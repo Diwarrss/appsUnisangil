@@ -10,13 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 /* Auth::routes(); */
 ////////RUTAS DE LOGIN Y AUTENTICACION
 Route::group(['middleware' => 'guest'], function () {
     // Authentication Routes...OK
-    Route::get('/', function () {return view('home');})->name('home'); //Pagina Principal home
-    Route::post('login', 'Auth\LoginController@login')->name('login');
+    Route::get('/', 'Auth\LoginController@index')->name('login');
+    //Route::get('/{any}', 'HomeController@index')->where('any', '.*'); //Pagina Principal home
+    Route::post('login', 'Auth\LoginController@login');
     // Registration Routes...OK
     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
     Route::post('register', 'Auth\RegisterController@register');
@@ -38,4 +38,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 });
 
-//Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/login', 'HomeController@index')->name('home');

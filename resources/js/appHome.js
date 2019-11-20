@@ -8,7 +8,11 @@ window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.Vue = require('vue');
-
+//importacion de libreria Vue Router
+import VueRouter from "vue-router";
+Vue.use(VueRouter);
+//importamos nuestras rutas
+import routes from './home/routes';
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -31,4 +35,6 @@ Vue.component('apphome', require('./components/home/AppHome.vue').default);
 
 const app = new Vue({
     el: '#app',
+    //le pasamos las rutas asi
+    router: new VueRouter(routes),
 });

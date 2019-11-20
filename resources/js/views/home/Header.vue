@@ -22,8 +22,8 @@
 
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
-                    <li class="active"><a href="#intro">Inicio</a></li>
-                    <li><a href="#services">Servicios</a></li>
+                    <li><router-link to="/">Inicio</router-link></li>
+                    <li><router-link to="/Servicios">Servicios</router-link></li>
                     <li><a href="#recursos">Recursos</a></li>
                     <li><a href="#about">Nosotros</a></li>
                     <!-- {{-- <li><a href="#portfolio">Portfolio</a></li> --}} -->
@@ -123,3 +123,9 @@ export default {
     },
 }
 </script>
+<style scoped>
+/* colocar estilo al router-link-active */
+.router-link-exact-active {
+  background: #a4d9ff;
+}
+</style>
