@@ -18,6 +18,8 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link href="adminCoreui/node_modules/fontawesome-free-5.10.2-web/css/all.min.css" rel="stylesheet">
+  <link href="adminCoreui/node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">

@@ -3360,13 +3360,24 @@ var staticRenderFns = [
                 [_c("i", { staticClass: "fa fa-youtube" })]
               ),
               _vm._v(" "),
-              _c("button", { staticClass: "btn btn-primary btn-sm" }, [
-                _c("i", {
-                  staticClass: "fa fa-sign-in",
-                  attrs: { "aria-hidden": "true" }
-                }),
-                _vm._v(" Admin")
-              ])
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary btn-sm",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "modal",
+                    "data-target": "#modalLogin"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "fa fa-sign-in",
+                    attrs: { "aria-hidden": "true" }
+                  }),
+                  _vm._v(" Admin")
+                ]
+              )
             ])
           ])
         ]),
@@ -3410,7 +3421,145 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("section")
+      _c("section", [
+        _c(
+          "div",
+          {
+            staticClass: "modal fade",
+            attrs: {
+              id: "modalLogin",
+              tabindex: "-1",
+              role: "dialog",
+              "aria-labelledby": "modalLoginLabel",
+              "aria-hidden": "true"
+            }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "modal-dialog", attrs: { role: "document" } },
+              [
+                _c("div", { staticClass: "modal-content" }, [
+                  _c("div", { staticClass: "modal-header" }, [
+                    _c(
+                      "h5",
+                      {
+                        staticClass: "modal-title",
+                        attrs: { id: "modalLoginLabel" }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fa fa-sign-in",
+                          attrs: { "aria-hidden": "true" }
+                        }),
+                        _vm._v(" Iniciar Sesión")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "close",
+                        attrs: {
+                          type: "button",
+                          "data-dismiss": "modal",
+                          "aria-label": "Close"
+                        }
+                      },
+                      [
+                        _c("span", { attrs: { "aria-hidden": "true" } }, [
+                          _vm._v("×")
+                        ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "modal-body" }, [
+                    _c(
+                      "form",
+                      { attrs: { action: "logingo", method: "post" } },
+                      [
+                        _c("div", { staticClass: "input-group mb-3" }, [
+                          _c("div", { staticClass: "input-group-prepend" }, [
+                            _c("span", { staticClass: "input-group-text" }, [
+                              _c("i", { staticClass: "icon-user" })
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control ",
+                            attrs: {
+                              id: "email",
+                              type: "email",
+                              placeholder: "E-mail",
+                              name: "email",
+                              value: "",
+                              required: "",
+                              autocomplete: "email",
+                              autofocus: ""
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group mb-4" }, [
+                          _c("div", { staticClass: "input-group-prepend" }, [
+                            _c("span", { staticClass: "input-group-text" }, [
+                              _c("i", { staticClass: "icon-lock" })
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control ",
+                            attrs: {
+                              id: "password",
+                              placeholder: "Password",
+                              type: "password",
+                              name: "password",
+                              required: "",
+                              autocomplete: "current-password"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-6" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "btn btn-primary px-4",
+                                attrs: { type: "submit" }
+                              },
+                              [
+                                _c("i", { staticClass: "fas fa-sign-in-alt" }),
+                                _vm._v(" Ingresar")
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-6 text-right" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "btn btn-link px-0",
+                                attrs: { href: "password/reset" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                        ¿Has olvidado la contraseña?"
+                                )
+                              ]
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ]
+            )
+          ]
+        )
+      ])
     ])
   }
 ]
