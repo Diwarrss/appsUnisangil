@@ -16,7 +16,7 @@
 Route::group(['middleware' => 'guest'], function () {
     // Authentication Routes...OK
     Route::get('/', function () {return view('home');})->name('home'); //Pagina Principal home
-    Route::post('logingo', 'Auth\LoginController@logingo')->name('logingo');
+    Route::post('login', 'Auth\LoginController@login')->name('login');
     // Registration Routes...OK
     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
     Route::post('register', 'Auth\RegisterController@register');

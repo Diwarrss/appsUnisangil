@@ -2109,10 +2109,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["csrf"],
   components: {
     Servicios: _views_home_Servicios__WEBPACK_IMPORTED_MODULE_0__["default"],
     Header: _views_home_Header__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -2155,6 +2157,139 @@ __webpack_require__.r(__webpack_exports__);
       } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
         $(".mobile-nav, .mobile-nav-toggle").hide();
       }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/home/Header.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/home/Header.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["csrf"],
+  data: function data() {
+    return {
+      email: '',
+      password: ''
+    };
+  },
+  methods: {
+    login: function login() {
+      var me = this;
+      var params = {
+        email: me.email,
+        password: me.password
+      };
+      axios.post('login', params).then(function (res) {
+        console.log(res);
+      })["catch"](function (err) {
+        console.error(err);
+      });
     }
   }
 });
@@ -2742,7 +2877,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Header"),
+      _c("Header", { attrs: { csrf: _vm.csrf } }),
       _vm._v(" "),
       _c("Intro"),
       _vm._v(" "),
@@ -3287,279 +3422,324 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("section", [
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "modalLogin",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "modalLoginLabel",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "modal-dialog", attrs: { role: "document" } },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("input", {
+                    attrs: { type: "hidden", name: "_token" },
+                    domProps: { value: _vm.csrf }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "input-group mb-3" }, [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.email,
+                          expression: "email"
+                        }
+                      ],
+                      staticClass: "form-control ",
+                      attrs: {
+                        type: "email",
+                        placeholder: "E-mail",
+                        name: "email",
+                        value: "",
+                        required: "",
+                        autocomplete: "email",
+                        autofocus: ""
+                      },
+                      domProps: { value: _vm.email },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.email = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "input-group mb-4" }, [
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.password,
+                          expression: "password"
+                        }
+                      ],
+                      staticClass: "form-control ",
+                      attrs: {
+                        placeholder: "Password",
+                        type: "password",
+                        name: "password",
+                        required: "",
+                        autocomplete: "current-password"
+                      },
+                      domProps: { value: _vm.password },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.password = $event.target.value
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-6" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary px-4",
+                          on: { click: _vm.login }
+                        },
+                        [
+                          _c("i", { staticClass: "fas fa-sign-in-alt" }),
+                          _vm._v(" Ingresar")
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(4)
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("header", { attrs: { id: "header" } }, [
-        _c("div", { attrs: { id: "topbar" } }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "social-links" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "twitter",
-                  attrs: {
-                    href: "https://twitter.com/unisangil",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-twitter" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "facebook",
-                  attrs: {
-                    href: "https://www.facebook.com/UNISANGIL",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-facebook" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "linkedin",
-                  attrs: {
-                    href:
-                      "https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-linkedin" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "instagram",
-                  attrs: {
-                    href: "https://www.instagram.com/unisangil/",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-instagram" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "youtube",
-                  attrs: {
-                    href: "https://www.youtube.com/user/miunisangil",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-youtube" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-primary btn-sm",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "modal",
-                    "data-target": "#modalLogin"
-                  }
-                },
-                [
-                  _c("i", {
-                    staticClass: "fa fa-sign-in",
-                    attrs: { "aria-hidden": "true" }
-                  }),
-                  _vm._v(" Admin")
-                ]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
+    return _c("header", { attrs: { id: "header" } }, [
+      _c("div", { attrs: { id: "topbar" } }, [
         _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "logo float-left" }, [
-            _c("h1", { staticClass: "text-light" }, [
-              _c("a", { staticClass: "scrollto", attrs: { href: "/" } }, [
-                _c("span", [_vm._v("Sistemas y Tics")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("nav", { staticClass: "main-nav float-right d-none d-lg-block" }, [
-            _c("ul", [
-              _c("li", { staticClass: "active" }, [
-                _c("a", { attrs: { href: "#intro" } }, [_vm._v("Inicio")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#services" } }, [_vm._v("Servicios")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#recursos" } }, [_vm._v("Recursos")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#about" } }, [_vm._v("Nosotros")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#team" } }, [_vm._v("Equipo")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "#footer" } }, [_vm._v("Contacto")])
-              ])
-            ])
+          _c("div", { staticClass: "social-links" }, [
+            _c(
+              "a",
+              {
+                staticClass: "twitter",
+                attrs: {
+                  href: "https://twitter.com/unisangil",
+                  target: "_blank"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-twitter" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "facebook",
+                attrs: {
+                  href: "https://www.facebook.com/UNISANGIL",
+                  target: "_blank"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-facebook" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "linkedin",
+                attrs: {
+                  href:
+                    "https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/",
+                  target: "_blank"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-linkedin" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "instagram",
+                attrs: {
+                  href: "https://www.instagram.com/unisangil/",
+                  target: "_blank"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-instagram" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "youtube",
+                attrs: {
+                  href: "https://www.youtube.com/user/miunisangil",
+                  target: "_blank"
+                }
+              },
+              [_c("i", { staticClass: "fa fa-youtube" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-sm",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#modalLogin"
+                }
+              },
+              [
+                _c("i", {
+                  staticClass: "fa fa-sign-in",
+                  attrs: { "aria-hidden": "true" }
+                }),
+                _vm._v(" Admin")
+              ]
+            )
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("section", [
-        _c(
-          "div",
-          {
-            staticClass: "modal fade",
-            attrs: {
-              id: "modalLogin",
-              tabindex: "-1",
-              role: "dialog",
-              "aria-labelledby": "modalLoginLabel",
-              "aria-hidden": "true"
-            }
-          },
-          [
-            _c(
-              "div",
-              { staticClass: "modal-dialog", attrs: { role: "document" } },
-              [
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("div", { staticClass: "modal-header" }, [
-                    _c(
-                      "h5",
-                      {
-                        staticClass: "modal-title",
-                        attrs: { id: "modalLoginLabel" }
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "fa fa-sign-in",
-                          attrs: { "aria-hidden": "true" }
-                        }),
-                        _vm._v(" Iniciar Sesión")
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "close",
-                        attrs: {
-                          type: "button",
-                          "data-dismiss": "modal",
-                          "aria-label": "Close"
-                        }
-                      },
-                      [
-                        _c("span", { attrs: { "aria-hidden": "true" } }, [
-                          _vm._v("×")
-                        ])
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "modal-body" }, [
-                    _c(
-                      "form",
-                      { attrs: { action: "logingo", method: "post" } },
-                      [
-                        _c("div", { staticClass: "input-group mb-3" }, [
-                          _c("div", { staticClass: "input-group-prepend" }, [
-                            _c("span", { staticClass: "input-group-text" }, [
-                              _c("i", { staticClass: "icon-user" })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control ",
-                            attrs: {
-                              id: "email",
-                              type: "email",
-                              placeholder: "E-mail",
-                              name: "email",
-                              value: "",
-                              required: "",
-                              autocomplete: "email",
-                              autofocus: ""
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group mb-4" }, [
-                          _c("div", { staticClass: "input-group-prepend" }, [
-                            _c("span", { staticClass: "input-group-text" }, [
-                              _c("i", { staticClass: "icon-lock" })
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control ",
-                            attrs: {
-                              id: "password",
-                              placeholder: "Password",
-                              type: "password",
-                              name: "password",
-                              required: "",
-                              autocomplete: "current-password"
-                            }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "col-6" }, [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary px-4",
-                                attrs: { type: "submit" }
-                              },
-                              [
-                                _c("i", { staticClass: "fas fa-sign-in-alt" }),
-                                _vm._v(" Ingresar")
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col-6 text-right" }, [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "btn btn-link px-0",
-                                attrs: { href: "password/reset" }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                                        ¿Has olvidado la contraseña?"
-                                )
-                              ]
-                            )
-                          ])
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ]
-            )
-          ]
-        )
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "logo float-left" }, [
+          _c("h1", { staticClass: "text-light" }, [
+            _c("a", { staticClass: "scrollto", attrs: { href: "/" } }, [
+              _c("span", [_vm._v("Sistemas y Tics")])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("nav", { staticClass: "main-nav float-right d-none d-lg-block" }, [
+          _c("ul", [
+            _c("li", { staticClass: "active" }, [
+              _c("a", { attrs: { href: "#intro" } }, [_vm._v("Inicio")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#services" } }, [_vm._v("Servicios")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#recursos" } }, [_vm._v("Recursos")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#about" } }, [_vm._v("Nosotros")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#team" } }, [_vm._v("Equipo")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "#footer" } }, [_vm._v("Contacto")])
+            ])
+          ])
+        ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "modalLoginLabel" } },
+        [
+          _c("i", {
+            staticClass: "fa fa-sign-in",
+            attrs: { "aria-hidden": "true" }
+          }),
+          _vm._v(" Iniciar Sesión")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: {
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
+          }
+        },
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "icon-user" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "icon-lock" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-6 text-right" }, [
+      _c(
+        "a",
+        { staticClass: "btn btn-link px-0", attrs: { href: "password/reset" } },
+        [
+          _vm._v(
+            "\n                                    ¿Has olvidado la contraseña?"
+          )
+        ]
+      )
     ])
   }
 ]
@@ -16133,15 +16313,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_vue_vue_type_template_id_227d832e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue?vue&type=template&id=227d832e& */ "./resources/js/views/home/Header.vue?vue&type=template&id=227d832e&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=script&lang=js& */ "./resources/js/views/home/Header.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Header_vue_vue_type_template_id_227d832e___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Header_vue_vue_type_template_id_227d832e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -16155,6 +16337,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/views/home/Header.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/views/home/Header.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/views/home/Header.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./Header.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/home/Header.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -16316,8 +16512,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! c:\laragon\www\appsUnisangil\resources\js\appHome.js */"./resources/js/appHome.js");
-module.exports = __webpack_require__(/*! c:\laragon\www\appsUnisangil\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\appsUnisangil\resources\js\appHome.js */"./resources/js/appHome.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\appsUnisangil\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

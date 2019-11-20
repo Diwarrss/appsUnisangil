@@ -1,9 +1,10 @@
 <template>
     <div>
+
         <!--==========================
         Header
         ============================-->
-        <Header />
+        <Header v-bind:csrf="csrf"/>
 
         <!--==========================
             Intro Section
@@ -271,6 +272,7 @@ import Servicios from '../../views/home/Servicios';
 import Header from '../../views/home/Header';
 import Intro from '../../views/home/Intro';
 export default {
+    props: ["csrf"],
     components:{
         Servicios,
         Header,

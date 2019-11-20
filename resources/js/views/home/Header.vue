@@ -62,34 +62,33 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form action="logingo" method="post">
-                                <!-- <p class="text-muted">Ingresa a tu cuenta</p> -->
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <i class="icon-user"></i>
-                                        </span>
-                                    </div>
-                                    <input id="email" type="email" placeholder="E-mail" class="form-control " name="email" value="" required="" autocomplete="email" autofocus="">
+                            <input type="hidden" name="_token" v-bind:value="csrf" />
+                            <!-- <p class="text-muted">Ingresa a tu cuenta</p> -->
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="icon-user"></i>
+                                    </span>
                                 </div>
-                                <div class="input-group mb-4">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">
-                                            <i class="icon-lock"></i>
-                                        </span>
-                                    </div>
-                                    <input id="password" placeholder="Password" type="password" class="form-control " name="password" required="" autocomplete="current-password">
+                                <input v-model="email" type="email" placeholder="E-mail" class="form-control " name="email" value="" required="" autocomplete="email" autofocus="">
+                            </div>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="icon-lock"></i>
+                                    </span>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <button class="btn btn-primary px-4" type="submit"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <a class="btn btn-link px-0" href="password/reset">
-                                            ¿Has olvidado la contraseña?</a>
-                                    </div>
+                                <input v-model="password" placeholder="Password" type="password" class="form-control " name="password" required="" autocomplete="current-password">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button class="btn btn-primary px-4" @click="login"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
                                 </div>
-                            </form>
+                                <div class="col-6 text-right">
+                                    <a class="btn btn-link px-0" href="password/reset">
+                                        ¿Has olvidado la contraseña?</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,3 +96,30 @@
         </section>
     </div>
 </template>
+<script>
+export default {
+    props: ["csrf"],
+    data() {
+        return {
+            email:'',
+            password:''
+        }
+    },
+    methods: {
+        login(){
+            let me = this;
+            let params = {
+                email: me.email,
+                password: me.password
+            };
+            axios.post('login',params)
+            .then(res => {
+                console.log(res)
+            })
+            .catch(err => {
+                console.error(err);
+            })
+        }
+    },
+}
+</script>

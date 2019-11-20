@@ -20078,7 +20078,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! c:\laragon\www\appsUnisangil\resources\js\appAdmin.js */"./resources/js/appAdmin.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\appsUnisangil\resources\js\appAdmin.js */"./resources/js/appAdmin.js");
 
 
 /***/ })
