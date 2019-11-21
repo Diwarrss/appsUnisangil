@@ -1,6 +1,9 @@
 //Importamos los componentes a usar
+import Error404 from '../views/home/Error404';
 import Intro from '../views/home/Intro';
-import Servicios from '../views/home/Servicios';
+import Services from '../views/home/Services';
+import About from '../views/home/About';
+import Team from '../views/home/Team';
 
 export default {
 
@@ -9,15 +12,27 @@ export default {
 
     routes: [/* {
             path: "*",
-            component:
+            component: Error404
         }, */
         {
             path: "/",
+            name: 'intro',
             component: Intro
         },
         {
-            path: "/Servicios",
-            component: Servicios
+            path: "/Services",
+            name: 'services',
+            component: Services
+        },
+        {
+            path: "/About",
+            name: 'about',
+            component: About
+        },
+        {
+            path: "/Team",
+            name: 'team',
+            component: Team
         }
     ]
 };
