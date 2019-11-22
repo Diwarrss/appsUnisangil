@@ -7,7 +7,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/admin">
+    <a class="navbar-brand" href="/home">
       <img class="navbar-brand-full" :src="imagenUniversidad" height="45" alt="Logotipo" />
       <!-- <img
         class="navbar-brand-minimized"

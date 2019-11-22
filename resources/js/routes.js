@@ -1,18 +1,18 @@
 //Importamos los componentes a usar
-import Error404 from '../views/admin/Error404';
-import Dashboard from '../views/admin/Dashboard';
+import Error404 from './views/Error404';
+import Dashboard from './views/Dashboard';
 
 export default {
 
     //mode: 'history',
-    base: "/admin",
+    base: "/home",
 
     routes: [{
             path: "*",
             component: Error404
         },
         {
-            path: "/",
+            path: "/home",
             component: Dashboard
         }
     ]

@@ -9,19 +9,15 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link href="img/favicon.png" rel="icon">
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/allCoreui.css') }}" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
 </head>
-<body>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -41,7 +37,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -70,11 +66,29 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
+        @auth
+            <!-- Barra Navegación Top Header -->
+            <headeradmin csrf="{{ csrf_token() }}"></headeradmin>
+        @endauth
+        @auth
+        <div class="app-body">
+            <sidebard><sidebard>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+            <!-- llamamos el componete que cargara todo el contenido de la pagina admin -->
+            <router-view></router-view>
+        </div>
+        @endauth
+        @auth
+            <footeradmin></footeradmin>
+        @endauth
+        @guest
+            <main class="py-4">
+                @yield('content')
+            </main>
+        @endguest
     </div>
+    <script src="{{ asset('js/appAdmin.js') }}"></script>
+    <script src="{{ asset('js/allCoreui.js') }}"></script>
 </body>
 </html>

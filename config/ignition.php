@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'editor' => env('IGNITION_EDITOR', 'phpstorm'),
+    'editor' => env('IGNITION_EDITOR', 'vscode'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'enable_share_button' => env('IGNITION_SHARING_ENABLED', true),
+    'enable_share_button' => env('IGNITION_SHARING_ENABLED', false),
 
     /*
     |--------------------------------------------------------------------------
