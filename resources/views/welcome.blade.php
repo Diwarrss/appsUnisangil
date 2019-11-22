@@ -20,7 +20,7 @@
     <body>
         <div id="app">
             <headerhome></headerhome>
-            <intro></intro>
+                @yield('content')
             <footerhome></footerhome>
         </div>
     </body>

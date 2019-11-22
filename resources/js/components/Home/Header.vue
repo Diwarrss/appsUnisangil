@@ -22,10 +22,10 @@
 
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
-                        <li><a href="#intro">Inicio</a></li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#abaut">Nosotros</a></li>
-                        <li><a href="#team">Equipo</a></li>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/services">Servicios</a></li>
+                        <li><a href="/about">Nosotros</a></li>
+                        <li><a href="/team">Equipo</a></li>
                     </ul>
                 </nav>
             </div>
