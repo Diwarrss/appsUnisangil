@@ -13,8 +13,8 @@
                 <i class="nav-icon icon-home"></i> Menú
                 </li>
                 <li class="nav-item">
-                <router-link class="nav-link" to="/ingresos">
-                    <i class="nav-icon icon-user-following"></i> Crear Ingreso
+                <router-link class="nav-link" to="/admin">
+                    <i class="nav-icon icon-user-following"></i> Admin
                 </router-link>
                 </li>
                 <li class="nav-item">

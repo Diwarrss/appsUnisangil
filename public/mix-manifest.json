@@ -1,6 +1,8 @@
 {
     "/js/appAdmin.js": "/js/appAdmin.js",
     "/js/appHome.js": "/js/appHome.js",
+    "/css/allHome.css": "/css/allHome.css",
     "/css/allCoreui.css": "/css/allCoreui.css",
-    "/js/allCoreui.js": "/js/allCoreui.js"
+    "/js/allCoreui.js": "/js/allCoreui.js",
+    "/js/allHome.js": "/js/allHome.js"
 }
