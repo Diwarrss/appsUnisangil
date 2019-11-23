@@ -1,7 +1,7 @@
 <template>
     <div>
         <section id="team" class="section-bg">
-            <div class="container">
+            <div class="container container py-5 mt-2">
                 <div class="section-header">
                     <h3>Team</h3>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <section id="services" class="section-bg">
-            <div class="container">
+            <div class="container py-5 mt-2">
                 <header class="section-header">
                 <h3>Services</h3>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>

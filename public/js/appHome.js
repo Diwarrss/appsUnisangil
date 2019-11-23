@@ -3201,7 +3201,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("section", { attrs: { id: "about" } }, [
-        _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "container container py-5 mt-2" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-lg-5 col-md-6" }, [
               _c("div", { staticClass: "about-img" }, [
@@ -3701,7 +3701,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("section", { staticClass: "section-bg", attrs: { id: "services" } }, [
-        _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "container py-5 mt-2" }, [
           _c("header", { staticClass: "section-header" }, [
             _c("h3", [_vm._v("Services")]),
             _vm._v(" "),
@@ -3960,7 +3960,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("section", { staticClass: "section-bg", attrs: { id: "team" } }, [
-        _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "container container py-5 mt-2" }, [
           _c("div", { staticClass: "section-header" }, [
             _c("h3", [_vm._v("Team")]),
             _vm._v(" "),

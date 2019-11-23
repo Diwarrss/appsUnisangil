@@ -1,7 +1,7 @@
 <template>
     <div>
         <section id="about">
-            <div class="container">
+            <div class="container container py-5 mt-2">
                 <div class="row">
 
                 <div class="col-lg-5 col-md-6">
