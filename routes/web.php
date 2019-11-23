@@ -1,4 +1,5 @@
 <?php
+Auth::routes();
 
 Route::group(['middleware' => ['guest']], function () {
     Route::get('/', function () {
@@ -14,7 +15,7 @@ Route::group(['middleware' => ['guest']], function () {
         return view('home.team');
     });
 });
-
-Auth::routes();
-//obtener la vista del admin al loguear
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['auth']], function () {
+    //obtener la vista del admin al loguear
+    Route::get('/home', 'HomeController@index')->name('home');
+});

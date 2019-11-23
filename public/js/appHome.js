@@ -2054,7 +2054,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-34761642] {\r\n  background: #a4d9ff;\n}\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-34761642] {\r\n  background: #a4d9ff;\n}\r\n", ""]);
 
 // exports
 
@@ -3541,15 +3541,7 @@ var staticRenderFns = [
                   }
                 },
                 [_c("i", { staticClass: "fa fa-youtube" })]
-              ),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "/login" } }, [
-                _c("i", {
-                  staticClass: "fa fa-sign-in",
-                  attrs: { "aria-hidden": "true" }
-                }),
-                _vm._v(" Admin")
-              ])
+              )
             ])
           ])
         ]),
@@ -3577,6 +3569,16 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("li", [
                 _c("a", { attrs: { href: "/team" } }, [_vm._v("Equipo")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "/login" } }, [
+                  _c("i", {
+                    staticClass: "fa fa-sign-in",
+                    attrs: { "aria-hidden": "true" }
+                  }),
+                  _vm._v(" Admin")
+                ])
               ])
             ])
           ])

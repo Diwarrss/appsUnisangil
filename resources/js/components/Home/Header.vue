@@ -9,7 +9,6 @@
                         <a href="https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/unisangil/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.youtube.com/user/miunisangil" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
-                        <a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a>
                     </div>
                 </div>
             </div>
@@ -26,6 +25,7 @@
                         <li><a href="/services">Servicios</a></li>
                         <li><a href="/about">Nosotros</a></li>
                         <li><a href="/team">Equipo</a></li>
+                        <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,6 +46,7 @@ export default {
                 class: 'mobile-nav d-lg-none'
                 });
                 $('body').append($mobile_nav);
+                
                 $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="fa fa-bars"></i></button>');
                 $('body').append('<div class="mobile-nav-overly"></div>');
 

@@ -19984,7 +19984,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_Error404__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/Error404 */ "./resources/js/views/Error404.vue");
 /* harmony import */ var _views_Dashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/Dashboard */ "./resources/js/views/Dashboard.vue");
-/* harmony import */ var _views_Admin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/Admin */ "./resources/js/views/Admin.vue");
+/* harmony import */ var _views_Admin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/Admin */ "./resources/js/views/Admin.vue");
 //Importamos los componentes a usar
 
 
@@ -20000,7 +20000,7 @@ __webpack_require__.r(__webpack_exports__);
     component: _views_Dashboard__WEBPACK_IMPORTED_MODULE_1__["default"]
   }, {
     path: "/admin",
-    component: _views_Admin__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _views_Admin__WEBPACK_IMPORTED_MODULE_2__["default"]
   }]
 });
 
