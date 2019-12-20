@@ -11,8 +11,11 @@ Route::group(['middleware' => ['guest']], function () {
     Route::get('/about', function () {
         return view('home.about');
     });
-    Route::get('/team', function () {
-        return view('home.team');
+    Route::get('/news', function () {
+        return view('home.news');
+    });
+    Route::get('/infrastructure', function () {
+        return view('home.infrastructure');
     });
 });
 Route::group(['middleware' => ['auth']], function () {

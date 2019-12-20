@@ -1,5 +1,5 @@
 @extends('welcome')
 
 @section('content')
-<team></team>
+<infrastructure></infrastructure>
 @endsection

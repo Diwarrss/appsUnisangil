@@ -9,7 +9,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <link href="img/favicon.png" rel="icon">
+    <link href="storage/img/favicon.png" rel="icon">
     <!-- Styles -->{{-- Cuando este autenticado --}}
     @auth
         <link href="{{ asset('css/allCoreui.css') }}" rel="stylesheet">

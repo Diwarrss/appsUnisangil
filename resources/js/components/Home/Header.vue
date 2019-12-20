@@ -13,10 +13,10 @@
                 </div>
             </div>
             <div class="container">
-                <div class="logo float-left">
+                <div class="float-left">
                     <!-- Uncomment below if you prefer to use an image logo -->
-                    <h1 class="text-light"><a href="/" class="scrollto"><span>Sistemas y Tics</span></a></h1>
-                    <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+                    <!-- <h1 class="text-light"><a href="/" class="scrollto"><span>Sistemas y Tics</span></a></h1> -->
+                    <a href="/" class="scrollto"><img src="storage/img/Logo-Name.png" alt="" class="img-fluid" width="250"></a>
                 </div>
 
                 <nav class="main-nav float-right d-none d-lg-block">
@@ -24,8 +24,9 @@
                         <li><a href="/">Inicio</a></li>
                         <li><a href="/services">Servicios</a></li>
                         <li><a href="/about">Nosotros</a></li>
-                        <li><a href="/team">Equipo</a></li>
-                        <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li>
+                        <li><a href="/news">Noticias</a></li>
+                        <li><a href="/infrastructure">Infraestructura</a></li>
+                        <!-- <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -46,7 +47,7 @@ export default {
                 class: 'mobile-nav d-lg-none'
                 });
                 $('body').append($mobile_nav);
-                
+
                 $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="fa fa-bars"></i></button>');
                 $('body').append('<div class="mobile-nav-overly"></div>');
 
