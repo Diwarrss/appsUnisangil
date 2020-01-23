@@ -3297,7 +3297,11 @@ var staticRenderFns = [
         _c("div", { staticClass: "footer-top" }, [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "section-header" }, [
-              _c("h3", [_vm._v("Sistemas y Tics")])
+              _c("h4", [
+                _vm._v(
+                  "Fundación Universitaria de San Gil - UNISANGIL. Dpto. Sistemas y Tics"
+                )
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "row" }, [
@@ -3437,8 +3441,8 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "credits" }, [
             _vm._v("\n            Designed by "),
-            _c("a", { attrs: { href: "https://gridsoft.co/" } }, [
-              _vm._v("GridSoft")
+            _c("a", { attrs: { href: "http://tics.unisangil.edu.co/" } }, [
+              _vm._v("Dpto. Sistemas y Tics")
             ])
           ])
         ])

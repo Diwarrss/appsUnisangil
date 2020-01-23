@@ -4,7 +4,7 @@
             <div class="footer-top">
             <div class="container">
                 <div class="section-header">
-                    <h3>Sistemas y Tics</h3>
+                    <h4>Fundación Universitaria de San Gil - UNISANGIL. Dpto. Sistemas y Tics</h4>
                 </div>
                 <div class="row">
 
@@ -73,7 +73,7 @@
                 &copy; Copyright <strong>Unisangil</strong>. All Rights Reserved
             </div>
             <div class="credits">
-                Designed by <a href="https://gridsoft.co/">GridSoft</a>
+                Designed by <a href="http://tics.unisangil.edu.co/">Dpto. Sistemas y Tics</a>
             </div>
             </div>
         </footer>
