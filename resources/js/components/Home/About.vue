@@ -80,7 +80,7 @@
                             <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Carlos Andres - -</h4>
+                                    <h4>Carlos Andres Acevedo Camargo</h4>
                                     <span>Dir. Taller de mantenimiento</span>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Mayra Alexandra Rodriguez Burgos</h4>
-                                    <span>Dir. Plataformas tecnológicas</span>
+                                    <span>Administrador plataformas tecnológicas</span>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                             <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Sebastián --</h4>
+                                    <h4>Jhoan Sebastian Becerra Chacon</h4>
                                     <span>Auxiliar Sena</span>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
+                    <div class="col-lg-3 col-md-4 col-sm-6  wow fadeInUp">
                         <div class="member">
                             <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
                             <div class="member-info">
