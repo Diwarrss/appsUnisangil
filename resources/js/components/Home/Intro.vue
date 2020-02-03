@@ -6,7 +6,7 @@
                 <div class="col-md-6 intro-info order-md-first order-last">
                     <div class="text-center">
                         <div>
-                            <img src="storage/img/logo.png" alt="" class="img-fluid" width="400">
+                            <img src="storage/img/logo.png" alt="" class="img-fluid" width="300">
                         </div>
                         <div class="mt-5">
                             <a href="/about" class="btn-get-started scrollto">
