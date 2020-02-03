@@ -3,61 +3,45 @@
         <footer id="footer" class="section-bg">
             <div class="footer-top">
             <div class="container">
-                <div class="section-header">
-                    <h4>Fundación Universitaria de San Gil - UNISANGIL. Dpto. Sistemas y Tics</h4>
+                <div class="section-header text-center">
+                    <h5>Fundación Universitaria de San Gil - UNISANGIL</h5>
                 </div>
                 <div class="row">
 
                 <div class="col-lg-12">
 
-                    <div class="row">
-
-                        <div class="col-sm-6">
-
-                        <div class="footer-info">
-                            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                        </div>
-
-                        <div class="footer-newsletter">
-                            <h4>Our Newsletter</h4>
-                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                            <form action="" method="post">
-                            <input type="email" name="email"><input type="submit"  value="Subscribe">
-                            </form>
-                        </div>
-
-                        </div>
-
-                        <div class="col-sm-3">
-                        <div class="footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Terms of service</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div>
-                        </div>
-
-                        <div class="col-sm-3">
+                    <div class="row text-center">
+                        <div class="col-md-4">
                             <div class="footer-links">
-                                <h4>Contact Us</h4>
+                                <h4>San Gil</h4>
                                 <p>
-                                    A108 Adam Street <br>
-                                    New York, NY 535022<br>
-                                    United States <br>
-                                    <strong>Phone:</strong> +1 5589 55488 55<br>
-                                    <strong>Email:</strong> info@example.com<br>
+                                    Km 2 vía San Gil - Charalá, <br>
+                                    <strong>Teléfonos:</strong> (7) 7245757 Ext 220-230-231<br>
+                                    <strong>Email:</strong> <a href="mailto:dirtics@unisangil.edu.co">  dirtics@unisangil.edu.co </a> <br>
+                                    San Gil, Santander, Colombia<br>
                                 </p>
-                                </div>
-
-                                <div class="social-links">
-                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h4>Chiquinquirá</h4>
+                                <p>
+                                    Calle 18 # 12-18 <br>
+                                    <strong>Teléfonos:</strong> (8) 7266058 Ext. 103<br>
+                                    <strong>Email:</strong> <a href="mailto:sistemaschiquinquira@unisangil.edu.co"> sistemaschiquinquira@unisangil.edu.co </a> <br>
+                                    Chiquinquirá, Boyacá, Colombia<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-links">
+                                <h4>Yopal</h4>
+                                <p>
+                                    Diagonal 15 No. 15-70 <br>
+                                    <strong>Teléfonos:</strong> PBX. 6341700<br>
+                                    <strong>Email:</strong> <a href="mailto:yopal_tic@unisangil.edu.co"> yopal_tic@unisangil.edu.co </a><br>
+                                    El Yopal, Casanare, Colombia<br>
+                                </p>
                             </div>
                         </div>
                     </div>

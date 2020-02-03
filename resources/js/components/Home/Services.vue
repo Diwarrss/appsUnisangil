@@ -2,9 +2,9 @@
     <div>
         <section id="services" class="section-bg">
             <div class="container py-5 mt-2">
-                <header class="section-header">
-                <h3>Services</h3>
-                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+                <header class="section-header mb-2">
+                <h3>Servicios</h3>
+                <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
                 </header>
 
                 <div class="row">
@@ -53,6 +53,19 @@
                     <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                     </div>
                 </div>
+                </div>
+            </div>
+        </section>
+        <section >
+            <div class="container p-5">
+                <header class="section-header">
+                <h3>Catálogo de Servicios TIC</h3>
+                <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
+                </header>
+                <div class="col-lg-8 col-md-12 offset-lg-2 my-auto p-4">
+                    <div class="about-img">
+                    <img src="storage/img/catalogo_servicios.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
