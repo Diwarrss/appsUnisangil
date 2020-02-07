@@ -3389,7 +3389,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "member" }, [
                   _c("img", {
                     staticClass: "img-fluid",
-                    attrs: { src: "storage/img/team-1.jpg", alt: "" }
+                    attrs: { src: "storage/img/team/auxRedes1.jpg", alt: "" }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "member-info" }, [
@@ -3496,7 +3496,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "member" }, [
                   _c("img", {
                     staticClass: "img-fluid",
-                    attrs: { src: "storage/img/team-1.jpg", alt: "" }
+                    attrs: { src: "storage/img/team/servidores.jpg", alt: "" }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "member-info" }, [
@@ -3517,7 +3517,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "member" }, [
                   _c("img", {
                     staticClass: "img-fluid",
-                    attrs: { src: "storage/img/team-1.jpg", alt: "" }
+                    attrs: { src: "storage/img/team/dba.jpg", alt: "" }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "member-info" }, [
@@ -17804,7 +17804,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\appsUnisangil\resources\js\appHome.js */"./resources/js/appHome.js");
+module.exports = __webpack_require__(/*! c:\laragon\www\appsUnisangil\resources\js\appHome.js */"./resources/js/appHome.js");
 
 
 /***/ })
