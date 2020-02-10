@@ -1,18 +1,20 @@
 <template>
     <div>
-        <section id="about">
-            <div class="container container py-5 mt-2">
+        <section id="about" class="about">
+            <div class="container py-5 mt-2">
+                <header class="section-header">
+                    <h3>Nosotros</h3>
+                </header>
                 <div class="row">
 
                 <div class="col-lg-5 col-md-6 my-auto">
                     <div class="about-img">
-                    <img src="storage/img/about-img.jpg" alt="">
+                        <img src="storage/img/about-img.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="col-lg-7 col-md-6">
                     <div class="about-content">
-                    <h2 class="text-center">Nosotros</h2>
                     <h3>Departamento de Sistemas y TIC</h3>
                     <p>Somos una unidad tecnológica de apoyo académico y administrativo, que aplica e integra sistemas informáticos y nuevas tecnologías de la información y la comunicación de manera responsable y oportuna, transformando los recursos tecnológicos en servicios que generen valor a quienes hacen parte de UNISANGIL.</p>
 
@@ -35,8 +37,19 @@
                 </div>
             </div>
         </section>
-        <section id="team">
-            <div class="container container">
+        <section class="section-bg">
+            <div class="container mb-5 pb-5 pt-3">
+                <div class="section-header">
+                    <h3>Actividades</h3>
+                    <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+                </div>
+                <div class="text-center about-img pt-5">
+                    <img src="storage/img/actividades_proceso.png" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team">
+            <div class="container">
                 <div class="section-header">
                     <h3>Nuestro Equipo</h3>
                     <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
@@ -99,7 +112,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
                         <div class="member">
-                            <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="storage/img/team/plataformas.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Mayra Alexandra Rodriguez Burgos</h4>
@@ -146,3 +159,11 @@
         </section>
     </div>
 </template>
+<style lang="scss" scoped>
+.about{
+    padding-bottom: 0px !important;
+}
+.team{
+    padding-top: 0px !important;
+}
+</style>
