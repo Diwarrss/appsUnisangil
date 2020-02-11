@@ -4,6 +4,7 @@
             <div id="topbar">
                 <div class="container">
                     <div class="social-links">
+                        <a @click="openBuzon" type="button" class="text-primary"><i class="fas fa-envelope-open-text"></i> Buzón de Sugerencias</a>
                         <a href="https://twitter.com/unisangil" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/UNISANGIL" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a href="https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -76,6 +77,9 @@ export default {
             } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
                 $(".mobile-nav, .mobile-nav-toggle").hide();
             }
+        },
+        openBuzon(){
+            console.log('para el buzón')
         }
     },
 }

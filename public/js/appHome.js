@@ -1873,6 +1873,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.showMobile();
@@ -1911,6 +1912,9 @@ __webpack_require__.r(__webpack_exports__);
       } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
         $(".mobile-nav, .mobile-nav-toggle").hide();
       }
+    },
+    openBuzon: function openBuzon() {
+      console.log('para el buzón');
     }
   }
 });
@@ -2118,7 +2122,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-34761642] {\n  background: #a4d9ff;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-34761642] {\n  background: #a4d9ff;\n}\n", ""]);
 
 // exports
 
@@ -3926,117 +3930,150 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("header", { attrs: { id: "header" } }, [
+      _c("div", { attrs: { id: "topbar" } }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "social-links" }, [
+            _c(
+              "a",
+              {
+                staticClass: "text-primary",
+                attrs: { type: "button" },
+                on: { click: _vm.openBuzon }
+              },
+              [
+                _c("i", { staticClass: "fas fa-envelope-open-text" }),
+                _vm._v(" Buzón de Sugerencias")
+              ]
+            ),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _vm._m(2),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4)
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(5)
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("header", { attrs: { id: "header" } }, [
-        _c("div", { attrs: { id: "topbar" } }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "social-links" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "twitter",
-                  attrs: {
-                    href: "https://twitter.com/unisangil",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-twitter" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "facebook",
-                  attrs: {
-                    href: "https://www.facebook.com/UNISANGIL",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-facebook" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "linkedin",
-                  attrs: {
-                    href:
-                      "https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-linkedin" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "instagram",
-                  attrs: {
-                    href: "https://www.instagram.com/unisangil/",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-instagram" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "youtube",
-                  attrs: {
-                    href: "https://www.youtube.com/user/miunisangil",
-                    target: "_blank"
-                  }
-                },
-                [_c("i", { staticClass: "fa fa-youtube" })]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "float-left" }, [
-            _c("a", { staticClass: "scrollto", attrs: { href: "/" } }, [
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: {
-                  src: "storage/img/Logo-Name.png",
-                  alt: "",
-                  width: "250"
-                }
-              })
-            ])
+    return _c(
+      "a",
+      {
+        staticClass: "twitter",
+        attrs: { href: "https://twitter.com/unisangil", target: "_blank" }
+      },
+      [_c("i", { staticClass: "fa fa-twitter" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "facebook",
+        attrs: { href: "https://www.facebook.com/UNISANGIL", target: "_blank" }
+      },
+      [_c("i", { staticClass: "fa fa-facebook" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "linkedin",
+        attrs: {
+          href:
+            "https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/",
+          target: "_blank"
+        }
+      },
+      [_c("i", { staticClass: "fa fa-linkedin" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "instagram",
+        attrs: {
+          href: "https://www.instagram.com/unisangil/",
+          target: "_blank"
+        }
+      },
+      [_c("i", { staticClass: "fa fa-instagram" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "youtube",
+        attrs: {
+          href: "https://www.youtube.com/user/miunisangil",
+          target: "_blank"
+        }
+      },
+      [_c("i", { staticClass: "fa fa-youtube" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "float-left" }, [
+        _c("a", { staticClass: "scrollto", attrs: { href: "/" } }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: { src: "storage/img/Logo-Name.png", alt: "", width: "250" }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("nav", { staticClass: "main-nav float-right d-none d-lg-block" }, [
+        _c("ul", [
+          _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Inicio")])]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { href: "/services" } }, [_vm._v("Servicios")])
           ]),
           _vm._v(" "),
-          _c("nav", { staticClass: "main-nav float-right d-none d-lg-block" }, [
-            _c("ul", [
-              _c("li", [_c("a", { attrs: { href: "/" } }, [_vm._v("Inicio")])]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/services" } }, [_vm._v("Servicios")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/about" } }, [_vm._v("Nosotros")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/news" } }, [_vm._v("Noticias")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/infrastructure" } }, [
-                  _vm._v("Infraestructura")
-                ])
-              ])
+          _c("li", [
+            _c("a", { attrs: { href: "/about" } }, [_vm._v("Nosotros")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { href: "/news" } }, [_vm._v("Noticias")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { href: "/infrastructure" } }, [
+              _vm._v("Infraestructura")
             ])
           ])
         ])
