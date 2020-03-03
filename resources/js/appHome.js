@@ -3,6 +3,16 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.Vue = require('vue');
 
+//import global sweetalert vuejs
+import VueSweetalert2 from 'vue-sweetalert2';
+
+const options = {
+    confirmButtonColor: '#41b882',
+    cancelButtonColor: '#ff7674',
+};
+
+Vue.use(VueSweetalert2, options);
+
 Vue.component('headerhome', require('./components/Home/Header.vue').default);
 Vue.component('footerhome', require('./components/Home/Footer.vue').default);
 Vue.component('intro', require('./components/Home/Intro.vue').default);

@@ -4,7 +4,7 @@
             <div id="topbar">
                 <div class="container">
                     <div class="social-links">
-                        <a @click="openBuzon" type="button" class="text-primary"><i class="fas fa-envelope-open-text"></i> Buzón de Sugerencias</a>
+                        <a @click="openBuzon" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fas fa-envelope-open-text"></i> PQRSF</a>
                         <a href="https://twitter.com/unisangil" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                         <a href="https://www.facebook.com/UNISANGIL" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a href="https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -32,10 +32,90 @@
                 </nav>
             </div>
         </header>
+        <!-- Modal de PQRSF -->
+        <section>
+            <div class="modal fade" id="modalPqrsf" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPqrsfLabel"><strong>PQRSF</strong>
+                        <label>(Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones)</label>
+                        </h5>
+
+                        <button type="button" class="close" @click="closeBuzon">
+                            <span aria-hidden="true" class="text-danger">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombres"><strong>Nombres y Apellidos</strong></label>
+                                <input type="text" class="form-control" :class="{'is-invalid': errors['data.nombres']}" id="nombres" v-model="dataBuzon.nombres">
+                                <div class="invalid-feedback" v-if="errors['data.nombres']">
+                                    {{errors['data.nombres'][0]}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="celular"><strong>Celular</strong></label>
+                                <input type="text" class="form-control" :class="{'is-invalid': errors['data.celular']}" id="celular" v-model="dataBuzon.celular">
+                                <div class="invalid-feedback" v-if="errors['data.celular']">
+                                    {{errors['data.celular'][0]}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><strong>Email</strong></label>
+                                <input type="email" class="form-control" :class="{'is-invalid': errors['data.email']}" id="email" placeholder="name@example.com" v-model="dataBuzon.email">
+                                <div class="invalid-feedback" v-if="errors['data.email']">
+                                    {{errors['data.email'][0]}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipoSolicitud"><strong>Tipo de Solicitud</strong></label>
+                                <select class="form-control" :class="{'is-invalid': errors['data.tipo']}" id="tipoSolicitud" v-model="dataBuzon.tipo">
+                                <option disabled value selected>Seleccionar...</option>
+                                <option value="Felicitación">Felicitación</option>
+                                <option value="Petición">Petición</option>
+                                <option value="Queja">Queja</option>
+                                <option value="Reclamo">Reclamo</option>
+                                <option value="Sugerencia">Sugerencia</option>
+                                </select>
+                                <div class="invalid-feedback" v-if="errors['data.tipo']">
+                                    {{errors['data.tipo'][0]}}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion"><strong>Descripción</strong></label>
+                                <textarea class="form-control" :class="{'is-invalid': errors['data.descripcion']}" id="descripcion" rows="3" v-model="dataBuzon.descripcion"></textarea>
+                            <div class="invalid-feedback" v-if="errors['data.descripcion']">
+                                {{errors['data.descripcion'][0]}}
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" @click="closeBuzon"><i class="far fa-times-circle"></i> Cancelar</button>
+                        <button type="button" class="btn btn-success" @click="sendPqrsf"><i class="fas fa-paper-plane"></i> Enviar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 <script>
 export default {
+    data () {
+        return {
+            dataBuzon: {
+                nombres: '',
+                celular: '',
+                email: '',
+                tipo: '',
+                descripcion: ''
+            },
+            errors: []
+        }
+    },
     mounted() {
         this.showMobile();
     },
@@ -78,15 +158,52 @@ export default {
                 $(".mobile-nav, .mobile-nav-toggle").hide();
             }
         },
+        sendPqrsf(){
+            let me = this
+            let data = this.dataBuzon
+            axios.post("buzon/save", {data})
+                .then(function (response) {
+                    // handle success
+                    me.$swal({
+                        position: 'top',
+                        icon: 'success',
+                        title: "PQRSF enviado con éxito",
+                        showConfirmButton: false,
+                        timer: 1800
+                    });
+                    me.closeBuzon()
+                })
+                .catch(function (error) {
+                    if (error.response) {
+                        if (error.response.status == 422) {
+                            me.errors = error.response.data.errors;
+                        }
+                    }
+                });
+        },
         openBuzon(){
-            console.log('para el buzón')
+            $('#modalPqrsf').modal('show')
+        },
+        closeBuzon(){
+            $('#modalPqrsf').modal('hide')
+            this.errors = []
+            this.dataBuzon.nombres = ''
+            this.dataBuzon.celular = ''
+            this.dataBuzon.email = ''
+            this.dataBuzon.tipo = ''
+            this.dataBuzon.descripcion = ''
         }
     },
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 /* colocar estilo al router-link-active */
 .router-link-exact-active {
   background: #a4d9ff;
+}
+.modal-header{
+    label{
+        font-size: 14px;
+    }
 }
 </style>

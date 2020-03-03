@@ -90,7 +90,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
                         <div class="member">
-                            <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="storage/img/team/taller.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Carlos Andres Acevedo Camargo</h4>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
                         <div class="member">
-                            <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="storage/img/team/auxTaller.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Luis Danery Prada Bueno</h4>

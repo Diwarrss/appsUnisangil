@@ -48,6 +48,10 @@ Route::group(['middleware' => ['guest']], function () {
     Route::get('/licencias', function () {
         return view('home.licencias');
     });
+    //BuzonSugerenciaController
+    Route::post('buzon/save','BuzonSugerenciaController@save');
+    //InscripcionPruebaController
+    Route::get('inscripcion/downloadFile','InscripcionPruebaController@downloadFile');
 });
 Route::group(['middleware' => ['auth']], function () {
     //obtener la vista del admin al loguear

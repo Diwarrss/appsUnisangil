@@ -35,8 +35,7 @@ mix
         "public/adminCoreui/node_modules/bootstrap/dist/js/bootstrap.min.js",
         "public/adminCoreui/node_modules/pace-progress/pace.min.js",
         "public/adminCoreui/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
-        "public/adminCoreui/node_modules/@coreui/coreui/dist/js/coreui.min.js",
-        "public/adminCoreui/js/sweetalert2/sweetalert2.all.min.js"
+        "public/adminCoreui/node_modules/@coreui/coreui/dist/js/coreui.min.js"
     ],
     "public/js/allCoreui.js"
 )
