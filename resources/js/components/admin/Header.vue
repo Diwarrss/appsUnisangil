@@ -96,11 +96,6 @@
 import { mapState, mapActions } from "vuex";
 export default {
   props: ["csrf"],
-  data() {
-    return {
-      imagenUniversidad: ""
-    };
-  },
   methods: {
     logout() {
       event.preventDefault();

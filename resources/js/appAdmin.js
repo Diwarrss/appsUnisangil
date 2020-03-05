@@ -12,7 +12,7 @@ Vue.use(Vuex);
 //importamos nuestras rutas
 import routes from './routes';
 //importamos nuestro store de vuex
-import store from './store';
+import store from './store/admin.js';
 
 //Components show auth
 Vue.component('headeradmin', require('./components/Admin/Header.vue').default);

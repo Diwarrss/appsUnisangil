@@ -6,8 +6,8 @@ window.Vue = require('vue');
 //import vuex for vuejs
 import Vuex from 'vuex'
 Vue.use(Vuex)
-//import store for vuex
-import store from './store';
+    //import store for vuex
+import store from './store/home.js';
 
 //import global sweetalert vuejs
 import VueSweetalert2 from 'vue-sweetalert2';

@@ -1948,11 +1948,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["csrf"],
-  data: function data() {
-    return {
-      imagenUniversidad: ""
-    };
-  },
   methods: {
     logout: function logout() {
       event.preventDefault();
@@ -20501,7 +20496,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "./resources/js/store.js");
+/* harmony import */ var _store_admin_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store/admin.js */ "./resources/js/store/admin.js");
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); //importacion de libreria Vue Router
@@ -20523,7 +20518,7 @@ var app = new Vue({
   el: '#app',
   router: new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"](_routes__WEBPACK_IMPORTED_MODULE_2__["default"]),
   //le pasamos el Store importado
-  store: new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store(_store__WEBPACK_IMPORTED_MODULE_3__["default"])
+  store: new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store(_store_admin_js__WEBPACK_IMPORTED_MODULE_3__["default"])
 });
 
 /***/ }),
@@ -20754,10 +20749,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/store.js":
-/*!*******************************!*\
-  !*** ./resources/js/store.js ***!
-  \*******************************/
+/***/ "./resources/js/store/admin.js":
+/*!*************************************!*\
+  !*** ./resources/js/store/admin.js ***!
+  \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

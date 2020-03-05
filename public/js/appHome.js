@@ -26805,7 +26805,7 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store */ "./resources/js/store.js");
+/* harmony import */ var _store_home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./store/home.js */ "./resources/js/store/home.js");
 /* harmony import */ var vue_sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-sweetalert2 */ "./node_modules/vue-sweetalert2/dist/index.js");
 /* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
 /* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_3__);
@@ -26855,7 +26855,7 @@ Vue.component('licencias', __webpack_require__(/*! ./components/Home/Licencias.v
 var app = new Vue({
   el: '#app',
   //le pasamos el Store vuex
-  store: new vuex__WEBPACK_IMPORTED_MODULE_0__["default"].Store(_store__WEBPACK_IMPORTED_MODULE_1__["default"])
+  store: new vuex__WEBPACK_IMPORTED_MODULE_0__["default"].Store(_store_home_js__WEBPACK_IMPORTED_MODULE_1__["default"])
 });
 
 /***/ }),
@@ -27899,10 +27899,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/store.js":
-/*!*******************************!*\
-  !*** ./resources/js/store.js ***!
-  \*******************************/
+/***/ "./resources/js/store/home.js":
+/*!************************************!*\
+  !*** ./resources/js/store/home.js ***!
+  \************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
