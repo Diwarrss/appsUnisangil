@@ -1954,6 +1954,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -8313,7 +8315,7 @@ var render = function() {
           _c(
             "div",
             {
-              staticClass: "modal-dialog modal-primary",
+              staticClass: "modal-dialog modal-primary modal-dialog-scrollable",
               attrs: { role: "document" }
             },
             [
@@ -8384,90 +8386,92 @@ var render = function() {
                         : _vm._e()
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _vm._m(8),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.dataBuzon.celular,
-                            expression: "dataBuzon.celular"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        class: { "is-invalid": _vm.errors["data.celular"] },
-                        attrs: { type: "text", id: "celular" },
-                        domProps: { value: _vm.dataBuzon.celular },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
+                    _c("div", { staticClass: "form-row" }, [
+                      _c("div", { staticClass: "form-group col-md-4" }, [
+                        _vm._m(8),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.dataBuzon.celular,
+                              expression: "dataBuzon.celular"
                             }
-                            _vm.$set(
-                              _vm.dataBuzon,
-                              "celular",
-                              $event.target.value
-                            )
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm.errors["data.celular"]
-                        ? _c("div", { staticClass: "invalid-feedback" }, [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(_vm.errors["data.celular"][0]) +
-                                "\n                            "
-                            )
-                          ])
-                        : _vm._e()
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "form-group" }, [
-                      _vm._m(9),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.dataBuzon.email,
-                            expression: "dataBuzon.email"
-                          }
-                        ],
-                        staticClass: "form-control",
-                        class: { "is-invalid": _vm.errors["data.email"] },
-                        attrs: {
-                          type: "email",
-                          id: "email",
-                          placeholder: "name@example.com"
-                        },
-                        domProps: { value: _vm.dataBuzon.email },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
+                          ],
+                          staticClass: "form-control",
+                          class: { "is-invalid": _vm.errors["data.celular"] },
+                          attrs: { type: "text", id: "celular" },
+                          domProps: { value: _vm.dataBuzon.celular },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.dataBuzon,
+                                "celular",
+                                $event.target.value
+                              )
                             }
-                            _vm.$set(
-                              _vm.dataBuzon,
-                              "email",
-                              $event.target.value
-                            )
                           }
-                        }
-                      }),
+                        }),
+                        _vm._v(" "),
+                        _vm.errors["data.celular"]
+                          ? _c("div", { staticClass: "invalid-feedback" }, [
+                              _vm._v(
+                                "\n                                    " +
+                                  _vm._s(_vm.errors["data.celular"][0]) +
+                                  "\n                                "
+                              )
+                            ])
+                          : _vm._e()
+                      ]),
                       _vm._v(" "),
-                      _vm.errors["data.email"]
-                        ? _c("div", { staticClass: "invalid-feedback" }, [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(_vm.errors["data.email"][0]) +
-                                "\n                            "
-                            )
-                          ])
-                        : _vm._e()
+                      _c("div", { staticClass: "form-group col-md-8" }, [
+                        _vm._m(9),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.dataBuzon.email,
+                              expression: "dataBuzon.email"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          class: { "is-invalid": _vm.errors["data.email"] },
+                          attrs: {
+                            type: "email",
+                            id: "email",
+                            placeholder: "name@example.com"
+                          },
+                          domProps: { value: _vm.dataBuzon.email },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.dataBuzon,
+                                "email",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm.errors["data.email"]
+                          ? _c("div", { staticClass: "invalid-feedback" }, [
+                              _vm._v(
+                                "\n                                    " +
+                                  _vm._s(_vm.errors["data.email"][0]) +
+                                  "\n                                "
+                              )
+                            ])
+                          : _vm._e()
+                      ])
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
@@ -9044,7 +9048,7 @@ var render = function() {
           _c(
             "div",
             {
-              staticClass: "modal-dialog modal-primary",
+              staticClass: "modal-dialog modal-primary modal-dialog-scrollable",
               attrs: { role: "document" }
             },
             [

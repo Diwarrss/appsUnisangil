@@ -35,7 +35,7 @@
         <!-- Modal de PQRSF -->
         <section>
             <div class="modal fade" id="modalPqrsf" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-primary" role="document">
+                <div class="modal-dialog modal-primary modal-dialog-scrollable" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalPqrsfLabel"><strong>PQRSF</strong>
@@ -55,18 +55,20 @@
                                     {{errors['data.nombres'][0]}}
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="celular"><strong>Celular</strong></label>
-                                <input type="text" class="form-control" :class="{'is-invalid': errors['data.celular']}" id="celular" v-model="dataBuzon.celular">
-                                <div class="invalid-feedback" v-if="errors['data.celular']">
-                                    {{errors['data.celular'][0]}}
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="celular"><strong>Celular</strong></label>
+                                    <input type="text" class="form-control" :class="{'is-invalid': errors['data.celular']}" id="celular" v-model="dataBuzon.celular">
+                                    <div class="invalid-feedback" v-if="errors['data.celular']">
+                                        {{errors['data.celular'][0]}}
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email"><strong>Email</strong></label>
-                                <input type="email" class="form-control" :class="{'is-invalid': errors['data.email']}" id="email" placeholder="name@example.com" v-model="dataBuzon.email">
-                                <div class="invalid-feedback" v-if="errors['data.email']">
-                                    {{errors['data.email'][0]}}
+                                <div class="form-group col-md-8">
+                                    <label for="email"><strong>Email</strong></label>
+                                    <input type="email" class="form-control" :class="{'is-invalid': errors['data.email']}" id="email" placeholder="name@example.com" v-model="dataBuzon.email">
+                                    <div class="invalid-feedback" v-if="errors['data.email']">
+                                        {{errors['data.email'][0]}}
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
