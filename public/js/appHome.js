@@ -2252,6 +2252,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     closeForm: function closeForm() {
       $('#modalForm').modal('hide');
+      this.errors = [];
       this.dataForm.tipo_documento = '';
       this.dataForm.numero_documento = '';
       this.dataForm.nombres_apellidos = '';

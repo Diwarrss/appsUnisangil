@@ -201,6 +201,7 @@ export default {
         },
         closeForm(){
             $('#modalForm').modal('hide')
+            this.errors = []
             this.dataForm.tipo_documento = ''
             this.dataForm.numero_documento = ''
             this.dataForm.nombres_apellidos = ''
