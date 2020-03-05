@@ -35,7 +35,7 @@
         <!-- Modal de PQRSF -->
         <section>
             <div class="modal fade" id="modalPqrsf" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-primary" role="document">
                     <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalPqrsfLabel"><strong>PQRSF</strong>
@@ -43,7 +43,7 @@
                         </h5>
 
                         <button type="button" class="close" @click="closeBuzon">
-                            <span aria-hidden="true" class="text-danger">&times;</span>
+                            <span aria-hidden="true" class="text-white">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
@@ -205,5 +205,12 @@ export default {
     label{
         font-size: 14px;
     }
+}
+.modal-primary .modal-header {
+    color: #fff;
+    background-color: #20a8d8;
+}
+.modal-primary .modal-content {
+    border-color: #20a8d8;
 }
 </style>

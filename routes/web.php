@@ -52,6 +52,10 @@ Route::group(['middleware' => ['guest']], function () {
     Route::post('buzon/save','BuzonSugerenciaController@save');
     //InscripcionPruebaController
     Route::get('inscripcion/downloadFile','InscripcionPruebaController@downloadFile');
+    //NiveleController
+    Route::get('nivel/getAll','NiveleController@getAll');
+    //InscripcionPruebaController
+    Route::post('inscripcion/save','InscripcionPruebaController@save');
 });
 Route::group(['middleware' => ['auth']], function () {
     //obtener la vista del admin al loguear

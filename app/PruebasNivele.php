@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class InscripcionPrueba extends Model
+class PruebasNivele extends Model
 {
     protected $fillable = [
         'empleado_id',

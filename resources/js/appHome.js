@@ -3,15 +3,28 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.Vue = require('vue');
 
+//import vuex for vuejs
+import Vuex from 'vuex'
+Vue.use(Vuex)
+//import store for vuex
+import store from './store';
+
 //import global sweetalert vuejs
 import VueSweetalert2 from 'vue-sweetalert2';
-
 const options = {
     confirmButtonColor: '#41b882',
     cancelButtonColor: '#ff7674',
 };
-
 Vue.use(VueSweetalert2, options);
+
+//import vue-select
+import vSelect from 'vue-select'
+Vue.component('v-select', vSelect)
+import 'vue-select/dist/vue-select.css';
+
+//import vue-tel-input
+import VueTelInput from 'vue-tel-input'
+Vue.use(VueTelInput)
 
 Vue.component('headerhome', require('./components/Home/Header.vue').default);
 Vue.component('footerhome', require('./components/Home/Footer.vue').default);
@@ -35,4 +48,6 @@ Vue.component('licencias', require('./components/Home/Licencias.vue').default);
 
 const app = new Vue({
     el: '#app',
+    //le pasamos el Store vuex
+    store: new Vuex.Store(store)
 });

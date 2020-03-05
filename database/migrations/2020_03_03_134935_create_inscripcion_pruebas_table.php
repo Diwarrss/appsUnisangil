@@ -15,6 +15,13 @@ class CreateInscripcionPruebasTable extends Migration
     {
         Schema::create('inscripcion_pruebas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('tipo_documento', 4);
+            $table->string('numero_documento', 12);
+            $table->string('nombres_apellidos', 220);
+            $table->string('email', 150);
+            $table->string('celular', 14);
+            $table->string('programa_academico', 255);
+            $table->string('url_comprobante', 200);
             $table->timestamps();
         });
     }
