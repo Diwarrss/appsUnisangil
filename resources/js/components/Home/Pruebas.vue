@@ -7,7 +7,7 @@
             </header>
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <button class="btn btn-primary btn-lg btn-block mt-4" @click="downloadFile">
+                    <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
                         <i class="fas fa-file-download"></i> Descargar formato de pago
                     </button>
                 </div>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" @click="closeForm"><i class="far fa-times-circle"></i> Cancelar</button>
-                        <button type="button" class="btn btn-success" @click="sendForm"><i class="fas fa-paper-plane"></i> Enviar</button>
+                        <button type="button" class="btn btn-success" @click="sendForm" id="sendForm"><i class="fas fa-paper-plane"></i> Enviar</button>
                     </div>
                     </div>
                 </div>
@@ -175,6 +175,7 @@ export default {
     },
     methods: {
         downloadFile() {
+            document.getElementById("downloadFile").disabled = true;
             axios({
                 url: "inscripcion/downloadFile",
                 method: "GET",
@@ -194,6 +195,7 @@ export default {
                     showConfirmButton: false,
                     timer: 2000
                 });
+                document.getElementById("downloadFile").disabled = false;
             });
         },
         openForm(){
@@ -224,6 +226,7 @@ export default {
             }
         },
         sendForm(){
+            document.getElementById("sendForm").disabled = true;
             let me = this
             function setprograma_academico(){
                 if (me.dataForm.programa_academico === null) {
@@ -268,12 +271,14 @@ export default {
                         timer: 1800
                     });
                     me.closeForm()
+                    document.getElementById("sendForm").disabled = false;
                     //console.log(response);
                 })
                 .catch(function(error) {
                     if (error.response.status == 422) {
                         me.errors = error.response.data.errors;
                     }
+                    document.getElementById("sendForm").disabled = false;
                 });
         }
     }

@@ -96,7 +96,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" @click="closeBuzon"><i class="far fa-times-circle"></i> Cancelar</button>
-                        <button type="button" class="btn btn-success" @click="sendPqrsf"><i class="fas fa-paper-plane"></i> Enviar</button>
+                        <button type="button" class="btn btn-success" id="sendPqrsf" @click="sendPqrsf"><i class="fas fa-paper-plane"></i> Enviar</button>
                     </div>
                     </div>
                 </div>
@@ -161,6 +161,7 @@ export default {
             }
         },
         sendPqrsf(){
+            document.getElementById("sendPqrsf").disabled = true;
             let me = this
             let data = this.dataBuzon
             axios.post("buzon/save", {data})
@@ -174,6 +175,7 @@ export default {
                         timer: 1800
                     });
                     me.closeBuzon()
+                    document.getElementById("sendPqrsf").disabled = false;
                 })
                 .catch(function (error) {
                     if (error.response) {
@@ -181,6 +183,7 @@ export default {
                             me.errors = error.response.data.errors;
                         }
                     }
+                    document.getElementById("sendPqrsf").disabled = false;
                 });
         },
         openBuzon(){
