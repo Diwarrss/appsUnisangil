@@ -7,12 +7,12 @@
             </header>
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <button class="btn btn-primary btn-lg btn-block" @click="downloadFile">
+                    <button class="btn btn-primary btn-lg btn-block mt-4" @click="downloadFile">
                         <i class="fas fa-file-download"></i> Descargar formato de pago
                     </button>
                 </div>
                 <div class="col-md-6">
-                    <button class="btn btn-primary btn-lg btn-block" @click="openForm">
+                    <button class="btn btn-primary btn-lg btn-block mt-4" @click="openForm">
                         <i class="fas fa-file-signature"></i> Inscripción prueba de informática
                     </button>
                 </div>
@@ -35,29 +35,47 @@
                         <form enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="nombres"><strong>Nombres y Apellidos</strong></label>
-                                <input type="text" class="form-control" id="nombres" v-model="dataForm.nombres_apellidos">
+                                <input type="text" class="form-control" :class="{'is-invalid': errors['nombres_apellidos']}" id="nombres" v-model="dataForm.nombres_apellidos">
+                                <div class="invalid-feedback" v-if="errors['nombres_apellidos']">
+                                    {{errors['nombres_apellidos'][0]}}
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="tipDocumento"><strong>Tipo Documento</strong></label>
-                                    <v-select :options="tiposDoc" placeholder="Seleccionar..." v-model="dataForm.tipo_documento"></v-select>
+                                    <v-select :options="tiposDoc" placeholder="Seleccionar..." v-model="dataForm.tipo_documento" :class="{'invalid__input_select': errors['tipo_documento']}"></v-select>
+                                    <span class="invalid__input" v-if="errors['tipo_documento']">
+                                        Obligatorio.
+                                    </span>
                                 </div>
                                 <div class="form-group col-md-8">
                                     <label for="numDocumento"><strong>Número Documento</strong></label>
-                                    <input type="string" class="form-control" id="numDocumento" v-model="dataForm.numero_documento">
+                                    <input type="string" class="form-control" id="numDocumento" v-model="dataForm.numero_documento" :class="{'is-invalid': errors['numero_documento']}">
+                                    <div class="invalid-feedback" v-if="errors['numero_documento']">
+                                        {{errors['numero_documento'][0]}}
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="celular"><strong>Celular</strong></label>
-                                <vue-tel-input v-model="dataForm.celular" placeholder="Ingrese su número"></vue-tel-input>
+                                <vue-tel-input v-model="dataForm.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
+                                <span class="invalid__input" v-if="errors['celular']">
+                                    {{errors['celular'][0]}}
+                                </span>
                             </div>
                             <div class="form-group">
                                 <label for="email"><strong>Correo institucional</strong></label>
-                                <input type="text" class="form-control" id="email" placeholder="hola@unisangil.edu.co" v-model="dataForm.email">
+                                <input type="text" class="form-control" id="email" placeholder="hola@unisangil.edu.co" v-model="dataForm.email" :class="{'is-invalid': errors['email']}">
+                                <div class="invalid-feedback" v-if="errors['email']">
+                                    {{errors['email'][0]}}
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="academico"><strong>Programa académico</strong></label>
-                                <v-select :options="programas" placeholder="Seleccionar..." v-model="dataForm.programa_academico" @input="changeNivels"></v-select>
+                                <v-select :options="programas" placeholder="Seleccionar..." v-model="dataForm.programa_academico" @input="changeNivels" :class="{'invalid__input_select': errors['programa_academico']}"></v-select>
+                                <span class="invalid__input" v-if="errors['programa_academico']">
+                                    {{errors['programa_academico'][0]}}
+                                </span>
                             </div>
                             <div class="form-group" v-if="dataForm.programa_academico ==='Ingeniería Financiera (UNAB)' || dataForm.programa_academico ==='Psicología (UNAB)'">
                                 <label for="niveles"><strong>Niveles</strong></label>
@@ -67,22 +85,33 @@
                                     :reduce="nvl => nvl.id"
                                     :multiple="true"
                                     placeholder="Seleccionar..."
-                                    v-model="dataForm.niveles">
+                                    v-model="dataForm.niveles"
+                                    :class="{'invalid__input_select': errors['niveles']}"
+                                    >
                                 </v-select>
+                                <span class="invalid__input" v-if="errors['niveles']">
+                                    {{errors['niveles'][0]}}
+                                </span>
                             </div>
                             <div class="form-group" v-else>
                                 <label for="niveles"><strong>Niveles</strong></label>
-                                <select class="form-control" v-model="dataForm.niveles">
+                                <select class="form-control" v-model="dataForm.niveles" :class="{'is-invalid': errors['niveles']}">
                                     <option value="5" disabled selected>Nivel básico: Informática básica</option>
                                 </select>
+                                <div class="invalid-feedback" v-if="errors['niveles']">
+                                    {{errors['niveles'][0]}}
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="soporte"><strong>Soporte de pago</strong></label>
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" @change="obtenerArchivo"/>
+                                    <input type="file" class="custom-file-input" @change="obtenerArchivo" :class="{'is-invalid': errors['url_comprobante']}"/>
                                     <label class="custom-file-label" for="file" v-if="!dataForm.url_comprobante">Elegir Archivo</label>
                                     <label class="custom-file-label" for="file" v-else>{{dataForm.url_comprobante.name}}</label>
                                 </div>
+                                <span class="invalid__input" v-if="errors['url_comprobante']">
+                                    {{errors['url_comprobante'][0]}}
+                                </span>
                             </div>
                         </form>
                     </div>
@@ -195,16 +224,37 @@ export default {
         },
         sendForm(){
             let me = this
+            function setprograma_academico(){
+                if (me.dataForm.programa_academico === null) {
+                    return ''
+                }else{
+                    return me.dataForm.programa_academico
+                }
+            }
+            function settipo_documento(){
+                if (me.dataForm.tipo_documento === null) {
+                    return ''
+                }else{
+                    return me.dataForm.tipo_documento
+                }
+            }
+            function setniveles(){
+                if (me.dataForm.niveles === null) {
+                    return ''
+                }else{
+                    return me.dataForm.niveles
+                }
+            }
 
             let allData = new FormData()
             allData.append('url_comprobante', me.dataForm.url_comprobante)
-            allData.append("tipo_documento", me.dataForm.tipo_documento)
+            allData.append("tipo_documento", settipo_documento())
             allData.append("numero_documento", me.dataForm.numero_documento)
             allData.append("nombres_apellidos", me.dataForm.nombres_apellidos)
             allData.append("email", me.dataForm.email)
             allData.append("celular", me.dataForm.celular)
-            allData.append("programa_academico", me.dataForm.programa_academico)
-            allData.append("niveles", me.dataForm.niveles)
+            allData.append("programa_academico", setprograma_academico())
+            allData.append("niveles", setniveles())
 
             axios
                 .post("inscripcion/save", allData)
@@ -249,5 +299,25 @@ export default {
 }
 .form-control{
     height: 34px;
+}
+.invalid__input{
+    display: block;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+.invalid__input__tel{
+    border-color: #dc3545;
+}
+</style>
+<style lang="scss">
+.invalid__input_select .vs__dropdown-toggle {
+    border-color: #dc3545;
+}
+.vs__search::placeholder{
+    color: gray;
+}
+.vs__clear{
+    display: none;
 }
 </style>
