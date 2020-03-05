@@ -2209,7 +2209,7 @@ __webpack_require__.r(__webpack_exports__);
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            this.$store.dispatch('getUserAuth');
+            this.$store.dispatch('getNiveles');
 
           case 1:
           case "end":
@@ -27922,9 +27922,9 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
     }
   },
   actions: {
-    getUserAuth: function getUserAuth(_ref) {
+    getNiveles: function getNiveles(_ref) {
       var commit, data;
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function getUserAuth$(_context) {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function getNiveles$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:

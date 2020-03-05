@@ -1,7 +1,7 @@
 window.axios = require('axios');
 export default {
     state: {
-        dataNivels:[]
+        dataNivels: []
     },
     mutations: {
         setNivels(state, data) {
@@ -9,16 +9,16 @@ export default {
         }
     },
     actions: {
-        getUserAuth: async function({ commit }) {
+        getNiveles: async function({ commit }) {
             const data = await axios.get('nivel/getAll')
             commit('setNivels', data.data)
         }
     },
     getters: {
         doneNivels: state => {
-            return state.dataNivels.map(dn =>{
-                return{
-                    'nivel': dn.nombre+': '+dn.descripcion,
+            return state.dataNivels.map(dn => {
+                return {
+                    'nivel': dn.nombre + ': ' + dn.descripcion,
                     'id': dn.id
                 }
             })

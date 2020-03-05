@@ -166,7 +166,7 @@ export default {
         }
     },
     async created () {
-        this.$store.dispatch('getUserAuth')
+        this.$store.dispatch('getNiveles')
     },
     computed: {
         niveles(){
