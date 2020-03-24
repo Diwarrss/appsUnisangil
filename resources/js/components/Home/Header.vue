@@ -25,8 +25,8 @@
                         <li><a href="/">Inicio</a></li>
                         <li><a href="/services">Servicios</a></li>
                         <li><a href="/about">Nosotros</a></li>
-                        <li><a href="/news">Noticias</a></li>
-                        <li><a href="/infrastructure">Infraestructura</a></li>
+                        <!-- <li><a href="/news">Noticias</a></li> -->
+                        <!-- <li><a href="/infrastructure">Infraestructura</a></li> -->
                         <!-- <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li> -->
                     </ul>
                 </nav>

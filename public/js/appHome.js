@@ -8813,16 +8813,6 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("li", [
             _c("a", { attrs: { href: "/about" } }, [_vm._v("Nosotros")])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "/news" } }, [_vm._v("Noticias")])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "/infrastructure" } }, [
-              _vm._v("Infraestructura")
-            ])
           ])
         ])
       ])
