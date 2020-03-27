@@ -1,10 +1,10 @@
 <template>
     <div>
-        <section id="services" class="">
+        <section id="services" class="py-5 mt-4">
             <div class="container py-5 mt-5">
                 <header class="section-header mb-2">
                 <h3>Servicios</h3>
-                    <div class="text-services">
+                    <div class="text_header">
                         <span>El Catálogo de Servicios Tecnológicos de UNISANGIL, recoge los servicios de TI que el departamento de sistemas y TIC´s de UNISANGIL, presta a las demás dependencias y procesos de la Institución como soporte al desarrollo de sus actividades misionales.</span> <br> <br>
                         <span>El catálogo tiene gran repercusión en el modelo de gestión de la Institución al aportar agilidad y visión global del trabajo desempeñado a todos los niveles, al tiempo que sienta las bases para la regulación de la relación de la Gestión de TI con los demás.</span>
                     </div>
@@ -142,7 +142,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .text-services{
+    .text_header{
         margin-bottom: 50px;
     }
     .title{

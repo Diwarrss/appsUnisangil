@@ -1956,6 +1956,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2063,6 +2070,167 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2512,6 +2680,82 @@ exports.push([module.i, ".about[data-v-83045f30] {\n  padding-bottom: 0px !impor
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-4af8246e] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-4af8246e]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-4af8246e]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-4af8246e] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-4af8246e] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-4af8246e] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-4af8246e] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-4af8246e] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-4af8246e] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-4af8246e] {\n  border-right: 1px solid;\n}\n.section-header[data-v-4af8246e] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-56acabb2] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-56acabb2]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-56acabb2]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-56acabb2] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-56acabb2] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-56acabb2] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-56acabb2] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-56acabb2] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-56acabb2] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-56acabb2] {\n  border-right: 1px solid;\n}\n.section-header[data-v-56acabb2] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-4615b067] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-4615b067]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-4615b067]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-4615b067] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-4615b067] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-4615b067] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-4615b067] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-4615b067] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-4615b067] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-4615b067] {\n  border-right: 1px solid;\n}\n.section-header[data-v-4615b067] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Footer.vue?vue&type=style&index=0&id=1343b250&lang=scss&scoped=true&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Footer.vue?vue&type=style&index=0&id=1343b250&lang=scss&scoped=true& ***!
@@ -2524,7 +2768,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".section__footer .title__section[data-v-1343b250] {\n  font-size: 18px;\n  font-weight: 600;\n  color: #413e66;\n}\n.section__footer span[data-v-1343b250] {\n  font-weight: 600;\n  color: #413e66;\n}", ""]);
+exports.push([module.i, ".footer_content[data-v-1343b250] {\n  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);\n}\n.section__footer .title__section[data-v-1343b250] {\n  font-size: 18px;\n  font-weight: 600;\n  color: #413e66;\n}\n.section__footer span[data-v-1343b250] {\n  font-weight: 600;\n  color: #413e66;\n}", ""]);
 
 // exports
 
@@ -2543,7 +2787,45 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-34761642] {\n  background: #a4d9ff;\n}\n.modal-header label[data-v-34761642] {\n  font-size: 14px;\n}\n.modal-primary .modal-header[data-v-34761642] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.modal-primary .modal-content[data-v-34761642] {\n  border-color: #20a8d8;\n}", ""]);
+exports.push([module.i, "/* colocar estilo al router-link-active */\n.router-link-exact-active[data-v-34761642] {\n  background: #a4d9ff;\n}\n.modal-header label[data-v-34761642] {\n  font-size: 14px;\n}\n.modal-primary .modal-header[data-v-34761642] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.modal-primary .modal-content[data-v-34761642] {\n  border-color: #20a8d8;\n}\n.header_content[data-v-34761642] {\n  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);\n}\n.header-scrolled[data-v-34761642] {\n  height: 100px !important;\n}\n#topbar[data-v-34761642] {\n  font-size: 15px;\n  padding: 0 0 5px 0;\n}\n#topbar .social-links[data-v-34761642] {\n  text-align: right;\n}\n#header.header-scrolled #topbar[data-v-34761642],\n#header.header-pages #topbar[data-v-34761642] {\n  display: block;\n  margin: 0 0 0 0;\n}\n@media screen and (max-width: 580px) {\n.float-left[data-v-34761642] {\n    width: 100%;\n    text-align: center;\n}\n.float-left img[data-v-34761642] {\n    height: 45px;\n    width: auto;\n}\n#header[data-v-34761642] {\n    height: 100px !important;\n}\n#topbar[data-v-34761642] {\n    display: block;\n    margin: 0 45px 0 0;\n}\n#topbar .twitter[data-v-34761642] {\n    display: none;\n}\n#topbar .facebook[data-v-34761642] {\n    display: none;\n}\n#topbar .instagram[data-v-34761642] {\n    display: none;\n}\n#topbar .youtube[data-v-34761642] {\n    display: none;\n}\n#topbar .linkedin[data-v-34761642] {\n    display: none;\n}\n#header.header-scrolled #topbar[data-v-34761642],\n#header.header-pages #topbar[data-v-34761642] {\n    display: block;\n    margin: 0 40px 0 0;\n}\n#header.header-scrolled #topbar .twitter[data-v-34761642],\n#header.header-pages #topbar .twitter[data-v-34761642] {\n    display: none;\n}\n#header.header-scrolled #topbar .facebook[data-v-34761642],\n#header.header-pages #topbar .facebook[data-v-34761642] {\n    display: none;\n}\n#header.header-scrolled #topbar .instagram[data-v-34761642],\n#header.header-pages #topbar .instagram[data-v-34761642] {\n    display: none;\n}\n#header.header-scrolled #topbar .youtube[data-v-34761642],\n#header.header-pages #topbar .youtube[data-v-34761642] {\n    display: none;\n}\n#header.header-scrolled #topbar .linkedin[data-v-34761642],\n#header.header-pages #topbar .linkedin[data-v-34761642] {\n    display: none;\n}\n#topbar .social-links a[data-v-34761642] {\n    color: #535074;\n    padding: 1px 2px;\n    line-height: 1px;\n    font-size: 12px;\n}\n}\n.btn-outline-danger[data-v-34761642]:hover {\n  color: white;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "#intro[data-v-42498bc7] {\n  height: auto;\n  padding: 220px 0 60px 0;\n}\n@media screen and (max-width: 580px) {\n#intro[data-v-42498bc7] {\n    padding: 150px 0 60px 0;\n}\n.img_unisangil[data-v-42498bc7] {\n    width: 60%;\n}\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-1e0a73a2] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-1e0a73a2]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-1e0a73a2]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-1e0a73a2] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-1e0a73a2] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-1e0a73a2] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-1e0a73a2] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-1e0a73a2] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-1e0a73a2] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-1e0a73a2] {\n  border-right: 1px solid;\n}\n.section-header[data-v-1e0a73a2] {\n  text-transform: uppercase;\n}", ""]);
 
 // exports
 
@@ -2562,7 +2844,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".btn-primary[data-v-a3452746] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-primary[data-v-a3452746]:hover {\n  background: #3478c1;\n  border-color: #3478c1;\n}\n.modal-primary .modal-header[data-v-a3452746] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.modal-primary .modal-content[data-v-a3452746] {\n  border-color: #20a8d8;\n}\n.custom-file-label[data-v-a3452746]::after {\n  content: \"Examinar\";\n}\n.form-control[data-v-a3452746] {\n  height: 34px;\n}\n.invalid__input[data-v-a3452746] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.invalid__input__tel[data-v-a3452746] {\n  border-color: #dc3545;\n}", ""]);
+exports.push([module.i, ".btn-primary[data-v-a3452746] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-primary[data-v-a3452746]:hover {\n  background: #3478c1;\n  border-color: #3478c1;\n}\n.modal-primary .modal-header[data-v-a3452746] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.modal-primary .modal-content[data-v-a3452746] {\n  border-color: #20a8d8;\n}\n.custom-file-label[data-v-a3452746]::after {\n  content: \"Examinar\";\n}\n.form-control[data-v-a3452746] {\n  height: 34px;\n}\n.invalid__input[data-v-a3452746] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.invalid__input__tel[data-v-a3452746] {\n  border-color: #dc3545;\n}\n.btn-link[data-v-a3452746] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-a3452746]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-a3452746]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-a3452746] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-a3452746] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-a3452746] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-a3452746] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-a3452746] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-a3452746] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-a3452746] {\n  border-right: 1px solid;\n}\n.section-header[data-v-a3452746] {\n  text-transform: uppercase;\n}", ""]);
 
 // exports
 
@@ -2588,6 +2870,44 @@ exports.push([module.i, ".invalid__input_select .vs__dropdown-toggle {\n  border
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-6d6c88da] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-6d6c88da]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-6d6c88da]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-6d6c88da] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-6d6c88da] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-6d6c88da] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-6d6c88da] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-6d6c88da] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-6d6c88da] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-6d6c88da] {\n  border-right: 1px solid;\n}\n.section-header[data-v-6d6c88da] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-57edadea] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-57edadea]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-57edadea]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-57edadea] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-57edadea] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-57edadea] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-57edadea] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-57edadea] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-57edadea] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-57edadea] {\n  border-right: 1px solid;\n}\n.section-header[data-v-57edadea] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Services.vue?vue&type=style&index=0&id=6598ff5a&lang=scss&scoped=true&":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Services.vue?vue&type=style&index=0&id=6598ff5a&lang=scss&scoped=true& ***!
@@ -2600,7 +2920,45 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".text-services[data-v-6598ff5a] {\n  margin-bottom: 50px;\n}\n.title[data-v-6598ff5a] {\n  color: black;\n}\n.box[data-v-6598ff5a] {\n  height: 180px;\n}", ""]);
+exports.push([module.i, ".text_header[data-v-6598ff5a] {\n  margin-bottom: 50px;\n}\n.title[data-v-6598ff5a] {\n  color: black;\n}\n.box[data-v-6598ff5a] {\n  height: 180px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-572d1906] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-572d1906]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-572d1906]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-572d1906] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-572d1906] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-572d1906] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-572d1906] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-572d1906] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-572d1906] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-572d1906] {\n  border-right: 1px solid;\n}\n.section-header[data-v-572d1906] {\n  text-transform: uppercase;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".btn-link[data-v-27af45c3] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-27af45c3]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-27af45c3]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-27af45c3] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-27af45c3] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-27af45c3] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-27af45c3] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-27af45c3] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-27af45c3] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-27af45c3] {\n  border-right: 1px solid;\n}\n.section-header[data-v-27af45c3] {\n  text-transform: uppercase;\n}", ""]);
 
 // exports
 
@@ -3895,6 +4253,126 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Footer.vue?vue&type=style&index=0&id=1343b250&lang=scss&scoped=true&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Footer.vue?vue&type=style&index=0&id=1343b250&lang=scss&scoped=true& ***!
@@ -3934,6 +4412,66 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Header.vue?vue&type=style&index=0&id=34761642&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Header.vue?vue&type=style&index=0&id=34761642&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -4015,6 +4553,66 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Services.vue?vue&type=style&index=0&id=6598ff5a&lang=scss&scoped=true&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Services.vue?vue&type=style&index=0&id=6598ff5a&lang=scss&scoped=true& ***!
@@ -4024,6 +4622,66 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Services.vue?vue&type=style&index=0&id=6598ff5a&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Services.vue?vue&type=style&index=0&id=6598ff5a&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -7718,7 +8376,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("section", { staticClass: "about", attrs: { id: "about" } }, [
-        _c("div", { staticClass: "container py-5 mt-2" }, [
+        _c("div", { staticClass: "container py-5 mt-5" }, [
           _c("header", { staticClass: "section-header" }, [
             _c("h3", [_vm._v("Nosotros")])
           ]),
@@ -7804,7 +8462,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "member" }, [
                   _c("img", {
                     staticClass: "img-fluid",
-                    attrs: { src: "storage/img/team-1.jpg", alt: "" }
+                    attrs: { src: "storage/img/team/user.png", alt: "" }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "member-info" }, [
@@ -7827,7 +8485,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "member" }, [
                   _c("img", {
                     staticClass: "img-fluid",
-                    attrs: { src: "storage/img/team-1.jpg", alt: "" }
+                    attrs: { src: "storage/img/team/user.png", alt: "" }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "member-info" }, [
@@ -7934,7 +8592,7 @@ var staticRenderFns = [
                 _c("div", { staticClass: "member" }, [
                   _c("img", {
                     staticClass: "img-fluid",
-                    attrs: { src: "storage/img/team-1.jpg", alt: "" }
+                    attrs: { src: "storage/img/team/user.png", alt: "" }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "member-info" }, [
@@ -8001,10 +8659,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&":
-/*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e& ***!
-  \**********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8024,7 +8682,355 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("almacenamiento")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Almacenamiento")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Dirección Departamento de Sistemas y TIC.\n                    Administrador de servidores.\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tDirección departamento de sistemas sede San Gil, Administrador de servidores\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757  Extensión  231\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("\n                        •\tCorreo: "),
+                _c(
+                  "a",
+                  { attrs: { href: "mailto:dirtics@unisangil.edu.co" } },
+                  [_vm._v("dirtics@unisangil.edu.co")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/almacenamiento.png",
+                    alt: "",
+                    width: "250"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tAlmacenamiento\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Contar con un recurso virtual centralizado en el cual se almacena la información corporativa de los usuarios administrativos de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Implementación de un servicio de almacenamiento de información alojado en el Centro de Computo de UNISANGIL, en su campus de San Gil; el cual está diseñado para trabajar de forma eficiente a través de conexiones LAN y WAN con el fin de proteger la data de los equipos de cómputo de cada uno de los campus Universitarios de la institución en sus diferentes sedes, de forma centralizada.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tBackups\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Contar con un recurso  virtual o físico donde se almacenen las copias de seguridad de los sistemas de información y bases de datos de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Implementación de una estrategia de respaldo y réplicas de información automatizados y periódicos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -8034,10 +9040,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8057,7 +9063,347 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("conceptos")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Conceptos técnicos")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Área de redes y Telecomunicaciones, sede San Gil\n                    Director, Coordinador de Sistemas y TIC, sede Yopal\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tDirección departamento de sistemas sede San Gil\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757 Extensión  231\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("\n                        •\tCorreo: "),
+                _c(
+                  "a",
+                  { attrs: { href: "mailto:dirtics@unisangil.edu.co" } },
+                  [_vm._v("dirtics@unisangil.edu.co")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/conceptos.png",
+                    alt: "",
+                    height: "250"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tConceptos técnicos\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar asesoría y emisión de conceptos técnicos para la adquisición, soporte y retiro del servicio de bienes de informática y tecnologías de la información y las comunicaciones.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar asesoría y emisión de conceptos técnicos para la adquisición, soporte y retiro del servicio de bienes de informática y tecnologías de la información y las comunicaciones.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad Informática  "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Área administrativa y  académica\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tConsultorías\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar consultorías  externas en  temas de infraestructura y tecnología.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar consultorías  externas en  temas de infraestructura y tecnología.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Extensión y proyección social\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Área administrativa y  académica\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -8067,10 +9413,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8& ***!
-  \**************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8090,11 +9436,352 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("header", { staticClass: "section-header mt-5" }, [
-        _c("h3", [_vm._v("Cursos de Informática")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" })
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Cursos de Informática")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Dirección Departamento de Sistemas y TIC.\n                    Director, Coordinador de Sistemas y TIC sede Yopal.\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tDirección departamento de sistemas sede San Gil, Teléfono 7245757 Extensión 231 "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tDirector, Coordinador de Sistemas y TIC sede Yopal  "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tCoordinador de Sistemas y Tic, sede Chiquinquirá\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/cursos.png",
+                    alt: "",
+                    width: "250"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tInformática básica UNISANGIL\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Servicio de formación en competencia digital para los estudiantes, administrativos y docentes de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Oferta de cursos de formación en informática básica para estudiantes de UNISANGIL, como requisito de grado. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\n                                        Oferta de formación para personal administrativo y docente de UNISANGIL,  en competencias digitales.\n\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Extensión y proyección social "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Área administrativa y académica\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tInformática programas UNAB\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Servicio de formación en competencia digital para los estudiantes, de los programas UNAB\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Oferta de cursos de formación en informática básica para estudiantes de los programas UNAB, de acuerdo a las directrices del plan de estudio.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Extensión y proyección social "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Área administrativa y  académica\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -8104,10 +9791,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067& ***!
-  \******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8127,7 +9814,115 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("directorio")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Directorio Activo")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-5" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Dirección Departamento de Sistemas y TIC.\n                    Administrador de servidores.\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Objetivo")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Contar con un sistema de control de acceso basado en la identidad de los funcionarios.\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Necesidad que Satisface")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("\n                        Seguridad informática "),
+                _c("br"),
+                _vm._v(
+                  "\n                        Desarrollo de la gestión académica y administrativa "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        Desarrollo de la gestión de la investigación  y la extensión\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Descripción")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Este esquema, de autenticación a través de un dominio de red, pretende facilitar la gestión del hardware y del software que se usa en la institución, además de permitir desarrollar estrategias dirigidas a mejorar la integridad, confidencialidad y disponibilidad de los recursos. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n\n                        Se realiza cambio de la forma de administración de red, pasando de un esquema en grupo de trabajo a un dominio de red. Con esto se centralizará el control de los usuarios y recursos, optimizando las labores de administración.\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tDirección departamento de sistemas sede San Gil, Administrador de servidores "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757  Extensión  231 "
+                ),
+                _c("br"),
+                _vm._v("\n                        •\tCorreo: "),
+                _c(
+                  "a",
+                  { attrs: { href: "mailto:dirtics@unisangil.edu.co" } },
+                  [_vm._v("dirtics@unisangil.edu.co")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport text-center col-md-6" }, [
+              _c("img", {
+                staticClass: "img-fluid",
+                attrs: {
+                  src: "storage/img/services/directorio.png",
+                  alt: "",
+                  width: "250"
+                }
+              })
+            ])
+          ])
+        ])
+      ])
     ])
   }
 ]
@@ -8160,161 +9955,170 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("footer", { staticClass: "section-bg", attrs: { id: "footer" } }, [
-        _c("div", { staticClass: "footer-top" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "section-header text-center" }, [
-              _c("h5", [
-                _vm._v("Fundación Universitaria de San Gil - UNISANGIL")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-lg-12" }, [
-                _c("div", { staticClass: "row text-center" }, [
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "footer-links" }, [
-                      _c("h4", [_vm._v("San Gil")]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "\n                                    Km 2 vía San Gil - Charalá, "
-                        ),
-                        _c("br"),
+      _c(
+        "footer",
+        {
+          staticClass: "section-bg footer_content mt-5",
+          attrs: { id: "footer" }
+        },
+        [
+          _c("div", { staticClass: "footer-top" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "section-header text-center" }, [
+                _c("h5", [
+                  _vm._v("Fundación Universitaria de San Gil - UNISANGIL")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-lg-12" }, [
+                  _c("div", { staticClass: "row text-center" }, [
+                    _c("div", { staticClass: "col-md-4" }, [
+                      _c("div", { staticClass: "footer-links" }, [
+                        _c("h4", [_vm._v("San Gil")]),
                         _vm._v(" "),
-                        _c("strong", [_vm._v("Teléfonos:")]),
-                        _vm._v(" (7) 7245757 Ext 220-230-231"),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v("Email:")]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            attrs: { href: "mailto:dirtics@unisangil.edu.co" }
-                          },
-                          [_vm._v("  dirtics@unisangil.edu.co ")]
-                        ),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    San Gil, Santander, Colombia"
-                        ),
-                        _c("br")
+                        _c("p", [
+                          _vm._v(
+                            "\n                                    Km 2 vía San Gil - Charalá, "
+                          ),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("Teléfonos:")]),
+                          _vm._v(" (7) 7245757 Ext 220-230-231"),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("Email:")]),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              attrs: { href: "mailto:dirtics@unisangil.edu.co" }
+                            },
+                            [_vm._v("  dirtics@unisangil.edu.co ")]
+                          ),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(
+                            "\n                                    San Gil, Santander, Colombia"
+                          ),
+                          _c("br")
+                        ])
                       ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "footer-links" }, [
-                      _c("h4", [_vm._v("Chiquinquirá")]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "\n                                    Calle 18 # 12-18 "
-                        ),
-                        _c("br"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-4" }, [
+                      _c("div", { staticClass: "footer-links" }, [
+                        _c("h4", [_vm._v("Chiquinquirá")]),
                         _vm._v(" "),
-                        _c("strong", [_vm._v("Teléfonos:")]),
-                        _vm._v(" (8) 7266058 Ext. 103"),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v("Email:")]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            attrs: {
-                              href:
-                                "mailto:sistemaschiquinquira@unisangil.edu.co"
-                            }
-                          },
-                          [_vm._v(" sistemaschiquinquira@unisangil.edu.co ")]
-                        ),
-                        _vm._v(" "),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    Chiquinquirá, Boyacá, Colombia"
-                        ),
-                        _c("br")
+                        _c("p", [
+                          _vm._v(
+                            "\n                                    Calle 18 # 12-18 "
+                          ),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("Teléfonos:")]),
+                          _vm._v(" (8) 7266058 Ext. 103"),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("Email:")]),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                href:
+                                  "mailto:sistemaschiquinquira@unisangil.edu.co"
+                              }
+                            },
+                            [_vm._v(" sistemaschiquinquira@unisangil.edu.co ")]
+                          ),
+                          _vm._v(" "),
+                          _c("br"),
+                          _vm._v(
+                            "\n                                    Chiquinquirá, Boyacá, Colombia"
+                          ),
+                          _c("br")
+                        ])
                       ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c("div", { staticClass: "footer-links" }, [
-                      _c("h4", [_vm._v("Yopal")]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "\n                                    Diagonal 15 No. 15-70 "
-                        ),
-                        _c("br"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-4" }, [
+                      _c("div", { staticClass: "footer-links" }, [
+                        _c("h4", [_vm._v("Yopal")]),
                         _vm._v(" "),
-                        _c("strong", [_vm._v("Teléfonos:")]),
-                        _vm._v(" PBX. 6341700"),
-                        _c("br"),
-                        _vm._v(" "),
-                        _c("strong", [_vm._v("Email:")]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            attrs: { href: "mailto:yopal_tic@unisangil.edu.co" }
-                          },
-                          [_vm._v(" yopal_tic@unisangil.edu.co ")]
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          "\n                                    El Yopal, Casanare, Colombia"
-                        ),
-                        _c("br")
+                        _c("p", [
+                          _vm._v(
+                            "\n                                    Diagonal 15 No. 15-70 "
+                          ),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("Teléfonos:")]),
+                          _vm._v(" PBX. 6341700"),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("strong", [_vm._v("Email:")]),
+                          _vm._v(" "),
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                href: "mailto:yopal_tic@unisangil.edu.co"
+                              }
+                            },
+                            [_vm._v(" yopal_tic@unisangil.edu.co ")]
+                          ),
+                          _c("br"),
+                          _vm._v(
+                            "\n                                    El Yopal, Casanare, Colombia"
+                          ),
+                          _c("br")
+                        ])
                       ])
                     ])
                   ])
                 ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "section__footer text-center" }, [
+                _c("span", { staticClass: "title__section" }, [
+                  _vm._v("Horarios de atención: ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", [_vm._v("Lunes a Viernes:")]),
+                _vm._v(" "),
+                _c("label", [
+                  _vm._v("8:00 am - 12:00 pm "),
+                  _c("span", [_vm._v("y")]),
+                  _vm._v(" 2:00 pm - 7:00 pm")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", [_vm._v("Sabados:")]),
+                _vm._v(" "),
+                _c("label", [_vm._v("9:00 am - 12:00 pm")])
               ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "section__footer text-center" }, [
-              _c("span", { staticClass: "title__section" }, [
-                _vm._v("Horarios de atención: ")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("span", [_vm._v("Lunes a Viernes:")]),
-              _vm._v(" "),
-              _c("label", [
-                _vm._v("8:00 am - 12:00 pm "),
-                _c("span", [_vm._v("y")]),
-                _vm._v(" 2:00 pm - 7:00 pm")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("span", [_vm._v("Sabados:")]),
-              _vm._v(" "),
-              _c("label", [_vm._v("9:00 am - 12:00 pm")])
             ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "copyright" }, [
-            _vm._v("\n            © Copyright "),
-            _c("strong", [_vm._v("Unisangil")]),
-            _vm._v(". All Rights Reserved\n        ")
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "credits" }, [
-            _vm._v("\n            Designed by "),
-            _c("a", { attrs: { href: "http://tics.unisangil.edu.co/" } }, [
-              _vm._v("Dpto. Sistemas y Tics")
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "copyright" }, [
+              _vm._v("\n            © Copyright "),
+              _c("strong", [_vm._v("Unisangil")]),
+              _vm._v(". All Rights Reserved\n        ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "credits" }, [
+              _vm._v("\n            Designed by "),
+              _c("a", { attrs: { href: "http://tics.unisangil.edu.co/" } }, [
+                _vm._v("Dpto. Sistemas y Tics")
+              ])
             ])
           ])
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
       _c("a", { staticClass: "back-to-top", attrs: { href: "#" } }, [
         _c("i", { staticClass: "fa fa-chevron-up" })
@@ -8346,37 +10150,50 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("header", { attrs: { id: "header" } }, [
+    _c("header", { staticClass: "header_content", attrs: { id: "header" } }, [
       _c("div", { attrs: { id: "topbar" } }, [
         _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "social-links" }, [
-            _c(
-              "a",
-              {
-                staticClass: "text-primary",
-                attrs: { type: "button", title: "Buzón para radicar un PQRSF" },
-                on: { click: _vm.openBuzon }
-              },
-              [
-                _c("i", { staticClass: "fas fa-envelope-open-text" }),
-                _vm._v(" PQRSF")
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4)
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "social-links col align-self-end" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-primary",
+                  attrs: {
+                    type: "button",
+                    title: "Buzón para radicar un PQRSF"
+                  },
+                  on: { click: _vm.openBuzon }
+                },
+                [
+                  _c("i", { staticClass: "fas fa-envelope-open-text" }),
+                  _vm._v(" PQRSF")
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _vm._m(5),
+              _vm._v(" "),
+              _vm._m(6),
+              _vm._v(" "),
+              _vm._m(7),
+              _vm._v(" "),
+              _vm._m(8)
+            ])
           ])
         ])
       ]),
       _vm._v(" "),
-      _vm._m(5)
+      _vm._m(9)
     ]),
     _vm._v(" "),
     _c("section", [
@@ -8402,33 +10219,12 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _vm._m(6),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: { type: "button" },
-                      on: { click: _vm.closeBuzon }
-                    },
-                    [
-                      _c(
-                        "span",
-                        {
-                          staticClass: "text-white",
-                          attrs: { "aria-hidden": "true" }
-                        },
-                        [_vm._v("×")]
-                      )
-                    ]
-                  )
-                ]),
+                _vm._m(10),
                 _vm._v(" "),
                 _c("div", { staticClass: "modal-body" }, [
                   _c("form", [
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(7),
+                      _vm._m(11),
                       _vm._v(" "),
                       _c("input", {
                         directives: [
@@ -8470,7 +10266,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "form-row" }, [
                       _c("div", { staticClass: "form-group col-md-4" }, [
-                        _vm._m(8),
+                        _vm._m(12),
                         _vm._v(" "),
                         _c("input", {
                           directives: [
@@ -8511,7 +10307,7 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-group col-md-8" }, [
-                        _vm._m(9),
+                        _vm._m(13),
                         _vm._v(" "),
                         _c("input", {
                           directives: [
@@ -8557,7 +10353,7 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(10),
+                      _vm._m(14),
                       _vm._v(" "),
                       _c(
                         "select",
@@ -8636,7 +10432,7 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(11),
+                      _vm._m(15),
                       _vm._v(" "),
                       _c("textarea", {
                         directives: [
@@ -8714,6 +10510,80 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "text-primary",
+        attrs: {
+          href: "http://mesadeayuda.unisangil.edu.co/",
+          target: "_blank",
+          type: "button",
+          title: "Buzón para radicar un PQRSF"
+        }
+      },
+      [_c("i", { staticClass: "fa fa-exclamation-circle" }), _vm._v(" GLPI ")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "text-primary",
+        attrs: {
+          href: "http://moodle.unisangil.edu.co/login/index.php",
+          target: "_blank",
+          type: "button",
+          title: "Buzón para radicar un PQRSF"
+        }
+      },
+      [_c("i", { staticClass: "fas fa-atlas" }), _vm._v(" Ágora ")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "text-primary",
+        attrs: {
+          href:
+            "http://vortal.unisangil.edu.co/unisangil/hermesoft/vortal/login.jsp",
+          target: "_blank",
+          type: "button",
+          title: "Buzón para radicar un PQRSF"
+        }
+      },
+      [_c("i", { staticClass: "fa fa-sign-in" }), _vm._v(" Vortal")]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "text-primary",
+        attrs: {
+          href:
+            "https://www.google.com/a/unisangil.edu.co/ServiceLogin?service=mail&passive=true&rm=false&continue=http%3A%2F%2Fmail.google.com%2Fa%2Funisangil.edu.co%2F&bsv=zpwhtygjntrz&",
+          target: "_blank",
+          type: "button",
+          title: "Buzón para radicar un PQRSF"
+        }
+      },
+      [_c("i", { staticClass: "fa fa-envelope" }), _vm._v(" Correo")]
+    )
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -8813,6 +10683,27 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("li", [
             _c("a", { attrs: { href: "/about" } }, [_vm._v("Nosotros")])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-outline-danger",
+                attrs: {
+                  href:
+                    "http://www.unisangil.edu.co/index.php?option=com_content&view=article&id=1943&Itemid=999",
+                  target: "_blank",
+                  rel: "noopener noreferrer"
+                }
+              },
+              [
+                _c("i", {
+                  staticClass: "fas fa-exclamation-triangle text-warning"
+                }),
+                _vm._v("  COVID-19")
+              ]
+            )
           ])
         ])
       ])
@@ -8822,17 +10713,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h5",
-      { staticClass: "modal-title", attrs: { id: "modalPqrsfLabel" } },
-      [
-        _c("strong", [_vm._v("PQRSF")]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("(Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones)")
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "modalPqrsfLabel" } },
+        [
+          _c("strong", [_vm._v("PQRSF")]),
+          _vm._v(" "),
+          _c("label", [
+            _vm._v(
+              "(Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones)"
+            )
+          ])
+        ]
+      )
+    ])
   },
   function() {
     var _vm = this
@@ -8905,10 +10800,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7& ***!
-  \*************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8943,7 +10838,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "text-center" }, [
                     _c("div", [
                       _c("img", {
-                        staticClass: "img-fluid",
+                        staticClass: "img-fluid img_unisangil",
                         attrs: {
                           src: "storage/img/logo.png",
                           alt: "",
@@ -8995,10 +10890,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9018,7 +10913,117 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("licencias")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Licencias de software")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-5" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL. Dirección Departamento de Sistemas y TIC\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Objetivo")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Contar con una gestión centralizada para la selección, compra, instalación y renovación de licencias de software  de uso académico y administrativo.\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Necesidad que Satisface")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Extensión y proyección social "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        Desarrollo de la gestión académica y administrativa "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        Desarrollo de la gestión de la investigación  y la extensión\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Descripción")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Apoyo a los programas académicos y áreas administrativas en procesos de adquisición, mantenimiento, soporte y versiona miento de las licencias de software. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        Gestión centralizada de las mismas\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tDirección departamento de sistemas sede San Gil, Administrador de servidores "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757  Extensión  231 "
+                ),
+                _c("br"),
+                _vm._v("\n                        •\tCorreo: "),
+                _c(
+                  "a",
+                  { attrs: { href: "mailto:dirtics@unisangil.edu.co" } },
+                  [_vm._v("dirtics@unisangil.edu.co")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport text-center col-md-6" }, [
+              _c("img", {
+                staticClass: "img-fluid",
+                attrs: {
+                  src: "storage/img/services/licencias.jpg",
+                  alt: "",
+                  width: "250"
+                }
+              })
+            ])
+          ])
+        ])
+      ])
     ])
   }
 ]
@@ -9071,36 +11076,50 @@ var render = function() {
     _c("section", [
       _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "row mt-5" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-primary btn-lg btn-block mt-4",
-              attrs: { id: "downloadFile" },
-              on: { click: _vm.downloadFile }
-            },
-            [
-              _c("i", { staticClass: "fas fa-file-download" }),
-              _vm._v(" Descargar formato de pago\n                ")
-            ]
-          )
+      _c("div", { staticClass: "text_header" }, [
+        _c("h5", [_vm._v("Responsable del servicio")]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c("div", { staticClass: "row mt-5" }, [
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-lg btn-block mt-4",
+                attrs: { id: "downloadFile" },
+                on: { click: _vm.downloadFile }
+              },
+              [
+                _c("i", { staticClass: "fas fa-file-download" }),
+                _vm._v(" Descargar formato de pago\n                    ")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-lg btn-block mt-4",
+                on: { click: _vm.openForm }
+              },
+              [
+                _c("i", { staticClass: "fas fa-file-signature" }),
+                _vm._v(
+                  " Inscripción prueba de informática\n                    "
+                )
+              ]
+            )
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-primary btn-lg btn-block mt-4",
-              on: { click: _vm.openForm }
-            },
-            [
-              _c("i", { staticClass: "fas fa-file-signature" }),
-              _vm._v(" Inscripción prueba de informática\n                ")
-            ]
-          )
-        ])
-      ])
+        _vm._m(3)
+      ]),
+      _vm._v(" "),
+      _vm._m(4)
     ]),
     _vm._v(" "),
     _c("section", [
@@ -9127,7 +11146,7 @@ var render = function() {
             [
               _c("div", { staticClass: "modal-content" }, [
                 _c("div", { staticClass: "modal-header" }, [
-                  _vm._m(1),
+                  _vm._m(5),
                   _vm._v(" "),
                   _c(
                     "button",
@@ -9152,7 +11171,7 @@ var render = function() {
                 _c("div", { staticClass: "modal-body" }, [
                   _c("form", { attrs: { enctype: "multipart/form-data" } }, [
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(2),
+                      _vm._m(6),
                       _vm._v(" "),
                       _c("input", {
                         directives: [
@@ -9199,7 +11218,7 @@ var render = function() {
                         "div",
                         { staticClass: "form-group col-md-4" },
                         [
-                          _vm._m(3),
+                          _vm._m(7),
                           _vm._v(" "),
                           _c("v-select", {
                             class: {
@@ -9231,7 +11250,7 @@ var render = function() {
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-group col-md-8" }, [
-                        _vm._m(4),
+                        _vm._m(8),
                         _vm._v(" "),
                         _c("input", {
                           directives: [
@@ -9278,7 +11297,7 @@ var render = function() {
                       "div",
                       { staticClass: "form-group" },
                       [
-                        _vm._m(5),
+                        _vm._m(9),
                         _vm._v(" "),
                         _c("vue-tel-input", {
                           class: { invalid__input__tel: _vm.errors["celular"] },
@@ -9306,7 +11325,7 @@ var render = function() {
                     ),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(6),
+                      _vm._m(10),
                       _vm._v(" "),
                       _c("input", {
                         directives: [
@@ -9350,7 +11369,7 @@ var render = function() {
                       "div",
                       { staticClass: "form-group" },
                       [
-                        _vm._m(7),
+                        _vm._m(11),
                         _vm._v(" "),
                         _c("v-select", {
                           class: {
@@ -9391,7 +11410,7 @@ var render = function() {
                           "div",
                           { staticClass: "form-group" },
                           [
-                            _vm._m(8),
+                            _vm._m(12),
                             _vm._v(" "),
                             _c("v-select", {
                               class: {
@@ -9428,7 +11447,7 @@ var render = function() {
                           1
                         )
                       : _c("div", { staticClass: "form-group" }, [
-                          _vm._m(9),
+                          _vm._m(13),
                           _vm._v(" "),
                           _c(
                             "select",
@@ -9491,7 +11510,7 @@ var render = function() {
                         ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(10),
+                      _vm._m(14),
                       _vm._v(" "),
                       _c("div", { staticClass: "custom-file" }, [
                         _c("input", {
@@ -9579,10 +11598,348 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", { staticClass: "section-header mt-5 text-center" }, [
-      _c("h3", [_vm._v("Pruebas de suficiencia en TICs")]),
+    return _c(
+      "header",
+      { staticClass: "section-header mt-5 py-5 text-center" },
+      [
+        _c("h3", [_vm._v("Pruebas de suficiencia en TICs")]),
+        _vm._v(" "),
+        _c("h2", [_vm._v("(Administrativos y estudiantes)")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c("span", [
+        _vm._v(
+          "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Dirección Departamento de Sistemas y TIC.\n                    Asistente Departamento de Sistemas y TIC.\n                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "content_contact col-md-6" }, [
+        _c("h5", [_vm._v("Contacto de Soporte")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        •\tDirección departamento de sistemas sede San Gil, Administrador de servidores "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        •\tTeléfono 7245757  Extensión  231 "
+          ),
+          _c("br"),
+          _vm._v("\n                        •\tCorreo: "),
+          _c("a", { attrs: { href: "mailto:dirtics@unisangil.edu.co" } }, [
+            _vm._v("dirtics@unisangil.edu.co")
+          ])
+        ])
+      ]),
       _vm._v(" "),
-      _c("h2", [_vm._v("(Administrativos y estudiantes)")])
+      _c("div", { staticClass: "content_suport col-md-6" }, [
+        _c("h5", [_vm._v("Horario de soporte")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: {
+              src: "storage/img/services/pruebas.jpg",
+              alt: "",
+              width: "250"
+            }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+      _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-0" }, [
+      _c(
+        "div",
+        { staticClass: "accordion", attrs: { id: "accordionExample" } },
+        [
+          _c("div", { staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header collapsed",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#collapseOne",
+                  "aria-expanded": "false",
+                  "aria-controls": "collapseSix",
+                  id: "headingOne"
+                }
+              },
+              [
+                _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                  _vm._v(
+                    "\n                            •\tPrueba de suficiencia TICs para Administrativos\n                        "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse show",
+                attrs: {
+                  id: "collapseOne",
+                  "aria-labelledby": "headingOne",
+                  "data-parent": "#accordionExample"
+                }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Contar con una apreciación del manejo de las competencias digitales del personal administrativo de UNISANGIL\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Servicio de validación en competencia digital para el personal administrativo de UNISANGIL\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [
+                        _c("h5", [
+                          _c("strong", [_vm._v("Necesidad que Satisface")])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Extensión y proyección social "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        Desarrollo de la gestión académica y administrativa\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Usuario objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Área administrativa y académica\n                                    "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header collapsed",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#collapseTwo",
+                  "aria-expanded": "false",
+                  "aria-controls": "collapseSix",
+                  id: "headingTwo"
+                }
+              },
+              [
+                _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                  _vm._v(
+                    "\n                            •\tPrueba de suficiencia TICs para Estudiantes programas UNAB y UNISANGIL\n                        "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: {
+                  id: "collapseTwo",
+                  "aria-labelledby": "headingTwo",
+                  "data-parent": "#accordionExample"
+                }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Contar con una apreciación en el  manejo de las competencias digitales de los estudiantes de UNISANGIL y programas UNAB\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Servicio de validación en competencia digital para el personal administrativo de UNISANGIL\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [
+                        _c("h5", [
+                          _c("strong", [_vm._v("Necesidad que Satisface")])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Extensión y proyección social "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        Desarrollo de la gestión académica y administrativa\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Usuario objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Área administrativa y  académica\n                                    "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ])
+        ]
+      )
     ])
   },
   function() {
@@ -9679,10 +12036,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da& ***!
-  \*************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9702,7 +12059,897 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("redes")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Conectividad y comunicaciones")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Área de redes y Telecomunicaciones, sede San Gil\n                    Director, Coordinador de Sistemas y TIC, sede Yopal\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tDepartamento de sistemas y TIC San Gil, Bloque 1 Piso 1, Área de redes y Telecomunicaciones, Teléfono 7245757 Extensión 230 - 220\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tDepartamento de sistemas y TIC, Edificio San Miguel Yopal, Director, Coordinador de Sistemas y TIC\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tCoordinación de Sistemas y TIC, Chiquinquirá, Coordinador de Sistemas y TIC.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("\n                        •\tCorreos electrónicos: "),
+                _c("br"),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "mailto:wifi@unisangil.edu.co" } }, [
+                  _vm._v("wifi@unisangil.edu.co")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "mailto:redes@unisangil.edu.co" } }, [
+                  _vm._v("redes@unisangil.edu.co")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "mailto:email@unisangil.edu.co" } }, [
+                  _vm._v("email@unisangil.edu.co")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/red.png",
+                    alt: "",
+                    width: "250"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tInternet\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar un medio de comunicación seguro y confiable para la trasmisión y recepción de información (voz, datos, videos e imágenes entre otros) con el exterior.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        El servicio de Internet facilita a los usuarios de la institución, el envío y recepción de información desde y hacia fuera de la institución, a través de la web.\n                                        El servicio cuenta con políticas de control  de contenidos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunicación entre los diferentes usuarios y el mundo. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Permite compartir y divulgar información de la institución. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Permite generar otros espacios de comunicación.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tRed LAN\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar un medio de comunicación seguro y confiable para la trasmisión y recepción de información (voz, datos, videos e imágenes entre otros) en la red interna.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        El servicio de red LAN facilita a los usuarios de la institución, el envío y recepción de información dentro de la institución.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunicación entre los diferentes usuarios del área académica y administrativa de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseThree",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingThree"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tRed inalámbrica\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      "aria-labelledby": "headingThree",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar un medio de comunicación seguro y confiable para la trasmisión y recepción de información (voz, datos, videos e imágenes entre otros) con el exterior.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        El servicio de red inalámbrica facilita a los usuarios de la institución, el envío y recepción de información desde y hacia fuera de la institución, a través de la web.El servicio cuenta con políticas de control  de contenidos, ancho de banda, entre otros.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunicación entre los diferentes usuarios y el mundo. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Permite compartir y divulgar información de la institución. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Permite generar otros espacios de comunicación. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Apoyo a los procesos académicos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseFour",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingFour"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tConexión VPN\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFour",
+                      "aria-labelledby": "headingFour",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar aun medio de conexión seguro a la red interna de la institución, para aquellos usuarios administrativos de UNISANGIL, que requieren de este servicio.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Una VPN (Virtual Private Network) es una tecnología de red que se utiliza para conectar una o más computadoras a la red privada de UNISANGIL, utilizando Internet.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunicación. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Seguridad. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Apoyo a los procesos académicos.  "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Confidencialidad e integridad de la información.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Usuarios Administrativos\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseFive",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingFive"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tCorreo electrónico\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFive",
+                      "aria-labelledby": "headingFive",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar un medio de comunicación institucional, seguro y confiable para el desarrollo de los diferentes procesos académicos y administrativos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        El correo electrónico es un servicio de red que permite el envío y recepción de mensajes mediante un sistema de comunicación basado en protocolos estándares.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunicación entre los diferentes usuarios y el mundo. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Permite compartir y divulgar información. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Permite contar con otros medios de comunicación. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Apoyo a los procesos académicos y administrativos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseSix",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingSix"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tTelefonía\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseSix",
+                      "aria-labelledby": "headingSix",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar aun medio de comunicación directa con los diferentes usuarios, empresas y áreas de  la institución.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Servicio tecnológico que permite la comunicación telefónica entre los usuarios internos y externos de UNISANGIL\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunicación. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Apoyo a los procesos académicos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Administrativos\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -9712,10 +12959,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9735,7 +12982,948 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("seguridad")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Seguridad e infraestructura")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Contratista Externo.\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Área de redes y Telecomunicaciones, sede San Gil.\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tÁrea de redes y Telecomunicaciones, servidores, Bases de Datos y taller de mantenimiento sede San Gil\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757  Extensión  230 – 220\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/seguridad.png",
+                    alt: "",
+                    width: "150"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSeguridad perimetral\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar una herramienta que aporte a mitigar los riesgos y posibles ataques debido a las vulnerabilidades que se pueden presentar en materia de seguridad de la información.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Gestión de la administración y configuración centralizada de la seguridad de la red institucional, a través del UTM.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Contacto de Soporte")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tÁrea de redes y Telecomunicaciones sede San Gil "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tTeléfono 7245757  Extensión  230 – 220 "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tCorreo electrónico  "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: { href: "mailto:redes@unisangil.edu.co" }
+                              },
+                              [_vm._v("redes@unisangil.edu.co")]
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSoftware de Protección Antivirus – Sophos\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar una herramienta que aporte a mitigar los riesgos y posibles ataques debido a las vulnerabilidades que se pueden presentar en materia de seguridad de la información en los equipos de cómputo de la institución.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Gestión de la administración y configuración centralizada del sistema de seguridad de los equipos de cómputo y servidores de la institución, a través del Endpoint SOPHOS.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Contacto de Soporte")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tÁrea de servidores y taller de mantenimiento  sede San Gil, Teléfono 7245757  Extensión  230 – 220, correo electrónico  "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "mailto:taller@unisangil.edu.co"
+                                }
+                              },
+                              [_vm._v("taller@unisangil.edu.co")]
+                            ),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tDirector, Coordinador de Sistemas y TIC sede Yopal  Correo electrónico "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "mailto:yopal_tic@unisangil.edu.co"
+                                }
+                              },
+                              [_vm._v("yopal_tic@unisangil.edu.co")]
+                            ),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tCoordinador de Sistemas y Tic, sede Chiquinquirá, correo electrónico "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href:
+                                    "mailto:sistemaschiquinquira@unisangil.edu.co"
+                                }
+                              },
+                              [_vm._v("sistemaschiquinquira@unisangil.edu.co")]
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseThree",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingThree"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tServidores\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      "aria-labelledby": "headingThree",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Realizar la administración centralizada de la infraestructura de servidores institucionales\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Gestión de la administración y configuración centralizada de la infraestructura de servidores de la institución. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Aprovisionamiento de recursos para el funcionamiento de los sistemas de información, sitios web y recursos académicos\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Contacto de Soporte")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada\n                                        •\tÁrea de servidores sede San Gil "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tTeléfono 7245757  Extensión  230 – 220 "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tCorreo electrónico "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "mailto:servidores@unisangil.edu.co"
+                                }
+                              },
+                              [_vm._v("servidores@unisangil.edu.co")]
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseFour",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingFour"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tBases de Datos\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFour",
+                      "aria-labelledby": "headingFour",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Realizar la administración centralizada de las bases de  datos institucionales\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Gestión de la administración y configuración centralizada de las bases de datos de los diferentes sistemas de información y plataformas de la institución.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Usuarios Administrativos\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Contacto de Soporte")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada\n                                        •\tÁrea de Bases de Datos sede San Gil\n                                        •\tTeléfono 7245757  Extensión  230 – 220\n                                        •\tCorreo electrónico "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: { href: "mailto:dba@unisangil.edu.co" }
+                              },
+                              [_vm._v("dba@unisangil.edu.co")]
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseFive",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingFive"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tDatacenter\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFive",
+                      "aria-labelledby": "headingFive",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar un centro de procesamiento, almacenamiento y gestión de toda la base tecnológica de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        El Datacenter es el centro de procesamiento, almacenamiento y gestión de toda la base tecnológica de UNISANGIL. Ofrece un excelente apoyo computacional gracias a una infraestructura virtual conformada por servidores de alta capacidad y una configuración en cluster. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Esta estructura asegura el rendimiento, la disponibilidad, el balanceo de carga y la escalabilidad necesarios para el funcionamiento de los sistemas de información, el desarrollo de las actividades académicas y administrativas, así como los procesos de investigación y consultorías.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad informática.  "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ticket a través de la Mesa de TI, plataforma GLPI y Llamada "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tDirección departamento de sistemas sede San Gil, Teléfono 7245757  Extensión  231 "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        •\tCorreo: "
+                            ),
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "mailto:dirtics@unisangil.edu.co"
+                                }
+                              },
+                              [_vm._v("dirtics@unisangil.edu.co")]
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -9768,12 +13956,12 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("section", { attrs: { id: "services" } }, [
+      _c("section", { staticClass: "py-5 mt-4", attrs: { id: "services" } }, [
         _c("div", { staticClass: "container py-5 mt-5" }, [
           _c("header", { staticClass: "section-header mb-2" }, [
             _c("h3", [_vm._v("Servicios")]),
             _vm._v(" "),
-            _c("div", { staticClass: "text-services" }, [
+            _c("div", { staticClass: "text_header" }, [
               _c("span", [
                 _vm._v(
                   "El Catálogo de Servicios Tecnológicos de UNISANGIL, recoge los servicios de TI que el departamento de sistemas y TIC´s de UNISANGIL, presta a las demás dependencias y procesos de la Institución como soporte al desarrollo de sus actividades misionales."
@@ -10116,10 +14304,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906& ***!
-  \****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10139,7 +14327,1403 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("sistemas")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Sistemas de Información")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Área de redes y Telecomunicaciones, sede San Gil\n                    Director, Coordinador de Sistemas y TIC, sede Yopal\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tDirección departamento de sistemas sede San Gil, Administrador de servidores, Administrador de Bases de Datos\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757 Extensión  231\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("\n                        •\tCorreo: "),
+                _c(
+                  "a",
+                  { attrs: { href: "mailto:dirtics@unisangil.edu.co" } },
+                  [_vm._v("dirtics@unisangil.edu.co")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/sistemas.jpg",
+                    alt: "",
+                    width: "250"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSistema Academusoft\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento del sistema académico administrativo integrado, de acuerdo a las recomendaciones dadas por el proveedor.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Soporte técnico en la administración de servidores y bases de datos del aplicativo y montaje de ajustes recibidos por el proveedor del software.\n                                        "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Gestión de algunos requerimientos no funcionales relacionados con la disponibilidad del Sistema de información.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tPlataforma Ágora\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento del LMS Moodle.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Soporte técnico en la administración de servidores y bases de datos del LMS. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Gestión de algunos requerimientos no funcionales relacionados con la disponibilidad del Sistema.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseThree",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingThree"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSistema de alertas tempranas\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      "aria-labelledby": "headingThree",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento del aplicativo.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Soporte técnico en la administración de servidores y bases de datos del sistema. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Gestión de algunos requerimientos no funcionales del mismo.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseFour",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingFour"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tPlataforma Open Journal Systems OJS\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFour",
+                      "aria-labelledby": "headingFour",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento del aplicativo.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Soporte técnico en la administración de servidores y bases de datos del sistema. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Gestión de algunos requerimientos no funcionales del mismo. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Apoyo técnico en todas las operaciones de despliegue, funcionamiento y la disponibilidad del sistema OJS\n\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseFive",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingFive"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSNIES - HECAA\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseFive",
+                      "aria-labelledby": "headingFive",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el cumplimento del reporte de información de acuerdo a lo establecido por en MEN en las resoluciones vigentes.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico a los usuarios en el proceso de cargue del sistema SNIES.\n                                        Capacitar a los usuarios en el diligenciamiento de la información. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Resolución de dudas del proceso "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Realizar el cargue de la información de las diferentes variables del sistema SNIES, exceptuando las variables poblacionales y financiera.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Cumplimiento de directrices de usuarios externos\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Universitaria – Ministerio de Educación Nacional\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseSix",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingSix"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSitio Web\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseSix",
+                      "aria-labelledby": "headingSix",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento y la disponibilidad de la página web  de UNISANGIL y los micro sitios asociados a la misma.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Soporte técnico en la administración de servidores y bases de datos del sitio web y los micro sitios del sistema. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Gestión de algunos requerimientos no funcionales del mismo.\n\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Imagen corporativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseSeven",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSeven",
+                      id: "headingSeven"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSIAAC\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseSeven",
+                      "aria-labelledby": "headingSeven",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento y la disponibilidad del Antiguo sistema académico SIAAC\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Soporte técnico en la administración de servidores y bases de datos del SIAAC.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseEight",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseEight",
+                      id: "headingEight"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tGLPI\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseEight",
+                      "aria-labelledby": "headingEight",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento y la disponibilidad del sistema de mesa de ayuda de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Proporcionar de manera integral y eficiente mesas de ayuda para la administración y gestión de los servicios ofrecidos por las diferentes áreas, que apoyen la gestión y toma de decisiones de sus procesos.\n                                        "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico en todas las operaciones de despliegue, funcionamiento y la disponibilidad del sistema GLPI\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Administrativos\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseNine",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseNine",
+                      id: "headingNine"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tOCSSINVENTORY\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseNine",
+                      "aria-labelledby": "headingNine",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico, para el correcto funcionamiento y la disponibilidad del sistema de inventarios  de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico en todas las operaciones de despliegue, funcionamiento y la disponibilidad del sistema de inventarios OCSSINVENTORY.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Departamento de Sistemas y TIC\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTen",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseTen",
+                      id: "headingTen"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tAlienVault\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTen",
+                      "aria-labelledby": "headingTen",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Contar con una herramienta de detección de amenazas de seguridad, hacia la infraestructura de servidores.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar apoyo técnico en todas las operaciones de despliegue, funcionamiento y la disponibilidad del sistema de detección de amenazas AlientVault.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Seguridad Informática  "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad Administrativos\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -10149,10 +15733,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3& ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10172,7 +15756,500 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("h1", [_vm._v("soporte")])
+      _c("section", { staticClass: "py-5" }, [
+        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
+          _c("h3", [_vm._v("Soporte a usuarios")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text_header" }, [
+          _c("h5", [_vm._v("Responsable del servicio")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mb-4" }, [
+            _c("span", [
+              _vm._v(
+                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL. Dirección Departamento de Sistemas y TIC.\n                    Taller de mantenimiento.\n                    Director, Coordinador de Sistemas y TIC sede Yopal.\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n                "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "content_contact col-md-6" }, [
+              _c("h5", [_vm._v("Contacto de Soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tTaller de mantenimiento, Área de redes, sede San Gil "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tTeléfono 7245757  Extensión  230 – 220 "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tDirector, Coordinador de Sistemas y TIC sede Yopal  Correo electrónico "
+                ),
+                _c(
+                  "a",
+                  { attrs: { href: "mailto:yopal_tic@unisangil.edu.co" } },
+                  [_vm._v("yopal_tic@unisangil.edu.co")]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tCoordinador de Sistemas y Tic, sede Chiquinquirá, correo electrónico "
+                ),
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      href: "mailto:sistemaschiquinquira@unisangil.edu.co"
+                    }
+                  },
+                  [_vm._v("sistemaschiquinquira@unisangil.edu.co")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "content_suport col-md-6" }, [
+              _c("h5", [_vm._v("Horario de soporte")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-center" }, [
+                _c("img", {
+                  staticClass: "img-fluid",
+                  attrs: {
+                    src: "storage/img/services/soporte.png",
+                    alt: "",
+                    width: "250"
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mt-0" }, [
+          _c(
+            "div",
+            { staticClass: "accordion", attrs: { id: "accordionExample" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseOne",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingOne"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tSoporte a usuarios\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse show",
+                    attrs: {
+                      id: "collapseOne",
+                      "aria-labelledby": "headingOne",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Brindar atención y solución a los incidentes técnicos de hardware y software presentados en los recursos tecnológicos que soportan los procesos misionales y reportados por los funcionarios de UNISANGIL.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Servicio de asistencia técnica al hardware y software de los  equipos de cómputo que soportan los procesos misionales y de apoyo a la institución, mantenimiento preventivo y correctivo de las diferentes partes físicas de los equipos de escritorio y portátiles así como de impresoras, puntos de red y demás periféricos, reinstalación de equipos por daño o reclamaciones por garantía.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Solución de incidentes de hardware y software de los equipos tecnológicos "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseTwo",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingTwo"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tPréstamo de laboratorios\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseTwo",
+                      "aria-labelledby": "headingTwo",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ofrecer a la comunidad universitaria el préstamo de los laboratorios de cómputo para el desarrollo de las diferentes actividades académicas y administrativas.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Asignación y prestamos de los recursos de laboratorios de acuerdo a los requerimientos recibidos. "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Servicio de asistencia técnica al hardware y software de los equipos de cómputo instalados en los laboratorios, alistamiento para el desarrollo de las actividades académicas del semestre.\n                                        Instalación de software específico para las actividades programadas.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Solución de incidentes de hardware y software de los equipos tecnológicos "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Comunidad universitaria\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "card" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-header collapsed",
+                    attrs: {
+                      type: "button",
+                      "data-toggle": "collapse",
+                      "data-target": "#collapseThree",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseSix",
+                      id: "headingThree"
+                    }
+                  },
+                  [
+                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                      _vm._v(
+                        "\n                            •\tPréstamo de portátiles\n                        "
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "collapse",
+                    attrs: {
+                      id: "collapseThree",
+                      "aria-labelledby": "headingThree",
+                      "data-parent": "#accordionExample"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "card-body" }, [
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Ofrecer a la comunidad universitaria el préstamo de equipos portátiles, para el desarrollo de las diferentes actividades académicas y administrativas.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Asignación y prestamos de equipos portátiles de acuerdo a los requerimientos recibidos.\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Necesidad que Satisface")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Solución de incidentes de hardware y software de los equipos tecnológicos "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión académica y administrativa "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "content_body row mb-2" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "col-12 col-sm-4 col-md-3 text-center my-auto"
+                          },
+                          [
+                            _c("h5", [
+                              _c("strong", [_vm._v("Usuario objetivo")])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                          _c("p", { staticClass: "mb-2" }, [
+                            _vm._v(
+                              "\n                                        Personal Administrativo\n                                    "
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -27013,21 +33090,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Almacenamiento_vue_vue_type_template_id_4af8246e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Almacenamiento.vue?vue&type=template&id=4af8246e& */ "./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Almacenamiento_vue_vue_type_template_id_4af8246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true& */ "./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true&");
+/* harmony import */ var _Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true& */ "./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Almacenamiento_vue_vue_type_template_id_4af8246e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Almacenamiento_vue_vue_type_template_id_4af8246e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Almacenamiento_vue_vue_type_template_id_4af8246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Almacenamiento_vue_vue_type_template_id_4af8246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "4af8246e",
   null
   
 )
@@ -27039,19 +33118,35 @@ component.options.__file = "resources/js/components/Home/Almacenamiento.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true&":
+/*!*******************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true& ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=style&index=0&id=4af8246e&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_style_index_0_id_4af8246e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true& ***!
+  \****************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_template_id_4af8246e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Almacenamiento.vue?vue&type=template&id=4af8246e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_template_id_4af8246e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_template_id_4af8246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Almacenamiento.vue?vue&type=template&id=4af8246e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_template_id_4af8246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_template_id_4af8246e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Almacenamiento_vue_vue_type_template_id_4af8246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27066,21 +33161,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Conceptos_vue_vue_type_template_id_56acabb2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Conceptos.vue?vue&type=template&id=56acabb2& */ "./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Conceptos_vue_vue_type_template_id_56acabb2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Conceptos.vue?vue&type=template&id=56acabb2&scoped=true& */ "./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&scoped=true&");
+/* harmony import */ var _Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true& */ "./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Conceptos_vue_vue_type_template_id_56acabb2___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Conceptos_vue_vue_type_template_id_56acabb2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Conceptos_vue_vue_type_template_id_56acabb2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Conceptos_vue_vue_type_template_id_56acabb2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "56acabb2",
   null
   
 )
@@ -27092,19 +33189,35 @@ component.options.__file = "resources/js/components/Home/Conceptos.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=style&index=0&id=56acabb2&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_style_index_0_id_56acabb2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&scoped=true& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_template_id_56acabb2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Conceptos.vue?vue&type=template&id=56acabb2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_template_id_56acabb2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_template_id_56acabb2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Conceptos.vue?vue&type=template&id=56acabb2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Conceptos.vue?vue&type=template&id=56acabb2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_template_id_56acabb2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_template_id_56acabb2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Conceptos_vue_vue_type_template_id_56acabb2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27119,21 +33232,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Cursos_vue_vue_type_template_id_78445be8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Cursos.vue?vue&type=template&id=78445be8& */ "./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Cursos_vue_vue_type_template_id_78445be8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Cursos.vue?vue&type=template&id=78445be8&scoped=true& */ "./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&scoped=true&");
+/* harmony import */ var _Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true& */ "./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Cursos_vue_vue_type_template_id_78445be8___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Cursos_vue_vue_type_template_id_78445be8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Cursos_vue_vue_type_template_id_78445be8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Cursos_vue_vue_type_template_id_78445be8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "78445be8",
   null
   
 )
@@ -27145,19 +33260,35 @@ component.options.__file = "resources/js/components/Home/Cursos.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8& ***!
-  \********************************************************************************/
+/***/ "./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=style&index=0&id=78445be8&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_style_index_0_id_78445be8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&scoped=true&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&scoped=true& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_template_id_78445be8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Cursos.vue?vue&type=template&id=78445be8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_template_id_78445be8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_template_id_78445be8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Cursos.vue?vue&type=template&id=78445be8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Cursos.vue?vue&type=template&id=78445be8&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_template_id_78445be8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_template_id_78445be8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cursos_vue_vue_type_template_id_78445be8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27172,21 +33303,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Directorio_vue_vue_type_template_id_4615b067___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Directorio.vue?vue&type=template&id=4615b067& */ "./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Directorio_vue_vue_type_template_id_4615b067_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Directorio.vue?vue&type=template&id=4615b067&scoped=true& */ "./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&scoped=true&");
+/* harmony import */ var _Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true& */ "./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Directorio_vue_vue_type_template_id_4615b067___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Directorio_vue_vue_type_template_id_4615b067___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Directorio_vue_vue_type_template_id_4615b067_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Directorio_vue_vue_type_template_id_4615b067_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "4615b067",
   null
   
 )
@@ -27198,19 +33331,35 @@ component.options.__file = "resources/js/components/Home/Directorio.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067& ***!
-  \************************************************************************************/
+/***/ "./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true&":
+/*!***************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true& ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=style&index=0&id=4615b067&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_style_index_0_id_4615b067_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&scoped=true& ***!
+  \************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_template_id_4615b067___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Directorio.vue?vue&type=template&id=4615b067& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_template_id_4615b067___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_template_id_4615b067_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Directorio.vue?vue&type=template&id=4615b067&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Directorio.vue?vue&type=template&id=4615b067&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_template_id_4615b067_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_template_id_4615b067___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Directorio_vue_vue_type_template_id_4615b067_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27436,21 +33585,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Intro_vue_vue_type_template_id_42498bc7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Intro.vue?vue&type=template&id=42498bc7& */ "./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Intro_vue_vue_type_template_id_42498bc7_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Intro.vue?vue&type=template&id=42498bc7&scoped=true& */ "./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&scoped=true&");
+/* harmony import */ var _Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true& */ "./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Intro_vue_vue_type_template_id_42498bc7___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Intro_vue_vue_type_template_id_42498bc7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Intro_vue_vue_type_template_id_42498bc7_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Intro_vue_vue_type_template_id_42498bc7_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "42498bc7",
   null
   
 )
@@ -27462,19 +33613,35 @@ component.options.__file = "resources/js/components/Home/Intro.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7& ***!
-  \*******************************************************************************/
+/***/ "./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=style&index=0&id=42498bc7&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_style_index_0_id_42498bc7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&scoped=true& ***!
+  \*******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_42498bc7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Intro.vue?vue&type=template&id=42498bc7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_42498bc7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_42498bc7_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Intro.vue?vue&type=template&id=42498bc7&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Intro.vue?vue&type=template&id=42498bc7&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_42498bc7_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_42498bc7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_42498bc7_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27489,21 +33656,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Licencias_vue_vue_type_template_id_1e0a73a2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Licencias.vue?vue&type=template&id=1e0a73a2& */ "./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Licencias_vue_vue_type_template_id_1e0a73a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true& */ "./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true&");
+/* harmony import */ var _Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true& */ "./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Licencias_vue_vue_type_template_id_1e0a73a2___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Licencias_vue_vue_type_template_id_1e0a73a2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Licencias_vue_vue_type_template_id_1e0a73a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Licencias_vue_vue_type_template_id_1e0a73a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "1e0a73a2",
   null
   
 )
@@ -27515,19 +33684,35 @@ component.options.__file = "resources/js/components/Home/Licencias.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=style&index=0&id=1e0a73a2&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_style_index_0_id_1e0a73a2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_template_id_1e0a73a2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Licencias.vue?vue&type=template&id=1e0a73a2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_template_id_1e0a73a2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_template_id_1e0a73a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Licencias.vue?vue&type=template&id=1e0a73a2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_template_id_1e0a73a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_template_id_1e0a73a2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licencias_vue_vue_type_template_id_1e0a73a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27700,21 +33885,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Redes_vue_vue_type_template_id_6d6c88da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Redes.vue?vue&type=template&id=6d6c88da& */ "./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Redes_vue_vue_type_template_id_6d6c88da_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Redes.vue?vue&type=template&id=6d6c88da&scoped=true& */ "./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&scoped=true&");
+/* harmony import */ var _Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true& */ "./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Redes_vue_vue_type_template_id_6d6c88da___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Redes_vue_vue_type_template_id_6d6c88da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Redes_vue_vue_type_template_id_6d6c88da_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Redes_vue_vue_type_template_id_6d6c88da_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "6d6c88da",
   null
   
 )
@@ -27726,19 +33913,35 @@ component.options.__file = "resources/js/components/Home/Redes.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da& ***!
-  \*******************************************************************************/
+/***/ "./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=style&index=0&id=6d6c88da&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_style_index_0_id_6d6c88da_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&scoped=true& ***!
+  \*******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_template_id_6d6c88da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Redes.vue?vue&type=template&id=6d6c88da& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_template_id_6d6c88da___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_template_id_6d6c88da_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Redes.vue?vue&type=template&id=6d6c88da&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Redes.vue?vue&type=template&id=6d6c88da&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_template_id_6d6c88da_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_template_id_6d6c88da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Redes_vue_vue_type_template_id_6d6c88da_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27753,21 +33956,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Seguridad_vue_vue_type_template_id_57edadea___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Seguridad.vue?vue&type=template&id=57edadea& */ "./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Seguridad_vue_vue_type_template_id_57edadea_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Seguridad.vue?vue&type=template&id=57edadea&scoped=true& */ "./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&scoped=true&");
+/* harmony import */ var _Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true& */ "./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Seguridad_vue_vue_type_template_id_57edadea___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Seguridad_vue_vue_type_template_id_57edadea___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Seguridad_vue_vue_type_template_id_57edadea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Seguridad_vue_vue_type_template_id_57edadea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "57edadea",
   null
   
 )
@@ -27779,19 +33984,35 @@ component.options.__file = "resources/js/components/Home/Seguridad.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=style&index=0&id=57edadea&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_style_index_0_id_57edadea_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&scoped=true& ***!
+  \***********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_template_id_57edadea___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Seguridad.vue?vue&type=template&id=57edadea& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_template_id_57edadea___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_template_id_57edadea_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Seguridad.vue?vue&type=template&id=57edadea&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Seguridad.vue?vue&type=template&id=57edadea&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_template_id_57edadea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_template_id_57edadea___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Seguridad_vue_vue_type_template_id_57edadea_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27893,21 +34114,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Sistemas_vue_vue_type_template_id_572d1906___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sistemas.vue?vue&type=template&id=572d1906& */ "./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Sistemas_vue_vue_type_template_id_572d1906_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Sistemas.vue?vue&type=template&id=572d1906&scoped=true& */ "./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&scoped=true&");
+/* harmony import */ var _Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true& */ "./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Sistemas_vue_vue_type_template_id_572d1906___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Sistemas_vue_vue_type_template_id_572d1906___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Sistemas_vue_vue_type_template_id_572d1906_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Sistemas_vue_vue_type_template_id_572d1906_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "572d1906",
   null
   
 )
@@ -27919,19 +34142,35 @@ component.options.__file = "resources/js/components/Home/Sistemas.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906& ***!
-  \**********************************************************************************/
+/***/ "./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true&":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true& ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=style&index=0&id=572d1906&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_style_index_0_id_572d1906_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&scoped=true&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&scoped=true& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_template_id_572d1906___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sistemas.vue?vue&type=template&id=572d1906& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_template_id_572d1906___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_template_id_572d1906_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Sistemas.vue?vue&type=template&id=572d1906&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Sistemas.vue?vue&type=template&id=572d1906&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_template_id_572d1906_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_template_id_572d1906___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Sistemas_vue_vue_type_template_id_572d1906_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -27946,21 +34185,23 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Soporte_vue_vue_type_template_id_27af45c3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Soporte.vue?vue&type=template&id=27af45c3& */ "./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Soporte_vue_vue_type_template_id_27af45c3_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Soporte.vue?vue&type=template&id=27af45c3&scoped=true& */ "./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&scoped=true&");
+/* harmony import */ var _Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true& */ "./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
 
 
+
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   script,
-  _Soporte_vue_vue_type_template_id_27af45c3___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Soporte_vue_vue_type_template_id_27af45c3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Soporte_vue_vue_type_template_id_27af45c3_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Soporte_vue_vue_type_template_id_27af45c3_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "27af45c3",
   null
   
 )
@@ -27972,19 +34213,35 @@ component.options.__file = "resources/js/components/Home/Soporte.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true&":
+/*!************************************************************************************************************!*\
+  !*** ./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true& ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=style&index=0&id=27af45c3&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_style_index_0_id_27af45c3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&scoped=true&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&scoped=true& ***!
+  \*********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_template_id_27af45c3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Soporte.vue?vue&type=template&id=27af45c3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_template_id_27af45c3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_template_id_27af45c3_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Soporte.vue?vue&type=template&id=27af45c3&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home/Soporte.vue?vue&type=template&id=27af45c3&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_template_id_27af45c3_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_template_id_27af45c3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Soporte_vue_vue_type_template_id_27af45c3_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -1,7 +1,7 @@
 <template>
     <div>
         <section id="about" class="about">
-            <div class="container py-5 mt-2">
+            <div class="container py-5 mt-5">
                 <header class="section-header">
                     <h3>Nosotros</h3>
                 </header>
@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
                         <div class="member">
-                            <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="storage/img/team/user.png" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Lida Fabiola Castro Pinzón</h4>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
                         <div class="member">
-                            <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="storage/img/team/user.png" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Luis Fernando Millán Morales</h4>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp">
                         <div class="member">
-                            <img src="storage/img/team-1.jpg" class="img-fluid" alt="">
+                            <img src="storage/img/team/user.png" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <h4>Jhoan Sebastian Becerra Chacon</h4>

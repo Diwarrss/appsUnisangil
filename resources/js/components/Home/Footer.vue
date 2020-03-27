@@ -1,6 +1,6 @@
 <template>
     <div>
-        <footer id="footer" class="section-bg">
+        <footer id="footer" class="section-bg footer_content mt-5">
             <div class="footer-top">
             <div class="container">
                 <div class="section-header text-center">
@@ -73,6 +73,9 @@
     </div>
 </template>
 <style lang="scss" scoped>
+.footer_content{
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
 .section__footer{
     .title__section{
         font-size: 18px;

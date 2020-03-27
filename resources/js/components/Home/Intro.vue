@@ -6,7 +6,7 @@
                 <div class="col-md-6 intro-info order-md-first order-last">
                     <div class="text-center">
                         <div>
-                            <img src="storage/img/logo.png" alt="" class="img-fluid" width="300">
+                            <img src="storage/img/logo.png" alt="" class="img-fluid img_unisangil" width="300">
                         </div>
                         <div class="mt-5">
                             <a href="/about" class="btn-get-started scrollto">
@@ -24,3 +24,17 @@
         </section>
     </div>
 </template>
+<style lang="scss" scoped>
+#intro {
+    height: auto;
+    padding: 220px 0 60px 0;
+}
+@media screen and (max-width: 580px) {
+    #intro {
+        padding: 150px 0 60px 0;
+    }
+    .img_unisangil{
+        width: 60%;
+    }
+}
+</style>
