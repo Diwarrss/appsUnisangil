@@ -48,6 +48,9 @@ Route::group(['middleware' => ['guest']], function () {
     Route::get('/licencias', function () {
         return view('home.licencias');
     });
+    Route::get('/resources', function () {
+        return view('home.resources');
+    });
     //BuzonSugerenciaController
     Route::post('buzon/save','BuzonSugerenciaController@save');
     //InscripcionPruebaController

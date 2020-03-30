@@ -32,7 +32,7 @@ Vue.component('intro', require('./components/Home/Intro.vue').default);
 Vue.component('services', require('./components/Home/Services.vue').default);
 Vue.component('about', require('./components/Home/About.vue').default);
 Vue.component('news', require('./components/Home/News.vue').default);
-Vue.component('infrastructure', require('./components/Home/Infrastructure.vue').default);
+Vue.component('resources', require('./components/Home/Resources.vue').default);
 
 //servicios
 Vue.component('redes', require('./components/Home/Redes.vue').default);

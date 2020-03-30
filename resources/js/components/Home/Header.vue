@@ -31,11 +31,7 @@
                         <li><a href="/">Inicio</a></li>
                         <li><a href="/services">Servicios</a></li>
                         <li><a href="/about">Nosotros</a></li>
-                        <!-- <li><a href="/resources">Recursos</a>
-                            Anydesk
-                            Team viewer
-                            Manuales
-                        </li> -->
+                        <li><a href="/resources">Recursos</a></li>
                         <!-- <li><a href="/security">Seguridad</a>
                             Tomado de : referenciandolo
                         </li> -->
