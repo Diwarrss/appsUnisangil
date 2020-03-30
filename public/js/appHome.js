@@ -2651,7 +2651,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       products: [{
-        name: 'Canon MF 244DW',
+        name: 'CANON MF 244DW',
         manuals: [{
           name: 'Cambio de Tóner',
           file_url: 'storage/formatos/canon-MF-244DW/canon-MF-244dw-Cambio-de-Tóner.pdf',
@@ -2721,6 +2721,21 @@ __webpack_require__.r(__webpack_exports__);
           name: 'Extracción de papel atascado',
           file_url: 'storage/formatos/HP-P2035/HP-LaserJet-P2035-Extracion-de-papel.pdf',
           slug_file: 'HP-LaserJet-P2035-Extracion-de-papel.pdf'
+        }]
+      }, {
+        name: 'HP LASERJET M124NF',
+        manuals: [{
+          name: 'Cambio de Tóner',
+          file_url: 'storage/formatos/HP-P2035/HP-LASERJET-M124NF-CAMBIO-DE-TONER.pdf',
+          slug_file: 'HP-LASERJET-M124NF-CAMBIO-DE-TONER.pdf'
+        }, {
+          name: 'Conexión básica',
+          file_url: 'storage/formatos/HP-P2035/HP-LASERJET-M124NF-USO-BASICO.pdf',
+          slug_file: 'HP-LASERJET-M124NF-USO-BASICO.pdf'
+        }, {
+          name: 'Extracción de papel atascado',
+          file_url: 'storage/formatos/HP-P2035/HP-LASERJET-M124NF-EXTRACCION-DE-ATASCO.pdf',
+          slug_file: 'HP-LASERJET-M124NF-EXTRACCION-DE-ATASCO.pdf'
         }]
       }]
     };
