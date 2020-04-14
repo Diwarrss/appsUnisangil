@@ -9781,360 +9781,408 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container py-5 mt-5" }, [
+    _c("section", { staticClass: "py-5" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "text_header" }, [
+        _c("h5", [_vm._v("Responsable del servicio")]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c("div", { staticClass: "row mt-5" }, [
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-lg btn-block mt-4",
+                on: { click: _vm.openFormCursos }
+              },
+              [
+                _c("i", { staticClass: "fas fa-file-signature" }),
+                _vm._v(" Inscripción a Cursos\n                    ")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-lg btn-block mt-4",
+                on: { click: _vm.openFormComprobante }
+              },
+              [
+                _c("i", { staticClass: "fas fa-file-signature" }),
+                _vm._v(" Adjuntar Comprobante de Pago\n                    ")
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(3)
+      ]),
+      _vm._v(" "),
+      _vm._m(4)
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container py-5 mt-5" }, [
-      _c("section", { staticClass: "py-5" }, [
-        _c("header", { staticClass: "section-header mt-5 mb-5 text-center" }, [
-          _c("h3", [_vm._v("Cursos de Informática")])
+    return _c(
+      "header",
+      { staticClass: "section-header mt-5 mb-5 text-center" },
+      [_c("h3", [_vm._v("Cursos de Informática")])]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mb-4" }, [
+      _c("span", [
+        _vm._v(
+          "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Dirección Departamento de Sistemas y TIC.\n                    Director, Coordinador de Sistemas y TIC sede Yopal.\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n\n                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "content_contact col-md-6" }, [
+        _c("h5", [_vm._v("Contacto de Soporte")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
+          )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "text_header" }, [
-          _c("h5", [_vm._v("Responsable del servicio")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mb-4" }, [
-            _c("span", [
-              _vm._v(
-                "\n                    Funcionario de Departamento de Sistemas y TIC de UNISANGIL.\n                    Dirección Departamento de Sistemas y TIC.\n                    Director, Coordinador de Sistemas y TIC sede Yopal.\n                    Coordinador de Sistemas y Tic, sede Chiquinquirá\n\n                "
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "content_contact col-md-6" }, [
-              _c("h5", [_vm._v("Contacto de Soporte")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        Ticket a través de la Mesa de TI, plataforma GLPI, Llamada\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        •\tDirección departamento de sistemas sede San Gil, Teléfono 7245757 Extensión 231 "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        •\tDirector, Coordinador de Sistemas y TIC sede Yopal  "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        •\tCoordinador de Sistemas y Tic, sede Chiquinquirá\n                    "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "content_suport col-md-6" }, [
-              _c("h5", [_vm._v("Horario de soporte")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "text-center" }, [
-                _c("img", {
-                  staticClass: "img-fluid",
-                  attrs: {
-                    src: "storage/img/services/cursos.png",
-                    alt: "",
-                    width: "250"
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
-            _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mt-0" }, [
-          _c(
-            "div",
-            { staticClass: "accordion", attrs: { id: "accordionExample" } },
-            [
-              _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card-header collapsed",
-                    attrs: {
-                      type: "button",
-                      "data-toggle": "collapse",
-                      "data-target": "#collapseOne",
-                      "aria-expanded": "false",
-                      "aria-controls": "collapseSix",
-                      id: "headingOne"
-                    }
-                  },
-                  [
-                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
-                      _vm._v(
-                        "\n                            •\tInformática básica UNISANGIL\n                        "
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "collapse show",
-                    attrs: {
-                      id: "collapseOne",
-                      "aria-labelledby": "headingOne",
-                      "data-parent": "#accordionExample"
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Servicio de formación en competencia digital para los estudiantes, administrativos y docentes de UNISANGIL.\n                                    "
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Oferta de cursos de formación en informática básica para estudiantes de UNISANGIL, como requisito de grado. "
-                            ),
-                            _c("br"),
-                            _vm._v(
-                              "\n\n                                        Oferta de formación para personal administrativo y docente de UNISANGIL,  en competencias digitales.\n\n                                    "
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [
-                            _c("h5", [
-                              _c("strong", [_vm._v("Necesidad que Satisface")])
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Extensión y proyección social "
-                            ),
-                            _c("br"),
-                            _vm._v(
-                              "\n                                        Desarrollo de la gestión académica y administrativa "
-                            ),
-                            _c("br"),
-                            _vm._v(
-                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [
-                            _c("h5", [
-                              _c("strong", [_vm._v("Usuario objetivo")])
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Área administrativa y académica\n                                    "
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card-header collapsed",
-                    attrs: {
-                      type: "button",
-                      "data-toggle": "collapse",
-                      "data-target": "#collapseTwo",
-                      "aria-expanded": "false",
-                      "aria-controls": "collapseSix",
-                      id: "headingTwo"
-                    }
-                  },
-                  [
-                    _c("h2", { staticClass: "btn btn-link mb-0" }, [
-                      _vm._v(
-                        "\n                            •\tInformática programas UNAB\n                        "
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "collapse",
-                    attrs: {
-                      id: "collapseTwo",
-                      "aria-labelledby": "headingTwo",
-                      "data-parent": "#accordionExample"
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Servicio de formación en competencia digital para los estudiantes, de los programas UNAB\n                                    "
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Oferta de cursos de formación en informática básica para estudiantes de los programas UNAB, de acuerdo a las directrices del plan de estudio.\n                                    "
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [
-                            _c("h5", [
-                              _c("strong", [_vm._v("Necesidad que Satisface")])
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Extensión y proyección social "
-                            ),
-                            _c("br"),
-                            _vm._v(
-                              "\n                                        Desarrollo de la gestión académica y administrativa "
-                            ),
-                            _c("br"),
-                            _vm._v(
-                              "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "content_body row mb-2" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "col-12 col-sm-4 col-md-3 text-center my-auto"
-                          },
-                          [
-                            _c("h5", [
-                              _c("strong", [_vm._v("Usuario objetivo")])
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
-                          _c("p", { staticClass: "mb-2" }, [
-                            _vm._v(
-                              "\n                                        Área administrativa y  académica\n                                    "
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ]
-                )
-              ])
-            ]
+        _c("p", [
+          _vm._v(
+            "\n                        •\tDirección departamento de sistemas sede San Gil, Teléfono 7245757 Extensión 231 "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        •\tDirector, Coordinador de Sistemas y TIC sede Yopal  "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        •\tCoordinador de Sistemas y Tic, sede Chiquinquirá\n                    "
           )
         ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "content_suport col-md-6" }, [
+        _c("h5", [_vm._v("Horario de soporte")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        •\tLunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. "
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        •\tSábado de 9:00 – 12:00 p.m.\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-center" }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: {
+              src: "storage/img/services/cursos.png",
+              alt: "",
+              width: "250"
+            }
+          })
+        ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12 mt-5 text-center" }, [
+      _c("h5", { staticClass: "mb-0" }, [_vm._v("SERVICIOS")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mt-0" }, [
+      _c(
+        "div",
+        { staticClass: "accordion", attrs: { id: "accordionExample" } },
+        [
+          _c("div", { staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header collapsed",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#collapseOne",
+                  "aria-expanded": "false",
+                  "aria-controls": "collapseSix",
+                  id: "headingOne"
+                }
+              },
+              [
+                _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                  _vm._v(
+                    "\n                            •\tInformática básica UNISANGIL\n                        "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse show",
+                attrs: {
+                  id: "collapseOne",
+                  "aria-labelledby": "headingOne",
+                  "data-parent": "#accordionExample"
+                }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Servicio de formación en competencia digital para los estudiantes, administrativos y docentes de UNISANGIL.\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Oferta de cursos de formación en informática básica para estudiantes de UNISANGIL, como requisito de grado. "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n\n                                        Oferta de formación para personal administrativo y docente de UNISANGIL,  en competencias digitales.\n\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [
+                        _c("h5", [
+                          _c("strong", [_vm._v("Necesidad que Satisface")])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Extensión y proyección social "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        Desarrollo de la gestión académica y administrativa "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Usuario objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Área administrativa y académica\n                                    "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header collapsed",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#collapseTwo",
+                  "aria-expanded": "false",
+                  "aria-controls": "collapseSix",
+                  id: "headingTwo"
+                }
+              },
+              [
+                _c("h2", { staticClass: "btn btn-link mb-0" }, [
+                  _vm._v(
+                    "\n                            •\tInformática programas UNAB\n                        "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: {
+                  id: "collapseTwo",
+                  "aria-labelledby": "headingTwo",
+                  "data-parent": "#accordionExample"
+                }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Servicio de formación en competencia digital para los estudiantes, de los programas UNAB\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Descripción")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Oferta de cursos de formación en informática básica para estudiantes de los programas UNAB, de acuerdo a las directrices del plan de estudio.\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [
+                        _c("h5", [
+                          _c("strong", [_vm._v("Necesidad que Satisface")])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Extensión y proyección social "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        Desarrollo de la gestión académica y administrativa "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                                        Desarrollo de la gestión de la investigación  y la extensión\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content_body row mb-2" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "col-12 col-sm-4 col-md-3 text-center my-auto"
+                      },
+                      [_c("h5", [_c("strong", [_vm._v("Usuario objetivo")])])]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-12 col-sm-8 col-md-9" }, [
+                      _c("p", { staticClass: "mb-2" }, [
+                        _vm._v(
+                          "\n                                        Área administrativa y  académica\n                                    "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          ])
+        ]
+      )
     ])
   }
 ]

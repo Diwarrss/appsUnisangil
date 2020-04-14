@@ -38,6 +38,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <!-- <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
+                            <i class="fas fa-file-download"></i> Descargar formato de pago
+                        </button>
+                    </div> -->
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg btn-block mt-4" @click="openFormCursos">
+                            <i class="fas fa-file-signature"></i> Inscripción a Cursos
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg btn-block mt-4" @click="openFormComprobante">
+                            <i class="fas fa-file-signature"></i> Adjuntar Comprobante de Pago
+                        </button>
+                    </div>
+                </div>
                 <div class="col-md-12 mt-5 text-center">
                     <h5 class="mb-0">SERVICIOS</h5>
                 </div>
