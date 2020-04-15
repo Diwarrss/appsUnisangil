@@ -2250,6 +2250,9 @@ __webpack_require__.r(__webpack_exports__);
       this.dataRegister.cursos = '';
       this.dataUploadFile.data = [];
     },
+    clearData: function clearData() {
+      this.dataUploadFile.data = [];
+    },
     openForm: function openForm(value) {
       if (value === 'register') {
         this.typeModal = 1;
@@ -2290,20 +2293,24 @@ __webpack_require__.r(__webpack_exports__);
         }
       }).then(function (response) {
         me.dataUploadFile.data = response.data;
+        me.errors = [];
         document.getElementById("save").disabled = false; //console.log(response);
       })["catch"](function (error) {
         if (error.response.status == 422) {
           me.errors = error.response.data.errors;
         }
 
-        me.$swal({
-          position: 'top',
-          icon: 'warning',
-          title: "No hay resultados",
-          text: 'Volver a intentar!',
-          showConfirmButton: true //timer: 1800
+        if (error.response.status == 404) {
+          me.$swal({
+            position: 'top',
+            icon: 'warning',
+            title: "No hay resultados",
+            text: 'Volver a intentar!',
+            showConfirmButton: true //timer: 1800
 
-        });
+          });
+        }
+
         document.getElementById("save").disabled = false;
       });
     },
@@ -3537,7 +3544,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".btn-primary[data-v-78445be8] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}\n.invalid__input[data-v-78445be8] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.form-control[data-v-78445be8] {\n  height: 34px;\n}\n.modal-primary[data-v-78445be8] {\n  /* .body__search{\n      height: 150px;\n  } */\n}\n.modal-primary .modal-content[data-v-78445be8] {\n  border-color: #20a8d8;\n}\n.modal-primary .modal-header[data-v-78445be8] {\n  color: #fff;\n  background-color: #20a8d8;\n}", ""]);
+exports.push([module.i, ".btn-primary[data-v-78445be8] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}\n.invalid__input[data-v-78445be8] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.form-control[data-v-78445be8] {\n  height: 34px;\n}\n.modal-primary[data-v-78445be8] {\n  /* .body__search{\n      height: 150px;\n  } */\n}\n.modal-primary .modal-content[data-v-78445be8] {\n  border-color: #20a8d8;\n}\n.modal-primary .modal-header[data-v-78445be8] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.custom-file-label[data-v-78445be8]::after {\n  content: \"Buscar Archivo\";\n}", ""]);
 
 // exports
 
@@ -10842,26 +10849,29 @@ var render = function() {
                                   },
                                   attrs: { placeholder: "Seleccionar..." },
                                   on: {
-                                    change: function($event) {
-                                      var $$selectedVal = Array.prototype.filter
-                                        .call($event.target.options, function(
-                                          o
-                                        ) {
-                                          return o.selected
-                                        })
-                                        .map(function(o) {
-                                          var val =
-                                            "_value" in o ? o._value : o.value
-                                          return val
-                                        })
-                                      _vm.$set(
-                                        _vm.dataRegister,
-                                        "tipo_documento",
-                                        $event.target.multiple
-                                          ? $$selectedVal
-                                          : $$selectedVal[0]
-                                      )
-                                    }
+                                    change: [
+                                      function($event) {
+                                        var $$selectedVal = Array.prototype.filter
+                                          .call($event.target.options, function(
+                                            o
+                                          ) {
+                                            return o.selected
+                                          })
+                                          .map(function(o) {
+                                            var val =
+                                              "_value" in o ? o._value : o.value
+                                            return val
+                                          })
+                                        _vm.$set(
+                                          _vm.dataRegister,
+                                          "tipo_documento",
+                                          $event.target.multiple
+                                            ? $$selectedVal
+                                            : $$selectedVal[0]
+                                        )
+                                      },
+                                      _vm.clearData
+                                    ]
                                   }
                                 },
                                 [
@@ -10922,6 +10932,7 @@ var render = function() {
                                   value: _vm.dataRegister.numero_documento
                                 },
                                 on: {
+                                  change: _vm.clearData,
                                   input: function($event) {
                                     if ($event.target.composing) {
                                       return

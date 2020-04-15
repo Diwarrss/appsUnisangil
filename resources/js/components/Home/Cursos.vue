@@ -282,7 +282,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-5">
                                         <label for="tipDocumento"><strong>Tipo Documento</strong></label>
-                                        <select class="form-control" v-model="dataRegister.tipo_documento" placeholder="Seleccionar..." :class="{'is-invalid': errors['tipo_documento']}">
+                                        <select class="form-control" @change="clearData" v-model="dataRegister.tipo_documento" placeholder="Seleccionar..." :class="{'is-invalid': errors['tipo_documento']}">
                                             <option value="" disabled selected>Seleccionar...</option>
                                             <option v-for="elemento in tiposDoc" v-bind:value="elemento">{{ elemento }}</option>
                                         </select>
@@ -293,7 +293,7 @@
                                     </div>
                                     <div class="form-group col-md-7">
                                         <label for="numDocumento"><strong>Número Documento</strong></label>
-                                        <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}">
+                                        <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}" @change="clearData">
                                         <div class="invalid-feedback" v-if="errors['numero_documento']">
                                             {{errors['numero_documento'][0]}}
                                         </div>
@@ -385,6 +385,9 @@ export default {
             this.dataRegister.cursos = ''
             this.dataUploadFile.data = []
         },
+        clearData(){
+            this.dataUploadFile.data = []
+        },
         openForm(value){
             if (value ==='register') {
                 this.typeModal = 1
@@ -431,6 +434,7 @@ export default {
                 })
                 .then(function(response) {
                     me.dataUploadFile.data = response.data
+                    me.errors = []
                     document.getElementById("save").disabled = false;
                     //console.log(response);
                 })
@@ -438,14 +442,16 @@ export default {
                     if (error.response.status == 422) {
                         me.errors = error.response.data.errors;
                     }
-                    me.$swal({
-                        position: 'top',
-                        icon: 'warning',
-                        title: "No hay resultados",
-                        text: 'Volver a intentar!',
-                        showConfirmButton: true
-                        //timer: 1800
-                    });
+                    if (error.response.status == 404) {
+                        me.$swal({
+                            position: 'top',
+                            icon: 'warning',
+                            title: "No hay resultados",
+                            text: 'Volver a intentar!',
+                            showConfirmButton: true
+                            //timer: 1800
+                        });
+                    }
                     document.getElementById("save").disabled = false;
                 });
         },
@@ -556,6 +562,9 @@ export default {
         /* .body__search{
             height: 150px;
         } */
+    }
+    .custom-file-label::after{
+        content: "Buscar Archivo";
     }
 </style>
 <style lang="scss">

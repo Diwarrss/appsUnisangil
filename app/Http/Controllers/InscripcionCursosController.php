@@ -12,11 +12,23 @@ class InscripcionCursosController extends Controller
     public function getInfoinProcess(Request $request){
         if (!$request->ajax()) return redirect('/');
 
-        return InscripcionCursos::where([
+        $request->validate([
+            'tipo_documento' => 'required|max:4',
+            'numero_documento' => 'required|max:12'
+        ]);
+
+        $data = InscripcionCursos::where([
                 ['estado', 1],
                 ['tipo_documento', '=', $request->tipo_documento],
                 ['numero_documento', '=', $request->numero_documento]
             ])->get();
+
+        if (count($data) > 0) {
+            return $data;
+        }else{
+            return response()->json([
+                'message' => 'Not results'], 404);
+        }
     }
 
     public function register(Request $request)
