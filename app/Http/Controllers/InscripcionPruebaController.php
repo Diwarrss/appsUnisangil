@@ -18,7 +18,7 @@ class InscripcionPruebaController extends Controller
 
     public function save(Request $request)
     {
-        //if (!$request->ajax()) return redirect('/');
+        if (!$request->ajax()) return redirect('/');
         try {
             DB::beginTransaction();
 
@@ -44,7 +44,7 @@ class InscripcionPruebaController extends Controller
             $insPrueba->celular = $request->celular;
             $insPrueba->programa_academico = $request->programa_academico;
             $insPrueba->url_comprobante = '/storage/soportePagos/' . $nameFile;
-            $insPrueba->estado = 0;
+            $insPrueba->estado = '0';
             $insPrueba->save();
 
             //movemos la imagen a la carpeta definida

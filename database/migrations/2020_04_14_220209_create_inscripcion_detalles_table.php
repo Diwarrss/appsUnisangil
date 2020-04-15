@@ -14,7 +14,10 @@ class CreateInscripcionDetallesTable extends Migration
     public function up()
     {
         Schema::create('inscripcion_detalles', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->unsignedBigInteger('ins_cursos_id');
+            $table->foreign('ins_cursos_id')->references('id')->on('inscripcion_cursos');
+            $table->unsignedBigInteger('curso_id');
+            $table->foreign('curso_id')->references('id')->on('cursos');
             $table->timestamps();
         });
     }

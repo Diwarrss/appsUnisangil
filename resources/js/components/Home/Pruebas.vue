@@ -300,30 +300,7 @@ export default {
                 programa_academico: '',
                 url_comprobante: '',
                 niveles: '5'
-            },
-            programas: [
-                'Administración de Empresas',
-                'Contaduría Pública',
-                'Administración de Empresas Turísticas y Hoteleras',
-                'Derecho',
-                'Enfermería',
-                'Ingeniería Agrícola',
-                'Ingeniería Ambiental',
-                'Ingeniería Electrónica',
-                'Ingeniería de Sistemas',
-                'Ingeniería de Mantenimiento',
-                'Ingeniería Financiera (UNAB)',
-                'Psicología (UNAB)',
-                'Tecnología en Sistemas de Información',
-                'Tecnología en Gestión de Empresas de Economía Solidaria',
-                'Licenciatura en educación para la primera infancia'
-            ],
-            tiposDoc: [
-                'CC',
-                'TI',
-                'ID',
-                'CE'
-            ]
+            }
         }
     },
     async created () {
@@ -332,13 +309,19 @@ export default {
     computed: {
         niveles(){
             return this.$store.getters.doneNivels
+        },
+        programas(){
+            return this.$store.state.programas
+        },
+        tiposDoc(){
+            return this.$store.state.tiposDoc
         }
     },
     methods: {
         downloadFile() {
             document.getElementById("downloadFile").disabled = true;
             axios({
-                url: "inscripcion/downloadFile",
+                url: "insPruebas/downloadFile",
                 method: "GET",
                 responseType: "blob" // important
             }).then(response => {
@@ -422,7 +405,7 @@ export default {
             allData.append("niveles", setniveles())
 
             axios
-                .post("inscripcion/save", allData)
+                .post("prueba/save", allData)
                 .then(function(response) {
                     me.$swal({
                         position: 'top',
