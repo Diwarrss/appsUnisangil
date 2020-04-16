@@ -17,13 +17,15 @@ class CreateInscripcionCursosTable extends Migration
             $table->bigIncrements('id');
             $table->string('tipo_documento', 4);
             $table->string('numero_documento', 12);
+            $table->string('numero_id', 9);
             $table->string('nombres', 220);
             $table->string('apellidos', 220);
             $table->string('email', 150);
+            $table->string('celular', 11);
             $table->string('sede', 120);
             $table->string('programa_academico', 255);
             $table->string('url_comprobante', 200)->nullable();
-            $table->enum('estado', [0,1,2,3])->comment('0 = Pendiente, 1 = En Curso, 2 = Aprobado, 3 = Anulado');
+            $table->enum('estado', [0,1,2,3,4])->comment('0 = Pendiente Generar Recibo, 1 = En Curso o Mail enviado con Recibo, 2 = Pago Recibido por Validar , 3 = Pago Aprobado, 4 = Pago Anulado');
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@ export default {
     state: {
         dataNivels: [],
         dataCursos: [],
-        programas: [
+        programasPruebas: [
             'Administración de Empresas',
             'Contaduría Pública',
             'Administración de Empresas Turísticas y Hoteleras',
@@ -20,10 +20,20 @@ export default {
             'Tecnología en Gestión de Empresas de Economía Solidaria',
             'Licenciatura en educación para la primera infancia'
         ],
-        tiposDoc: [
+        programasCursos: [
+            'Derecho (UNAB)',
+            'Ingeniería Financiera (UNAB)',
+            'Psicología (UNAB)'
+        ],
+        tiposDocPruebas: [
             'CC',
             'TI',
             'ID',
+            'CE'
+        ],
+        tiposDocCursos: [
+            'CC',
+            'TI',
             'CE'
         ],
         sedes: [

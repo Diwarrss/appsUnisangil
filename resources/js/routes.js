@@ -1,7 +1,8 @@
 //Importamos los componentes a usar
 import Error404 from './views/Error404';
 import Dashboard from './views/Dashboard';
-import Admin from './views/Admin';
+import Cursos from './views/Cursos';
+import Pruebas from './views/Pruebas';
 
 export default {
 
@@ -10,15 +11,23 @@ export default {
 
     routes: [{
             path: "*",
+            name: 'error',
             component: Error404
         },
         {
             path: "/",
+            name: 'dashboard',
             component: Dashboard
         },
         {
-            path: "/admin",
-            component: Admin
+            path: "/cursos",
+            name: 'cursos',
+            component: Cursos
+        },
+        {
+            path: "/pruebas",
+            name: 'pruebas',
+            component: Pruebas
         }
     ]
 };

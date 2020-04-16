@@ -1,4 +1,7 @@
 <?php
+
+use Illuminate\Routing\RouteGroup;
+
 Auth::routes();
 
 Route::group(['middleware' => ['guest']], function () {
@@ -73,4 +76,8 @@ Route::group(['middleware' => ['guest']], function () {
 Route::group(['middleware' => ['auth']], function () {
     //obtener la vista del admin al loguear
     Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::group(['prefix' => 'user'], function () {
+        Route::get('getData', 'UserController@getData')->name('getData');
+    });
 });

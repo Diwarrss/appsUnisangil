@@ -1,5 +1,5 @@
 <template>
-  <header class="app-header navbar">
+  <header class="app-header navbar" v-if="dataUser">
     <button
       class="navbar-toggler sidebar-toggler d-lg-none mr-auto"
       type="button"
@@ -8,14 +8,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/home">
-      <img class="navbar-brand-full" :src="imagenUniversidad" height="45" alt="Logotipo" />
-      <!-- <img
-        class="navbar-brand-minimized"
-        src="adminCoreui/img/brand/sygnet.svg"
-        width="30"
-        height="30"
-        alt="CoreUI Logo"
-      />-->
+      <img class="navbar-brand-full" src="storage/img/Logo-Name.png" width="130" alt="Logotipo" />
     </a>
     <button
       class="navbar-toggler sidebar-toggler d-md-down-none"
@@ -51,8 +44,8 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          <a class="d-sm-down-none">Juan Gomez</a>
-          <!-- <img class="img-avatar" :src="imagenUniversidad" /> -->
+          <a class="d-sm-down-none">{{dataUser.name}}</a>
+          <img class="img-avatar" :src="dataUser.urlImagen" />
         </a>
         <div class="dropdown-menu dropdown-menu-right">
           <div class="dropdown-header text-center">
@@ -93,9 +86,18 @@
 </template>
 <script>
 //importamos para usar el mapState, mapActions
-import { mapState, mapActions } from "vuex";
+import { mapState, mapActions, mapGetters } from "vuex";
 export default {
   props: ["csrf"],
+  computed: {
+      dataUser()
+      {
+        return this.$store.state.dataUser
+      }
+  },
+  async created() {
+      this.$store.dispatch('getDataUser')
+  },
   methods: {
     logout() {
       event.preventDefault();

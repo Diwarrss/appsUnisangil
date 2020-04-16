@@ -38,15 +38,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5 mb-5 section_insCursos">
                     <!-- <div class="col-md-6">
                         <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
                             <i class="fas fa-file-download"></i> Descargar formato de pago
                         </button>
                     </div> -->
+                    <div class="col-md-12 text-center">
+                        <h5>Inscripciones para Cursos de Informática Programas UNAB</h5>
+                        <p>
+                            Inscripciones, matrículas en la web y pago: <strong>20 de Abril/2020 hasta 12 de Mayo/2020</strong>
+                        </p>
+                    </div>
                     <div class="col-md-6">
                         <button class="btn btn-primary btn-lg btn-block mt-4" @click="openForm('register')">
-                            <i class="fas fa-file-signature"></i> Inscripción a Cursos
+                            <i class="fas fa-file-signature"></i> Inscribirme o registrarme
                         </button>
                     </div>
                     <div class="col-md-6">
@@ -193,7 +199,7 @@
         <!-- modal inscripcion cursos -->
         <section>
             <div class="modal fade" id="modalForm" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-primary modal-dialog-scrollable" role="document">
+                <div class="modal-dialog modal-primary modal-dialog-scrollable modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="modalFormLabel" v-if="typeModal === 1">
@@ -208,18 +214,20 @@
                         </div>
                         <div class="modal-body" v-if="typeModal === 1">
                             <form enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label for="nombres"><strong>Nombres</strong></label>
-                                    <input type="text" class="form-control" :class="{'is-invalid': errors['nombres']}" id="nombres" v-model="dataRegister.nombres">
-                                    <div class="invalid-feedback" v-if="errors['nombres']">
-                                        {{errors['nombres'][0]}}
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="nombres"><strong>Nombres</strong></label>
+                                        <input type="text" class="form-control" :class="{'is-invalid': errors['nombres']}" id="nombres" v-model="dataRegister.nombres">
+                                        <div class="invalid-feedback" v-if="errors['nombres']">
+                                            {{errors['nombres'][0]}}
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="apellidos"><strong>Apellidos</strong></label>
-                                    <input type="text" class="form-control" :class="{'is-invalid': errors['apellidos']}" id="apellidos" v-model="dataRegister.apellidos">
-                                    <div class="invalid-feedback" v-if="errors['apellidos']">
-                                        {{errors['apellidos'][0]}}
+                                    <div class="form-group col-md-6">
+                                        <label for="apellidos"><strong>Apellidos</strong></label>
+                                        <input type="text" class="form-control" :class="{'is-invalid': errors['apellidos']}" id="apellidos" v-model="dataRegister.apellidos">
+                                        <div class="invalid-feedback" v-if="errors['apellidos']">
+                                            {{errors['apellidos'][0]}}
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -230,36 +238,54 @@
                                             Obligatorio.
                                         </span>
                                     </div>
-                                    <div class="form-group col-md-8">
+                                    <div class="form-group col-md-4">
                                         <label for="numDocumento"><strong>Número Documento</strong></label>
                                         <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}">
                                         <div class="invalid-feedback" v-if="errors['numero_documento']">
                                             {{errors['numero_documento'][0]}}
                                         </div>
                                     </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="numId"><strong>Número ID</strong></label>
+                                        <input type="string" class="form-control" id="numId" v-model="dataRegister.numero_id" :class="{'is-invalid': errors['numero_id']}">
+                                        <div class="invalid-feedback" v-if="errors['numero_id']">
+                                            {{errors['numero_id'][0]}}
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email"><strong>Correo institucional</strong></label>
-                                    <input type="text" class="form-control" id="email" placeholder="hola@unisangil.edu.co" v-model="dataRegister.email" :class="{'is-invalid': errors['email']}">
-                                    <div class="invalid-feedback" v-if="errors['email']">
-                                        {{errors['email'][0]}}
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="email"><strong>Correo institucional</strong></label>
+                                        <input type="text" class="form-control" id="email" placeholder="hola@unisangil.edu.co" v-model="dataRegister.email" :class="{'is-invalid': errors['email']}">
+                                        <div class="invalid-feedback" v-if="errors['email']">
+                                            {{errors['email'][0]}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="celular"><strong>Celular</strong></label>
+                                        <vue-tel-input v-model="dataRegister.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
+                                        <span class="invalid__input" v-if="errors['celular']">
+                                            {{errors['celular'][0]}}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="sede"><strong>Sede</strong></label>
+                                        <v-select :options="sedes" placeholder="Seleccionar..." v-model="dataRegister.sede" :class="{'invalid__input_select': errors['sede']}"></v-select>
+                                        <span class="invalid__input" v-if="errors['sede']">
+                                            {{errors['sede'][0]}}
+                                        </span>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="academico"><strong>Programa académico</strong></label>
+                                        <v-select :options="programas" placeholder="Seleccionar..." v-model="dataRegister.programa_academico" :class="{'invalid__input_select': errors['programa_academico']}"></v-select>
+                                        <span class="invalid__input" v-if="errors['programa_academico']">
+                                            {{errors['programa_academico'][0]}}
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sede"><strong>Sede</strong></label>
-                                    <v-select :options="sedes" placeholder="Seleccionar..." v-model="dataRegister.sede" :class="{'invalid__input_select': errors['sede']}"></v-select>
-                                    <span class="invalid__input" v-if="errors['sede']">
-                                        {{errors['sede'][0]}}
-                                    </span>
-                                </div>
-                                <div class="form-group">
-                                    <label for="academico"><strong>Programa académico</strong></label>
-                                    <v-select :options="programas" placeholder="Seleccionar..." v-model="dataRegister.programa_academico" :class="{'invalid__input_select': errors['programa_academico']}"></v-select>
-                                    <span class="invalid__input" v-if="errors['programa_academico']">
-                                        {{errors['programa_academico'][0]}}
-                                    </span>
-                                </div>
-                                <div class="form-group" >
                                     <label for="cursos"><strong>Cursos</strong></label>
                                     <v-select
                                         :options="cursos"
@@ -280,35 +306,63 @@
                         <div class="modal-body body__search" v-if="typeModal === 2">
                             <form enctype="multipart/form-data">
                                 <div class="form-row">
-                                    <div class="form-group col-md-5">
+                                    <div class="form-group col-md-4">
                                         <label for="tipDocumento"><strong>Tipo Documento</strong></label>
                                         <select class="form-control" @change="clearData" v-model="dataRegister.tipo_documento" placeholder="Seleccionar..." :class="{'is-invalid': errors['tipo_documento']}">
                                             <option value="" disabled selected>Seleccionar...</option>
-                                            <option v-for="elemento in tiposDoc" v-bind:value="elemento">{{ elemento }}</option>
+                                            <option v-for="elemento in tiposDoc" :key="elemento" v-bind:value="elemento">{{ elemento }}</option>
                                         </select>
-                                        <!-- <v-select :options="tiposDoc" placeholder="Seleccionar..." v-model="dataRegister.tipo_documento" :class="{'invalid__input_select': errors['tipo_documento']}"></v-select> -->
                                         <span class="invalid__input" v-if="errors['tipo_documento']">
                                             Obligatorio.
                                         </span>
                                     </div>
-                                    <div class="form-group col-md-7">
+                                    <div class="form-group col-md-4">
                                         <label for="numDocumento"><strong>Número Documento</strong></label>
-                                        <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}" @change="clearData">
+                                        <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}" @focus="clearData">
                                         <div class="invalid-feedback" v-if="errors['numero_documento']">
                                             {{errors['numero_documento'][0]}}
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group" v-if="dataUploadFile.data.length">
-                                    <label for="soporte"><strong>Soporte de pago</strong></label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" @change="obtenerArchivo" :class="{'is-invalid': errors['url_comprobante']}"/>
-                                        <label class="custom-file-label" for="file" v-if="!dataUploadFile.url_comprobante">Elegir Archivo</label>
-                                        <label class="custom-file-label" for="file" v-else>{{dataUploadFile.url_comprobante.name}}</label>
+                                    <div class="form-group col-md-4">
+                                        <label for="numId"><strong>Número ID</strong></label>
+                                        <input type="string" class="form-control" id="numId" v-model="dataRegister.numero_id" :class="{'is-invalid': errors['numero_id']}" @focus="clearDataTdNumDoc">
+                                        <div class="invalid-feedback" v-if="errors['numero_id']">
+                                            {{errors['numero_id'][0]}}
+                                        </div>
                                     </div>
-                                    <span class="invalid__input" v-if="errors['url_comprobante']">
-                                        {{errors['url_comprobante'][0]}}
-                                    </span>
+                                </div>
+                                <div v-if="dataUploadFile.data" class="result_content">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="nombres"><strong>Nombres</strong></label>
+                                            <input type="text" class="form-control"  id="nombres" v-model="dataUploadFile.data.nombres" readonly>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="apellidos"><strong>Apellidos</strong></label>
+                                            <input type="text" class="form-control" id="apellidos" v-model="dataUploadFile.data.apellidos" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="programa"><strong>Programa académico</strong></label>
+                                            <input type="text" class="form-control" id="programa" v-model="dataUploadFile.data.programa_academico" readonly>
+                                        </div>
+                                        <div class="form-group col-md-6 my-auto text-center created_at">
+                                            <label for="created_at"><strong>Fecha Solicitud: </strong></label>
+                                            <label for="">{{dataUploadFile.data.created_at | moment('DD/MM/YYYY h:mm a')}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="soporte"><strong>Soporte de pago</strong></label>
+                                        <div class="custom-file file_div">
+                                            <input type="file" class="custom-file-input" @change="obtenerArchivo" :class="{'is-invalid': errors['url_comprobante']}"/>
+                                            <label class="custom-file-label" for="file" v-if="!dataUploadFile.url_comprobante">Adjuntar Archivo</label>
+                                            <label class="custom-file-label" for="file" v-else>{{dataUploadFile.url_comprobante.name}}</label>
+                                        </div>
+                                        <span class="invalid__input" v-if="errors['url_comprobante']">
+                                            {{errors['url_comprobante'][0]}}
+                                        </span>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -317,9 +371,9 @@
                             <button type="button" class="btn btn-success" @click="sendRegister" id="save" v-if="typeModal === 1"><i class="fas fa-paper-plane"></i> Enviar</button>
                         </div>
                         <div class="modal-footer" v-if="typeModal === 2">
-                            <div v-if="dataUploadFile.data.length">
+                            <div v-if="dataUploadFile.data">
                                 <button type="button" class="btn btn-danger" @click="closeForm"><i class="far fa-times-circle"></i> Cancelar</button>
-                                <button type="button" class="btn btn-success" @click="sendFile" id="save" ><i class="fas fa-paper-plane"></i> Enviar</button>
+                                <button type="button" class="btn btn-success" :class="{'disabled': !dataUploadFile.url_comprobante , 'enabled' : dataUploadFile.url_comprobante}" @click="sendFile" id="save" ><i class="fas fa-paper-plane"></i> Enviar</button>
                             </div>
                             <div v-else>
                                 <button type="button" class="btn btn-danger" @click="closeForm"><i class="far fa-times-circle"></i> Cancelar</button>
@@ -341,15 +395,17 @@ export default {
             dataRegister:{
                 tipo_documento: '',
                 numero_documento: '',
+                numero_id:'',
                 nombres: '',
                 apellidos: '',
                 email: '',
+                celular: '',
                 sede: '',
                 programa_academico: '',
                 cursos: ''
             },
             dataUploadFile:{
-                data: [],
+                data: null,
                 url_comprobante: ''
             }
         }
@@ -359,10 +415,10 @@ export default {
             return this.$store.state.dataCursos
         },
         programas(){
-            return this.$store.state.programas
+            return this.$store.state.programasCursos
         },
         tiposDoc(){
-            return this.$store.state.tiposDoc
+            return this.$store.state.tiposDocCursos
         },
         sedes(){
             return this.$store.state.sedes
@@ -377,16 +433,26 @@ export default {
             this.errors = []
             this.dataRegister.tipo_documento = ''
             this.dataRegister.numero_documento = ''
+            this.dataRegister.numero_id = ''
             this.dataRegister.nombres = ''
             this.dataRegister.apellidos = ''
             this.dataRegister.email = ''
+            this.dataRegister.celular = ''
             this.dataRegister.sede = ''
             this.dataRegister.programa_academico = ''
             this.dataRegister.cursos = ''
-            this.dataUploadFile.data = []
+            this.dataUploadFile.data = null
         },
         clearData(){
-            this.dataUploadFile.data = []
+            this.dataUploadFile.data = null
+            this.dataRegister.numero_id = ''
+            this.errors = []
+        },
+        clearDataTdNumDoc(){
+            this.dataUploadFile.data = null
+            this.dataRegister.tipo_documento = ''
+            this.dataRegister.numero_documento = ''
+            this.errors = []
         },
         openForm(value){
             if (value ==='register') {
@@ -408,7 +474,7 @@ export default {
                         position: 'top',
                         icon: 'success',
                         title: "Registro enviado con éxito",
-                        text: `${me.dataRegister.nombres}, en unos minutos recibirás un E-mail de control y registro académico!`,
+                        html: `<strong>${me.dataRegister.nombres},</strong> en unos minutos recibirás un E-mail de admisiones, registro y control académico con el <strong>polígrafo de pago</strong>!`,
                         showConfirmButton: true
                         //timer: 1800
                     });
@@ -430,10 +496,11 @@ export default {
                     {
                         tipo_documento: me.dataRegister.tipo_documento,
                         numero_documento: me.dataRegister.numero_documento,
+                        numero_id: me.dataRegister.numero_id,
                     }
                 })
                 .then(function(response) {
-                    me.dataUploadFile.data = response.data
+                    me.dataUploadFile.data = response.data[0]
                     me.errors = []
                     document.getElementById("save").disabled = false;
                     //console.log(response);
@@ -443,6 +510,7 @@ export default {
                         me.errors = error.response.data.errors;
                     }
                     if (error.response.status == 404) {
+                        me.errors = []
                         me.$swal({
                             position: 'top',
                             icon: 'warning',
@@ -465,7 +533,7 @@ export default {
             let me = this
 
             let allData = new FormData()
-            allData.append('id', me.dataUploadFile.data[0].id)
+            allData.append('id', me.dataUploadFile.data.id)
             allData.append('url_comprobante', me.dataUploadFile.url_comprobante)
 
             axios
@@ -496,6 +564,10 @@ export default {
     .btn-primary {
         background: #053365;
         border-color: #053365;
+    }
+    .btn-primary:hover{
+        background: #3478c1;
+        border-color: #3478c1;
     }
     .btn-link{
         font-size: 18px;
@@ -564,8 +636,33 @@ export default {
         } */
     }
     .custom-file-label::after{
-        content: "Buscar Archivo";
+        content: "Adjuntar Archivo";
     }
+    .invalid__input__tel{
+        border-color: #dc3545;
+    }
+    .result_content{
+        padding: 20px;
+        border: 1px solid #20a8d8;
+        border-radius: .3rem;
+        .created_at{
+            font-size: 20px;
+        }
+    }
+    .section_insCursos{
+        padding: 20px;
+        border: 1px solid red;
+        border-radius: .3rem;
+        h5{
+            color: #1b1371;
+            font-size: 26px;
+        }
+        p{
+            color: red;
+            font-size: 18px;
+        }
+    }
+
 </style>
 <style lang="scss">
     .invalid__input_select .vs__dropdown-toggle {

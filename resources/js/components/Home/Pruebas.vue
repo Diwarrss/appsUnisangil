@@ -311,10 +311,10 @@ export default {
             return this.$store.getters.doneNivels
         },
         programas(){
-            return this.$store.state.programas
+            return this.$store.state.programasPruebas
         },
         tiposDoc(){
-            return this.$store.state.tiposDoc
+            return this.$store.state.tiposDocPruebas
         }
     },
     methods: {
@@ -405,7 +405,7 @@ export default {
             allData.append("niveles", setniveles())
 
             axios
-                .post("prueba/save", allData)
+                .post("insPruebas/save", allData)
                 .then(function(response) {
                     me.$swal({
                         position: 'top',

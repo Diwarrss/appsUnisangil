@@ -9,6 +9,13 @@ Vue.use(VueRouter);
 import Vuex from "vuex";
 Vue.use(Vuex);
 
+//import vue-moment CONFIGURADO AL ESPAÑOL
+const moment = require("moment");
+require("moment/locale/es");
+Vue.use(require("vue-moment"), {
+    moment
+});
+
 //importamos nuestras rutas
 import routes from './routes';
 //importamos nuestro store de vuex

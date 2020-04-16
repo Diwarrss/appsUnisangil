@@ -27,7 +27,7 @@ class InscripcionPruebaController extends Controller
                 'numero_documento' => 'required|max:12',
                 'nombres_apellidos' => 'required|max:220|regex:/^[A-ZÀÁÉÍÓÚÂÇÉÈÊËÎÏÔÛÙÜŸÑÆŒa-zàáéíóúâçéèêëîïôûùüÿñæœ ]+$/',
                 'email' => 'required|email|max:150',
-                'celular' => 'required|max:14',
+                'celular' => 'required|max:11',
                 'programa_academico' => 'required|max:255',
                 'niveles' => 'required',
                 'url_comprobante' => 'required|max:4098|mimes:jpeg,png,pdf',
@@ -43,12 +43,12 @@ class InscripcionPruebaController extends Controller
             $insPrueba->email = $request->email;
             $insPrueba->celular = $request->celular;
             $insPrueba->programa_academico = $request->programa_academico;
-            $insPrueba->url_comprobante = '/storage/soportePagos/' . $nameFile;
+            $insPrueba->url_comprobante = '/storage/soportePagos/pruebas/' . $nameFile;
             $insPrueba->estado = '0';
             $insPrueba->save();
 
             //movemos la imagen a la carpeta definida
-            $request->url_comprobante->move(public_path('/storage/soportePagos/'), $nameFile);
+            $request->url_comprobante->move(public_path('/storage/soportePagos/pruebas/'), $nameFile);
 
             //llega un string dividido por , entonces se crea un array
             $niveles = explode(",", $request->niveles);

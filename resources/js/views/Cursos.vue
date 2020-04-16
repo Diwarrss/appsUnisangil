@@ -7,7 +7,7 @@
             <div class="col-sm-12 col-lg-12">
               <div class="card">
                 <div class="card-body">
-                  <h2>ADMIN</h2>
+                  <h2>CURSOS</h2>
                 </div>
               </div>
             </div>
