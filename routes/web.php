@@ -1,4 +1,7 @@
 <?php
+
+use Illuminate\Routing\RouteGroup;
+
 Auth::routes();
 
 Route::group(['middleware' => ['guest']], function () {
@@ -48,16 +51,33 @@ Route::group(['middleware' => ['guest']], function () {
     Route::get('/licencias', function () {
         return view('home.licencias');
     });
+    Route::get('/resources', function () {
+        return view('home.resources');
+    });
+
     //BuzonSugerenciaController
     Route::post('buzon/save','BuzonSugerenciaController@save');
-    //InscripcionPruebaController
-    Route::get('inscripcion/downloadFile','InscripcionPruebaController@downloadFile');
+
     //NiveleController
     Route::get('nivel/getAll','NiveleController@getAll');
+
+    //CursosController
+    Route::get('curso/getAll','CursosController@getAll');
+
     //InscripcionPruebaController
-    Route::post('inscripcion/save','InscripcionPruebaController@save');
+    Route::get('insPruebas/downloadFile','InscripcionPruebaController@downloadFile');
+    Route::post('insPruebas/save','InscripcionPruebaController@save');
+
+    //InscripcionCursosController
+    Route::get('insCursos/getInfoinProcess','InscripcionCursosController@getInfoinProcess');
+    Route::post('insCursos/register','InscripcionCursosController@register');
+    Route::post('insCursos/saveFile','InscripcionCursosController@saveFile');
 });
 Route::group(['middleware' => ['auth']], function () {
     //obtener la vista del admin al loguear
     Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::group(['prefix' => 'user'], function () {
+        Route::get('getData', 'UserController@getData')->name('getData');
+    });
 });

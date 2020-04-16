@@ -26,13 +26,20 @@ import 'vue-select/dist/vue-select.css';
 import VueTelInput from 'vue-tel-input'
 Vue.use(VueTelInput)
 
+//import vue-moment CONFIGURADO AL ESPAÑOL
+const moment = require("moment");
+require("moment/locale/es");
+Vue.use(require("vue-moment"), {
+    moment
+});
+
 Vue.component('headerhome', require('./components/Home/Header.vue').default);
 Vue.component('footerhome', require('./components/Home/Footer.vue').default);
 Vue.component('intro', require('./components/Home/Intro.vue').default);
 Vue.component('services', require('./components/Home/Services.vue').default);
 Vue.component('about', require('./components/Home/About.vue').default);
 Vue.component('news', require('./components/Home/News.vue').default);
-Vue.component('infrastructure', require('./components/Home/Infrastructure.vue').default);
+Vue.component('resources', require('./components/Home/Resources.vue').default);
 
 //servicios
 Vue.component('redes', require('./components/Home/Redes.vue').default);

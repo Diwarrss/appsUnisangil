@@ -32,7 +32,7 @@ class CreateUsersTable extends Migration
         //inserto a la tabla datos registros
         DB::table('users')->insert(array(
             'id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.co', 'email_verified_at' => null, 'password' => $password,
-            'estadoUser' => 1, 'urlImagen' => 'storage/user.png', 'roles_id' => 1
+            'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1
         ));
     }
 

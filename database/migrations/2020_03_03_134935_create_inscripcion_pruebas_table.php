@@ -22,7 +22,7 @@ class CreateInscripcionPruebasTable extends Migration
             $table->string('celular', 14);
             $table->string('programa_academico', 255);
             $table->string('url_comprobante', 200);
-            $table->enum('estado', [0,1])->comment('0 = Pendiente, 1 = Procesado');
+            $table->enum('estado', [0,1,2])->comment('0 = Pendiente, 1 = Procesado, 2 = Anulado');
             $table->timestamps();
         });
     }

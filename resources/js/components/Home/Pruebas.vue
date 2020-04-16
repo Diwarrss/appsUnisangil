@@ -1,20 +1,181 @@
 <template>
     <div class="container py-5 mt-5">
         <section>
-            <header class="section-header mt-5 text-center">
+            <header class="section-header mt-5 py-5 text-center">
                 <h3>Pruebas de suficiencia en TICs</h3>
                 <h2>(Administrativos y estudiantes)</h2>
             </header>
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
-                        <i class="fas fa-file-download"></i> Descargar formato de pago
-                    </button>
+            <div class="text_header">
+                <h5>Responsable del servicio</h5>
+                <div class="mb-4">
+                    <span>
+                        Funcionario de Departamento de Sistemas y TIC de UNISANGIL.
+                        Dirección Departamento de Sistemas y TIC.
+                        Asistente Departamento de Sistemas y TIC.
+                    </span>
                 </div>
-                <div class="col-md-6">
-                    <button class="btn btn-primary btn-lg btn-block mt-4" @click="openForm">
-                        <i class="fas fa-file-signature"></i> Inscripción prueba de informática
-                    </button>
+                <div class="row">
+                    <div class="content_contact col-md-6">
+                        <h5>Contacto de Soporte</h5>
+                        <p>
+                            Ticket a través de la Mesa de TI, plataforma GLPI, Llamada
+                        </p>
+                        <p>
+                            •	Dirección departamento de sistemas sede San Gil, Administrador de servidores <br>
+                            •	Teléfono 7245757  Extensión  231 <br>
+                            •	Correo: <a href="mailto:dirtics@unisangil.edu.co">dirtics@unisangil.edu.co</a>
+                        </p>
+                    </div>
+                    <div class="content_suport col-md-6">
+                        <h5>Horario de soporte</h5>
+                        <p>
+                            •	Lunes a viernes de 8:00 – 12:00 y  2:00 – 7:00 p.m. <br>
+                            •	Sábado de 9:00 – 12:00 p.m.
+                        </p>
+                        <div class="text-center">
+                            <img src="storage/img/services/pruebas.jpg" alt="" class="img-fluid" width="250">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
+                            <i class="fas fa-file-download"></i> Descargar formato de pago
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-primary btn-lg btn-block mt-4" @click="openForm">
+                            <i class="fas fa-file-signature"></i> Inscripción prueba de informática
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5 text-center">
+                    <h5 class="mb-0">SERVICIOS</h5>
+                </div>
+            </div>
+            <div class="mt-0">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseSix" id="headingOne">
+                            <h2 class="btn btn-link mb-0">
+                                •	Prueba de suficiencia TICs para Administrativos
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Objetivo</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Contar con una apreciación del manejo de las competencias digitales del personal administrativo de UNISANGIL
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Descripción</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Servicio de validación en competencia digital para el personal administrativo de UNISANGIL
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Necesidad que Satisface</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Extensión y proyección social <br>
+                                            Desarrollo de la gestión académica y administrativa
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Usuario objetivo</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Área administrativa y académica
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseSix" id="headingTwo">
+                            <h2 class="btn btn-link mb-0">
+                                •	Prueba de suficiencia TICs para Estudiantes programas UNAB y UNISANGIL
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Objetivo</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Contar con una apreciación en el  manejo de las competencias digitales de los estudiantes de UNISANGIL y programas UNAB
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Descripción</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Servicio de validación en competencia digital para el personal administrativo de UNISANGIL
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Necesidad que Satisface</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Extensión y proyección social <br>
+                                            Desarrollo de la gestión académica y administrativa
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="content_body row mb-2">
+                                    <div class="col-12 col-sm-4 col-md-3 text-center my-auto">
+                                        <h5>
+                                            <strong>Usuario objetivo</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="col-12 col-sm-8 col-md-9">
+                                        <p class="mb-2">
+                                            Área administrativa y  académica
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -139,30 +300,7 @@ export default {
                 programa_academico: '',
                 url_comprobante: '',
                 niveles: '5'
-            },
-            programas: [
-                'Administración de Empresas',
-                'Contaduría Pública',
-                'Administración de Empresas Turísticas y Hoteleras',
-                'Derecho',
-                'Enfermería',
-                'Ingeniería Agrícola',
-                'Ingeniería Ambiental',
-                'Ingeniería Electrónica',
-                'Ingeniería de Sistemas',
-                'Ingeniería de Mantenimiento',
-                'Ingeniería Financiera (UNAB)',
-                'Psicología (UNAB)',
-                'Tecnología en Sistemas de Información',
-                'Tecnología en Gestión de Empresas de Economía Solidaria',
-                'Licenciatura en educación para la primera infancia'
-            ],
-            tiposDoc: [
-                'CC',
-                'TI',
-                'ID',
-                'CE'
-            ]
+            }
         }
     },
     async created () {
@@ -171,13 +309,19 @@ export default {
     computed: {
         niveles(){
             return this.$store.getters.doneNivels
+        },
+        programas(){
+            return this.$store.state.programasPruebas
+        },
+        tiposDoc(){
+            return this.$store.state.tiposDocPruebas
         }
     },
     methods: {
         downloadFile() {
             document.getElementById("downloadFile").disabled = true;
             axios({
-                url: "inscripcion/downloadFile",
+                url: "insPruebas/downloadFile",
                 method: "GET",
                 responseType: "blob" // important
             }).then(response => {
@@ -261,7 +405,7 @@ export default {
             allData.append("niveles", setniveles())
 
             axios
-                .post("inscripcion/save", allData)
+                .post("insPruebas/save", allData)
                 .then(function(response) {
                     me.$swal({
                         position: 'top',
@@ -314,6 +458,51 @@ export default {
 }
 .invalid__input__tel{
     border-color: #dc3545;
+}
+.btn-link{
+    font-size: 18px;
+    font-weight: 600;
+    &:hover {
+        color: #413e66;
+        text-decoration: none;
+    }
+}
+.card-header{
+    &:hover {
+        background-color: #cac9dd;
+        text-decoration: none;
+    }
+}
+.content_body{
+    border-bottom: 1px solid;
+    h5{
+        color: #696592;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: italic;
+    }
+}
+.text_header{
+    margin-bottom: 50px;
+    h5{
+        color: #696592;
+        font-weight: 600;
+        font-size: 22px;
+        font-style: italic;
+    }
+    p{
+        margin: 0 0 10px 0;
+    }
+    .content_contact{
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+    .content_suport{
+        border-right: 1px solid;
+    }
+}
+.section-header{
+    text-transform: uppercase;
 }
 </style>
 <style lang="scss">

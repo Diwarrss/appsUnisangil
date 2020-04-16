@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Tics - Admin') }}</title>
 
     <link href="storage/img/favicon.png" rel="icon">
     <!-- Styles -->{{-- Cuando este autenticado --}}
@@ -34,7 +34,7 @@
             <!-- llamamos el componete que cargara todo el contenido de la pagina admin -->
             <router-view></router-view>
             <footeradmin></footeradmin>
-            
+
         @endauth
         {{-- Cuando sea un invitado no auth --}}
         @guest
@@ -87,5 +87,5 @@
         <!-- JavaScript Libraries -->
         <script src="{{asset('/js/allHome.js')}}"></script>
         <script src="{{asset('/js/appHome.js')}}"></script>
-    @endguest    
+    @endguest
 </html>

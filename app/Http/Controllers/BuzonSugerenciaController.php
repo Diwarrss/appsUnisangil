@@ -10,7 +10,7 @@ class BuzonSugerenciaController extends Controller
 {
     public function save(Request $request)
     {
-        //if (!$request->ajax()) return redirect('/');
+        if (!$request->ajax()) return redirect('/');
         try {
             DB::beginTransaction();
 

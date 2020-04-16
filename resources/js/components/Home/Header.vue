@@ -1,15 +1,21 @@
 <template>
     <div>
-        <header id="header">
+        <header id="header" class="header_content">
             <div id="topbar">
                 <div class="container">
-                    <div class="social-links">
-                        <a @click="openBuzon" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fas fa-envelope-open-text"></i> PQRSF</a>
-                        <a href="https://twitter.com/unisangil" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/UNISANGIL" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/unisangil/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/user/miunisangil" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <div class="row">
+                        <div class="social-links col align-self-end">
+                            <a href='http://mesadeayuda.unisangil.edu.co/' target="_blank" type="button" class="text-primary" title="Buzón para radicar un PQRSF"> <i class="fa fa-exclamation-circle"></i> GLPI </a>
+                            <a href='http://moodle.unisangil.edu.co/login/index.php' target="_blank" type="button" class="text-primary" title="Buzón para radicar un PQRSF"> <i class="fas fa-atlas"></i> Ágora </a>
+                            <a href='http://vortal.unisangil.edu.co' target="_blank" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fa fa-sign-in"></i> Vortal</a>
+                            <a href='https://www.google.com/a/unisangil.edu.co/ServiceLogin?service=mail&passive=true&rm=false&continue=http%3A%2F%2Fmail.google.com%2Fa%2Funisangil.edu.co%2F&bsv=zpwhtygjntrz&' target="_blank" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fa fa-envelope"></i> Correo</a>
+                            <a @click="openBuzon" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fas fa-envelope-open-text"></i> PQRSF</a>
+                            <a href="https://twitter.com/unisangil" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/UNISANGIL" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/unisangil/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/user/miunisangil" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,8 +31,13 @@
                         <li><a href="/">Inicio</a></li>
                         <li><a href="/services">Servicios</a></li>
                         <li><a href="/about">Nosotros</a></li>
-                        <li><a href="/news">Noticias</a></li>
-                        <li><a href="/infrastructure">Infraestructura</a></li>
+                        <li><a href="/resources">Recursos</a></li>
+                        <!-- <li><a href="/security">Seguridad</a>
+                            Tomado de : referenciandolo
+                        </li> -->
+                        <li><a href="http://www.unisangil.edu.co/index.php?option=com_content&view=article&id=1943&Itemid=999" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger"><i class="fas fa-exclamation-triangle text-warning"></i>  COVID-19</a></li>
+                        <!-- <li><a href="/news">Noticias</a></li> -->
+                        <!-- <li><a href="/infrastructure">Infraestructura</a></li> -->
                         <!-- <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li> -->
                     </ul>
                 </nav>
@@ -42,9 +53,9 @@
                         <label>(Peticiones, Quejas, Reclamos, Sugerencias y Felicitaciones)</label>
                         </h5>
 
-                        <button type="button" class="close" @click="closeBuzon">
-                            <span aria-hidden="true" class="text-white">&times;</span>
-                        </button>
+                            <!-- <button type="button" class="close" @click="closeBuzon">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                            </button> -->
                     </div>
                     <div class="modal-body">
                         <form>
@@ -217,5 +228,86 @@ export default {
 }
 .modal-primary .modal-content {
     border-color: #20a8d8;
+}
+.header_content{
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+.header-scrolled{
+    height: 100px !important;
+}
+#topbar{
+    font-size: 15px;
+    padding: 0 0 5px 0;
+}
+#topbar .social-links{
+    text-align: right;
+}
+#header.header-scrolled #topbar,
+#header.header-pages #topbar {
+  display: block;
+  margin: 0 0 0 0;
+}
+@media screen and (max-width: 580px) {
+    .float-left{
+        width: 100%;
+        text-align: center;
+        img{
+            height: 45px;
+            width: auto;
+        }
+    }
+    #header{
+        height: 100px !important;
+    }
+    #topbar{
+        display: block;
+        margin: 0 45px 0 0;
+        .twitter{
+            display: none;
+        }
+        .facebook{
+            display: none;
+        }
+        .instagram{
+            display: none;
+        }
+        .youtube{
+            display: none;
+        }
+        .linkedin{
+            display: none;
+        }
+    }
+    #header.header-scrolled #topbar,
+    #header.header-pages #topbar {
+    display: block;
+    margin: 0 40px 0 0;
+        .twitter{
+            display: none;
+        }
+        .facebook{
+            display: none;
+        }
+        .instagram{
+            display: none;
+        }
+        .youtube{
+            display: none;
+        }
+        .linkedin{
+            display: none;
+        }
+    }
+    #topbar .social-links a {
+        color: #535074;
+        padding: 1px 2px;
+        line-height: 1px;
+        font-size: 12px;
+    }
+}
+.btn-outline-danger{
+    &:hover{
+        color: white;
+    }
 }
 </style>
