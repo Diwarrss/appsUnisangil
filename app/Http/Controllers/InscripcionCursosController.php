@@ -12,12 +12,18 @@ class InscripcionCursosController extends Controller
     public function getInfoinProcess(Request $request){
         if (!$request->ajax()) return redirect('/');
 
-        /* $request->validate([
+        $request->validate([
             'tipo_documento' => 'required|max:4',
             'numero_documento' => 'required|max:12'
-        ]); */
+        ]);
 
-        if (!$request->tipo_documento && !$request->numero_documento && $request->numero_id) {
+        $data = InscripcionCursos::where([
+            ['estado', '=', '1'],
+            ['tipo_documento', '=', $request->tipo_documento],
+            ['numero_documento', '=', $request->numero_documento]
+        ])->get();
+
+        /* if (!$request->tipo_documento && !$request->numero_documento && $request->numero_id) {
             $request->validate([
                 'numero_id' => 'required|max:9'
             ]);
@@ -42,13 +48,57 @@ class InscripcionCursosController extends Controller
                 'numero_documento' => 'required|max:12',
                 'numero_id' => 'required|max:9'
             ]);
-        }
+        } */
 
         if (count($data) > 0) {
             return $data;
         }else{
             return response()->json([
                 'message' => 'Not results'], 404);
+        }
+    }
+
+    public function getDataTable(Request $request){
+        if (!$request->ajax()) return redirect('/');
+        $criterio = $request->criterio;
+        $buscar = $request->buscar;
+        $cant = $request->cant;
+
+        switch ($criterio) {
+            case 'num_doc':
+                return InscripcionCursos::with('cursos')
+                ->where('inscripcion_cursos.numero_documento', 'like', "%$buscar%")
+                ->orderBy('created_at', 'desc')
+                ->paginate($cant);
+                break;
+            case 'id_unab':
+                return InscripcionCursos::with('cursos')
+                ->where('inscripcion_cursos.numero_id', 'like', "%$buscar%")
+                ->orderBy('created_at', 'desc')
+                ->paginate($cant);
+                break;
+            case 'email':
+                return InscripcionCursos::with('cursos')
+                ->where('inscripcion_cursos.email', 'like', "%$buscar%")
+                ->orderBy('created_at', 'desc')
+                ->paginate($cant);
+                break;
+            case 'nombres':
+                return InscripcionCursos::with('cursos')
+                ->where('inscripcion_cursos.nombres', 'like', "%$buscar%")
+                ->orderBy('created_at', 'desc')
+                ->paginate($cant);
+                break;
+            case 'celular':
+                return InscripcionCursos::with('cursos')
+                ->where('inscripcion_cursos.celular', 'like', "%$buscar%")
+                ->orderBy('created_at', 'desc')
+                ->paginate($cant);
+                break;
+
+            default:
+                # code...
+                break;
         }
     }
 

@@ -12,3 +12,8 @@
         </footer>
     </div>
 </template>
+<style lang="scss" scoped>
+    .app{
+        min-height: unset;
+    }
+</style>

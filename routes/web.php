@@ -80,4 +80,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['prefix' => 'user'], function () {
         Route::get('getData', 'UserController@getData')->name('getData');
     });
+
+    Route::group(['prefix' => 'insCursos'], function () {
+        Route::get('getDataTable', 'InscripcionCursosController@getDataTable')->name('getDataTable');
+    });
 });

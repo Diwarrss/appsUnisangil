@@ -246,28 +246,28 @@
                                         </div>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="numId"><strong>Número ID</strong></label>
+                                        <label for="numId"><strong>ID UNAB</strong></label>
                                         <input type="string" class="form-control" id="numId" v-model="dataRegister.numero_id" :class="{'is-invalid': errors['numero_id']}">
                                         <div class="invalid-feedback" v-if="errors['numero_id']">
                                             {{errors['numero_id'][0]}}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="email"><strong>Correo institucional</strong></label>
-                                        <input type="text" class="form-control" id="email" placeholder="hola@unisangil.edu.co" v-model="dataRegister.email" :class="{'is-invalid': errors['email']}">
-                                        <div class="invalid-feedback" v-if="errors['email']">
-                                            {{errors['email'][0]}}
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="celular"><strong>Celular</strong></label>
-                                        <vue-tel-input v-model="dataRegister.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
-                                        <span class="invalid__input" v-if="errors['celular']">
-                                            {{errors['celular'][0]}}
-                                        </span>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="cursos"><strong>Cursos a Inscribirme</strong></label>
+                                    <v-select
+                                        :options="cursos"
+                                        label="nombre"
+                                        :reduce="nvl => nvl.id"
+                                        :multiple="true"
+                                        placeholder="Seleccionar..."
+                                        v-model="dataRegister.cursos"
+                                        :class="{'invalid__input_select': errors['cursos']}"
+                                        >
+                                    </v-select>
+                                    <span class="invalid__input" v-if="errors['cursos']">
+                                        {{errors['cursos'][0]}}
+                                    </span>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
@@ -285,28 +285,28 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="cursos"><strong>Cursos</strong></label>
-                                    <v-select
-                                        :options="cursos"
-                                        label="nombre"
-                                        :reduce="nvl => nvl.id"
-                                        :multiple="true"
-                                        placeholder="Seleccionar..."
-                                        v-model="dataRegister.cursos"
-                                        :class="{'invalid__input_select': errors['cursos']}"
-                                        >
-                                    </v-select>
-                                    <span class="invalid__input" v-if="errors['cursos']">
-                                        {{errors['cursos'][0]}}
-                                    </span>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="email"><strong>Correo institucional</strong></label>
+                                        <input type="text" class="form-control" id="email" placeholder="email@unab.edu.co" v-model="dataRegister.email" :class="{'is-invalid': errors['email']}">
+                                        <div class="invalid-feedback" v-if="errors['email']">
+                                            {{errors['email'][0]}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="celular"><strong>Celular</strong></label>
+                                        <vue-tel-input v-model="dataRegister.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
+                                        <span class="invalid__input" v-if="errors['celular']">
+                                            {{errors['celular'][0]}}
+                                        </span>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                         <div class="modal-body body__search" v-if="typeModal === 2">
                             <form enctype="multipart/form-data">
                                 <div class="form-row">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label for="tipDocumento"><strong>Tipo Documento</strong></label>
                                         <select class="form-control" @change="clearData" v-model="dataRegister.tipo_documento" placeholder="Seleccionar..." :class="{'is-invalid': errors['tipo_documento']}">
                                             <option value="" disabled selected>Seleccionar...</option>
@@ -316,20 +316,20 @@
                                             Obligatorio.
                                         </span>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-5">
                                         <label for="numDocumento"><strong>Número Documento</strong></label>
                                         <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}" @focus="clearData">
                                         <div class="invalid-feedback" v-if="errors['numero_documento']">
                                             {{errors['numero_documento'][0]}}
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="numId"><strong>Número ID</strong></label>
+                                    <!-- <div class="form-group col-md-4">
+                                        <label for="numId"><strong>ID UNAB</strong></label>
                                         <input type="string" class="form-control" id="numId" v-model="dataRegister.numero_id" :class="{'is-invalid': errors['numero_id']}" @focus="clearDataTdNumDoc">
                                         <div class="invalid-feedback" v-if="errors['numero_id']">
                                             {{errors['numero_id'][0]}}
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div v-if="dataUploadFile.data" class="result_content">
                                     <div class="form-row">

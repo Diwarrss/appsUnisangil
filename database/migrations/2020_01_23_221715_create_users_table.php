@@ -30,10 +30,10 @@ class CreateUsersTable extends Migration
         $password = Hash::make('123456789');
 
         //inserto a la tabla datos registros
-        DB::table('users')->insert(array(
-            'id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.co', 'email_verified_at' => null, 'password' => $password,
-            'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1
-        ));
+        DB::table('users')->insert([
+            array('id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1),
+            array('id' => '2', 'name' => 'Registro Académico', 'email' => 'registroacademicosangil@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 2)
+        ]);
     }
 
 

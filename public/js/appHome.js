@@ -28376,100 +28376,57 @@ var render = function() {
                             ])
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "form-row" }, [
-                            _c("div", { staticClass: "form-group col-md-6" }, [
+                          _c(
+                            "div",
+                            { staticClass: "form-group" },
+                            [
                               _vm._m(13),
                               _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.dataRegister.email,
-                                    expression: "dataRegister.email"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                class: { "is-invalid": _vm.errors["email"] },
-                                attrs: {
-                                  type: "text",
-                                  id: "email",
-                                  placeholder: "hola@unisangil.edu.co"
+                              _c("v-select", {
+                                class: {
+                                  invalid__input_select: _vm.errors["cursos"]
                                 },
-                                domProps: { value: _vm.dataRegister.email },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.$set(
-                                      _vm.dataRegister,
-                                      "email",
-                                      $event.target.value
-                                    )
-                                  }
+                                attrs: {
+                                  options: _vm.cursos,
+                                  label: "nombre",
+                                  reduce: function(nvl) {
+                                    return nvl.id
+                                  },
+                                  multiple: true,
+                                  placeholder: "Seleccionar..."
+                                },
+                                model: {
+                                  value: _vm.dataRegister.cursos,
+                                  callback: function($$v) {
+                                    _vm.$set(_vm.dataRegister, "cursos", $$v)
+                                  },
+                                  expression: "dataRegister.cursos"
                                 }
                               }),
                               _vm._v(" "),
-                              _vm.errors["email"]
+                              _vm.errors["cursos"]
                                 ? _c(
-                                    "div",
-                                    { staticClass: "invalid-feedback" },
+                                    "span",
+                                    { staticClass: "invalid__input" },
                                     [
                                       _vm._v(
-                                        "\n                                        " +
-                                          _vm._s(_vm.errors["email"][0]) +
-                                          "\n                                    "
+                                        "\n                                    " +
+                                          _vm._s(_vm.errors["cursos"][0]) +
+                                          "\n                                "
                                       )
                                     ]
                                   )
                                 : _vm._e()
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "form-group col-md-6" },
-                              [
-                                _vm._m(14),
-                                _vm._v(" "),
-                                _c("vue-tel-input", {
-                                  class: {
-                                    invalid__input__tel: _vm.errors["celular"]
-                                  },
-                                  attrs: { placeholder: "Ingrese su número" },
-                                  model: {
-                                    value: _vm.dataRegister.celular,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.dataRegister, "celular", $$v)
-                                    },
-                                    expression: "dataRegister.celular"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _vm.errors["celular"]
-                                  ? _c(
-                                      "span",
-                                      { staticClass: "invalid__input" },
-                                      [
-                                        _vm._v(
-                                          "\n                                        " +
-                                            _vm._s(_vm.errors["celular"][0]) +
-                                            "\n                                    "
-                                        )
-                                      ]
-                                    )
-                                  : _vm._e()
-                              ],
-                              1
-                            )
-                          ]),
+                            ],
+                            1
+                          ),
                           _vm._v(" "),
                           _c("div", { staticClass: "form-row" }, [
                             _c(
                               "div",
                               { staticClass: "form-group col-md-6" },
                               [
-                                _vm._m(15),
+                                _vm._m(14),
                                 _vm._v(" "),
                                 _c("v-select", {
                                   class: {
@@ -28509,7 +28466,7 @@ var render = function() {
                               "div",
                               { staticClass: "form-group col-md-6" },
                               [
-                                _vm._m(16),
+                                _vm._m(15),
                                 _vm._v(" "),
                                 _c("v-select", {
                                   class: {
@@ -28556,50 +28513,93 @@ var render = function() {
                             )
                           ]),
                           _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "form-group" },
-                            [
-                              _vm._m(17),
+                          _c("div", { staticClass: "form-row" }, [
+                            _c("div", { staticClass: "form-group col-md-6" }, [
+                              _vm._m(16),
                               _vm._v(" "),
-                              _c("v-select", {
-                                class: {
-                                  invalid__input_select: _vm.errors["cursos"]
-                                },
+                              _c("input", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.dataRegister.email,
+                                    expression: "dataRegister.email"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                class: { "is-invalid": _vm.errors["email"] },
                                 attrs: {
-                                  options: _vm.cursos,
-                                  label: "nombre",
-                                  reduce: function(nvl) {
-                                    return nvl.id
-                                  },
-                                  multiple: true,
-                                  placeholder: "Seleccionar..."
+                                  type: "text",
+                                  id: "email",
+                                  placeholder: "email@unab.edu.co"
                                 },
-                                model: {
-                                  value: _vm.dataRegister.cursos,
-                                  callback: function($$v) {
-                                    _vm.$set(_vm.dataRegister, "cursos", $$v)
-                                  },
-                                  expression: "dataRegister.cursos"
+                                domProps: { value: _vm.dataRegister.email },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.$set(
+                                      _vm.dataRegister,
+                                      "email",
+                                      $event.target.value
+                                    )
+                                  }
                                 }
                               }),
                               _vm._v(" "),
-                              _vm.errors["cursos"]
+                              _vm.errors["email"]
                                 ? _c(
-                                    "span",
-                                    { staticClass: "invalid__input" },
+                                    "div",
+                                    { staticClass: "invalid-feedback" },
                                     [
                                       _vm._v(
-                                        "\n                                    " +
-                                          _vm._s(_vm.errors["cursos"][0]) +
-                                          "\n                                "
+                                        "\n                                        " +
+                                          _vm._s(_vm.errors["email"][0]) +
+                                          "\n                                    "
                                       )
                                     ]
                                   )
                                 : _vm._e()
-                            ],
-                            1
-                          )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "form-group col-md-6" },
+                              [
+                                _vm._m(17),
+                                _vm._v(" "),
+                                _c("vue-tel-input", {
+                                  class: {
+                                    invalid__input__tel: _vm.errors["celular"]
+                                  },
+                                  attrs: { placeholder: "Ingrese su número" },
+                                  model: {
+                                    value: _vm.dataRegister.celular,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.dataRegister, "celular", $$v)
+                                    },
+                                    expression: "dataRegister.celular"
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _vm.errors["celular"]
+                                  ? _c(
+                                      "span",
+                                      { staticClass: "invalid__input" },
+                                      [
+                                        _vm._v(
+                                          "\n                                        " +
+                                            _vm._s(_vm.errors["celular"][0]) +
+                                            "\n                                    "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ],
+                              1
+                            )
+                          ])
                         ]
                       )
                     ])
@@ -28612,7 +28612,7 @@ var render = function() {
                         { attrs: { enctype: "multipart/form-data" } },
                         [
                           _c("div", { staticClass: "form-row" }, [
-                            _c("div", { staticClass: "form-group col-md-4" }, [
+                            _c("div", { staticClass: "form-group col-md-3" }, [
                               _vm._m(18),
                               _vm._v(" "),
                               _c(
@@ -28697,7 +28697,7 @@ var render = function() {
                                 : _vm._e()
                             ]),
                             _vm._v(" "),
-                            _c("div", { staticClass: "form-group col-md-4" }, [
+                            _c("div", { staticClass: "form-group col-md-5" }, [
                               _vm._m(19),
                               _vm._v(" "),
                               _c("input", {
@@ -28747,54 +28747,6 @@ var render = function() {
                                     ]
                                   )
                                 : _vm._e()
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "form-group col-md-4" }, [
-                              _vm._m(20),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.dataRegister.numero_id,
-                                    expression: "dataRegister.numero_id"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                class: {
-                                  "is-invalid": _vm.errors["numero_id"]
-                                },
-                                attrs: { type: "string", id: "numId" },
-                                domProps: { value: _vm.dataRegister.numero_id },
-                                on: {
-                                  focus: _vm.clearDataTdNumDoc,
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
-                                    _vm.$set(
-                                      _vm.dataRegister,
-                                      "numero_id",
-                                      $event.target.value
-                                    )
-                                  }
-                                }
-                              }),
-                              _vm._v(" "),
-                              _vm.errors["numero_id"]
-                                ? _c(
-                                    "div",
-                                    { staticClass: "invalid-feedback" },
-                                    [
-                                      _vm._v(
-                                        "\n                                        " +
-                                          _vm._s(_vm.errors["numero_id"][0]) +
-                                          "\n                                    "
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
                             ])
                           ]),
                           _vm._v(" "),
@@ -28805,7 +28757,7 @@ var render = function() {
                                     "div",
                                     { staticClass: "form-group col-md-6" },
                                     [
-                                      _vm._m(21),
+                                      _vm._m(20),
                                       _vm._v(" "),
                                       _c("input", {
                                         directives: [
@@ -28847,7 +28799,7 @@ var render = function() {
                                     "div",
                                     { staticClass: "form-group col-md-6" },
                                     [
-                                      _vm._m(22),
+                                      _vm._m(21),
                                       _vm._v(" "),
                                       _c("input", {
                                         directives: [
@@ -28892,7 +28844,7 @@ var render = function() {
                                     "div",
                                     { staticClass: "form-group col-md-6" },
                                     [
-                                      _vm._m(23),
+                                      _vm._m(22),
                                       _vm._v(" "),
                                       _c("input", {
                                         directives: [
@@ -28940,7 +28892,7 @@ var render = function() {
                                         "form-group col-md-6 my-auto text-center created_at"
                                     },
                                     [
-                                      _vm._m(24),
+                                      _vm._m(23),
                                       _vm._v(" "),
                                       _c("label", { attrs: { for: "" } }, [
                                         _vm._v(
@@ -28958,7 +28910,7 @@ var render = function() {
                                 ]),
                                 _vm._v(" "),
                                 _c("div", { staticClass: "form-group" }, [
-                                  _vm._m(25),
+                                  _vm._m(24),
                                   _vm._v(" "),
                                   _c(
                                     "div",
@@ -29555,23 +29507,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "numId" } }, [
-      _c("strong", [_vm._v("Número ID")])
+      _c("strong", [_vm._v("ID UNAB")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "email" } }, [
-      _c("strong", [_vm._v("Correo institucional")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "celular" } }, [
-      _c("strong", [_vm._v("Celular")])
+    return _c("label", { attrs: { for: "cursos" } }, [
+      _c("strong", [_vm._v("Cursos a Inscribirme")])
     ])
   },
   function() {
@@ -29594,8 +29538,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "cursos" } }, [
-      _c("strong", [_vm._v("Cursos")])
+    return _c("label", { attrs: { for: "email" } }, [
+      _c("strong", [_vm._v("Correo institucional")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "celular" } }, [
+      _c("strong", [_vm._v("Celular")])
     ])
   },
   function() {
@@ -29612,14 +29564,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "numDocumento" } }, [
       _c("strong", [_vm._v("Número Documento")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "numId" } }, [
-      _c("strong", [_vm._v("Número ID")])
     ])
   },
   function() {

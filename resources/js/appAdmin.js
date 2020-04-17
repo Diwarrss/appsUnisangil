@@ -15,6 +15,8 @@ require("moment/locale/es");
 Vue.use(require("vue-moment"), {
     moment
 });
+//import vue-pagination
+Vue.component("pagination", require("laravel-vue-pagination"));
 
 //importamos nuestras rutas
 import routes from './routes';
