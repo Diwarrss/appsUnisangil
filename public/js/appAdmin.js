@@ -26523,7 +26523,8 @@ var render = function() {
                                                 }
                                               },
                                               [
-                                                data.estado === 0
+                                                data.estado === "0" &&
+                                                _vm.dataUser.roles_id === 2
                                                   ? _c("div", [
                                                       _c(
                                                         "a",
@@ -26552,7 +26553,8 @@ var render = function() {
                                                     ])
                                                   : _vm._e(),
                                                 _vm._v(" "),
-                                                data.estado === "2"
+                                                data.estado === "2" &&
+                                                _vm.dataUser.roles_id === 1
                                                   ? _c("div", [
                                                       _c(
                                                         "a",
@@ -26623,7 +26625,8 @@ var render = function() {
                                                     ])
                                                   : _vm._e(),
                                                 _vm._v(" "),
-                                                data.estado === "3"
+                                                data.estado === "3" &&
+                                                _vm.dataUser.roles_id === 1
                                                   ? _c("div", [
                                                       _c(
                                                         "a",

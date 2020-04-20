@@ -141,15 +141,15 @@
                                                     <i class="far fa-check-circle"></i> Elegir
                                                     </button>
                                                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                                        <div v-if="data.estado === 0">
+                                                        <div v-if="data.estado === '0' && dataUser.roles_id === 2">
                                                             <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'mail_send')">Enviar E-Mail</a>
                                                         </div>
-                                                        <div v-if="data.estado === '2'">
+                                                        <div v-if="data.estado === '2' && dataUser.roles_id === 1">
                                                             <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_success')">Aprobar Pago</a>
                                                             <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_reset')">Devolver Pago</a>
                                                             <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_error')">Anular Pago</a>
                                                         </div>
-                                                        <div v-if="data.estado === '3'">
+                                                        <div v-if="data.estado === '3' && dataUser.roles_id === 1">
                                                             <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_reset')">Devolver Pago</a>
                                                             <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_error')">Anular Pago</a>
                                                         </div>
