@@ -18,6 +18,14 @@ Vue.use(require("vue-moment"), {
 //import vue-pagination
 Vue.component("pagination", require("laravel-vue-pagination"));
 
+//import global sweetalert vuejs
+import VueSweetalert2 from 'vue-sweetalert2';
+const options = {
+    confirmButtonColor: '#41b882',
+    cancelButtonColor: '#ff7674',
+};
+Vue.use(VueSweetalert2, options);
+
 //importamos nuestras rutas
 import routes from './routes';
 //importamos nuestro store de vuex

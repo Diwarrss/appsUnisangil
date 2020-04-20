@@ -272,7 +272,15 @@
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="sede"><strong>Sede</strong></label>
-                                        <v-select :options="sedes" placeholder="Seleccionar..." v-model="dataRegister.sede" :class="{'invalid__input_select': errors['sede']}"></v-select>
+                                        <v-select
+                                            :options="sedes"
+                                            label="nombre"
+                                            placeholder="Seleccionar..."
+                                            v-model="dataRegister.sede"
+                                            :class="{'invalid__input_select': errors['sede']}"
+                                        >
+                                            <div slot="no-options">No hay Resultados!</div>
+                                        </v-select>
                                         <span class="invalid__input" v-if="errors['sede']">
                                             {{errors['sede'][0]}}
                                         </span>
@@ -421,11 +429,12 @@ export default {
             return this.$store.state.tiposDocCursos
         },
         sedes(){
-            return this.$store.state.sedes
+            return this.$store.state.dataSedes
         }
     },
     async created () {
         this.$store.dispatch('getCursos')
+        this.$store.dispatch('getSedes')
     },
     methods: {
         closeForm(){

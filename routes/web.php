@@ -64,6 +64,9 @@ Route::group(['middleware' => ['guest']], function () {
     //CursosController
     Route::get('curso/getAll','CursosController@getAll');
 
+    //SedeController
+    Route::get('sede/getAll','SedeController@getAll');
+
     //InscripcionPruebaController
     Route::get('insPruebas/downloadFile','InscripcionPruebaController@downloadFile');
     Route::post('insPruebas/save','InscripcionPruebaController@save');
@@ -83,5 +86,7 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::group(['prefix' => 'insCursos'], function () {
         Route::get('getDataTable', 'InscripcionCursosController@getDataTable')->name('getDataTable');
+        Route::post('updateState','InscripcionCursosController@updateState');
+        Route::get('downloadPay','InscripcionCursosController@downloadPay');
     });
 });

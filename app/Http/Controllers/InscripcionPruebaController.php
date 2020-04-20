@@ -30,6 +30,7 @@ class InscripcionPruebaController extends Controller
                 'celular' => 'required|max:11',
                 'programa_academico' => 'required|max:255',
                 'niveles' => 'required',
+                'sede' => 'required',
                 'url_comprobante' => 'required|max:4098|mimes:jpeg,png,pdf',
             ]);
 
@@ -43,6 +44,7 @@ class InscripcionPruebaController extends Controller
             $insPrueba->email = $request->email;
             $insPrueba->celular = $request->celular;
             $insPrueba->programa_academico = $request->programa_academico;
+            $insPrueba->sedes_id = $request->sede;
             $insPrueba->url_comprobante = '/storage/soportePagos/pruebas/' . $nameFile;
             $insPrueba->estado = '0';
             $insPrueba->save();

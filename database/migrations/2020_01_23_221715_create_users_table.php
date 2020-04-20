@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->string('urlImagen', 200)->nullable();
             $table->unsignedBigInteger('roles_id')->default(1);
             $table->foreign('roles_id')->references('id')->on('roles');
+            $table->unsignedBigInteger('sedes_id')->nullable();
+            $table->foreign('sedes_id')->references('id')->on('sedes');
             $table->rememberToken();
             $table->timestamps();
         });
@@ -31,8 +33,8 @@ class CreateUsersTable extends Migration
 
         //inserto a la tabla datos registros
         DB::table('users')->insert([
-            array('id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1),
-            array('id' => '2', 'name' => 'Registro Académico', 'email' => 'registroacademicosangil@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 2)
+            array('id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1, 'sedes_id' => null),
+            array('id' => '2', 'name' => 'Registro Académico', 'email' => 'registroacademicosangil@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 2, 'sedes_id' => 1)
         ]);
     }
 

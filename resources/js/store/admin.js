@@ -13,11 +13,11 @@ export default {
         },
     },
     actions: {
-        getDataUser: async function({ commit }) {
+        getDataUser: async function({ commit, state }) {
             const data = await axios.get('user/getData')
             commit('setDataUser', data.data[0])
         },
-        getInfoTables: async function ({commit}, paramsTable) {
+        getInfoTables: async function ({commit, state}, paramsTable) {
             let url_api = paramsTable.url_api
             let params = paramsTable.params
             let page = paramsTable.page
@@ -28,7 +28,8 @@ export default {
                         page: params.page,
                         criterio: params.criterio,
                         buscar: params.buscar,
-                        cant: params.cant
+                        cant: params.cant,
+                        sede: state.dataUser.sedes_id
                     }
                 })
                 const dataTable = data.data
@@ -41,7 +42,8 @@ export default {
                         page: page,
                         criterio: params.criterio,
                         buscar: params.buscar,
-                        cant: params.cant
+                        cant: params.cant,
+                        sede: state.dataUser.sedes_id
                     }
                 })
                 const dataTable = data.data

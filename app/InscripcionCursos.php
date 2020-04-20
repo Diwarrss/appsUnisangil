@@ -16,10 +16,10 @@ class InscripcionCursos extends Model
         'apellidos',
         'email',
         'celular',
-        'sede',
         'programa_academico',
         'url_comprobante',
         'estado',
+        'sedes_id'
     ];
 
     //relatioships
@@ -27,5 +27,11 @@ class InscripcionCursos extends Model
     {
         //return sedes activas del usuario
         return $this->belongsToMany('App\Cursos','inscripcion_detalles','ins_cursos_id','curso_id');
+    }
+
+    public function sede()
+    {
+        //return sedes activas del usuario
+        return $this->hasOne('App\Sede','id','sedes_id');
     }
 }

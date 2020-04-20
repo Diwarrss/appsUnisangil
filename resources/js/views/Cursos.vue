@@ -1,5 +1,5 @@
 <template>
-    <main class="main">
+    <main class="main" v-if="dataUser">
         <div class="container-fluid py-5">
             <div class="ui-view">
                 <div class="animated fadeIn">
@@ -80,7 +80,7 @@
                                         </thead>
                                         <!-- verificamos si el objeto es vacio -->
                                         <tbody v-if="!infoTables.data">
-                                            <td colspan="8">
+                                            <td colspan="11">
                                             <div role="alert" class="alert alert-danger text-center">
                                                 <div class="form-group">
                                                 <strong>
@@ -107,24 +107,24 @@
                                                     <i class="fab fa-whatsapp"></i> {{data.celular.replace(' ', '')}}
                                                 </a>
                                             </td>
-                                            <td>{{data.sede}}</td>
+                                            <td>{{data.sede.nombre}}</td>
                                             <td>
                                                 <li v-for="(curso, keyCurso) in data.cursos" :key="keyCurso" class="form-inline">
                                                     <label class="mr-2">{{curso.nombre}}  &nbsp; <strong> Nrc: </strong> {{curso.nrc}}</label>
                                                 </li>
                                             </td>
                                             <td>
-                                                <button class="btn btn-outline-info" @click.prevent="downloadFile(data.url_comprobante)" v-if="data.url_comprobante">
+                                                <button class="btn btn-outline-info" @click.prevent="downloadFile(data)" v-if="data.url_comprobante && data.estado != '1'" title="Ver Pago">
                                                     <i class="fas fa-file-download fa-2x"></i>
                                                 </button>
                                             </td>
                                             <td>{{data.created_at | moment("YYYY-MM-DD h:mm:ss a")}}</td>
 
                                             <td v-if="data.estado === '0'">
-                                                <span class="badge badge-danger">Pte. Crear Comprobante</span>
+                                                <span class="badge badge-danger">Pte. Generar Polígrafo</span>
                                             </td>
                                             <td v-if="data.estado === '1'">
-                                                <span class="badge badge-mailSend">E-mail Enviado</span>
+                                                <span class="badge badge-mailSend">Polígrafo Enviado</span>
                                             </td>
                                             <td v-if="data.estado === '2'">
                                                 <span class="badge badge-warning">Pte. Validar Pago</span>
@@ -136,11 +136,25 @@
                                                 <span class="badge badge-default">Pago Anulado</span>
                                             </td>
                                             <td>
-                                                <!-- <button
-                                                    class="btn btn-primary mt-1" title="Editar"
-                                                    @click="openModal('update', data)">
-                                                    <i class="far fa-edit"></i>
-                                                </button> -->
+                                                <div class="btn-group" role="group">
+                                                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="far fa-check-circle"></i> Elegir
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                        <div v-if="data.estado === 0">
+                                                            <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'mail_send')">Enviar E-Mail</a>
+                                                        </div>
+                                                        <div v-if="data.estado === '2'">
+                                                            <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_success')">Aprobar Pago</a>
+                                                            <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_reset')">Devolver Pago</a>
+                                                            <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_error')">Anular Pago</a>
+                                                        </div>
+                                                        <div v-if="data.estado === '3'">
+                                                            <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_reset')">Devolver Pago</a>
+                                                            <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_error')">Anular Pago</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tbody>
                                     </table>
@@ -170,15 +184,20 @@ export default {
         }
     },
     computed: {
-        ...mapState(['infoUserAuth','infoTables']),
+        dataUser(){
+            return this.$store.state.dataUser
+        },
+        ...mapState(['infoTables']),
         paramsTable(){
+            let me = this
             let datos = {
                     url_api: 'insCursos/getDataTable',
                     params:{
-                        page: this.getCurrentPage,
+                        page: me.getCurrentPage,
                         criterio: 'num_doc',
                         buscar:'',
-                        cant:5
+                        cant:5,
+                        sede: me.dataUser.sedes_id
                     }
                 }
             return datos
@@ -201,27 +220,64 @@ export default {
                     criterio: this.paramsTable.params.criterio,
                     buscar: this.paramsTable.params.buscar,
                     cant: this.paramsTable.params.cant,
-                    pagActual: this.paramsTable.params.pagActual
+                    pagActual: this.paramsTable.params.pagActual,
+                    sede: this.dataUser.sedes_id
                 }
             }
             this.$store.dispatch('getInfoTables', allParams)
         },
-        downloadFile(url_file){
-            console.log(document.location.hostname)
-            /* axios({
-                url: `${document.location.hostname}:8081${url_file}`,
+        updateState(data, type){
+            let me = this
+            let params = {
+                id: data.id,
+                type: type
+            }
+            axios.post("insCursos/updateState", params)
+                .then(function(response) {
+                    me.$swal({
+                        position: 'top',
+                        icon: 'success',
+                        title: "Comprobante enviado con éxito",
+                        showConfirmButton: false,
+                        timer: 1800
+                    });
+                    me.getInfoTables(me.paramsTable)
+                })
+                .catch(function(error) {
+                    console.error(error)
+                });
+        },
+        downloadFile(data){
+            axios({
+                url: 'insCursos/downloadPay',
                 method: 'GET',
                 responseType: 'blob',
+                params: {url_comprobante: data.url_comprobante}
             }).then((response) => {
                 var fileURL = window.URL.createObjectURL(new Blob([response.data]));
                 var fileLink = document.createElement('a');
 
                 fileLink.href = fileURL;
-                fileLink.setAttribute('download', 'file.jpg');
+                fileLink.setAttribute('download', `Poligrafo.${data.url_comprobante.substr(-3)}`);
                 document.body.appendChild(fileLink);
 
                 fileLink.click();
-            }); */
+                this.$swal({
+                    position: 'top',
+                    icon: 'success',
+                    title: "Descarga éxitosa!",
+                    showConfirmButton: false,
+                    timer: 1800
+                });
+            }).catch(function(error) {
+                this.$swal({
+                    position: 'top',
+                    icon: 'error',
+                    title: "Error al descargar!",
+                    showConfirmButton: false,
+                    timer: 1800
+                });
+            });;
         }
     },
 }

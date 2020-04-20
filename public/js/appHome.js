@@ -2241,6 +2241,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2275,7 +2283,7 @@ __webpack_require__.r(__webpack_exports__);
       return this.$store.state.tiposDocCursos;
     },
     sedes: function sedes() {
-      return this.$store.state.sedes;
+      return this.$store.state.dataSedes;
     }
   },
   created: function created() {
@@ -2284,8 +2292,9 @@ __webpack_require__.r(__webpack_exports__);
         switch (_context.prev = _context.next) {
           case 0:
             this.$store.dispatch('getCursos');
+            this.$store.dispatch('getSedes');
 
-          case 1:
+          case 2:
           case "end":
             return _context.stop();
         }
@@ -2936,6 +2945,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2946,6 +2972,7 @@ __webpack_require__.r(__webpack_exports__);
         nombres_apellidos: '',
         email: '',
         celular: '',
+        sede: '',
         programa_academico: '',
         url_comprobante: '',
         niveles: '5'
@@ -2958,8 +2985,9 @@ __webpack_require__.r(__webpack_exports__);
         switch (_context.prev = _context.next) {
           case 0:
             this.$store.dispatch('getNiveles');
+            this.$store.dispatch('getSedes');
 
-          case 1:
+          case 2:
           case "end":
             return _context.stop();
         }
@@ -2975,6 +3003,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     tiposDoc: function tiposDoc() {
       return this.$store.state.tiposDocPruebas;
+    },
+    sedes: function sedes() {
+      return this.$store.state.dataSedes;
     }
   },
   methods: {
@@ -3017,6 +3048,7 @@ __webpack_require__.r(__webpack_exports__);
       this.dataForm.nombres_apellidos = '';
       this.dataForm.email = '';
       this.dataForm.celular = '';
+      this.dataForm.sede = '';
       this.dataForm.programa_academico = '';
       this.dataForm.url_comprobante = '';
       this.dataForm.niveles = '5';
@@ -3067,6 +3099,7 @@ __webpack_require__.r(__webpack_exports__);
       allData.append("nombres_apellidos", me.dataForm.nombres_apellidos);
       allData.append("email", me.dataForm.email);
       allData.append("celular", me.dataForm.celular);
+      allData.append("sede", me.dataForm.sede.id);
       allData.append("programa_academico", setprograma_academico());
       allData.append("niveles", setniveles());
       axios.post("insPruebas/save", allData).then(function (response) {
@@ -28428,22 +28461,36 @@ var render = function() {
                               [
                                 _vm._m(14),
                                 _vm._v(" "),
-                                _c("v-select", {
-                                  class: {
-                                    invalid__input_select: _vm.errors["sede"]
-                                  },
-                                  attrs: {
-                                    options: _vm.sedes,
-                                    placeholder: "Seleccionar..."
-                                  },
-                                  model: {
-                                    value: _vm.dataRegister.sede,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.dataRegister, "sede", $$v)
+                                _c(
+                                  "v-select",
+                                  {
+                                    class: {
+                                      invalid__input_select: _vm.errors["sede"]
                                     },
-                                    expression: "dataRegister.sede"
-                                  }
-                                }),
+                                    attrs: {
+                                      options: _vm.sedes,
+                                      label: "nombre",
+                                      placeholder: "Seleccionar..."
+                                    },
+                                    model: {
+                                      value: _vm.dataRegister.sede,
+                                      callback: function($$v) {
+                                        _vm.$set(_vm.dataRegister, "sede", $$v)
+                                      },
+                                      expression: "dataRegister.sede"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        attrs: { slot: "no-options" },
+                                        slot: "no-options"
+                                      },
+                                      [_vm._v("No hay Resultados!")]
+                                    )
+                                  ]
+                                ),
                                 _vm._v(" "),
                                 _vm.errors["sede"]
                                   ? _c(
@@ -31094,39 +31141,93 @@ var render = function() {
                       ])
                     ]),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "form-group" },
-                      [
-                        _vm._m(9),
-                        _vm._v(" "),
-                        _c("vue-tel-input", {
-                          class: { invalid__input__tel: _vm.errors["celular"] },
-                          attrs: { placeholder: "Ingrese su número" },
-                          model: {
-                            value: _vm.dataForm.celular,
-                            callback: function($$v) {
-                              _vm.$set(_vm.dataForm, "celular", $$v)
+                    _c("div", { staticClass: "form-row" }, [
+                      _c(
+                        "div",
+                        { staticClass: "form-group col-md-6" },
+                        [
+                          _vm._m(9),
+                          _vm._v(" "),
+                          _c("vue-tel-input", {
+                            class: {
+                              invalid__input__tel: _vm.errors["celular"]
                             },
-                            expression: "dataForm.celular"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _vm.errors["celular"]
-                          ? _c("span", { staticClass: "invalid__input" }, [
-                              _vm._v(
-                                "\n                                " +
-                                  _vm._s(_vm.errors["celular"][0]) +
-                                  "\n                            "
+                            attrs: { placeholder: "Ingrese su número" },
+                            model: {
+                              value: _vm.dataForm.celular,
+                              callback: function($$v) {
+                                _vm.$set(_vm.dataForm, "celular", $$v)
+                              },
+                              expression: "dataForm.celular"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.errors["celular"]
+                            ? _c("span", { staticClass: "invalid__input" }, [
+                                _vm._v(
+                                  "\n                                    " +
+                                    _vm._s(_vm.errors["celular"][0]) +
+                                    "\n                                "
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "form-group col-md-6" },
+                        [
+                          _vm._m(10),
+                          _vm._v(" "),
+                          _c(
+                            "v-select",
+                            {
+                              class: {
+                                invalid__input_select: _vm.errors["sede"]
+                              },
+                              attrs: {
+                                options: _vm.sedes,
+                                label: "nombre",
+                                placeholder: "Seleccionar..."
+                              },
+                              model: {
+                                value: _vm.dataForm.sede,
+                                callback: function($$v) {
+                                  _vm.$set(_vm.dataForm, "sede", $$v)
+                                },
+                                expression: "dataForm.sede"
+                              }
+                            },
+                            [
+                              _c(
+                                "div",
+                                {
+                                  attrs: { slot: "no-options" },
+                                  slot: "no-options"
+                                },
+                                [_vm._v("No hay Resultados!")]
                               )
-                            ])
-                          : _vm._e()
-                      ],
-                      1
-                    ),
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _vm.errors["sede"]
+                            ? _c("span", { staticClass: "invalid__input" }, [
+                                _vm._v(
+                                  "\n                                    " +
+                                    _vm._s(_vm.errors["sede"][0]) +
+                                    "\n                                "
+                                )
+                              ])
+                            : _vm._e()
+                        ],
+                        1
+                      )
+                    ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(10),
+                      _vm._m(11),
                       _vm._v(" "),
                       _c("input", {
                         directives: [
@@ -31170,7 +31271,7 @@ var render = function() {
                       "div",
                       { staticClass: "form-group" },
                       [
-                        _vm._m(11),
+                        _vm._m(12),
                         _vm._v(" "),
                         _c("v-select", {
                           class: {
@@ -31211,7 +31312,7 @@ var render = function() {
                           "div",
                           { staticClass: "form-group" },
                           [
-                            _vm._m(12),
+                            _vm._m(13),
                             _vm._v(" "),
                             _c("v-select", {
                               class: {
@@ -31248,7 +31349,7 @@ var render = function() {
                           1
                         )
                       : _c("div", { staticClass: "form-group" }, [
-                          _vm._m(13),
+                          _vm._m(14),
                           _vm._v(" "),
                           _c(
                             "select",
@@ -31311,7 +31412,7 @@ var render = function() {
                         ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "form-group" }, [
-                      _vm._m(14),
+                      _vm._m(15),
                       _vm._v(" "),
                       _c("div", { staticClass: "custom-file" }, [
                         _c("input", {
@@ -31788,6 +31889,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "celular" } }, [
       _c("strong", [_vm._v("Celular")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "sede" } }, [
+      _c("strong", [_vm._v("Sede")])
     ])
   },
   function() {
@@ -59443,7 +59552,7 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
     programasCursos: ['Derecho (UNAB)', 'Ingeniería Financiera (UNAB)', 'Psicología (UNAB)'],
     tiposDocPruebas: ['CC', 'TI', 'ID', 'CE'],
     tiposDocCursos: ['CC', 'TI', 'CE'],
-    sedes: ['San Gil', 'Yopal', 'Chiquinquirá']
+    dataSedes: {}
   },
   mutations: {
     setNivels: function setNivels(state, data) {
@@ -59451,6 +59560,9 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
     },
     setCursos: function setCursos(state, data) {
       state.dataCursos = data;
+    },
+    setSedes: function setSedes(state, data) {
+      state.dataSedes = data;
     }
   },
   actions: {
@@ -59492,6 +59604,27 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
             case 5:
             case "end":
               return _context2.stop();
+          }
+        }
+      });
+    },
+    getSedes: function getSedes(_ref3) {
+      var commit, data;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function getSedes$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              commit = _ref3.commit;
+              _context3.next = 3;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get('sede/getAll'));
+
+            case 3:
+              data = _context3.sent;
+              commit('setSedes', data.data);
+
+            case 5:
+            case "end":
+              return _context3.stop();
           }
         }
       });

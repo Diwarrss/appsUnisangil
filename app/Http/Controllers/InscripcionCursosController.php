@@ -63,34 +63,74 @@ class InscripcionCursosController extends Controller
         $criterio = $request->criterio;
         $buscar = $request->buscar;
         $cant = $request->cant;
+        $sede = $request->sede;
 
+        if($sede){
+            switch ($criterio) {
+                case 'num_doc':
+                    return InscripcionCursos::with('cursos', 'sede')
+                    ->where([['inscripcion_cursos.numero_documento', 'like', "%$buscar%"], ['sedes_id', $sede]])
+                    ->orderBy('created_at', 'desc')
+                    ->paginate($cant);
+                    break;
+                case 'id_unab':
+                    return InscripcionCursos::with('cursos', 'sede')
+                    ->where([['inscripcion_cursos.numero_id', 'like', "%$buscar%"], ['sedes_id', $sede]])
+                    ->orderBy('created_at', 'desc')
+                    ->paginate($cant);
+                    break;
+                case 'email':
+                    return InscripcionCursos::with('cursos', 'sede')
+                    ->where([['inscripcion_cursos.email', 'like', "%$buscar%"], ['sedes_id', $sede]])
+                    ->orderBy('created_at', 'desc')
+                    ->paginate($cant);
+                    break;
+                case 'nombres':
+                    return InscripcionCursos::with('cursos', 'sede')
+                    ->where([['inscripcion_cursos.nombres', 'like', "%$buscar%"], ['sedes_id', $sede]])
+                    ->orderBy('created_at', 'desc')
+                    ->paginate($cant);
+                    break;
+                case 'celular':
+                    return InscripcionCursos::with('cursos', 'sede')
+                    ->where([['inscripcion_cursos.celular', 'like', "%$buscar%"], ['sedes_id', $sede]])
+                    ->orderBy('created_at', 'desc')
+                    ->paginate($cant);
+                    break;
+
+                default:
+                    # code...
+                    break;
+            }
+        }
+        //sin sede
         switch ($criterio) {
             case 'num_doc':
-                return InscripcionCursos::with('cursos')
+                return InscripcionCursos::with('cursos', 'sede')
                 ->where('inscripcion_cursos.numero_documento', 'like', "%$buscar%")
                 ->orderBy('created_at', 'desc')
                 ->paginate($cant);
                 break;
             case 'id_unab':
-                return InscripcionCursos::with('cursos')
+                return InscripcionCursos::with('cursos', 'sede')
                 ->where('inscripcion_cursos.numero_id', 'like', "%$buscar%")
                 ->orderBy('created_at', 'desc')
                 ->paginate($cant);
                 break;
             case 'email':
-                return InscripcionCursos::with('cursos')
+                return InscripcionCursos::with('cursos', 'sede')
                 ->where('inscripcion_cursos.email', 'like', "%$buscar%")
                 ->orderBy('created_at', 'desc')
                 ->paginate($cant);
                 break;
             case 'nombres':
-                return InscripcionCursos::with('cursos')
+                return InscripcionCursos::with('cursos', 'sede')
                 ->where('inscripcion_cursos.nombres', 'like', "%$buscar%")
                 ->orderBy('created_at', 'desc')
                 ->paginate($cant);
                 break;
             case 'celular':
-                return InscripcionCursos::with('cursos')
+                return InscripcionCursos::with('cursos', 'sede')
                 ->where('inscripcion_cursos.celular', 'like', "%$buscar%")
                 ->orderBy('created_at', 'desc')
                 ->paginate($cant);
@@ -116,9 +156,9 @@ class InscripcionCursosController extends Controller
                 'apellidos' => 'required|max:220|regex:/^[A-ZÀÁÉÍÓÚÂÇÉÈÊËÎÏÔÛÙÜŸÑÆŒa-zàáéíóúâçéèêëîïôûùüÿñæœ ]+$/',
                 'email' => 'required|email|max:150',
                 'celular' => 'required|max:11',
-                'sede' => 'required|max:120',
+                'sede' => 'required',
                 'programa_academico' => 'required|max:255',
-                'cursos' => 'required',
+                'cursos', 'sede' => 'required',
             ]);
 
             $insCurso =  new InscripcionCursos();
@@ -129,7 +169,7 @@ class InscripcionCursosController extends Controller
             $insCurso->apellidos = $request->apellidos;
             $insCurso->email = $request->email;
             $insCurso->celular = $request->celular;
-            $insCurso->sede = $request->sede;
+            $insCurso->sedes_id = $request->sede['id'];
             $insCurso->programa_academico = $request->programa_academico;
             $insCurso->estado = '0';
             $insCurso->save();
@@ -160,7 +200,7 @@ class InscripcionCursosController extends Controller
             $insCurso = InscripcionCursos::findOrFail($request->id);
 
             $request->validate([
-                'url_comprobante' => 'required|max:4098|mimes:jpeg,png,pdf',
+                'url_comprobante' => 'required|max:4098|mimes:jpg,png,pdf',
             ]);
 
             //crear nombre de imagen
@@ -177,5 +217,51 @@ class InscripcionCursosController extends Controller
         } catch (Exception $e) {
             DB::rollBack();
         }
+    }
+
+    public function updateState(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+        $type = $request->type;
+
+        $insCurso = InscripcionCursos::findOrFail($request->id);
+
+        switch ($type) {
+            case 'mail_send':
+                $insCurso->estado = '1';
+                $insCurso->save();
+                break;
+            case 'pay_success':
+                $insCurso->estado = '3';
+                $insCurso->save();
+                break;
+            case 'pay_error':
+                $insCurso->estado = '4';
+                $insCurso->save();
+                break;
+            case 'pay_reset':
+                $insCurso->estado = '1';
+                $insCurso->url_comprobante = '';
+                $insCurso->save();
+                break;
+
+            default:
+                # code...
+                break;
+        }
+    }
+
+    public function downloadPay(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+
+        $file= public_path(). $request->url_comprobante;
+        $extension = substr($file, -3);
+
+        $headers = [
+            'Content-Type' => "application/$extension",
+        ];
+
+        return response()->download($file, '', $headers);
     }
 }

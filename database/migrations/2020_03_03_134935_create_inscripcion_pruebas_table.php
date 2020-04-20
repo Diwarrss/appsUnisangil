@@ -23,6 +23,8 @@ class CreateInscripcionPruebasTable extends Migration
             $table->string('programa_academico', 255);
             $table->string('url_comprobante', 200);
             $table->enum('estado', [0,1,2])->comment('0 = Pendiente, 1 = Procesado, 2 = Anulado');
+            $table->unsignedBigInteger('sedes_id');
+            $table->foreign('sedes_id')->references('id')->on('sedes');
             $table->timestamps();
         });
     }
