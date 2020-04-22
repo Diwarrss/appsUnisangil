@@ -332,26 +332,24 @@ export default {
         },
         updateState(data, type){
             let me = this
-            if (type === 'pay_reset') {
-                let params = {
-                    id: data.id,
-                    type: type
-                }
-                axios.post("insCursos/updateState", params)
-                    .then(function(response) {
-                        me.$swal({
-                            position: 'top',
-                            icon: 'success',
-                            title: "Estado actualizado con éxito!",
-                            showConfirmButton: false,
-                            timer: 1800
-                        });
-                        me.getInfoTables(me.paramsTable)
-                    })
-                    .catch(function(error) {
-                        console.error(error)
-                    });
+            let params = {
+                id: data.id,
+                type: type
             }
+            axios.post("insCursos/updateState", params)
+                .then(function(response) {
+                    me.$swal({
+                        position: 'top',
+                        icon: 'success',
+                        title: "Estado actualizado con éxito!",
+                        showConfirmButton: false,
+                        timer: 1800
+                    });
+                    me.getInfoTables(me.paramsTable)
+                })
+                .catch(function(error) {
+                    console.error(error)
+                });
         },
         downloadFile(data){
             axios({

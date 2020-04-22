@@ -2441,25 +2441,22 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     updateState: function updateState(data, type) {
       var me = this;
-
-      if (type === 'pay_reset') {
-        var params = {
-          id: data.id,
-          type: type
-        };
-        axios.post("insCursos/updateState", params).then(function (response) {
-          me.$swal({
-            position: 'top',
-            icon: 'success',
-            title: "Estado actualizado con éxito!",
-            showConfirmButton: false,
-            timer: 1800
-          });
-          me.getInfoTables(me.paramsTable);
-        })["catch"](function (error) {
-          console.error(error);
+      var params = {
+        id: data.id,
+        type: type
+      };
+      axios.post("insCursos/updateState", params).then(function (response) {
+        me.$swal({
+          position: 'top',
+          icon: 'success',
+          title: "Estado actualizado con éxito!",
+          showConfirmButton: false,
+          timer: 1800
         });
-      }
+        me.getInfoTables(me.paramsTable);
+      })["catch"](function (error) {
+        console.error(error);
+      });
     },
     downloadFile: function downloadFile(data) {
       var _this = this;
