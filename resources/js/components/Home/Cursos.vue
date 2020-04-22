@@ -26,6 +26,12 @@
                             •	Director, Coordinador de Sistemas y TIC sede Yopal  <br>
                             •	Coordinador de Sistemas y Tic, sede Chiquinquirá
                         </p>
+                        <p>
+                            •	E-Mails: <br>
+                            <a href="mailto:informaticasangil@unisangil.edu.co">informaticasangil@unisangil.edu.co</a><br>
+                            <a href="mailto:informaticayopal@unisangil.edu.co">informaticayopal@unisangil.edu.co</a><br>
+                            <a href="mailto:asistentetic@unisangil.edu.co">asistentetic@unisangil.edu.co</a>
+                        </p>
                     </div>
                     <div class="content_suport col-md-6">
                         <h5>Horario de soporte</h5>
@@ -451,6 +457,7 @@ export default {
             this.dataRegister.programa_academico = ''
             this.dataRegister.cursos = ''
             this.dataUploadFile.data = null
+            this.dataUploadFile.url_comprobante = ''
         },
         clearData(){
             this.dataUploadFile.data = null

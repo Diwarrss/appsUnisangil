@@ -2277,10 +2277,61 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {};
+    return {
+      errors: [],
+      observacion: '',
+      params_observacion: {}
+    };
   },
   computed: _objectSpread({
     dataUser: function dataUser() {
@@ -2335,24 +2386,80 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       };
       this.$store.dispatch('getInfoTables', allParams);
     },
+    showModal: function showModal(data, type) {
+      var me = this;
+      $("#modalNota").modal("show");
+
+      if (type === 'pay_success') {
+        me.tipo_modal = 'pay_success';
+        var params = {
+          id: data.id,
+          type: type
+        };
+        this.params_observacion = params;
+      }
+
+      if (type === 'pay_error') {
+        me.tipo_modal = 'pay_error';
+        var _params = {
+          id: data.id,
+          type: type
+        };
+        this.params_observacion = _params;
+      }
+    },
+    closeModal: function closeModal() {
+      $("#modalNota").modal("hide");
+      this.observacion = '';
+    },
+    updateStateNota: function updateStateNota() {
+      var me = this;
+      me.errors = [];
+
+      if (!me.observacion) {
+        this.errors.push('La observación es obligatoria.');
+      } else {
+        var paramsAll = _objectSpread({}, me.params_observacion, {
+          nota: me.observacion
+        });
+
+        axios.post("insCursos/updateState", paramsAll).then(function (response) {
+          me.$swal({
+            position: 'top',
+            icon: 'success',
+            title: "Estado actualizado con éxito!",
+            showConfirmButton: false,
+            timer: 1800
+          });
+          me.getInfoTables(me.paramsTable);
+          me.closeModal();
+        })["catch"](function (error) {
+          console.error(error);
+        });
+        console.log(paramsAll);
+      }
+    },
     updateState: function updateState(data, type) {
       var me = this;
-      var params = {
-        id: data.id,
-        type: type
-      };
-      axios.post("insCursos/updateState", params).then(function (response) {
-        me.$swal({
-          position: 'top',
-          icon: 'success',
-          title: "Comprobante enviado con éxito",
-          showConfirmButton: false,
-          timer: 1800
+
+      if (type === 'pay_reset') {
+        var params = {
+          id: data.id,
+          type: type
+        };
+        axios.post("insCursos/updateState", params).then(function (response) {
+          me.$swal({
+            position: 'top',
+            icon: 'success',
+            title: "Estado actualizado con éxito!",
+            showConfirmButton: false,
+            timer: 1800
+          });
+          me.getInfoTables(me.paramsTable);
+        })["catch"](function (error) {
+          console.error(error);
         });
-        me.getInfoTables(me.paramsTable);
-      })["catch"](function (error) {
-        console.error(error);
-      });
+      }
     },
     downloadFile: function downloadFile(data) {
       var _this = this;
@@ -26236,7 +26343,7 @@ var render = function() {
                                     [
                                       _c("i", { staticClass: "fas fa-search" }),
                                       _vm._v(
-                                        " Buscar\n                                            "
+                                        " Buscar\n                                                "
                                       )
                                     ]
                                   )
@@ -26252,7 +26359,7 @@ var render = function() {
                         _vm._v(
                           " " +
                             _vm._s(_vm.infoTables.total) +
-                            "\n                            "
+                            "\n                                "
                         )
                       ]),
                       _vm._v(" "),
@@ -26307,7 +26414,7 @@ var render = function() {
                                             _vm._s(
                                               data.numero_id.toUpperCase()
                                             ) +
-                                            "\n                                        "
+                                            "\n                                            "
                                         )
                                       ]),
                                       _vm._v(" "),
@@ -26322,9 +26429,9 @@ var render = function() {
                                           },
                                           [
                                             _vm._v(
-                                              "\n                                                " +
+                                              "\n                                                    " +
                                                 _vm._s(data.email) +
-                                                "\n                                            "
+                                                "\n                                                "
                                             )
                                           ]
                                         )
@@ -26354,7 +26461,7 @@ var render = function() {
                                                 _vm._s(
                                                   data.celular.replace(" ", "")
                                                 ) +
-                                                "\n                                            "
+                                                "\n                                                "
                                             )
                                           ]
                                         )
@@ -26554,7 +26661,7 @@ var render = function() {
                                                   : _vm._e(),
                                                 _vm._v(" "),
                                                 data.estado === "2" &&
-                                                _vm.dataUser.roles_id === 1
+                                                _vm.dataUser.roles_id === 3
                                                   ? _c("div", [
                                                       _c(
                                                         "a",
@@ -26567,14 +26674,23 @@ var render = function() {
                                                               $event
                                                             ) {
                                                               $event.preventDefault()
-                                                              return _vm.updateState(
+                                                              return _vm.showModal(
                                                                 data,
                                                                 "pay_success"
                                                               )
                                                             }
                                                           }
                                                         },
-                                                        [_vm._v("Aprobar Pago")]
+                                                        [
+                                                          _c("i", {
+                                                            staticClass:
+                                                              "far fa-check-circle",
+                                                            staticStyle: {
+                                                              color: "#67b30b"
+                                                            }
+                                                          }),
+                                                          _vm._v("Aprobar Pago")
+                                                        ]
                                                       ),
                                                       _vm._v(" "),
                                                       _c(
@@ -26596,6 +26712,13 @@ var render = function() {
                                                           }
                                                         },
                                                         [
+                                                          _c("i", {
+                                                            staticClass:
+                                                              "fas fa-reply-all",
+                                                            staticStyle: {
+                                                              color: "#e4b213"
+                                                            }
+                                                          }),
                                                           _vm._v(
                                                             "Devolver Pago"
                                                           )
@@ -26613,20 +26736,29 @@ var render = function() {
                                                               $event
                                                             ) {
                                                               $event.preventDefault()
-                                                              return _vm.updateState(
+                                                              return _vm.showModal(
                                                                 data,
                                                                 "pay_error"
                                                               )
                                                             }
                                                           }
                                                         },
-                                                        [_vm._v("Anular Pago")]
+                                                        [
+                                                          _c("i", {
+                                                            staticClass:
+                                                              "fas fa-times-circle",
+                                                            staticStyle: {
+                                                              color: "#f30a0a"
+                                                            }
+                                                          }),
+                                                          _vm._v("Anular Pago")
+                                                        ]
                                                       )
                                                     ])
                                                   : _vm._e(),
                                                 _vm._v(" "),
                                                 data.estado === "3" &&
-                                                _vm.dataUser.roles_id === 1
+                                                _vm.dataUser.roles_id === 3
                                                   ? _c("div", [
                                                       _c(
                                                         "a",
@@ -26647,6 +26779,13 @@ var render = function() {
                                                           }
                                                         },
                                                         [
+                                                          _c("i", {
+                                                            staticClass:
+                                                              "fas fa-reply-all",
+                                                            staticStyle: {
+                                                              color: "#e4b213"
+                                                            }
+                                                          }),
                                                           _vm._v(
                                                             "Devolver Pago"
                                                           )
@@ -26664,14 +26803,23 @@ var render = function() {
                                                               $event
                                                             ) {
                                                               $event.preventDefault()
-                                                              return _vm.updateState(
+                                                              return _vm.showModal(
                                                                 data,
                                                                 "pay_error"
                                                               )
                                                             }
                                                           }
                                                         },
-                                                        [_vm._v("Anular Pago")]
+                                                        [
+                                                          _c("i", {
+                                                            staticClass:
+                                                              "fas fa-times-circle",
+                                                            staticStyle: {
+                                                              color: "#f30a0a"
+                                                            }
+                                                          }),
+                                                          _vm._v("Anular Pago")
+                                                        ]
                                                       )
                                                     ])
                                                   : _vm._e()
@@ -26703,6 +26851,134 @@ var render = function() {
               ])
             ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("section", [
+          _c(
+            "div",
+            {
+              staticClass: "modal",
+              attrs: {
+                id: "modalNota",
+                role: "dialog",
+                "aria-labelledby": "myModalLabel2",
+                "data-backdrop": "static",
+                "data-keyboard": "false"
+              }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "modal-dialog modal-dialog-centered modal-primary",
+                  attrs: { role: "document" }
+                },
+                [
+                  _c("div", { staticClass: "modal-content" }, [
+                    _c("div", { staticClass: "modal-header" }, [
+                      _vm._m(4),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "close",
+                          attrs: { type: "button", "aria-label": "Close" },
+                          on: { click: _vm.closeModal }
+                        },
+                        [
+                          _c("span", { attrs: { "aria-hidden": "true" } }, [
+                            _vm._v("×")
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "modal-body" }, [
+                      _c(
+                        "form",
+                        {
+                          staticClass: "form-horizontal",
+                          attrs: { enctype: "multipart/form-data" }
+                        },
+                        [
+                          _c("div", { staticClass: "form-group" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "col-form-label font-weight-bold"
+                              },
+                              [_vm._v("Observación:")]
+                            ),
+                            _vm._v(" "),
+                            _c("div", [
+                              _c("textarea", {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.observacion,
+                                    expression: "observacion"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                attrs: { type: "text" },
+                                domProps: { value: _vm.observacion },
+                                on: {
+                                  input: function($event) {
+                                    if ($event.target.composing) {
+                                      return
+                                    }
+                                    _vm.observacion = $event.target.value
+                                  }
+                                }
+                              }),
+                              _vm._v(" "),
+                              _vm.errors.length
+                                ? _c("span", {
+                                    staticClass: "help-block text-danger",
+                                    domProps: {
+                                      textContent: _vm._s(_vm.errors[0])
+                                    }
+                                  })
+                                : _vm._e()
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "modal-footer" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-secondary",
+                          attrs: { type: "button" },
+                          on: { click: _vm.closeModal }
+                        },
+                        [
+                          _c("i", { staticClass: "far fa-times-circle" }),
+                          _vm._v(" Cancelar\n                ")
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary",
+                          on: { click: _vm.updateStateNota }
+                        },
+                        [
+                          _c("i", { staticClass: "far fa-check-circle" }),
+                          _vm._v(" Guardar\n                ")
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ]
+          )
         ])
       ])
     : _vm._e()
@@ -26788,9 +27064,18 @@ var staticRenderFns = [
       },
       [
         _c("i", { staticClass: "far fa-check-circle" }),
-        _vm._v(" Elegir\n                                                ")
+        _vm._v(" Elegir\n                                                    ")
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", { staticClass: "modal-title" }, [
+      _c("i", { staticClass: "fas fa-exclamation-triangle" }),
+      _vm._v(" Actualizar Estado de Pago\n                ")
+    ])
   }
 ]
 render._withStripped = true

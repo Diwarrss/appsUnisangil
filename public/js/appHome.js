@@ -2249,6 +2249,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2316,6 +2322,7 @@ __webpack_require__.r(__webpack_exports__);
       this.dataRegister.programa_academico = '';
       this.dataRegister.cursos = '';
       this.dataUploadFile.data = null;
+      this.dataUploadFile.url_comprobante = '';
     },
     clearData: function clearData() {
       this.dataUploadFile.data = null;
@@ -29175,6 +29182,29 @@ var staticRenderFns = [
           _vm._v(
             "\n                        •\tCoordinador de Sistemas y Tic, sede Chiquinquirá\n                    "
           )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("\n                        •\tE-Mails: "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            { attrs: { href: "mailto:informaticasangil@unisangil.edu.co" } },
+            [_vm._v("informaticasangil@unisangil.edu.co")]
+          ),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            { attrs: { href: "mailto:informaticayopal@unisangil.edu.co" } },
+            [_vm._v("informaticayopal@unisangil.edu.co")]
+          ),
+          _c("br"),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "mailto:asistentetic@unisangil.edu.co" } }, [
+            _vm._v("asistentetic@unisangil.edu.co")
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -30576,6 +30606,16 @@ var staticRenderFns = [
                 _vm._v("  COVID-19")
               ]
             )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { attrs: { href: "/login" } }, [
+              _c("i", {
+                staticClass: "fa fa-sign-in",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" Admin")
+            ])
           ])
         ])
       ])

@@ -233,10 +233,12 @@ class InscripcionCursosController extends Controller
                 break;
             case 'pay_success':
                 $insCurso->estado = '3';
+                $insCurso->nota_aprobado = $request->nota;
                 $insCurso->save();
                 break;
             case 'pay_error':
                 $insCurso->estado = '4';
+                $insCurso->nota_anulado = $request->nota;
                 $insCurso->save();
                 break;
             case 'pay_reset':
