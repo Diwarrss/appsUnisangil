@@ -2381,7 +2381,7 @@ __webpack_require__.r(__webpack_exports__);
 
       document.getElementById("downloadFile").disabled = true;
       axios({
-        url: "insPruebas/downloadFile",
+        url: "insCursos/downloadFile",
         method: "GET",
         responseType: "blob" // important
 
