@@ -75,6 +75,7 @@ Route::group(['middleware' => ['guest']], function () {
     Route::get('insCursos/getInfoinProcess','InscripcionCursosController@getInfoinProcess');
     Route::post('insCursos/register','InscripcionCursosController@register');
     Route::post('insCursos/saveFile','InscripcionCursosController@saveFile');
+    Route::get('insCursos/downloadFile','InscripcionCursosController@downloadFile');
 });
 Route::group(['middleware' => ['auth']], function () {
     //obtener la vista del admin al loguear

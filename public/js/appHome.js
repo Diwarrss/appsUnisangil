@@ -2255,6 +2255,74 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2308,6 +2376,34 @@ __webpack_require__.r(__webpack_exports__);
     }, null, this);
   },
   methods: {
+    downloadCalendar: function downloadCalendar() {
+      var _this = this;
+
+      document.getElementById("downloadFile").disabled = true;
+      axios({
+        url: "insPruebas/downloadFile",
+        method: "GET",
+        responseType: "blob" // important
+
+      }).then(function (response) {
+        var url = window.URL.createObjectURL(new Blob([response.data]));
+        var link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Calendario_2020.pdf");
+        document.body.appendChild(link);
+        link.click();
+
+        _this.$swal({
+          position: 'top',
+          icon: 'success',
+          title: "Calendario descargado con éxito!",
+          showConfirmButton: false,
+          timer: 2000
+        });
+
+        document.getElementById("downloadFile").disabled = false;
+      });
+    },
     closeForm: function closeForm() {
       $('#modalForm').modal('hide');
       this.errors = [];
@@ -3652,7 +3748,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".btn-primary[data-v-78445be8] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-primary[data-v-78445be8]:hover {\n  background: #3478c1;\n  border-color: #3478c1;\n}\n.btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}\n.invalid__input[data-v-78445be8] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.form-control[data-v-78445be8] {\n  height: 34px;\n}\n.modal-primary[data-v-78445be8] {\n  /* .body__search{\n      height: 150px;\n  } */\n}\n.modal-primary .modal-content[data-v-78445be8] {\n  border-color: #20a8d8;\n}\n.modal-primary .modal-header[data-v-78445be8] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.custom-file-label[data-v-78445be8]::after {\n  content: \"Adjuntar Archivo\";\n}\n.invalid__input__tel[data-v-78445be8] {\n  border-color: #dc3545;\n}\n.result_content[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid #20a8d8;\n  border-radius: 0.3rem;\n}\n.result_content .created_at[data-v-78445be8] {\n  font-size: 20px;\n}\n.section_insCursos[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid red;\n  border-radius: 0.3rem;\n}\n.section_insCursos h5[data-v-78445be8] {\n  color: #1b1371;\n  font-size: 26px;\n}\n.section_insCursos p[data-v-78445be8] {\n  color: red;\n  font-size: 18px;\n}", ""]);
+exports.push([module.i, ".btn-primary[data-v-78445be8] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-primary[data-v-78445be8]:hover {\n  background: #3478c1;\n  border-color: #3478c1;\n}\n.btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #1b1371;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n  border-bottom: 1px solid #1b1371;\n  padding-bottom: 10px;\n  font-size: 26px;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}\n.invalid__input[data-v-78445be8] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.form-control[data-v-78445be8] {\n  height: 34px;\n}\n.modal-primary[data-v-78445be8] {\n  /* .body__search{\n      height: 150px;\n  } */\n}\n.modal-primary .modal-content[data-v-78445be8] {\n  border-color: #20a8d8;\n}\n.modal-primary .modal-header[data-v-78445be8] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.custom-file-label[data-v-78445be8]::after {\n  content: \"Adjuntar Archivo\";\n}\n.invalid__input__tel[data-v-78445be8] {\n  border-color: #dc3545;\n}\n.result_content[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid #20a8d8;\n  border-radius: 0.3rem;\n}\n.result_content .created_at[data-v-78445be8] {\n  font-size: 20px;\n}\n.section_insCursos[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid red;\n  border-radius: 0.3rem;\n}\n.section_insCursos h5[data-v-78445be8] {\n  color: #1b1371;\n  font-size: 26px;\n}\n.section_insCursos p[data-v-78445be8] {\n  color: red;\n  font-size: 18px;\n}\n.carousel_calendar[data-v-78445be8] {\n  padding: 0 10% 0 10%;\n}\n.carousel_calendar h5[data-v-78445be8] {\n  padding-bottom: 10px;\n  color: #1b1371;\n  font-size: 26px;\n  border-bottom: 1px solid #1b1371;\n}\n@media all and (max-width: 580px) {\n.carousel_calendar[data-v-78445be8] {\n    padding: 0 0 0 0;\n}\n}\n.carousel[data-v-78445be8] {\n  width: 100%;\n}\n.cuentas_bancarias h3[data-v-78445be8] {\n  padding-bottom: 10px;\n  color: #1b1371;\n  font-size: 20px;\n  font-weight: bold;\n  border-bottom: 1px solid #1b1371;\n}", ""]);
 
 // exports
 
@@ -28101,13 +28197,41 @@ var render = function() {
                 _vm._v(" Adjuntar Comprobante de Pago\n                    ")
               ]
             )
-          ])
+          ]),
+          _vm._v(" "),
+          _vm._m(4)
         ]),
         _vm._v(" "),
-        _vm._m(4)
+        _c("div", { staticClass: "mt-5 carousel_calendar" }, [
+          _c("div", { staticClass: "col-md-12 mt-5 mb-5 text-center" }, [
+            _c("h5", { staticClass: "mb-0" }, [_vm._v("CALENDARIOS")]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-lg mt-4",
+                attrs: { id: "downloadFile" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.downloadCalendar($event)
+                  }
+                }
+              },
+              [
+                _c("i", { staticClass: "fas fa-file-download" }),
+                _vm._v(" Descargar Cronograma 2020\n                    ")
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(5)
+        ]),
+        _vm._v(" "),
+        _vm._m(6)
       ]),
       _vm._v(" "),
-      _vm._m(5)
+      _vm._m(7)
     ]),
     _vm._v(" "),
     _c("section", [
@@ -28142,7 +28266,7 @@ var render = function() {
                           staticClass: "modal-title",
                           attrs: { id: "modalFormLabel" }
                         },
-                        [_vm._m(6)]
+                        [_vm._m(8)]
                       )
                     : _c(
                         "h5",
@@ -28150,7 +28274,7 @@ var render = function() {
                           staticClass: "modal-title",
                           attrs: { id: "modalFormLabel" }
                         },
-                        [_vm._m(7)]
+                        [_vm._m(9)]
                       ),
                   _vm._v(" "),
                   _c(
@@ -28181,7 +28305,7 @@ var render = function() {
                         [
                           _c("div", { staticClass: "form-row" }, [
                             _c("div", { staticClass: "form-group col-md-6" }, [
-                              _vm._m(8),
+                              _vm._m(10),
                               _vm._v(" "),
                               _c("input", {
                                 directives: [
@@ -28226,7 +28350,7 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "form-group col-md-6" }, [
-                              _vm._m(9),
+                              _vm._m(11),
                               _vm._v(" "),
                               _c("input", {
                                 directives: [
@@ -28278,7 +28402,7 @@ var render = function() {
                               "div",
                               { staticClass: "form-group col-md-4" },
                               [
-                                _vm._m(10),
+                                _vm._m(12),
                                 _vm._v(" "),
                                 _c("v-select", {
                                   class: {
@@ -28318,7 +28442,7 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c("div", { staticClass: "form-group col-md-4" }, [
-                              _vm._m(11),
+                              _vm._m(13),
                               _vm._v(" "),
                               _c("input", {
                                 directives: [
@@ -28369,7 +28493,7 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "form-group col-md-4" }, [
-                              _vm._m(12),
+                              _vm._m(14),
                               _vm._v(" "),
                               _c("input", {
                                 directives: [
@@ -28420,7 +28544,7 @@ var render = function() {
                             "div",
                             { staticClass: "form-group" },
                             [
-                              _vm._m(13),
+                              _vm._m(15),
                               _vm._v(" "),
                               _c("v-select", {
                                 class: {
@@ -28466,7 +28590,7 @@ var render = function() {
                               "div",
                               { staticClass: "form-group col-md-6" },
                               [
-                                _vm._m(14),
+                                _vm._m(16),
                                 _vm._v(" "),
                                 _c(
                                   "v-select",
@@ -28520,7 +28644,7 @@ var render = function() {
                               "div",
                               { staticClass: "form-group col-md-6" },
                               [
-                                _vm._m(15),
+                                _vm._m(17),
                                 _vm._v(" "),
                                 _c("v-select", {
                                   class: {
@@ -28569,7 +28693,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("div", { staticClass: "form-row" }, [
                             _c("div", { staticClass: "form-group col-md-6" }, [
-                              _vm._m(16),
+                              _vm._m(18),
                               _vm._v(" "),
                               _c("input", {
                                 directives: [
@@ -28621,7 +28745,7 @@ var render = function() {
                               "div",
                               { staticClass: "form-group col-md-6" },
                               [
-                                _vm._m(17),
+                                _vm._m(19),
                                 _vm._v(" "),
                                 _c("vue-tel-input", {
                                   class: {
@@ -28667,7 +28791,7 @@ var render = function() {
                         [
                           _c("div", { staticClass: "form-row" }, [
                             _c("div", { staticClass: "form-group col-md-3" }, [
-                              _vm._m(18),
+                              _vm._m(20),
                               _vm._v(" "),
                               _c(
                                 "select",
@@ -28752,7 +28876,7 @@ var render = function() {
                             ]),
                             _vm._v(" "),
                             _c("div", { staticClass: "form-group col-md-5" }, [
-                              _vm._m(19),
+                              _vm._m(21),
                               _vm._v(" "),
                               _c("input", {
                                 directives: [
@@ -28811,7 +28935,7 @@ var render = function() {
                                     "div",
                                     { staticClass: "form-group col-md-6" },
                                     [
-                                      _vm._m(20),
+                                      _vm._m(22),
                                       _vm._v(" "),
                                       _c("input", {
                                         directives: [
@@ -28853,7 +28977,7 @@ var render = function() {
                                     "div",
                                     { staticClass: "form-group col-md-6" },
                                     [
-                                      _vm._m(21),
+                                      _vm._m(23),
                                       _vm._v(" "),
                                       _c("input", {
                                         directives: [
@@ -28898,7 +29022,7 @@ var render = function() {
                                     "div",
                                     { staticClass: "form-group col-md-6" },
                                     [
-                                      _vm._m(22),
+                                      _vm._m(24),
                                       _vm._v(" "),
                                       _c("input", {
                                         directives: [
@@ -28946,7 +29070,7 @@ var render = function() {
                                         "form-group col-md-6 my-auto text-center created_at"
                                     },
                                     [
-                                      _vm._m(23),
+                                      _vm._m(25),
                                       _vm._v(" "),
                                       _c("label", { attrs: { for: "" } }, [
                                         _vm._v(
@@ -28964,7 +29088,7 @@ var render = function() {
                                 ]),
                                 _vm._v(" "),
                                 _c("div", { staticClass: "form-group" }, [
-                                  _vm._m(24),
+                                  _vm._m(26),
                                   _vm._v(" "),
                                   _c(
                                     "div",
@@ -29249,6 +29373,220 @@ var staticRenderFns = [
         ),
         _c("strong", [_vm._v("20 de Abril/2020 hasta 12 de Mayo/2020")])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12 text-center" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-lg btn-info mt-4",
+          attrs: {
+            type: "button",
+            "data-toggle": "modal",
+            "data-target": "#modalCuentasBancarias"
+          }
+        },
+        [
+          _c("i", { staticClass: "fas fa-donate" }),
+          _vm._v(" Cuentas Bancarias\n                    ")
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: {
+            id: "modalCuentasBancarias",
+            tabindex: "-1",
+            role: "dialog",
+            "aria-labelledby": "modalCuentasBancariasTitle",
+            "aria-hidden": "true"
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "modal-dialog modal-dialog-centered modal-lg",
+              attrs: { role: "document" }
+            },
+            [
+              _c("div", { staticClass: "modal-content" }, [
+                _c("div", { staticClass: "modal-header" }, [
+                  _c(
+                    "h4",
+                    {
+                      staticClass: "modal-title",
+                      attrs: { id: "modalCuentasBancariasTitle" }
+                    },
+                    [
+                      _c("i", { staticClass: "fas fa-donate" }),
+                      _vm._v(" Cuentas Bancarias UNISANGIL")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "close",
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        "aria-label": "Close"
+                      }
+                    },
+                    [
+                      _c("span", { attrs: { "aria-hidden": "true" } }, [
+                        _vm._v("×")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body cuentas_bancarias" }, [
+                  _c("div", [
+                    _c("h3", [_vm._v("Sede Yopal")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-left" }, [
+                      _c("span", [
+                        _c("strong", [
+                          _vm._v(
+                            "• BANCO CAJA SOCIAL convenio 60026 o cta Ahorro No. 24507618193"
+                          )
+                        ]),
+                        _vm._v(
+                          " a nombre de Fundación Universitaria de Sangil Unisangil\n                                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("span", [
+                        _c("strong", [
+                          _vm._v("• BANCOLOMBIA  cta corriente No. 36309930994")
+                        ]),
+                        _vm._v(
+                          " a nombre de Fundación Universitaria de Sangil Unisangil\n                                    "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("h3", [_vm._v("Sede San Gil")]),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "storage/calendarioCursos/CUENTAS_BANCARIAS_UNISANGIL-1.png"
+                        }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-footer" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-danger",
+                      attrs: { type: "button", "data-dismiss": "modal" }
+                    },
+                    [
+                      _c("i", { staticClass: "far fa-times-circle" }),
+                      _vm._v(" Cerrar\n                            ")
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", {}, [
+      _c(
+        "div",
+        {
+          staticClass: "carousel slide",
+          attrs: { id: "carouselExampleIndicators", "data-ride": "carousel" }
+        },
+        [
+          _c("div", { staticClass: "carousel-inner" }, [
+            _c("div", { staticClass: "carousel-item active" }, [
+              _c("img", {
+                staticClass: "d-block w-80 img-fluid",
+                attrs: {
+                  src: "storage/calendarioCursos/Cronograma-Yopal.PNG",
+                  alt: "First slide"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "carousel-item" }, [
+              _c("img", {
+                staticClass: "d-block w-80 img-fluid",
+                attrs: {
+                  src: "storage/calendarioCursos/Cronograma-SanGil.PNG",
+                  alt: "Second slide"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "carousel-control-prev",
+              attrs: {
+                href: "#carouselExampleIndicators",
+                role: "button",
+                "data-slide": "prev"
+              }
+            },
+            [
+              _c("span", {
+                staticClass: "carousel-control-prev-icon",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "carousel-control-next",
+              attrs: {
+                href: "#carouselExampleIndicators",
+                role: "button",
+                "data-slide": "next"
+              }
+            },
+            [
+              _c("span", {
+                staticClass: "carousel-control-next-icon",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(" "),
+              _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+            ]
+          )
+        ]
+      )
     ])
   },
   function() {

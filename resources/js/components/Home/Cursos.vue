@@ -45,11 +45,6 @@
                     </div>
                 </div>
                 <div class="row mt-5 mb-5 section_insCursos">
-                    <!-- <div class="col-md-6">
-                        <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
-                            <i class="fas fa-file-download"></i> Descargar formato de pago
-                        </button>
-                    </div> -->
                     <div class="col-md-12 text-center">
                         <h5>Inscripciones para Cursos de Informática Programas UNAB</h5>
                         <p>
@@ -65,6 +60,79 @@
                         <button class="btn btn-primary btn-lg btn-block mt-4" @click="openForm('file')">
                             <i class="fas fa-file-upload"></i> Adjuntar Comprobante de Pago
                         </button>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg btn-info mt-4" data-toggle="modal" data-target="#modalCuentasBancarias">
+                        <i class="fas fa-donate"></i> Cuentas Bancarias
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalCuentasBancarias" tabindex="-1" role="dialog" aria-labelledby="modalCuentasBancariasTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modalCuentasBancariasTitle"><i class="fas fa-donate"></i> Cuentas Bancarias UNISANGIL</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body cuentas_bancarias">
+                                <div>
+                                    <h3>Sede Yopal</h3>
+                                    <div class="text-left">
+                                        <span>
+                                            <strong>• BANCO CAJA SOCIAL convenio 60026 o cta Ahorro No. 24507618193</strong> a nombre de Fundación Universitaria de Sangil Unisangil
+                                        </span>
+                                        <br>
+                                        <span>
+                                            <strong>• BANCOLOMBIA  cta corriente No. 36309930994</strong> a nombre de Fundación Universitaria de Sangil Unisangil
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3>Sede San Gil</h3>
+                                    <div>
+                                        <img src="storage/calendarioCursos/CUENTAS_BANCARIAS_UNISANGIL-1.png" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                    <i  class="far fa-times-circle"></i> Cerrar
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 carousel_calendar">
+                    <div class="col-md-12 mt-5 mb-5 text-center">
+                        <h5 class="mb-0">CALENDARIOS</h5>
+                        <button class="btn btn-primary btn-lg mt-4" id="downloadFile" @click.prevent="downloadCalendar">
+                            <i class="fas fa-file-download"></i> Descargar Cronograma 2020
+                        </button>
+                    </div>
+                    <div class="">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/Cronograma-Yopal.PNG" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/Cronograma-SanGil.PNG" alt="Second slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-12 mt-5 text-center">
@@ -443,6 +511,30 @@ export default {
         this.$store.dispatch('getSedes')
     },
     methods: {
+        downloadCalendar(){
+            document.getElementById("downloadFile").disabled = true;
+            axios({
+                url: "insPruebas/downloadFile",
+                method: "GET",
+                responseType: "blob" // important
+            }).then(response => {
+                const url = window.URL.createObjectURL(new Blob([response.data]));
+                const link = document.createElement("a");
+                link.href = url;
+                link.setAttribute("download", "Calendario_2020.pdf");
+                document.body.appendChild(link);
+                link.click();
+
+                this.$swal({
+                    position: 'top',
+                    icon: 'success',
+                    title: "Calendario descargado con éxito!",
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+                document.getElementById("downloadFile").disabled = false;
+            });
+        },
         closeForm(){
             $('#modalForm').modal('hide')
             this.errors = []
@@ -611,10 +703,13 @@ export default {
     .text_header{
         margin-bottom: 50px;
         h5{
-            color: #696592;
+            color: #1b1371;
             font-weight: 600;
             font-size: 22px;
             font-style: italic;
+            border-bottom: 1px solid #1b1371;
+            padding-bottom: 10px;
+            font-size: 26px;
         }
         p{
             margin: 0 0 10px 0;
@@ -676,6 +771,30 @@ export default {
         p{
             color: red;
             font-size: 18px;
+        }
+    }
+    .carousel_calendar{
+        h5{
+            padding-bottom: 10px;
+            color: #1b1371;
+            font-size: 26px;
+            border-bottom: 1px solid #1b1371;
+        }
+        padding:   0 10% 0 10%;
+        @media all and (max-width: 580px){
+        padding: 0 0 0 0;
+        }
+    }
+    .carousel{
+        width: 100%;
+    }
+    .cuentas_bancarias{
+        h3{
+            padding-bottom: 10px;
+            color: #1b1371;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #1b1371;
         }
     }
 

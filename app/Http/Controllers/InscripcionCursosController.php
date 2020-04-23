@@ -266,4 +266,11 @@ class InscripcionCursosController extends Controller
 
         return response()->download($file, '', $headers);
     }
+
+    public function downloadFile(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+
+        return response()->download(public_path('/storage/calendarioCursos/Cronograma 202098Informatica.pdf'));
+    }
 }
