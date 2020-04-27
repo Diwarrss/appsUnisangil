@@ -2324,13 +2324,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       errors: [],
       observacion: '',
-      params_observacion: {}
+      params_observacion: {},
+      tipo_modal: ''
     };
   },
   computed: _objectSpread({
@@ -2411,6 +2427,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     closeModal: function closeModal() {
       $("#modalNota").modal("hide");
       this.observacion = '';
+    },
+    showDesc: function showDesc(desc) {
+      this.tipo_modal = 'showDesc';
+      this.observacion = desc;
+      $("#modalNota").modal("show");
     },
     updateStateNota: function updateStateNota() {
       var me = this;
@@ -26590,6 +26611,30 @@ var render = function() {
                                                   "badge badge-success"
                                               },
                                               [_vm._v("Pago Aprobado")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass:
+                                                  "btn btn-outline-dark",
+                                                attrs: {
+                                                  title: "Ver descripción"
+                                                },
+                                                on: {
+                                                  click: function($event) {
+                                                    $event.preventDefault()
+                                                    return _vm.showDesc(
+                                                      data.nota_aprobado
+                                                    )
+                                                  }
+                                                }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass: "fas fa-eye"
+                                                })
+                                              ]
                                             )
                                           ])
                                         : _vm._e(),
@@ -26603,6 +26648,30 @@ var render = function() {
                                                   "badge badge-default"
                                               },
                                               [_vm._v("Pago Anulado")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass:
+                                                  "btn btn-outline-dark",
+                                                attrs: {
+                                                  title: "Ver descripción"
+                                                },
+                                                on: {
+                                                  click: function($event) {
+                                                    $event.preventDefault()
+                                                    return _vm.showDesc(
+                                                      data.nota_anulado
+                                                    )
+                                                  }
+                                                }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass: "fas fa-eye"
+                                                })
+                                              ]
                                             )
                                           ])
                                         : _vm._e(),
@@ -26874,7 +26943,9 @@ var render = function() {
                 [
                   _c("div", { staticClass: "modal-content" }, [
                     _c("div", { staticClass: "modal-header" }, [
-                      _vm._m(4),
+                      _vm.tipo_modal === "showDesc"
+                        ? _c("div", [_vm._m(4)])
+                        : _c("div", [_vm._m(5)]),
                       _vm._v(" "),
                       _c(
                         "button",
@@ -26909,27 +26980,49 @@ var render = function() {
                             ),
                             _vm._v(" "),
                             _c("div", [
-                              _c("textarea", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.observacion,
-                                    expression: "observacion"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                attrs: { type: "text" },
-                                domProps: { value: _vm.observacion },
-                                on: {
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
+                              _vm.tipo_modal === "showDesc"
+                                ? _c("textarea", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.observacion,
+                                        expression: "observacion"
+                                      }
+                                    ],
+                                    staticClass: "form-control",
+                                    attrs: { type: "text", readonly: "" },
+                                    domProps: { value: _vm.observacion },
+                                    on: {
+                                      input: function($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.observacion = $event.target.value
+                                      }
                                     }
-                                    _vm.observacion = $event.target.value
-                                  }
-                                }
-                              }),
+                                  })
+                                : _c("textarea", {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.observacion,
+                                        expression: "observacion"
+                                      }
+                                    ],
+                                    staticClass: "form-control",
+                                    attrs: { type: "text" },
+                                    domProps: { value: _vm.observacion },
+                                    on: {
+                                      input: function($event) {
+                                        if ($event.target.composing) {
+                                          return
+                                        }
+                                        _vm.observacion = $event.target.value
+                                      }
+                                    }
+                                  }),
                               _vm._v(" "),
                               _vm.errors.length
                                 ? _c("span", {
@@ -26945,32 +27038,47 @@ var render = function() {
                       )
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "modal-footer" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-secondary",
-                          attrs: { type: "button" },
-                          on: { click: _vm.closeModal }
-                        },
-                        [
-                          _c("i", { staticClass: "far fa-times-circle" }),
-                          _vm._v(" Cancelar\n                ")
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-primary",
-                          on: { click: _vm.updateStateNota }
-                        },
-                        [
-                          _c("i", { staticClass: "far fa-check-circle" }),
-                          _vm._v(" Guardar\n                ")
-                        ]
-                      )
-                    ])
+                    _vm.tipo_modal === "showDesc"
+                      ? _c("div", { staticClass: "modal-footer" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-danger",
+                              attrs: { type: "button" },
+                              on: { click: _vm.closeModal }
+                            },
+                            [
+                              _c("i", { staticClass: "far fa-times-circle" }),
+                              _vm._v(" Cerrar\n                ")
+                            ]
+                          )
+                        ])
+                      : _c("div", { staticClass: "modal-footer" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-danger",
+                              attrs: { type: "button" },
+                              on: { click: _vm.closeModal }
+                            },
+                            [
+                              _c("i", { staticClass: "far fa-times-circle" }),
+                              _vm._v(" Cancelar\n                ")
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-success",
+                              on: { click: _vm.updateStateNota }
+                            },
+                            [
+                              _c("i", { staticClass: "far fa-check-circle" }),
+                              _vm._v(" Guardar\n                ")
+                            ]
+                          )
+                        ])
                   ])
                 ]
               )
@@ -27070,8 +27178,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h4", { staticClass: "modal-title" }, [
+      _c("i", { staticClass: "fas fa-eye" }),
+      _vm._v(" Descripción registrada\n                    ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", { staticClass: "modal-title" }, [
       _c("i", { staticClass: "fas fa-exclamation-triangle" }),
-      _vm._v(" Actualizar Estado de Pago\n                ")
+      _vm._v(" Actualizar Estado de Pago\n                    ")
     ])
   }
 ]

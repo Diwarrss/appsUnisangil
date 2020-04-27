@@ -131,9 +131,11 @@
                                                 </td>
                                                 <td v-if="data.estado === '3'">
                                                     <span class="badge badge-success">Pago Aprobado</span>
+                                                    <button class="btn btn-outline-dark" title="Ver descripción" @click.prevent="showDesc(data.nota_aprobado)"><i class="fas fa-eye"></i></button>
                                                 </td>
                                                 <td v-if="data.estado === '4'">
                                                     <span class="badge badge-default">Pago Anulado</span>
+                                                    <button class="btn btn-outline-dark" title="Ver descripción" @click.prevent="showDesc(data.nota_anulado)"><i class="fas fa-eye"></i></button>
                                                 </td>
                                                 <td>
                                                     <div class="btn-group" role="group">
@@ -186,9 +188,16 @@
             <div class="modal-dialog modal-dialog-centered modal-primary" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">
-                        <i class="fas fa-exclamation-triangle"></i> Actualizar Estado de Pago
-                    </h4>
+                    <div v-if="tipo_modal==='showDesc'">
+                        <h4 class="modal-title">
+                            <i class="fas fa-eye"></i> Descripción registrada
+                        </h4>
+                    </div>
+                    <div v-else>
+                        <h4 class="modal-title">
+                            <i class="fas fa-exclamation-triangle"></i> Actualizar Estado de Pago
+                        </h4>
+                    </div>
                     <button class="close" type="button" @click="closeModal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                     </button>
@@ -198,7 +207,8 @@
                         <div class="form-group">
                             <label class="col-form-label font-weight-bold">Observación:</label>
                             <div>
-                                <textarea class="form-control" type="text" v-model="observacion"></textarea>
+                                <textarea v-if="tipo_modal==='showDesc'" class="form-control" type="text" readonly v-model="observacion"></textarea>
+                                <textarea v-else class="form-control" type="text" v-model="observacion"></textarea>
                                 <span
                                     class="help-block text-danger"
                                     v-if="errors.length"
@@ -208,11 +218,16 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" @click="closeModal">
+                <div class="modal-footer" v-if="tipo_modal==='showDesc'">
+                    <button class="btn btn-danger" type="button" @click="closeModal">
+                        <i class="far fa-times-circle"></i> Cerrar
+                    </button>
+                </div>
+                <div class="modal-footer" v-else>
+                    <button class="btn btn-danger" type="button" @click="closeModal">
                         <i class="far fa-times-circle"></i> Cancelar
                     </button>
-                    <button class="btn btn-primary" @click="updateStateNota">
+                    <button class="btn btn-success" @click="updateStateNota">
                         <i class="far fa-check-circle"></i> Guardar
                     </button>
                 </div>
@@ -229,7 +244,8 @@ export default {
         return {
             errors: [],
             observacion: '',
-            params_observacion: {}
+            params_observacion: {},
+            tipo_modal: ''
         }
     },
     computed: {
@@ -298,6 +314,11 @@ export default {
         closeModal() {
             $("#modalNota").modal("hide");
             this.observacion = ''
+        },
+        showDesc(desc){
+            this.tipo_modal = 'showDesc'
+            this.observacion = desc
+            $("#modalNota").modal("show");
         },
         updateStateNota(){
             let me = this

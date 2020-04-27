@@ -3675,6 +3675,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -34734,6 +34735,37 @@ var staticRenderFns = [
                 attrs: { "data-wow-duration": "1.4s" }
               },
               [
+                _c("a", { attrs: { href: "/cursos" } }, [
+                  _c("div", { staticClass: "box" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "icon",
+                        staticStyle: { background: "#ecebff" }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fas fa-mouse-pointer",
+                          staticStyle: { color: "#8660fe" }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "title" }, [
+                      _vm._v("Cursos de informática")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-6 col-lg-4 wow bounceInUp",
+                attrs: { "data-wow-duration": "1.4s" }
+              },
+              [
                 _c("a", { attrs: { href: "/redes" } }, [
                   _c("div", { staticClass: "box" }, [
                     _c(
@@ -34752,6 +34784,39 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("h4", { staticClass: "title" }, [
                       _vm._v("Conectividad y comunicaciones")
+                    ])
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-6 col-lg-4 wow bounceInUp",
+                attrs: { "data-wow-delay": "0.1s", "data-wow-duration": "1.4s" }
+              },
+              [
+                _c("a", { attrs: { href: "/pruebas" } }, [
+                  _c("div", { staticClass: "box" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "icon",
+                        staticStyle: { background: "#e6fdfc" }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fas fa-list-ol",
+                          staticStyle: { color: "#3fcdc7" }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticClass: "title" }, [
+                      _vm._v(
+                        "Pruebas de suficiencia en TICs (Administrativos y estudiantes)"
+                      )
                     ])
                   ])
                 ])
@@ -34938,70 +35003,6 @@ var staticRenderFns = [
                     _vm._v(" "),
                     _c("h4", { staticClass: "title" }, [
                       _vm._v("Conceptos técnicos")
-                    ])
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-6 col-lg-4 wow bounceInUp",
-                attrs: { "data-wow-duration": "1.4s" }
-              },
-              [
-                _c("a", { attrs: { href: "/cursos" } }, [
-                  _c("div", { staticClass: "box" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "icon",
-                        staticStyle: { background: "#ffbfbf" }
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "fas fa-mouse-pointer",
-                          staticStyle: { color: "#c50e0e" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "title" }, [
-                      _vm._v("Cursos de informática")
-                    ])
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-6 col-lg-4 wow bounceInUp",
-                attrs: { "data-wow-delay": "0.1s", "data-wow-duration": "1.4s" }
-              },
-              [
-                _c("a", { attrs: { href: "/pruebas" } }, [
-                  _c("div", { staticClass: "box" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "icon",
-                        staticStyle: { background: "#e6fdfc" }
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "fas fa-list-ol",
-                          staticStyle: { color: "#3fcdc7" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "title" }, [
-                      _vm._v(
-                        "Pruebas de suficiencia en TICs (Administrativos y estudiantes)"
-                      )
                     ])
                   ])
                 ])
