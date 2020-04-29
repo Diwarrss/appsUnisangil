@@ -26392,10 +26392,36 @@ var render = function() {
                                 "table table-responsive-xl table-hover table-bordered table-sm"
                             },
                             [
-                              _vm._m(1),
+                              _c("thead", [
+                                _c("tr", [
+                                  _c("th", [_vm._v("#")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Nombres y Apellidos")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Documento y ID Unab")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Email")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Celular")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Sede")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Cursos")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Pago")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Fecha Solicitud")]),
+                                  _vm._v(" "),
+                                  _c("th", [_vm._v("Estado")]),
+                                  _vm._v(" "),
+                                  _vm.dataUser.roles_id != 4
+                                    ? _c("th", [_vm._v("Acción")])
+                                    : _vm._e()
+                                ])
+                              ]),
                               _vm._v(" "),
                               !_vm.infoTables.data
-                                ? _c("tbody", [_vm._m(2)])
+                                ? _c("tbody", [_vm._m(1)])
                                 : _vm._l(_vm.infoTables.data, function(
                                     data,
                                     index
@@ -26676,224 +26702,250 @@ var render = function() {
                                           ])
                                         : _vm._e(),
                                       _vm._v(" "),
-                                      _c("td", [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass: "btn-group",
-                                            attrs: { role: "group" }
-                                          },
-                                          [
-                                            _vm._m(3, true),
-                                            _vm._v(" "),
+                                      _vm.dataUser.roles_id != 4
+                                        ? _c("td", [
                                             _c(
                                               "div",
                                               {
-                                                staticClass: "dropdown-menu",
-                                                attrs: {
-                                                  "aria-labelledby":
-                                                    "btnGroupDrop1"
-                                                }
+                                                staticClass: "btn-group",
+                                                attrs: { role: "group" }
                                               },
                                               [
-                                                data.estado === "0" &&
-                                                _vm.dataUser.roles_id === 2
-                                                  ? _c("div", [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          staticClass:
-                                                            "dropdown-item",
-                                                          attrs: { href: "#" },
-                                                          on: {
-                                                            click: function(
-                                                              $event
-                                                            ) {
-                                                              $event.preventDefault()
-                                                              return _vm.updateState(
-                                                                data,
-                                                                "mail_send"
-                                                              )
-                                                            }
-                                                          }
-                                                        },
-                                                        [
-                                                          _vm._v(
-                                                            "Enviar E-Mail"
-                                                          )
-                                                        ]
-                                                      )
-                                                    ])
-                                                  : _vm._e(),
+                                                _vm._m(2, true),
                                                 _vm._v(" "),
-                                                data.estado === "2" &&
-                                                _vm.dataUser.roles_id === 3
-                                                  ? _c("div", [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          staticClass:
-                                                            "dropdown-item",
-                                                          attrs: { href: "#" },
-                                                          on: {
-                                                            click: function(
-                                                              $event
-                                                            ) {
-                                                              $event.preventDefault()
-                                                              return _vm.showModal(
-                                                                data,
-                                                                "pay_success"
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "dropdown-menu",
+                                                    attrs: {
+                                                      "aria-labelledby":
+                                                        "btnGroupDrop1"
+                                                    }
+                                                  },
+                                                  [
+                                                    data.estado === "0" &&
+                                                    _vm.dataUser.roles_id === 2
+                                                      ? _c("div", [
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.updateState(
+                                                                    data,
+                                                                    "mail_send"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _vm._v(
+                                                                "Enviar E-Mail"
                                                               )
-                                                            }
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("i", {
-                                                            staticClass:
-                                                              "far fa-check-circle",
-                                                            staticStyle: {
-                                                              color: "#67b30b"
-                                                            }
-                                                          }),
-                                                          _vm._v("Aprobar Pago")
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          staticClass:
-                                                            "dropdown-item",
-                                                          attrs: { href: "#" },
-                                                          on: {
-                                                            click: function(
-                                                              $event
-                                                            ) {
-                                                              $event.preventDefault()
-                                                              return _vm.updateState(
-                                                                data,
-                                                                "pay_reset"
-                                                              )
-                                                            }
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("i", {
-                                                            staticClass:
-                                                              "fas fa-reply-all",
-                                                            staticStyle: {
-                                                              color: "#e4b213"
-                                                            }
-                                                          }),
-                                                          _vm._v(
-                                                            "Devolver Pago"
+                                                            ]
                                                           )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          staticClass:
-                                                            "dropdown-item",
-                                                          attrs: { href: "#" },
-                                                          on: {
-                                                            click: function(
-                                                              $event
-                                                            ) {
-                                                              $event.preventDefault()
-                                                              return _vm.showModal(
-                                                                data,
-                                                                "pay_error"
+                                                        ])
+                                                      : _vm._e(),
+                                                    _vm._v(" "),
+                                                    data.estado === "2" &&
+                                                    _vm.dataUser.roles_id === 3
+                                                      ? _c("div", [
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.showModal(
+                                                                    data,
+                                                                    "pay_success"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                staticClass:
+                                                                  "far fa-check-circle",
+                                                                staticStyle: {
+                                                                  color:
+                                                                    "#67b30b"
+                                                                }
+                                                              }),
+                                                              _vm._v(
+                                                                "Aprobar Pago"
                                                               )
-                                                            }
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("i", {
-                                                            staticClass:
-                                                              "fas fa-times-circle",
-                                                            staticStyle: {
-                                                              color: "#f30a0a"
-                                                            }
-                                                          }),
-                                                          _vm._v("Anular Pago")
-                                                        ]
-                                                      )
-                                                    ])
-                                                  : _vm._e(),
-                                                _vm._v(" "),
-                                                data.estado === "3" &&
-                                                _vm.dataUser.roles_id === 3
-                                                  ? _c("div", [
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          staticClass:
-                                                            "dropdown-item",
-                                                          attrs: { href: "#" },
-                                                          on: {
-                                                            click: function(
-                                                              $event
-                                                            ) {
-                                                              $event.preventDefault()
-                                                              return _vm.updateState(
-                                                                data,
-                                                                "pay_reset"
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.updateState(
+                                                                    data,
+                                                                    "pay_reset"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                staticClass:
+                                                                  "fas fa-reply-all",
+                                                                staticStyle: {
+                                                                  color:
+                                                                    "#e4b213"
+                                                                }
+                                                              }),
+                                                              _vm._v(
+                                                                "Devolver Pago"
                                                               )
-                                                            }
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("i", {
-                                                            staticClass:
-                                                              "fas fa-reply-all",
-                                                            staticStyle: {
-                                                              color: "#e4b213"
-                                                            }
-                                                          }),
-                                                          _vm._v(
-                                                            "Devolver Pago"
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.showModal(
+                                                                    data,
+                                                                    "pay_error"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                staticClass:
+                                                                  "fas fa-times-circle",
+                                                                staticStyle: {
+                                                                  color:
+                                                                    "#f30a0a"
+                                                                }
+                                                              }),
+                                                              _vm._v(
+                                                                "Anular Pago"
+                                                              )
+                                                            ]
                                                           )
-                                                        ]
-                                                      ),
-                                                      _vm._v(" "),
-                                                      _c(
-                                                        "a",
-                                                        {
-                                                          staticClass:
-                                                            "dropdown-item",
-                                                          attrs: { href: "#" },
-                                                          on: {
-                                                            click: function(
-                                                              $event
-                                                            ) {
-                                                              $event.preventDefault()
-                                                              return _vm.showModal(
-                                                                data,
-                                                                "pay_error"
+                                                        ])
+                                                      : _vm._e(),
+                                                    _vm._v(" "),
+                                                    data.estado === "3" &&
+                                                    _vm.dataUser.roles_id === 3
+                                                      ? _c("div", [
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.updateState(
+                                                                    data,
+                                                                    "pay_reset"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                staticClass:
+                                                                  "fas fa-reply-all",
+                                                                staticStyle: {
+                                                                  color:
+                                                                    "#e4b213"
+                                                                }
+                                                              }),
+                                                              _vm._v(
+                                                                "Devolver Pago"
                                                               )
-                                                            }
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("i", {
-                                                            staticClass:
-                                                              "fas fa-times-circle",
-                                                            staticStyle: {
-                                                              color: "#f30a0a"
-                                                            }
-                                                          }),
-                                                          _vm._v("Anular Pago")
-                                                        ]
-                                                      )
-                                                    ])
-                                                  : _vm._e()
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.showModal(
+                                                                    data,
+                                                                    "pay_error"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                staticClass:
+                                                                  "fas fa-times-circle",
+                                                                staticStyle: {
+                                                                  color:
+                                                                    "#f30a0a"
+                                                                }
+                                                              }),
+                                                              _vm._v(
+                                                                "Anular Pago"
+                                                              )
+                                                            ]
+                                                          )
+                                                        ])
+                                                      : _vm._e()
+                                                  ]
+                                                )
                                               ]
                                             )
-                                          ]
-                                        )
-                                      ])
+                                          ])
+                                        : _vm._e()
                                     ])
                                   })
                             ],
@@ -26944,8 +26996,8 @@ var render = function() {
                   _c("div", { staticClass: "modal-content" }, [
                     _c("div", { staticClass: "modal-header" }, [
                       _vm.tipo_modal === "showDesc"
-                        ? _c("div", [_vm._m(4)])
-                        : _c("div", [_vm._m(5)]),
+                        ? _c("div", [_vm._m(3)])
+                        : _c("div", [_vm._m(4)]),
                       _vm._v(" "),
                       _c(
                         "button",
@@ -27099,36 +27151,6 @@ var staticRenderFns = [
           _c("i", { staticClass: "fas fa-users-cog" }),
           _vm._v(" Solicitudes de Cursos")
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("#")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Nombres y Apellidos")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Documento y ID Unab")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Email")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Celular")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Sede")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Cursos")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Pago")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Fecha Solicitud")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Estado")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Acción")])
       ])
     ])
   },

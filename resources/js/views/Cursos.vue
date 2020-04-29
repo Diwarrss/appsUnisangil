@@ -75,7 +75,7 @@
                                                     <th>Pago</th>
                                                     <th>Fecha Solicitud</th>
                                                     <th>Estado</th>
-                                                    <th>Acción</th>
+                                                    <th v-if="dataUser.roles_id != 4">Acción</th>
                                                 </tr>
                                             </thead>
                                             <!-- verificamos si el objeto es vacio -->
@@ -137,7 +137,7 @@
                                                     <span class="badge badge-default">Pago Anulado</span>
                                                     <button class="btn btn-outline-dark" title="Ver descripción" @click.prevent="showDesc(data.nota_anulado)"><i class="fas fa-eye"></i></button>
                                                 </td>
-                                                <td>
+                                                <td v-if="dataUser.roles_id != 4">
                                                     <div class="btn-group" role="group">
                                                         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="far fa-check-circle"></i> Elegir

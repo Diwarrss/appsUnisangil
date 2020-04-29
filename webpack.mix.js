@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix
 .browserSync({
+    host: 'appsunisangil.local',
     proxy: 'http://appsunisangil.local:8081/'
 })
 .js('resources/js/appHome.js', 'public/js/appHome.js') //js de Home inicio de Pagina
