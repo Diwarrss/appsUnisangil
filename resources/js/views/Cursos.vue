@@ -137,6 +137,10 @@
                                                     <span class="badge badge-default">Pago Anulado</span>
                                                     <button class="btn btn-outline-dark" title="Ver descripción" @click.prevent="showDesc(data.nota_anulado)"><i class="fas fa-eye"></i></button>
                                                 </td>
+                                                <td v-if="data.estado === '5'">
+                                                    <span class="badge badge-dark">Registro Anulado</span>
+                                                    <button class="btn btn-outline-dark" title="Ver descripción" @click.prevent="showDesc(data.nota_anulado)"><i class="fas fa-eye"></i></button>
+                                                </td>
                                                 <td v-if="dataUser.roles_id != 4">
                                                     <div class="btn-group" role="group">
                                                         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -154,6 +158,9 @@
                                                             <div v-if="data.estado === '3' && dataUser.roles_id === 3">
                                                                 <a class="dropdown-item" href="#" @click.prevent="updateState(data, 'pay_reset')"><i class="fas fa-reply-all" style="color: #e4b213;"></i>Devolver Pago</a>
                                                                 <a class="dropdown-item" href="#" @click.prevent="showModal(data, 'pay_error')"><i class="fas fa-times-circle" style="color: #f30a0a;"></i>Anular Pago</a>
+                                                            </div>
+                                                            <div v-if="dataUser.roles_id === 1 && data.estado != '5'">
+                                                                <a class="dropdown-item" href="#" @click.prevent="showModal(data, 'data_delete')"><i class="fas fa-times-circle" style="color: #f30a0a;"></i>Eliminar Registro</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -304,6 +311,14 @@ export default {
             }
             if(type === 'pay_error'){
                 me.tipo_modal = 'pay_error'
+                let params = {
+                    id: data.id,
+                    type: type
+                }
+                this.params_observacion = params
+            }
+            if(type === 'data_delete'){
+                me.tipo_modal = 'data_delete'
                 let params = {
                     id: data.id,
                     type: type

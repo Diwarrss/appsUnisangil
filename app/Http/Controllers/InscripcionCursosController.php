@@ -149,7 +149,10 @@ class InscripcionCursosController extends Controller
         $selectSolicitud = InscripcionCursos::where([['numero_documento','=',$request->numero_documento],['estado', '=', '0']])->get();
 
         if (count($selectSolicitud) > 0) {
-            return response()->json(['message' => 'Ya hay una solicitud en proceso!'], 409);
+            return response()->json([
+                'message' => 'Ya hay una solicitud en proceso!',
+                'data' => $selectSolicitud
+            ], 409);
         } else {
             try {
                 DB::beginTransaction();
@@ -252,6 +255,11 @@ class InscripcionCursosController extends Controller
             case 'pay_reset':
                 $insCurso->estado = '1';
                 $insCurso->url_comprobante = '';
+                $insCurso->save();
+                break;
+            case 'data_delete':
+                $insCurso->estado = '5';
+                $insCurso->nota_anulado = $request->nota;
                 $insCurso->save();
                 break;
 

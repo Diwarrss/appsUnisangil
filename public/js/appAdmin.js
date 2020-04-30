@@ -2339,6 +2339,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2422,6 +2429,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           type: type
         };
         this.params_observacion = _params;
+      }
+
+      if (type === 'data_delete') {
+        me.tipo_modal = 'data_delete';
+        var _params2 = {
+          id: data.id,
+          type: type
+        };
+        this.params_observacion = _params2;
       }
     },
     closeModal: function closeModal() {
@@ -26702,6 +26718,42 @@ var render = function() {
                                           ])
                                         : _vm._e(),
                                       _vm._v(" "),
+                                      data.estado === "5"
+                                        ? _c("td", [
+                                            _c(
+                                              "span",
+                                              {
+                                                staticClass: "badge badge-dark"
+                                              },
+                                              [_vm._v("Registro Anulado")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass:
+                                                  "btn btn-outline-dark",
+                                                attrs: {
+                                                  title: "Ver descripción"
+                                                },
+                                                on: {
+                                                  click: function($event) {
+                                                    $event.preventDefault()
+                                                    return _vm.showDesc(
+                                                      data.nota_anulado
+                                                    )
+                                                  }
+                                                }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass: "fas fa-eye"
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        : _vm._e(),
+                                      _vm._v(" "),
                                       _vm.dataUser.roles_id != 4
                                         ? _c("td", [
                                             _c(
@@ -26935,6 +26987,46 @@ var render = function() {
                                                               }),
                                                               _vm._v(
                                                                 "Anular Pago"
+                                                              )
+                                                            ]
+                                                          )
+                                                        ])
+                                                      : _vm._e(),
+                                                    _vm._v(" "),
+                                                    _vm.dataUser.roles_id ===
+                                                      1 && data.estado != "5"
+                                                      ? _c("div", [
+                                                          _c(
+                                                            "a",
+                                                            {
+                                                              staticClass:
+                                                                "dropdown-item",
+                                                              attrs: {
+                                                                href: "#"
+                                                              },
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  $event.preventDefault()
+                                                                  return _vm.showModal(
+                                                                    data,
+                                                                    "data_delete"
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                staticClass:
+                                                                  "fas fa-times-circle",
+                                                                staticStyle: {
+                                                                  color:
+                                                                    "#f30a0a"
+                                                                }
+                                                              }),
+                                                              _vm._v(
+                                                                "Eliminar Registro"
                                                               )
                                                             ]
                                                           )

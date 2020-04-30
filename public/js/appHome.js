@@ -2471,12 +2471,14 @@ __webpack_require__.r(__webpack_exports__);
 
         if (error.response.status == 409) {
           var message = error.response.data.message;
+          var data = error.response.data.data[0];
 
           if (message) {
             me.$swal({
               position: 'top',
               icon: 'error',
               title: "".concat(message),
+              text: "Solicitud enviada el ".concat(data.created_at),
               showConfirmButton: true //timer: 1800
 
             });
@@ -29969,7 +29971,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "cursos" } }, [
-      _c("strong", [_vm._v("Cursos a Inscribirme")])
+      _c("strong", [_vm._v("Selecciona los Cursos")])
     ])
   },
   function() {

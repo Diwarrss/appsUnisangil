@@ -26,7 +26,7 @@ class CreateInscripcionCursosTable extends Migration
             $table->string('nota_aprobado', 255)->nullable();
             $table->string('nota_anulado', 255)->nullable();
             $table->string('url_comprobante', 200)->nullable();
-            $table->enum('estado', [0,1,2,3,4])->comment('0 = Pendiente Generar Recibo, 1 = En Curso o Mail enviado con Recibo, 2 = Pago Recibido por Validar , 3 = Pago Aprobado, 4 = Pago Anulado');
+            $table->enum('estado', [0,1,2,3,4,5])->comment('0 = Pendiente Generar Recibo, 1 = En Curso o Mail enviado con Recibo, 2 = Pago Recibido por Validar , 3 = Pago Aprobado, 4 = Pago Anulado, 5 = Anulado');
             $table->unsignedBigInteger('sedes_id');
             $table->foreign('sedes_id')->references('id')->on('sedes');
             $table->timestamps();

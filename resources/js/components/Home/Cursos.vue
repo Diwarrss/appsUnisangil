@@ -348,7 +348,7 @@
                                         </span>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="cursos"><strong>Cursos a Inscribirme</strong></label>
+                                        <label for="cursos"><strong>Selecciona los Cursos</strong></label>
                                         <v-select
                                             :options="cursos"
                                             label="nombre"
@@ -607,11 +607,13 @@ export default {
                     }
                     if (error.response.status == 409) {
                         let message = error.response.data.message;
+                        let data = error.response.data.data[0];
                         if (message) {
                             me.$swal({
                                 position: 'top',
                                 icon: 'error',
                                 title: `${message}`,
+                                text: `Solicitud enviada el ${data.created_at}`,
                                 showConfirmButton: true
                                 //timer: 1800
                             });
