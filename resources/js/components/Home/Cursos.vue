@@ -80,7 +80,10 @@
                             <div class="modal-body cuentas_bancarias">
                                 <div>
                                     <h3>Sede Yopal</h3>
-                                    <div class="text-left">
+                                    <div class="mb-2">
+                                        <img src="storage/calendarioCursos/CuentasYopal.png" class="img-fluid">
+                                    </div>
+                                    <!-- <div class="text-left">
                                         <span>
                                             <strong>• BANCO CAJA SOCIAL convenio 60026 o cta Ahorro No. 24507618193</strong> a nombre de Fundación Universitaria de Sangil Unisangil
                                         </span>
@@ -88,7 +91,7 @@
                                         <span>
                                             <strong>• BANCOLOMBIA  cta corriente No. 36309930994</strong> a nombre de Fundación Universitaria de Sangil Unisangil
                                         </span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div>
                                     <h3>Sede San Gil</h3>
@@ -327,26 +330,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="cursos"><strong>Cursos a Inscribirme</strong></label>
-                                    <v-select
-                                        :options="cursos"
-                                        label="nombre"
-                                        :reduce="nvl => nvl.id"
-                                        :multiple="true"
-                                        placeholder="Seleccionar..."
-                                        v-model="dataRegister.cursos"
-                                        :class="{'invalid__input_select': errors['cursos']}"
-                                        >
-                                    </v-select>
-                                    <span class="invalid__input" v-if="errors['cursos']">
-                                        {{errors['cursos'][0]}}
-                                    </span>
-                                </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="sede"><strong>Sede</strong></label>
                                         <v-select
+                                            @input="changedSede"
                                             :options="sedes"
                                             label="nombre"
                                             placeholder="Seleccionar..."
@@ -360,14 +348,31 @@
                                         </span>
                                     </div>
                                     <div class="form-group col-md-6">
+                                        <label for="cursos"><strong>Cursos a Inscribirme</strong></label>
+                                        <v-select
+                                            :options="cursos"
+                                            label="nombre"
+                                            :reduce="nvl => nvl.id"
+                                            :multiple="true"
+                                            placeholder="Seleccionar..."
+                                            v-model="dataRegister.cursos"
+                                            :class="{'invalid__input_select': errors['cursos']}"
+                                            >
+                                            <div slot="no-options">No hay Resultados!</div>
+                                        </v-select>
+                                        <span class="invalid__input" v-if="errors['cursos']">
+                                            {{errors['cursos'][0]}}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
                                         <label for="academico"><strong>Programa académico</strong></label>
                                         <v-select :options="programas" placeholder="Seleccionar..." v-model="dataRegister.programa_academico" :class="{'invalid__input_select': errors['programa_academico']}"></v-select>
                                         <span class="invalid__input" v-if="errors['programa_academico']">
                                             {{errors['programa_academico'][0]}}
                                         </span>
                                     </div>
-                                </div>
-                                <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="email"><strong>Correo institucional</strong></label>
                                         <input type="text" class="form-control" id="email" placeholder="email@unab.edu.co" v-model="dataRegister.email" :class="{'is-invalid': errors['email']}">
@@ -375,6 +380,8 @@
                                             {{errors['email'][0]}}
                                         </div>
                                     </div>
+                                </div>
+                                <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="celular"><strong>Celular</strong></label>
                                         <vue-tel-input v-model="dataRegister.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
@@ -494,7 +501,8 @@ export default {
     },
     computed: {
         cursos(){
-            return this.$store.state.dataCursos
+            return this.$store.getters.getCursoFilter(this.dataRegister.sede.id)
+            //return this.$store.state.dataCursos
         },
         programas(){
             return this.$store.state.programasCursos
@@ -511,6 +519,9 @@ export default {
         this.$store.dispatch('getSedes')
     },
     methods: {
+        changedSede(){
+            this.dataRegister.cursos = []
+        },
         downloadCalendar(){
             document.getElementById("downloadFile").disabled = true;
             axios({
@@ -582,7 +593,7 @@ export default {
                         position: 'top',
                         icon: 'success',
                         title: "Registro enviado con éxito",
-                        html: `<strong>${me.dataRegister.nombres},</strong> en unos minutos recibirás un E-mail de admisiones, registro y control académico con el <strong>polígrafo de pago</strong>!`,
+                        html: `<strong>${me.dataRegister.nombres},</strong> en el transcurso del día recibirás un E-mail de admisiones, registro y control académico con el <strong>polígrafo de pago</strong>!`,
                         showConfirmButton: true
                         //timer: 1800
                     });
@@ -593,6 +604,18 @@ export default {
                 .catch(function(error) {
                     if (error.response.status == 422) {
                         me.errors = error.response.data.errors;
+                    }
+                    if (error.response.status == 409) {
+                        let message = error.response.data.message;
+                        if (message) {
+                            me.$swal({
+                                position: 'top',
+                                icon: 'error',
+                                title: `${message}`,
+                                showConfirmButton: true
+                                //timer: 1800
+                            });
+                        }
                     }
                     document.getElementById("save").disabled = false;
                 });

@@ -2323,6 +2323,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2348,7 +2355,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     cursos: function cursos() {
-      return this.$store.state.dataCursos;
+      return this.$store.getters.getCursoFilter(this.dataRegister.sede.id); //return this.$store.state.dataCursos
     },
     programas: function programas() {
       return this.$store.state.programasCursos;
@@ -2376,6 +2383,9 @@ __webpack_require__.r(__webpack_exports__);
     }, null, this);
   },
   methods: {
+    changedSede: function changedSede() {
+      this.dataRegister.cursos = [];
+    },
     downloadCalendar: function downloadCalendar() {
       var _this = this;
 
@@ -2448,7 +2458,7 @@ __webpack_require__.r(__webpack_exports__);
           position: 'top',
           icon: 'success',
           title: "Registro enviado con éxito",
-          html: "<strong>".concat(me.dataRegister.nombres, ",</strong> en unos minutos recibir\xE1s un E-mail de admisiones, registro y control acad\xE9mico con el <strong>pol\xEDgrafo de pago</strong>!"),
+          html: "<strong>".concat(me.dataRegister.nombres, ",</strong> en el transcurso del d\xEDa recibir\xE1s un E-mail de admisiones, registro y control acad\xE9mico con el <strong>pol\xEDgrafo de pago</strong>!"),
           showConfirmButton: true //timer: 1800
 
         });
@@ -2457,6 +2467,20 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (error) {
         if (error.response.status == 422) {
           me.errors = error.response.data.errors;
+        }
+
+        if (error.response.status == 409) {
+          var message = error.response.data.message;
+
+          if (message) {
+            me.$swal({
+              position: 'top',
+              icon: 'error',
+              title: "".concat(message),
+              showConfirmButton: true //timer: 1800
+
+            });
+          }
         }
 
         document.getElementById("save").disabled = false;
@@ -28541,57 +28565,12 @@ var render = function() {
                             ])
                           ]),
                           _vm._v(" "),
-                          _c(
-                            "div",
-                            { staticClass: "form-group" },
-                            [
-                              _vm._m(15),
-                              _vm._v(" "),
-                              _c("v-select", {
-                                class: {
-                                  invalid__input_select: _vm.errors["cursos"]
-                                },
-                                attrs: {
-                                  options: _vm.cursos,
-                                  label: "nombre",
-                                  reduce: function(nvl) {
-                                    return nvl.id
-                                  },
-                                  multiple: true,
-                                  placeholder: "Seleccionar..."
-                                },
-                                model: {
-                                  value: _vm.dataRegister.cursos,
-                                  callback: function($$v) {
-                                    _vm.$set(_vm.dataRegister, "cursos", $$v)
-                                  },
-                                  expression: "dataRegister.cursos"
-                                }
-                              }),
-                              _vm._v(" "),
-                              _vm.errors["cursos"]
-                                ? _c(
-                                    "span",
-                                    { staticClass: "invalid__input" },
-                                    [
-                                      _vm._v(
-                                        "\n                                    " +
-                                          _vm._s(_vm.errors["cursos"][0]) +
-                                          "\n                                "
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
                           _c("div", { staticClass: "form-row" }, [
                             _c(
                               "div",
                               { staticClass: "form-group col-md-6" },
                               [
-                                _vm._m(16),
+                                _vm._m(15),
                                 _vm._v(" "),
                                 _c(
                                   "v-select",
@@ -28604,6 +28583,7 @@ var render = function() {
                                       label: "nombre",
                                       placeholder: "Seleccionar..."
                                     },
+                                    on: { input: _vm.changedSede },
                                     model: {
                                       value: _vm.dataRegister.sede,
                                       callback: function($$v) {
@@ -28641,6 +28621,71 @@ var render = function() {
                               1
                             ),
                             _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "form-group col-md-6" },
+                              [
+                                _vm._m(16),
+                                _vm._v(" "),
+                                _c(
+                                  "v-select",
+                                  {
+                                    class: {
+                                      invalid__input_select:
+                                        _vm.errors["cursos"]
+                                    },
+                                    attrs: {
+                                      options: _vm.cursos,
+                                      label: "nombre",
+                                      reduce: function(nvl) {
+                                        return nvl.id
+                                      },
+                                      multiple: true,
+                                      placeholder: "Seleccionar..."
+                                    },
+                                    model: {
+                                      value: _vm.dataRegister.cursos,
+                                      callback: function($$v) {
+                                        _vm.$set(
+                                          _vm.dataRegister,
+                                          "cursos",
+                                          $$v
+                                        )
+                                      },
+                                      expression: "dataRegister.cursos"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        attrs: { slot: "no-options" },
+                                        slot: "no-options"
+                                      },
+                                      [_vm._v("No hay Resultados!")]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _vm.errors["cursos"]
+                                  ? _c(
+                                      "span",
+                                      { staticClass: "invalid__input" },
+                                      [
+                                        _vm._v(
+                                          "\n                                        " +
+                                            _vm._s(_vm.errors["cursos"][0]) +
+                                            "\n                                    "
+                                        )
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ],
+                              1
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "form-row" }, [
                             _c(
                               "div",
                               { staticClass: "form-group col-md-6" },
@@ -28689,10 +28734,8 @@ var render = function() {
                                   : _vm._e()
                               ],
                               1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "form-row" }, [
+                            ),
+                            _vm._v(" "),
                             _c("div", { staticClass: "form-group col-md-6" }, [
                               _vm._m(18),
                               _vm._v(" "),
@@ -28740,8 +28783,10 @@ var render = function() {
                                     ]
                                   )
                                 : _vm._e()
-                            ]),
-                            _vm._v(" "),
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "form-row" }, [
                             _c(
                               "div",
                               { staticClass: "form-group col-md-6" },
@@ -29453,28 +29498,13 @@ var staticRenderFns = [
                   _c("div", [
                     _c("h3", [_vm._v("Sede Yopal")]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "text-left" }, [
-                      _c("span", [
-                        _c("strong", [
-                          _vm._v(
-                            "• BANCO CAJA SOCIAL convenio 60026 o cta Ahorro No. 24507618193"
-                          )
-                        ]),
-                        _vm._v(
-                          " a nombre de Fundación Universitaria de Sangil Unisangil\n                                    "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("br"),
-                      _vm._v(" "),
-                      _c("span", [
-                        _c("strong", [
-                          _vm._v("• BANCOLOMBIA  cta corriente No. 36309930994")
-                        ]),
-                        _vm._v(
-                          " a nombre de Fundación Universitaria de Sangil Unisangil\n                                    "
-                        )
-                      ])
+                    _c("div", { staticClass: "mb-2" }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src: "storage/calendarioCursos/CuentasYopal.png"
+                        }
+                      })
                     ])
                   ]),
                   _vm._v(" "),
@@ -29930,16 +29960,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "cursos" } }, [
-      _c("strong", [_vm._v("Cursos a Inscribirme")])
+    return _c("label", { attrs: { for: "sede" } }, [
+      _c("strong", [_vm._v("Sede")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "sede" } }, [
-      _c("strong", [_vm._v("Sede")])
+    return _c("label", { attrs: { for: "cursos" } }, [
+      _c("strong", [_vm._v("Cursos a Inscribirme")])
     ])
   },
   function() {
@@ -60017,6 +60047,13 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
           'id': dn.id
         };
       });
+    },
+    getCursoFilter: function getCursoFilter(state) {
+      return function (id) {
+        return state.dataCursos.filter(function (dc) {
+          return dc.sedes_id === id;
+        });
+      };
     }
   }
 });

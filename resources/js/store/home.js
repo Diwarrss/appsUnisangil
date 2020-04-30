@@ -71,6 +71,9 @@ export default {
                     'id': dn.id
                 }
             })
+        },
+        getCursoFilter: (state) => (id) => {
+            return state.dataCursos.filter(dc => dc.sedes_id === id)
         }
     }
 };

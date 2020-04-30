@@ -14,5 +14,12 @@ class Cursos extends Model
         'fecha_inicio_inscripcion',
         'fecha_fin_inscripcion',
         'estado',
+        'sedes_id'
     ];
+
+    public function sede()
+    {
+        //return sede del curso
+        return $this->hasOne('App\Sede','id','sedes_id');
+    }
 }
