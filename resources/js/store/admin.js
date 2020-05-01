@@ -3,6 +3,7 @@ export default {
     state: {
         dataUser: {},
         infoTables:{},
+        popos: 5
     },
     mutations: {
         setDataUser(state, data) {

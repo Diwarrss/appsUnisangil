@@ -2353,28 +2353,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       errors: [],
       observacion: '',
       params_observacion: {},
-      tipo_modal: ''
-    };
-  },
-  computed: _objectSpread({
-    dataUser: function dataUser() {
-      return this.$store.state.dataUser;
-    }
-  }, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])(['infoTables']), {
-    paramsTable: function paramsTable() {
-      var me = this;
-      var datos = {
+      tipo_modal: '',
+      paramsTable: {
         url_api: 'insCursos/getDataTable',
         params: {
-          page: me.getCurrentPage,
+          page: 1,
           criterio: 'num_doc',
           buscar: '',
-          cant: 5,
-          sede: me.dataUser.sedes_id
+          cant: 5
         }
-      };
-      return datos;
-    },
+      }
+    };
+  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])(['infoTables', 'dataUser']), {
     getCurrentPage: function getCurrentPage() {
       return this.infoTables.current_page;
     }
@@ -48807,7 +48798,8 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 /* harmony default export */ __webpack_exports__["default"] = ({
   state: {
     dataUser: {},
-    infoTables: {}
+    infoTables: {},
+    popos: 5
   },
   mutations: {
     setDataUser: function setDataUser(state, data) {

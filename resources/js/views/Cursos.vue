@@ -252,28 +252,20 @@ export default {
             errors: [],
             observacion: '',
             params_observacion: {},
-            tipo_modal: ''
+            tipo_modal: '',
+            paramsTable: {
+                url_api: 'insCursos/getDataTable',
+                params:{
+                    page: 1,
+                    criterio: 'num_doc',
+                    buscar:'',
+                    cant: 5
+                }
+            }
         }
     },
     computed: {
-        dataUser(){
-            return this.$store.state.dataUser
-        },
-        ...mapState(['infoTables']),
-        paramsTable(){
-            let me = this
-            let datos = {
-                    url_api: 'insCursos/getDataTable',
-                    params:{
-                        page: me.getCurrentPage,
-                        criterio: 'num_doc',
-                        buscar:'',
-                        cant:5,
-                        sede: me.dataUser.sedes_id
-                    }
-                }
-            return datos
-        },
+        ...mapState(['infoTables', 'dataUser']),
         getCurrentPage(){
             return this.infoTables.current_page
         },
