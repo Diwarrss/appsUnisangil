@@ -393,67 +393,85 @@
                             </form>
                         </div>
                         <div class="modal-body body__search" v-if="typeModal === 2">
-                            <form enctype="multipart/form-data">
-                                <div class="form-row">
-                                    <div class="form-group col-md-3">
-                                        <label for="tipDocumento"><strong>Tipo Documento</strong></label>
-                                        <select class="form-control" @change="clearData" v-model="dataRegister.tipo_documento" placeholder="Seleccionar..." :class="{'is-invalid': errors['tipo_documento']}">
-                                            <option value="" disabled selected>Seleccionar...</option>
-                                            <option v-for="elemento in tiposDoc" :key="elemento" v-bind:value="elemento">{{ elemento }}</option>
-                                        </select>
-                                        <span class="invalid__input" v-if="errors['tipo_documento']">
-                                            Obligatorio.
-                                        </span>
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="numDocumento"><strong>Número Documento</strong></label>
-                                        <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}" @focus="clearData">
-                                        <div class="invalid-feedback" v-if="errors['numero_documento']">
-                                            {{errors['numero_documento'][0]}}
-                                        </div>
-                                    </div>
-                                    <!-- <div class="form-group col-md-4">
-                                        <label for="numId"><strong>ID UNAB</strong></label>
-                                        <input type="string" class="form-control" id="numId" v-model="dataRegister.numero_id" :class="{'is-invalid': errors['numero_id']}" @focus="clearDataTdNumDoc">
-                                        <div class="invalid-feedback" v-if="errors['numero_id']">
-                                            {{errors['numero_id'][0]}}
-                                        </div>
-                                    </div> -->
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="tipDocumento"><strong>Tipo Documento</strong></label>
+                                    <select class="form-control" @change="clearData" v-model="dataRegister.tipo_documento" placeholder="Seleccionar..." :class="{'is-invalid': errors['tipo_documento']}">
+                                        <option value="" disabled selected>Seleccionar...</option>
+                                        <option v-for="elemento in tiposDoc" :key="elemento" v-bind:value="elemento">{{ elemento }}</option>
+                                    </select>
+                                    <span class="invalid__input" v-if="errors['tipo_documento']">
+                                        Obligatorio.
+                                    </span>
                                 </div>
-                                <div v-if="dataUploadFile.data" class="result_content">
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="nombres"><strong>Nombres</strong></label>
-                                            <input type="text" class="form-control"  id="nombres" v-model="dataUploadFile.data.nombres" readonly>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="apellidos"><strong>Apellidos</strong></label>
-                                            <input type="text" class="form-control" id="apellidos" v-model="dataUploadFile.data.apellidos" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6">
-                                            <label for="programa"><strong>Programa académico</strong></label>
-                                            <input type="text" class="form-control" id="programa" v-model="dataUploadFile.data.programa_academico" readonly>
-                                        </div>
-                                        <div class="form-group col-md-6 my-auto text-center created_at">
-                                            <label for="created_at"><strong>Fecha Solicitud: </strong></label>
-                                            <label for="">{{dataUploadFile.data.created_at | moment('DD/MM/YYYY h:mm a')}}</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="soporte"><strong>Soporte de pago</strong></label>
-                                        <div class="custom-file file_div">
-                                            <input type="file" class="custom-file-input" @change="obtenerArchivo" :class="{'is-invalid': errors['url_comprobante']}"/>
-                                            <label class="custom-file-label" for="file" v-if="!dataUploadFile.url_comprobante">Adjuntar Archivo</label>
-                                            <label class="custom-file-label" for="file" v-else>{{dataUploadFile.url_comprobante.name}}</label>
-                                        </div>
-                                        <span class="invalid__input" v-if="errors['url_comprobante']">
-                                            {{errors['url_comprobante'][0]}}
-                                        </span>
+                                <div class="form-group col-md-5">
+                                    <label for="numDocumento"><strong>Número Documento</strong></label>
+                                    <input type="string" class="form-control" id="numDocumento" v-model="dataRegister.numero_documento" :class="{'is-invalid': errors['numero_documento']}" @focus="clearData">
+                                    <div class="invalid-feedback" v-if="errors['numero_documento']">
+                                        {{errors['numero_documento'][0]}}
                                     </div>
                                 </div>
-                            </form>
+                                <!-- <div class="form-group col-md-4">
+                                    <label for="numId"><strong>ID UNAB</strong></label>
+                                    <input type="string" class="form-control" id="numId" v-model="dataRegister.numero_id" :class="{'is-invalid': errors['numero_id']}" @focus="clearDataTdNumDoc">
+                                    <div class="invalid-feedback" v-if="errors['numero_id']">
+                                        {{errors['numero_id'][0]}}
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div v-if="dataUploadFile.data" >
+                                <div class="result_content_main">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="nombres"><strong>Nombres:</strong></label>
+                                            <p>{{dataUploadFile.data[0].nombres}}</p>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="apellidos"><strong>Apellidos:</strong></label>
+                                            <p>{{dataUploadFile.data[0].apellidos}}</p>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="programa"><strong>Programa académico: </strong></label>
+                                            <p>{{dataUploadFile.data[0].programa_academico}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form enctype="multipart/form-data">
+                                    <div v-for="(item, index) in dataUploadFile.data" :key="index" class="result_content">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="created_at"><strong>Cursos: </strong></label>
+                                                <ul v-for="(cur, curId) in item.cursos" :key="curId">
+                                                    <li>{{cur.nombre}}</li>
+                                                </ul>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="created_at"><strong>Sede: </strong></label>
+                                                <ul>
+                                                    <li>{{item.sede.nombre}}</li>
+                                                </ul>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="created_at"><strong>Fecha Solicitud: </strong></label>
+                                                <ul>{{item.created_at | moment('DD/MM/YYYY h:mm a')}}</ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="soporte"><strong>Soporte de pago</strong></label>
+                                            <div class="custom-file file_div">
+                                                <input type="file" class="custom-file-input" @change="obtenerArchivo(index)" :class="{'is-invalid': errors['url_comprobante']}"/>
+                                                <label class="custom-file-label" for="file">Adjuntar Archivo</label>
+
+                                                <label class="custom-file-label" for="file" v-if="!item.url_comprobante">Adjuntar Archivo</label>
+                                                <label class="custom-file-label" for="file" v-else>{{item.url_comprobante.name}}</label>
+                                            </div>
+                                            <span class="invalid__input" v-if="errors['url_comprobante']">
+                                                {{errors['url_comprobante'][index]}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                         <div class="modal-footer" v-if="typeModal === 1">
                             <button type="button" class="btn btn-danger" @click="closeForm"><i class="far fa-times-circle"></i> Cancelar</button>
@@ -462,7 +480,7 @@
                         <div class="modal-footer" v-if="typeModal === 2">
                             <div v-if="dataUploadFile.data">
                                 <button type="button" class="btn btn-danger" @click="closeForm"><i class="far fa-times-circle"></i> Cancelar</button>
-                                <button type="button" class="btn btn-success" :class="{'disabled': !dataUploadFile.url_comprobante , 'enabled' : dataUploadFile.url_comprobante}" @click="sendFile" id="save" ><i class="fas fa-paper-plane"></i> Enviar</button>
+                                <button type="button" class="btn btn-success"  @click="sendFile" id="save" ><i class="fas fa-paper-plane"></i> Enviar</button>
                             </div>
                             <div v-else>
                                 <button type="button" class="btn btn-danger" @click="closeForm"><i class="far fa-times-circle"></i> Cancelar</button>
@@ -495,7 +513,6 @@ export default {
             },
             dataUploadFile:{
                 data: null,
-                url_comprobante: ''
             }
         }
     },
@@ -560,7 +577,7 @@ export default {
             this.dataRegister.programa_academico = ''
             this.dataRegister.cursos = ''
             this.dataUploadFile.data = null
-            this.dataUploadFile.url_comprobante = ''
+            /* this.dataUploadFile.url_comprobante = '' */
         },
         clearData(){
             this.dataUploadFile.data = null
@@ -607,13 +624,17 @@ export default {
                     }
                     if (error.response.status == 409) {
                         let message = error.response.data.message;
-                        let data = error.response.data.data[0];
+                        let data = error.response.data.data;
+                        let cursos = data.map(da => {
+                            var obj = da.cursos.map( dc => {return dc.nombre})
+                            return obj
+                        })
                         if (message) {
                             me.$swal({
                                 position: 'top',
                                 icon: 'error',
                                 title: `${message}`,
-                                text: `Solicitud enviada el ${data.created_at}`,
+                                text: `${cursos}`,
                                 showConfirmButton: true
                                 //timer: 1800
                             });
@@ -633,7 +654,7 @@ export default {
                     }
                 })
                 .then(function(response) {
-                    me.dataUploadFile.data = response.data[0]
+                    me.dataUploadFile.data = response.data
                     me.errors = []
                     document.getElementById("save").disabled = false;
                     //console.log(response);
@@ -656,26 +677,72 @@ export default {
                     document.getElementById("save").disabled = false;
                 });
         },
-        obtenerArchivo(e) {
+        obtenerArchivo(index) {
+            let me = this
+            me.errors = []
             let file = event.target.files[0];
-            this.dataUploadFile.url_comprobante = file;
-            //console.log(this.dataForm.url_comprobante);
+
+            if (file.type == "image/PNG" ||file.type == "image/JPG" || file.type == "image/jpg" || file.type == "image/jpeg" || file.type == "image/JPEG" || file.type == "image/png" || file.type == "application/pdf") {
+                me.dataUploadFile.data[index].url_comprobante = file
+                me.errors = []
+            } else {
+                me.dataUploadFile.data[index].url_comprobante = null
+                me.$swal({
+                    position: 'top',
+                    icon: 'warning',
+                    title: "Las imagenes no son:",
+                    text: "jpeg,JPEG, png, PNG, jpg, JPG, pdf, PDF!",
+                    showConfirmButton: true,
+                    //timer: 1800
+                });
+                me.errors.push('La imagenes no son: jpeg, png, pdf!')
+                console.log(file.size / 1048576)
+            }
+            if((file.size / 1048576).toFixed(2) > 6){
+                me.$swal({
+                    position: 'top',
+                    icon: 'warning',
+                    title: "Las imagenes pesan mas de:",
+                    text: "6 Mb",
+                    showConfirmButton: true,
+                    //timer: 1800
+                });
+                me.errors.push('Imagenes grandes!')
+            }
         },
         sendFile(){
-            document.getElementById("save").disabled = true;
+            //document.getElementById("save").disabled = true;
             let me = this
 
+            me.errors = []
             let allData = new FormData()
-            allData.append('id', me.dataUploadFile.data.id)
-            allData.append('url_comprobante', me.dataUploadFile.url_comprobante)
+            me.dataUploadFile.data.forEach((element, i) => {
+                //allData.append(`ids[${i}]`, element.id)
+                allData.append(`data[${i}][id]`, element.id)
+                allData.append(`data[${i}][url_comprobante]`, element.url_comprobante)
+            });
+            /* obtenemos el total de datos actuales los comparamos con el total e datos null su todos son null se manda mensaje */
+            let totalArray = me.dataUploadFile.data.length
+            let ifallNull = me.dataUploadFile.data.filter(el => el.url_comprobante == null).length
+            if (totalArray == ifallNull) {
+                me.$swal({
+                    position: 'top',
+                    icon: 'warning',
+                    title: "No hay Imagenes para cargar!",
+                    showConfirmButton: true,
+                    //timer: 1800
+                });
+                me.errors.push('No hay Imagenes para cargar!')
+            }
 
-            axios
+            if (!me.errors.length) {
+                axios
                 .post("insCursos/saveFile", allData)
                 .then(function(response) {
                     me.$swal({
                         position: 'top',
                         icon: 'success',
-                        title: "Comprobante enviado con éxito",
+                        title: "Comprobante de pago enviado con éxito",
                         showConfirmButton: false,
                         timer: 1800
                     });
@@ -689,6 +756,7 @@ export default {
                     }
                     document.getElementById("save").disabled = false;
                 });
+            }
         }
     },
 }
@@ -777,7 +845,22 @@ export default {
     .invalid__input__tel{
         border-color: #dc3545;
     }
+    .result_content_main{
+        margin-bottom: 10px;
+        padding: 20px;
+        border: 1px solid #0ab33e;
+        border-radius: .3rem;
+        .form-row{
+            .form-group{
+                margin-bottom: 0;
+                p{
+                    margin: 0 0 0 0;
+                }
+            }
+        }
+    }
     .result_content{
+        margin-bottom: 10px;
         padding: 20px;
         border: 1px solid #20a8d8;
         border-radius: .3rem;

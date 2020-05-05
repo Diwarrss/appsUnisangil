@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\InscripcionCursos;
 use App\InscripcionDetalles;
+use Barryvdh\Reflection\DocBlock\Type\Collection;
 use DB;
 use Illuminate\Http\Request;
+use Validator;
 
 class InscripcionCursosController extends Controller
 {
@@ -17,7 +19,7 @@ class InscripcionCursosController extends Controller
             'numero_documento' => 'required|max:12'
         ]);
 
-        $data = InscripcionCursos::where([
+        $data = InscripcionCursos::with('cursos','sede')->where([
             ['estado', '=', '1'],
             ['tipo_documento', '=', $request->tipo_documento],
             ['numero_documento', '=', $request->numero_documento]
@@ -146,11 +148,31 @@ class InscripcionCursosController extends Controller
     {
         if (!$request->ajax()) return redirect('/');
 
-        $selectSolicitud = InscripcionCursos::where([['numero_documento','=',$request->numero_documento],['estado', '=', '0']])->get();
+        //obtenemos los cursos que estan enviando
+        $requestCursosIds = collect($request->cursos);
 
-        if (count($selectSolicitud) > 0) {
+        $selectSolicitud = collect(InscripcionCursos::with('cursos')
+            ->where('numero_documento','=',$request->numero_documento)
+            ->whereIn('estado', array('0','1','2','3'))->get());
+
+        //obtenemos los id que encontramos en array
+        $arrayIdsIns= $selectSolicitud->pluck('id');
+
+
+        //obtenemos la coleccion de detalles
+        $selectCursos = collect(InscripcionDetalles::whereIn('ins_cursos_id', $arrayIdsIns)->get());
+
+        //obtenemos los ids de cursos ya inscritos
+        $arrayIdsCursos = $selectCursos->pluck('curso_id');
+
+        //comparamos las dos colleciones si hay un valor return true
+        $existeCurso = $arrayIdsCursos->intersect($requestCursosIds)->count();
+
+        //dd($existeCurso);
+
+        if ($existeCurso) {
             return response()->json([
-                'message' => 'Ya hay una solicitud en proceso!',
+                'message' => 'Ya hay una solicitud en proceso que contiene los cursos:',
                 'data' => $selectSolicitud
             ], 409);
         } else {
@@ -205,28 +227,39 @@ class InscripcionCursosController extends Controller
     {
         if (!$request->ajax()) return redirect('/');
 
-        try {
-            DB::beginTransaction();
+        $arrayData = $request->data;
 
-            $insCurso = InscripcionCursos::findOrFail($request->id);
+        $request->validate([
+            'data.*.[url_comprobante]' => 'sometimes|max:4098|mimes:jpg,png,PNG,pdf,JPG,jpeg',
+        ]);
+        foreach ($arrayData as $key => $value) {
+            /* dd($value['url_comprobante'] ); */
+            if ($value['url_comprobante'] != 'null') {
+                try {
+                    DB::beginTransaction();
 
-            $request->validate([
-                'url_comprobante' => 'required|max:4098|mimes:jpg,png,pdf',
-            ]);
+                    $insCurso = InscripcionCursos::findOrFail($value['id']);
 
-            //crear nombre de imagen
-            $nameFile = time().'.'. $request->url_comprobante->getClientOriginalExtension();
+                    //crear nombre de imagen
+                    $nameFile = time().'.'. $value['url_comprobante']->getClientOriginalExtension();
 
-            $insCurso->url_comprobante = '/storage/soportePagos/cursos/' . $nameFile;
-            $insCurso->estado = '2';
-            $insCurso->save();
+                    $insCurso->url_comprobante = '/storage/soportePagos/cursos/' . $nameFile;
+                    $insCurso->estado = '2';
+                    $insCurso->save();
 
-            //movemos la imagen a la carpeta definida
-            $request->url_comprobante->move(public_path('/storage/soportePagos/cursos/'), $nameFile);
+                    //movemos la imagen a la carpeta definida
+                    $value['url_comprobante']->move(public_path('/storage/soportePagos/cursos/'), $nameFile);
 
-            DB::commit();
-        } catch (Exception $e) {
-            DB::rollBack();
+                    DB::commit();
+                } catch (Exception $e) {
+                    DB::rollBack();
+                }
+            }
+            /* else{
+                return response()->json([
+                    'message' => 'Ya hay una solicitud en proceso que contiene los cursos:'
+                ], 409);
+            } */
         }
     }
 

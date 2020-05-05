@@ -2330,6 +2330,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2348,8 +2366,7 @@ __webpack_require__.r(__webpack_exports__);
         cursos: ''
       },
       dataUploadFile: {
-        data: null,
-        url_comprobante: ''
+        data: null
       }
     };
   },
@@ -2428,7 +2445,7 @@ __webpack_require__.r(__webpack_exports__);
       this.dataRegister.programa_academico = '';
       this.dataRegister.cursos = '';
       this.dataUploadFile.data = null;
-      this.dataUploadFile.url_comprobante = '';
+      /* this.dataUploadFile.url_comprobante = '' */
     },
     clearData: function clearData() {
       this.dataUploadFile.data = null;
@@ -2471,14 +2488,20 @@ __webpack_require__.r(__webpack_exports__);
 
         if (error.response.status == 409) {
           var message = error.response.data.message;
-          var data = error.response.data.data[0];
+          var data = error.response.data.data;
+          var cursos = data.map(function (da) {
+            var obj = da.cursos.map(function (dc) {
+              return dc.nombre;
+            });
+            return obj;
+          });
 
           if (message) {
             me.$swal({
               position: 'top',
               icon: 'error',
               title: "".concat(message),
-              text: "Solicitud enviada el ".concat(data.created_at),
+              text: "".concat(cursos),
               showConfirmButton: true //timer: 1800
 
             });
@@ -2497,7 +2520,7 @@ __webpack_require__.r(__webpack_exports__);
           numero_id: me.dataRegister.numero_id
         }
       }).then(function (response) {
-        me.dataUploadFile.data = response.data[0];
+        me.dataUploadFile.data = response.data;
         me.errors = [];
         document.getElementById("save").disabled = false; //console.log(response);
       })["catch"](function (error) {
@@ -2520,33 +2543,87 @@ __webpack_require__.r(__webpack_exports__);
         document.getElementById("save").disabled = false;
       });
     },
-    obtenerArchivo: function obtenerArchivo(e) {
-      var file = event.target.files[0];
-      this.dataUploadFile.url_comprobante = file; //console.log(this.dataForm.url_comprobante);
-    },
-    sendFile: function sendFile() {
-      document.getElementById("save").disabled = true;
+    obtenerArchivo: function obtenerArchivo(index) {
       var me = this;
-      var allData = new FormData();
-      allData.append('id', me.dataUploadFile.data.id);
-      allData.append('url_comprobante', me.dataUploadFile.url_comprobante);
-      axios.post("insCursos/saveFile", allData).then(function (response) {
+      me.errors = [];
+      var file = event.target.files[0];
+
+      if (file.type == "image/PNG" || file.type == "image/JPG" || file.type == "image/jpg" || file.type == "image/jpeg" || file.type == "image/JPEG" || file.type == "image/png" || file.type == "application/pdf") {
+        me.dataUploadFile.data[index].url_comprobante = file;
+        me.errors = [];
+      } else {
+        me.dataUploadFile.data[index].url_comprobante = null;
         me.$swal({
           position: 'top',
-          icon: 'success',
-          title: "Comprobante enviado con éxito",
-          showConfirmButton: false,
-          timer: 1800
-        });
-        me.closeForm();
-        document.getElementById("save").disabled = false; //console.log(response);
-      })["catch"](function (error) {
-        if (error.response.status == 422) {
-          me.errors = error.response.data.errors;
-        }
+          icon: 'warning',
+          title: "Las imagenes no son:",
+          text: "jpeg,JPEG, png, PNG, jpg, JPG, pdf, PDF!",
+          showConfirmButton: true //timer: 1800
 
-        document.getElementById("save").disabled = false;
+        });
+        me.errors.push('La imagenes no son: jpeg, png, pdf!');
+        console.log(file.size / 1048576);
+      }
+
+      if ((file.size / 1048576).toFixed(2) > 6) {
+        me.$swal({
+          position: 'top',
+          icon: 'warning',
+          title: "Las imagenes pesan mas de:",
+          text: "6 Mb",
+          showConfirmButton: true //timer: 1800
+
+        });
+        me.errors.push('Imagenes grandes!');
+      }
+    },
+    sendFile: function sendFile() {
+      //document.getElementById("save").disabled = true;
+      var me = this;
+      me.errors = [];
+      var allData = new FormData();
+      me.dataUploadFile.data.forEach(function (element, i) {
+        //allData.append(`ids[${i}]`, element.id)
+        allData.append("data[".concat(i, "][id]"), element.id);
+        allData.append("data[".concat(i, "][url_comprobante]"), element.url_comprobante);
       });
+      /* obtenemos el total de datos actuales los comparamos con el total e datos null su todos son null se manda mensaje */
+
+      var totalArray = me.dataUploadFile.data.length;
+      var ifallNull = me.dataUploadFile.data.filter(function (el) {
+        return el.url_comprobante == null;
+      }).length;
+
+      if (totalArray == ifallNull) {
+        me.$swal({
+          position: 'top',
+          icon: 'warning',
+          title: "No hay Imagenes para cargar!",
+          showConfirmButton: true //timer: 1800
+
+        });
+        me.errors.push('No hay Imagenes para cargar!');
+      }
+
+      if (!me.errors.length) {
+        axios.post("insCursos/saveFile", allData).then(function (response) {
+          me.$swal({
+            position: 'top',
+            icon: 'success',
+            title: "Comprobante de pago enviado con éxito",
+            showConfirmButton: false,
+            timer: 1800
+          });
+          me.closeForm();
+          document.getElementById("save").disabled = false; //console.log(response);
+        })["catch"](function (error) {
+          if (error.response.status == 422) {
+            me.errors = error.response.data.errors;
+          }
+
+          document.getElementById("save").disabled = false;
+        });
+      }
     }
   }
 });
@@ -3775,7 +3852,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".btn-primary[data-v-78445be8] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-primary[data-v-78445be8]:hover {\n  background: #3478c1;\n  border-color: #3478c1;\n}\n.btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #1b1371;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n  border-bottom: 1px solid #1b1371;\n  padding-bottom: 10px;\n  font-size: 26px;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}\n.invalid__input[data-v-78445be8] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.form-control[data-v-78445be8] {\n  height: 34px;\n}\n.modal-primary[data-v-78445be8] {\n  /* .body__search{\n      height: 150px;\n  } */\n}\n.modal-primary .modal-content[data-v-78445be8] {\n  border-color: #20a8d8;\n}\n.modal-primary .modal-header[data-v-78445be8] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.custom-file-label[data-v-78445be8]::after {\n  content: \"Adjuntar Archivo\";\n}\n.invalid__input__tel[data-v-78445be8] {\n  border-color: #dc3545;\n}\n.result_content[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid #20a8d8;\n  border-radius: 0.3rem;\n}\n.result_content .created_at[data-v-78445be8] {\n  font-size: 20px;\n}\n.section_insCursos[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid red;\n  border-radius: 0.3rem;\n}\n.section_insCursos h5[data-v-78445be8] {\n  color: #1b1371;\n  font-size: 26px;\n}\n.section_insCursos p[data-v-78445be8] {\n  color: red;\n  font-size: 18px;\n}\n.carousel_calendar[data-v-78445be8] {\n  padding: 0 10% 0 10%;\n}\n.carousel_calendar h5[data-v-78445be8] {\n  padding-bottom: 10px;\n  color: #1b1371;\n  font-size: 26px;\n  border-bottom: 1px solid #1b1371;\n}\n@media all and (max-width: 580px) {\n.carousel_calendar[data-v-78445be8] {\n    padding: 0 0 0 0;\n}\n}\n.carousel[data-v-78445be8] {\n  width: 100%;\n}\n.cuentas_bancarias h3[data-v-78445be8] {\n  padding-bottom: 10px;\n  color: #1b1371;\n  font-size: 20px;\n  font-weight: bold;\n  border-bottom: 1px solid #1b1371;\n}", ""]);
+exports.push([module.i, ".btn-primary[data-v-78445be8] {\n  background: #053365;\n  border-color: #053365;\n}\n.btn-primary[data-v-78445be8]:hover {\n  background: #3478c1;\n  border-color: #3478c1;\n}\n.btn-link[data-v-78445be8] {\n  font-size: 18px;\n  font-weight: 600;\n}\n.btn-link[data-v-78445be8]:hover {\n  color: #413e66;\n  text-decoration: none;\n}\n.card-header[data-v-78445be8]:hover {\n  background-color: #cac9dd;\n  text-decoration: none;\n}\n.content_body[data-v-78445be8] {\n  border-bottom: 1px solid;\n}\n.content_body h5[data-v-78445be8] {\n  color: #696592;\n  font-weight: 400;\n  font-size: 16px;\n  font-style: italic;\n}\n.text_header[data-v-78445be8] {\n  margin-bottom: 50px;\n}\n.text_header h5[data-v-78445be8] {\n  color: #1b1371;\n  font-weight: 600;\n  font-size: 22px;\n  font-style: italic;\n  border-bottom: 1px solid #1b1371;\n  padding-bottom: 10px;\n  font-size: 26px;\n}\n.text_header p[data-v-78445be8] {\n  margin: 0 0 10px 0;\n}\n.text_header .content_contact[data-v-78445be8] {\n  border-left: 1px solid;\n  border-right: 1px solid;\n}\n.text_header .content_suport[data-v-78445be8] {\n  border-right: 1px solid;\n}\n.section-header[data-v-78445be8] {\n  text-transform: uppercase;\n}\n.invalid__input[data-v-78445be8] {\n  display: block;\n  margin-top: 0.25rem;\n  font-size: 80%;\n  color: #dc3545;\n}\n.form-control[data-v-78445be8] {\n  height: 34px;\n}\n.modal-primary[data-v-78445be8] {\n  /* .body__search{\n      height: 150px;\n  } */\n}\n.modal-primary .modal-content[data-v-78445be8] {\n  border-color: #20a8d8;\n}\n.modal-primary .modal-header[data-v-78445be8] {\n  color: #fff;\n  background-color: #20a8d8;\n}\n.custom-file-label[data-v-78445be8]::after {\n  content: \"Adjuntar Archivo\";\n}\n.invalid__input__tel[data-v-78445be8] {\n  border-color: #dc3545;\n}\n.result_content_main[data-v-78445be8] {\n  margin-bottom: 10px;\n  padding: 20px;\n  border: 1px solid #0ab33e;\n  border-radius: 0.3rem;\n}\n.result_content_main .form-row .form-group[data-v-78445be8] {\n  margin-bottom: 0;\n}\n.result_content_main .form-row .form-group p[data-v-78445be8] {\n  margin: 0 0 0 0;\n}\n.result_content[data-v-78445be8] {\n  margin-bottom: 10px;\n  padding: 20px;\n  border: 1px solid #20a8d8;\n  border-radius: 0.3rem;\n}\n.result_content .created_at[data-v-78445be8] {\n  font-size: 20px;\n}\n.section_insCursos[data-v-78445be8] {\n  padding: 20px;\n  border: 1px solid red;\n  border-radius: 0.3rem;\n}\n.section_insCursos h5[data-v-78445be8] {\n  color: #1b1371;\n  font-size: 26px;\n}\n.section_insCursos p[data-v-78445be8] {\n  color: red;\n  font-size: 18px;\n}\n.carousel_calendar[data-v-78445be8] {\n  padding: 0 10% 0 10%;\n}\n.carousel_calendar h5[data-v-78445be8] {\n  padding-bottom: 10px;\n  color: #1b1371;\n  font-size: 26px;\n  border-bottom: 1px solid #1b1371;\n}\n@media all and (max-width: 580px) {\n.carousel_calendar[data-v-78445be8] {\n    padding: 0 0 0 0;\n}\n}\n.carousel[data-v-78445be8] {\n  width: 100%;\n}\n.cuentas_bancarias h3[data-v-78445be8] {\n  padding-bottom: 10px;\n  color: #1b1371;\n  font-size: 20px;\n  font-weight: bold;\n  border-bottom: 1px solid #1b1371;\n}", ""]);
 
 // exports
 
@@ -28833,372 +28910,337 @@ var render = function() {
                 _vm._v(" "),
                 _vm.typeModal === 2
                   ? _c("div", { staticClass: "modal-body body__search" }, [
-                      _c(
-                        "form",
-                        { attrs: { enctype: "multipart/form-data" } },
-                        [
-                          _c("div", { staticClass: "form-row" }, [
-                            _c("div", { staticClass: "form-group col-md-3" }, [
-                              _vm._m(20),
-                              _vm._v(" "),
-                              _c(
-                                "select",
+                      _c("div", { staticClass: "form-row" }, [
+                        _c("div", { staticClass: "form-group col-md-3" }, [
+                          _vm._m(20),
+                          _vm._v(" "),
+                          _c(
+                            "select",
+                            {
+                              directives: [
                                 {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.dataRegister.tipo_documento,
-                                      expression: "dataRegister.tipo_documento"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  class: {
-                                    "is-invalid": _vm.errors["tipo_documento"]
-                                  },
-                                  attrs: { placeholder: "Seleccionar..." },
-                                  on: {
-                                    change: [
-                                      function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.dataRegister,
-                                          "tipo_documento",
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      },
-                                      _vm.clearData
-                                    ]
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "option",
-                                    {
-                                      attrs: {
-                                        value: "",
-                                        disabled: "",
-                                        selected: ""
-                                      }
-                                    },
-                                    [_vm._v("Seleccionar...")]
-                                  ),
-                                  _vm._v(" "),
-                                  _vm._l(_vm.tiposDoc, function(elemento) {
-                                    return _c(
-                                      "option",
-                                      {
-                                        key: elemento,
-                                        domProps: { value: elemento }
-                                      },
-                                      [_vm._v(_vm._s(elemento))]
-                                    )
-                                  })
-                                ],
-                                2
-                              ),
-                              _vm._v(" "),
-                              _vm.errors["tipo_documento"]
-                                ? _c(
-                                    "span",
-                                    { staticClass: "invalid__input" },
-                                    [
-                                      _vm._v(
-                                        "\n                                        Obligatorio.\n                                    "
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "form-group col-md-5" }, [
-                              _vm._m(21),
-                              _vm._v(" "),
-                              _c("input", {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.dataRegister.numero_documento,
-                                    expression: "dataRegister.numero_documento"
-                                  }
-                                ],
-                                staticClass: "form-control",
-                                class: {
-                                  "is-invalid": _vm.errors["numero_documento"]
-                                },
-                                attrs: { type: "string", id: "numDocumento" },
-                                domProps: {
-                                  value: _vm.dataRegister.numero_documento
-                                },
-                                on: {
-                                  focus: _vm.clearData,
-                                  input: function($event) {
-                                    if ($event.target.composing) {
-                                      return
-                                    }
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.dataRegister.tipo_documento,
+                                  expression: "dataRegister.tipo_documento"
+                                }
+                              ],
+                              staticClass: "form-control",
+                              class: {
+                                "is-invalid": _vm.errors["tipo_documento"]
+                              },
+                              attrs: { placeholder: "Seleccionar..." },
+                              on: {
+                                change: [
+                                  function($event) {
+                                    var $$selectedVal = Array.prototype.filter
+                                      .call($event.target.options, function(o) {
+                                        return o.selected
+                                      })
+                                      .map(function(o) {
+                                        var val =
+                                          "_value" in o ? o._value : o.value
+                                        return val
+                                      })
                                     _vm.$set(
                                       _vm.dataRegister,
-                                      "numero_documento",
-                                      $event.target.value
+                                      "tipo_documento",
+                                      $event.target.multiple
+                                        ? $$selectedVal
+                                        : $$selectedVal[0]
                                     )
+                                  },
+                                  _vm.clearData
+                                ]
+                              }
+                            },
+                            [
+                              _c(
+                                "option",
+                                {
+                                  attrs: {
+                                    value: "",
+                                    disabled: "",
+                                    selected: ""
                                   }
-                                }
-                              }),
+                                },
+                                [_vm._v("Seleccionar...")]
+                              ),
                               _vm._v(" "),
-                              _vm.errors["numero_documento"]
-                                ? _c(
-                                    "div",
-                                    { staticClass: "invalid-feedback" },
-                                    [
-                                      _vm._v(
-                                        "\n                                        " +
-                                          _vm._s(
-                                            _vm.errors["numero_documento"][0]
-                                          ) +
-                                          "\n                                    "
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
-                            ])
-                          ]),
+                              _vm._l(_vm.tiposDoc, function(elemento) {
+                                return _c(
+                                  "option",
+                                  {
+                                    key: elemento,
+                                    domProps: { value: elemento }
+                                  },
+                                  [_vm._v(_vm._s(elemento))]
+                                )
+                              })
+                            ],
+                            2
+                          ),
                           _vm._v(" "),
-                          _vm.dataUploadFile.data
-                            ? _c("div", { staticClass: "result_content" }, [
-                                _c("div", { staticClass: "form-row" }, [
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group col-md-6" },
-                                    [
-                                      _vm._m(22),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value:
-                                              _vm.dataUploadFile.data.nombres,
-                                            expression:
-                                              "dataUploadFile.data.nombres"
-                                          }
-                                        ],
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "nombres",
-                                          readonly: ""
-                                        },
-                                        domProps: {
-                                          value: _vm.dataUploadFile.data.nombres
-                                        },
-                                        on: {
-                                          input: function($event) {
-                                            if ($event.target.composing) {
-                                              return
-                                            }
-                                            _vm.$set(
-                                              _vm.dataUploadFile.data,
-                                              "nombres",
-                                              $event.target.value
-                                            )
-                                          }
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group col-md-6" },
-                                    [
-                                      _vm._m(23),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value:
-                                              _vm.dataUploadFile.data.apellidos,
-                                            expression:
-                                              "dataUploadFile.data.apellidos"
-                                          }
-                                        ],
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "apellidos",
-                                          readonly: ""
-                                        },
-                                        domProps: {
-                                          value:
-                                            _vm.dataUploadFile.data.apellidos
-                                        },
-                                        on: {
-                                          input: function($event) {
-                                            if ($event.target.composing) {
-                                              return
-                                            }
-                                            _vm.$set(
-                                              _vm.dataUploadFile.data,
-                                              "apellidos",
-                                              $event.target.value
-                                            )
-                                          }
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "form-row" }, [
-                                  _c(
-                                    "div",
-                                    { staticClass: "form-group col-md-6" },
-                                    [
-                                      _vm._m(24),
-                                      _vm._v(" "),
-                                      _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value:
-                                              _vm.dataUploadFile.data
-                                                .programa_academico,
-                                            expression:
-                                              "dataUploadFile.data.programa_academico"
-                                          }
-                                        ],
-                                        staticClass: "form-control",
-                                        attrs: {
-                                          type: "text",
-                                          id: "programa",
-                                          readonly: ""
-                                        },
-                                        domProps: {
-                                          value:
-                                            _vm.dataUploadFile.data
-                                              .programa_academico
-                                        },
-                                        on: {
-                                          input: function($event) {
-                                            if ($event.target.composing) {
-                                              return
-                                            }
-                                            _vm.$set(
-                                              _vm.dataUploadFile.data,
-                                              "programa_academico",
-                                              $event.target.value
-                                            )
-                                          }
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "form-group col-md-6 my-auto text-center created_at"
-                                    },
-                                    [
-                                      _vm._m(25),
-                                      _vm._v(" "),
-                                      _c("label", { attrs: { for: "" } }, [
-                                        _vm._v(
-                                          _vm._s(
-                                            _vm._f("moment")(
-                                              _vm.dataUploadFile.data
-                                                .created_at,
-                                              "DD/MM/YYYY h:mm a"
-                                            )
-                                          )
+                          _vm.errors["tipo_documento"]
+                            ? _c("span", { staticClass: "invalid__input" }, [
+                                _vm._v(
+                                  "\n                                    Obligatorio.\n                                "
+                                )
+                              ])
+                            : _vm._e()
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group col-md-5" }, [
+                          _vm._m(21),
+                          _vm._v(" "),
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.dataRegister.numero_documento,
+                                expression: "dataRegister.numero_documento"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            class: {
+                              "is-invalid": _vm.errors["numero_documento"]
+                            },
+                            attrs: { type: "string", id: "numDocumento" },
+                            domProps: {
+                              value: _vm.dataRegister.numero_documento
+                            },
+                            on: {
+                              focus: _vm.clearData,
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.dataRegister,
+                                  "numero_documento",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.errors["numero_documento"]
+                            ? _c("div", { staticClass: "invalid-feedback" }, [
+                                _vm._v(
+                                  "\n                                    " +
+                                    _vm._s(_vm.errors["numero_documento"][0]) +
+                                    "\n                                "
+                                )
+                              ])
+                            : _vm._e()
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _vm.dataUploadFile.data
+                        ? _c("div", [
+                            _c("div", { staticClass: "result_content_main" }, [
+                              _c("div", { staticClass: "form-row" }, [
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group col-md-4" },
+                                  [
+                                    _vm._m(22),
+                                    _vm._v(" "),
+                                    _c("p", [
+                                      _vm._v(
+                                        _vm._s(
+                                          _vm.dataUploadFile.data[0].nombres
                                         )
-                                      ])
-                                    ]
-                                  )
-                                ]),
+                                      )
+                                    ])
+                                  ]
+                                ),
                                 _vm._v(" "),
-                                _c("div", { staticClass: "form-group" }, [
-                                  _vm._m(26),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "custom-file file_div" },
-                                    [
-                                      _c("input", {
-                                        staticClass: "custom-file-input",
-                                        class: {
-                                          "is-invalid":
-                                            _vm.errors["url_comprobante"]
-                                        },
-                                        attrs: { type: "file" },
-                                        on: { change: _vm.obtenerArchivo }
-                                      }),
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group col-md-4" },
+                                  [
+                                    _vm._m(23),
+                                    _vm._v(" "),
+                                    _c("p", [
+                                      _vm._v(
+                                        _vm._s(
+                                          _vm.dataUploadFile.data[0].apellidos
+                                        )
+                                      )
+                                    ])
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "form-group col-md-4" },
+                                  [
+                                    _vm._m(24),
+                                    _vm._v(" "),
+                                    _c("p", [
+                                      _vm._v(
+                                        _vm._s(
+                                          _vm.dataUploadFile.data[0]
+                                            .programa_academico
+                                        )
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "form",
+                              { attrs: { enctype: "multipart/form-data" } },
+                              _vm._l(_vm.dataUploadFile.data, function(
+                                item,
+                                index
+                              ) {
+                                return _c(
+                                  "div",
+                                  { key: index, staticClass: "result_content" },
+                                  [
+                                    _c("div", { staticClass: "form-row" }, [
+                                      _c(
+                                        "div",
+                                        { staticClass: "form-group col-md-4" },
+                                        [
+                                          _vm._m(25, true),
+                                          _vm._v(" "),
+                                          _vm._l(item.cursos, function(
+                                            cur,
+                                            curId
+                                          ) {
+                                            return _c("ul", { key: curId }, [
+                                              _c("li", [
+                                                _vm._v(_vm._s(cur.nombre))
+                                              ])
+                                            ])
+                                          })
+                                        ],
+                                        2
+                                      ),
                                       _vm._v(" "),
-                                      !_vm.dataUploadFile.url_comprobante
-                                        ? _c(
+                                      _c(
+                                        "div",
+                                        { staticClass: "form-group col-md-4" },
+                                        [
+                                          _vm._m(26, true),
+                                          _vm._v(" "),
+                                          _c("ul", [
+                                            _c("li", [
+                                              _vm._v(_vm._s(item.sede.nombre))
+                                            ])
+                                          ])
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "form-group col-md-4" },
+                                        [
+                                          _vm._m(27, true),
+                                          _vm._v(" "),
+                                          _c("ul", [
+                                            _vm._v(
+                                              _vm._s(
+                                                _vm._f("moment")(
+                                                  item.created_at,
+                                                  "DD/MM/YYYY h:mm a"
+                                                )
+                                              )
+                                            )
+                                          ])
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "form-group" }, [
+                                      _vm._m(28, true),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "custom-file file_div" },
+                                        [
+                                          _c("input", {
+                                            staticClass: "custom-file-input",
+                                            class: {
+                                              "is-invalid":
+                                                _vm.errors["url_comprobante"]
+                                            },
+                                            attrs: { type: "file" },
+                                            on: {
+                                              change: function($event) {
+                                                return _vm.obtenerArchivo(index)
+                                              }
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
                                             "label",
                                             {
                                               staticClass: "custom-file-label",
                                               attrs: { for: "file" }
                                             },
                                             [_vm._v("Adjuntar Archivo")]
-                                          )
-                                        : _c(
-                                            "label",
-                                            {
-                                              staticClass: "custom-file-label",
-                                              attrs: { for: "file" }
-                                            },
+                                          ),
+                                          _vm._v(" "),
+                                          !item.url_comprobante
+                                            ? _c(
+                                                "label",
+                                                {
+                                                  staticClass:
+                                                    "custom-file-label",
+                                                  attrs: { for: "file" }
+                                                },
+                                                [_vm._v("Adjuntar Archivo")]
+                                              )
+                                            : _c(
+                                                "label",
+                                                {
+                                                  staticClass:
+                                                    "custom-file-label",
+                                                  attrs: { for: "file" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      item.url_comprobante.name
+                                                    )
+                                                  )
+                                                ]
+                                              )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm.errors["url_comprobante"]
+                                        ? _c(
+                                            "span",
+                                            { staticClass: "invalid__input" },
                                             [
                                               _vm._v(
-                                                _vm._s(
-                                                  _vm.dataUploadFile
-                                                    .url_comprobante.name
-                                                )
+                                                "\n                                            " +
+                                                  _vm._s(
+                                                    _vm.errors[
+                                                      "url_comprobante"
+                                                    ][index]
+                                                  ) +
+                                                  "\n                                        "
                                               )
                                             ]
                                           )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _vm.errors["url_comprobante"]
-                                    ? _c(
-                                        "span",
-                                        { staticClass: "invalid__input" },
-                                        [
-                                          _vm._v(
-                                            "\n                                        " +
-                                              _vm._s(
-                                                _vm.errors["url_comprobante"][0]
-                                              ) +
-                                              "\n                                    "
-                                          )
-                                        ]
-                                      )
-                                    : _vm._e()
-                                ])
-                              ])
-                            : _vm._e()
-                        ]
-                      )
+                                        : _vm._e()
+                                    ])
+                                  ]
+                                )
+                              }),
+                              0
+                            )
+                          ])
+                        : _vm._e()
                     ])
                   : _vm._e(),
                 _vm._v(" "),
@@ -29255,10 +29297,6 @@ var render = function() {
                               "button",
                               {
                                 staticClass: "btn btn-success",
-                                class: {
-                                  disabled: !_vm.dataUploadFile.url_comprobante,
-                                  enabled: _vm.dataUploadFile.url_comprobante
-                                },
                                 attrs: { type: "button", id: "save" },
                                 on: { click: _vm.sendFile }
                               },
@@ -30019,7 +30057,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "nombres" } }, [
-      _c("strong", [_vm._v("Nombres")])
+      _c("strong", [_vm._v("Nombres:")])
     ])
   },
   function() {
@@ -30027,7 +30065,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "apellidos" } }, [
-      _c("strong", [_vm._v("Apellidos")])
+      _c("strong", [_vm._v("Apellidos:")])
     ])
   },
   function() {
@@ -30035,7 +30073,23 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "programa" } }, [
-      _c("strong", [_vm._v("Programa académico")])
+      _c("strong", [_vm._v("Programa académico: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "created_at" } }, [
+      _c("strong", [_vm._v("Cursos: ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "created_at" } }, [
+      _c("strong", [_vm._v("Sede: ")])
     ])
   },
   function() {
