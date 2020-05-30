@@ -2348,6 +2348,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -29611,6 +29617,26 @@ var staticRenderFns = [
                 staticClass: "d-block w-80 img-fluid",
                 attrs: {
                   src: "storage/calendarioCursos/Cronograma-SanGil.PNG",
+                  alt: "Second slide"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "carousel-item" }, [
+              _c("img", {
+                staticClass: "d-block w-80 img-fluid",
+                attrs: {
+                  src: "storage/calendarioCursos/cursos_yopal_1.png",
+                  alt: "Second slide"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "carousel-item" }, [
+              _c("img", {
+                staticClass: "d-block w-80 img-fluid",
+                attrs: {
+                  src: "storage/calendarioCursos/cursos_yopal_2.png",
                   alt: "Second slide"
                 }
               })

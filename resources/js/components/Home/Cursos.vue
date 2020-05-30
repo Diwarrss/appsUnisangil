@@ -126,6 +126,12 @@
                                 <div class="carousel-item">
                                 <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/Cronograma-SanGil.PNG" alt="Second slide">
                                 </div>
+                                <div class="carousel-item">
+                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/cursos_yopal_1.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/cursos_yopal_2.png" alt="Second slide">
+                                </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
