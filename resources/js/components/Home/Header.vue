@@ -38,7 +38,7 @@
                         <li><a href="http://www.unisangil.edu.co/index.php?option=com_content&view=article&id=1943&Itemid=999" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger"><i class="fas fa-exclamation-triangle text-warning"></i>  COVID-19</a></li>
                         <!-- <li><a href="/news">Noticias</a></li> -->
                         <!-- <li><a href="/infrastructure">Infraestructura</a></li> -->
-                        <!-- <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li> -->
+                        <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Admin</a></li>
                     </ul>
                 </nav>
             </div>

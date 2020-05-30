@@ -36,11 +36,7 @@ export default {
             'TI',
             'CE'
         ],
-        sedes: [
-            'San Gil',
-            'Yopal',
-            'Chiquinquirá'
-        ]
+        dataSedes: {}
     },
     mutations: {
         setNivels(state, data) {
@@ -48,6 +44,9 @@ export default {
         },
         setCursos(state, data) {
             state.dataCursos = data;
+        },
+        setSedes(state, data) {
+            state.dataSedes = data;
         }
     },
     actions: {
@@ -58,7 +57,11 @@ export default {
         getCursos: async function({ commit }) {
             const data = await axios.get('curso/getAll')
             commit('setCursos', data.data)
-        }
+        },
+        getSedes: async function({ commit }) {
+            const data = await axios.get('sede/getAll')
+            commit('setSedes', data.data)
+        },
     },
     getters: {
         doneNivels: state => {
@@ -68,6 +71,9 @@ export default {
                     'id': dn.id
                 }
             })
+        },
+        getCursoFilter: (state) => (id) => {
+            return state.dataCursos.filter(dc => dc.sedes_id === id)
         }
     }
 };

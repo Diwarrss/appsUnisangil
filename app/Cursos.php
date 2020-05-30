@@ -9,6 +9,17 @@ class Cursos extends Model
     protected $table = 'cursos';
 
     protected $fillable = [
-        'name', 'email', 'password',
+        'nombre',
+        'nrc',
+        'fecha_inicio_inscripcion',
+        'fecha_fin_inscripcion',
+        'estado',
+        'sedes_id'
     ];
+
+    public function sede()
+    {
+        //return sede del curso
+        return $this->hasOne('App\Sede','id','sedes_id');
+    }
 }

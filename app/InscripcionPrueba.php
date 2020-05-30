@@ -7,11 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class InscripcionPrueba extends Model
 {
     protected $fillable = [
-        'empleado_id',
-        'nombre_caja',
-        'valor_inicial',
-        'valor_producido',
-        'valor_gastos',
-        'estado_caja'
+        'tipo_documento',
+        'numero_documento',
+        'nombres_apellidos',
+        'email',
+        'celular',
+        'programa_academico',
+        'url_comprobante',
+        'estado',
+        'sedes_id',
     ];
 }

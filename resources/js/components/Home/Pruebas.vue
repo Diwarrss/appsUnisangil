@@ -217,12 +217,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="celular"><strong>Celular</strong></label>
-                                <vue-tel-input v-model="dataForm.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
-                                <span class="invalid__input" v-if="errors['celular']">
-                                    {{errors['celular'][0]}}
-                                </span>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="celular"><strong>Celular</strong></label>
+                                    <vue-tel-input v-model="dataForm.celular" placeholder="Ingrese su número" :class="{'invalid__input__tel': errors['celular']}"></vue-tel-input>
+                                    <span class="invalid__input" v-if="errors['celular']">
+                                        {{errors['celular'][0]}}
+                                    </span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="sede"><strong>Sede</strong></label>
+                                    <v-select
+                                        :options="sedes"
+                                        label="nombre"
+                                        placeholder="Seleccionar..."
+                                        v-model="dataForm.sede"
+                                        :class="{'invalid__input_select': errors['sede']}"
+                                    >
+                                        <div slot="no-options">No hay Resultados!</div>
+                                    </v-select>
+                                    <span class="invalid__input" v-if="errors['sede']">
+                                        {{errors['sede'][0]}}
+                                    </span>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="email"><strong>Correo institucional</strong></label>
@@ -297,6 +314,7 @@ export default {
                 nombres_apellidos: '',
                 email: '',
                 celular: '',
+                sede: '',
                 programa_academico: '',
                 url_comprobante: '',
                 niveles: '5'
@@ -305,6 +323,7 @@ export default {
     },
     async created () {
         this.$store.dispatch('getNiveles')
+        this.$store.dispatch('getSedes')
     },
     computed: {
         niveles(){
@@ -315,7 +334,10 @@ export default {
         },
         tiposDoc(){
             return this.$store.state.tiposDocPruebas
-        }
+        },
+        sedes(){
+            return this.$store.state.dataSedes
+        },
     },
     methods: {
         downloadFile() {
@@ -353,6 +375,7 @@ export default {
             this.dataForm.nombres_apellidos = ''
             this.dataForm.email = ''
             this.dataForm.celular = ''
+            this.dataForm.sede = ''
             this.dataForm.programa_academico = ''
             this.dataForm.url_comprobante = ''
             this.dataForm.niveles = '5'
@@ -401,6 +424,7 @@ export default {
             allData.append("nombres_apellidos", me.dataForm.nombres_apellidos)
             allData.append("email", me.dataForm.email)
             allData.append("celular", me.dataForm.celular)
+            allData.append("sede", me.dataForm.sede.id)
             allData.append("programa_academico", setprograma_academico())
             allData.append("niveles", setniveles())
 

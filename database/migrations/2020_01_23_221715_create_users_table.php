@@ -23,17 +23,22 @@ class CreateUsersTable extends Migration
             $table->string('urlImagen', 200)->nullable();
             $table->unsignedBigInteger('roles_id')->default(1);
             $table->foreign('roles_id')->references('id')->on('roles');
+            $table->unsignedBigInteger('sedes_id')->nullable();
+            $table->foreign('sedes_id')->references('id')->on('sedes');
             $table->rememberToken();
             $table->timestamps();
         });
 
-        $password = Hash::make('123456789');
+        $password = Hash::make('Unisangil2020*');
 
         //inserto a la tabla datos registros
-        DB::table('users')->insert(array(
-            'id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.co', 'email_verified_at' => null, 'password' => $password,
-            'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1
-        ));
+        DB::table('users')->insert([
+            array('id' => '1', 'name' => 'admin', 'email' => 'admin@gmail.com', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 1, 'sedes_id' => null),
+            array('id' => '2', 'name' => 'Registro San Gil', 'email' => 'registroacademicosangil@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 2, 'sedes_id' => 1),
+            array('id' => '3', 'name' => 'Registro Yopal', 'email' => 'registroacademicoyopal@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 2, 'sedes_id' => 3),
+            array('id' => '4', 'name' => 'Tesorería San Gil', 'email' => 'tesoreriasangil@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 3, 'sedes_id' => 1),
+            array('id' => '5', 'name' => 'Tesorería Yopal', 'email' => 'tesoreriayopal@unisangil.edu.co', 'email_verified_at' => null, 'password' => $password,'estadoUser' => 1, 'urlImagen' => 'storage/users/user.png', 'roles_id' => 3, 'sedes_id' => 3)
+        ]);
     }
 
 

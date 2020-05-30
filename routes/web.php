@@ -64,6 +64,9 @@ Route::group(['middleware' => ['guest']], function () {
     //CursosController
     Route::get('curso/getAll','CursosController@getAll');
 
+    //SedeController
+    Route::get('sede/getAll','SedeController@getAll');
+
     //InscripcionPruebaController
     Route::get('insPruebas/downloadFile','InscripcionPruebaController@downloadFile');
     Route::post('insPruebas/save','InscripcionPruebaController@save');
@@ -72,6 +75,7 @@ Route::group(['middleware' => ['guest']], function () {
     Route::get('insCursos/getInfoinProcess','InscripcionCursosController@getInfoinProcess');
     Route::post('insCursos/register','InscripcionCursosController@register');
     Route::post('insCursos/saveFile','InscripcionCursosController@saveFile');
+    Route::get('insCursos/downloadFile','InscripcionCursosController@downloadFile');
 });
 Route::group(['middleware' => ['auth']], function () {
     //obtener la vista del admin al loguear
@@ -79,5 +83,11 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::group(['prefix' => 'user'], function () {
         Route::get('getData', 'UserController@getData')->name('getData');
+    });
+
+    Route::group(['prefix' => 'insCursos'], function () {
+        Route::get('getDataTable', 'InscripcionCursosController@getDataTable')->name('getDataTable');
+        Route::post('updateState','InscripcionCursosController@updateState');
+        Route::get('downloadPay','InscripcionCursosController@downloadPay');
     });
 });

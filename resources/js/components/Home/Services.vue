@@ -11,6 +11,16 @@
                 </header>
 
                 <div class="row">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+                        <a href="/cursos">
+                            <div class="box">
+                                <!-- <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
+                                <div class="icon" style="background: #ecebff;"><i class="fas fa-mouse-pointer" style="color: #8660fe;"></i></div>
+                                <h4 class="title">Cursos de informática</h4>
+                                <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
+                            </div>
+                        </a>
+                    </div>
 
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
                         <a href="/redes">
@@ -22,6 +32,17 @@
                             </div>
                         </a>
                     </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <a href="/pruebas">
+                            <div class="box">
+                                <!-- <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
+                                <div class="icon" style="background: #e6fdfc;"><i class="fas fa-list-ol" style="color: #3fcdc7;"></i></div>
+                                <h4 class="title">Pruebas de suficiencia en TICs (Administrativos y estudiantes)</h4>
+                                <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
+                            </div>
+                        </a>
+                    </div>
+
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
                         <a href="/seguridad">
                             <div class="box">
@@ -85,26 +106,6 @@
                                 <!-- <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
                                 <div class="icon" style="background: #e1eeff;"><i class="far fa-comment-dots" style="color: #2282ff;"></i></div>
                                 <h4 class="title">Conceptos técnicos</h4>
-                                <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
-                        <a href="/cursos">
-                            <div class="box">
-                                <!-- <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
-                                <div class="icon" style="background: #ffbfbf;"><i class="fas fa-mouse-pointer" style="color: #c50e0e;"></i></div>
-                                <h4 class="title">Cursos de informática</h4>
-                                <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <a href="/pruebas">
-                            <div class="box">
-                                <!-- <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
-                                <div class="icon" style="background: #e6fdfc;"><i class="fas fa-list-ol" style="color: #3fcdc7;"></i></div>
-                                <h4 class="title">Pruebas de suficiencia en TICs (Administrativos y estudiantes)</h4>
                                 <!-- <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p> -->
                             </div>
                         </a>
