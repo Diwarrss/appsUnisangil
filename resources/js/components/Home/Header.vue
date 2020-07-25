@@ -10,11 +10,11 @@
                             <a href='http://vortal.unisangil.edu.co' target="_blank" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fa fa-sign-in"></i> Vortal</a>
                             <a href='https://www.google.com/a/unisangil.edu.co/ServiceLogin?service=mail&passive=true&rm=false&continue=http%3A%2F%2Fmail.google.com%2Fa%2Funisangil.edu.co%2F&bsv=zpwhtygjntrz&' target="_blank" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fa fa-envelope"></i> Correo</a>
                             <a @click="openBuzon" type="button" class="text-primary" title="Buzón para radicar un PQRSF"><i class="fas fa-envelope-open-text"></i> PQRSF</a>
-                            <a href="https://twitter.com/unisangil" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <!-- <a href="https://twitter.com/unisangil" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                             <a href="https://www.facebook.com/UNISANGIL" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.linkedin.com/school/fundaci%C3%B3n-universitaria-de-san-gil---unisangil/about/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
                             <a href="https://www.instagram.com/unisangil/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/user/miunisangil" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/user/miunisangil" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> -->
                         </div>
                     </div>
                 </div>

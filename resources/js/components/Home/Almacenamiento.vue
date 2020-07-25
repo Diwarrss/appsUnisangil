@@ -47,7 +47,7 @@
             <div class="mt-0">
                 <div class="accordion" id="accordionExample">
                     <div class="card">
-                        <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseSix" id="headingOne">
+                        <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="ture" aria-controls="collapseSix" id="headingOne">
                             <h2 class="btn btn-link mb-0">
                                 •	Almacenamiento
                             </h2>
