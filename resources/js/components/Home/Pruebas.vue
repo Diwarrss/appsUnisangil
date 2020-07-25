@@ -37,7 +37,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
+                <div class="col-md-12 mt-5 text-center">
+                    <h5 class="mb-0 text-uppercase"> Inscripciones para examen de informática</h5>
+                </div>
+                <div>
+                    <img src="storage/img/services/Pasos_Pruebas_Tics.PNG" alt="" class="img-fluid">
+                </div>
+                <div class="mt-0">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#sedecollapseOne" aria-expanded="true" aria-controls="collapseSix" id="headingOne">
+                                <h2 class="btn btn-link mb-0">
+                                    •	Sede Yopal
+                                </h2>
+                            </div>
+
+                            <div id="sedecollapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="content_body row mb-2">
+                                        <div class="col-12 col-sm-12 col-md-6 text-center my-auto">
+                                            <h5>
+                                                <strong>Programas UNAB</strong>
+                                            </h5>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-6">
+                                            <a href="https://forms.gle/SG7zHdeUAnEpwa6r5" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"> Formulario de Inscripción</a>
+                                        </div>
+                                    </div>
+                                    <div class="content_body row mb-2">
+                                        <div class="col-12 col-sm-12 col-md-6 text-center my-auto">
+                                            <h5>
+                                                <strong>Programas UNISANGIL</strong>
+                                            </h5>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-6">
+                                            <a href="https://forms.gle/utXbAvrtxjsj57LP6" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"> Formulario de Inscripción</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#sedecollapseTwo" aria-expanded="false" aria-controls="collapseSix" id="headingTwo">
+                                <h2 class="btn btn-link mb-0">
+                                    •	Sede San Gil
+                                </h2>
+                            </div>
+                            <div id="sedecollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="content_body row mb-2">
+                                        <div class="col-12 col-sm-12 col-md-6 text-center my-auto">
+                                            <h5>
+                                                <strong>Programas UNAB</strong>
+                                            </h5>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-6">
+                                            <a href="https://forms.gle/ih3cYqayXe5XrQ7H8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"> Formulario de Inscripción</a>
+                                        </div>
+                                    </div>
+                                    <div class="content_body row mb-2">
+                                        <div class="col-12 col-sm-12 col-md-6 text-center my-auto">
+                                            <h5>
+                                                <strong>Programas UNISANGIL</strong>
+                                            </h5>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-6">
+                                            <a href="https://forms.gle/dcVktGznzVEFi28j8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"> Formulario de Inscripción</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#sedecollapseThree" aria-expanded="false" aria-controls="collapseSix" id="headingTwo">
+                                <h2 class="btn btn-link mb-0">
+                                    •	Sede Chiquinquirá
+                                </h2>
+                            </div>
+                            <div id="sedecollapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="col-12 col-md-12 text-center">
+                                        <a href="https://forms.gle/88JisFHCxcXYnj7m6" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"> Formulario de Inscripción</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row mt-5">
                     <div class="col-md-6">
                         <button class="btn btn-primary btn-lg btn-block mt-4" id="downloadFile" @click="downloadFile">
                             <i class="fas fa-file-download"></i> Descargar formato de pago
@@ -48,7 +135,7 @@
                             <i class="fas fa-file-signature"></i> Inscripción prueba de informática
                         </button>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-12 mt-5 text-center">
                     <h5 class="mb-0">SERVICIOS</h5>
                 </div>
@@ -56,7 +143,7 @@
             <div class="mt-0">
                 <div class="accordion" id="accordionExample">
                     <div class="card">
-                        <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseSix" id="headingOne">
+                        <div class="card-header collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseSix" id="headingOne">
                             <h2 class="btn btn-link mb-0">
                                 •	Prueba de suficiencia TICs para Administrativos
                             </h2>
@@ -538,5 +625,8 @@ export default {
 }
 .vs__clear{
     display: none;
+}
+div[aria-expanded="true"]{
+  background-color: #d7dfde;
 }
 </style>
