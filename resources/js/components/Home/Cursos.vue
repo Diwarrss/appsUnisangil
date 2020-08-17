@@ -47,9 +47,9 @@
                 <div class="row mt-5 mb-5 section_insCursos">
                     <div class="col-md-12 text-center">
                         <h5>Inscripciones para Cursos de Informática Programas UNAB</h5>
-                        <p>
+                        <!-- <p>
                             Inscripciones, matrículas en la web y pago: <strong>20 de Abril/2020 hasta 12 de Mayo/2020</strong>
-                        </p>
+                        </p> -->
                     </div>
                     <div class="col-md-6">
                         <button class="btn btn-primary btn-lg btn-block mt-4" @click="openForm('register')">
@@ -121,6 +121,9 @@
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
+                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/PublicarEstudiantesSanGil.png" alt="First slide">
+                                </div>
+                                <!-- <div class="carousel-item active">
                                 <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/Cronograma-Yopal.PNG" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
@@ -131,7 +134,7 @@
                                 </div>
                                 <div class="carousel-item">
                                 <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/cursos_yopal_2.png" alt="Second slide">
-                                </div>
+                                </div> -->
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
