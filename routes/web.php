@@ -5,6 +5,10 @@ use Illuminate\Routing\RouteGroup;
 Auth::routes();
 
 Route::group(['middleware' => ['guest']], function () {
+    //login usando credenciales y api de postgresql del vortal
+    Route::get('/login-vortal', function () {
+        return view('auth.login-vortal');
+    });
     Route::get('/', function () {
         return view('home.intro');
     });

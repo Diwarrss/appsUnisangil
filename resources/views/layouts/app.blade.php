@@ -40,8 +40,11 @@
         @guest
             <nav class="navbar navbar-expand-md shadow-sm" style="background: #f5f8fd">
                 <div class="container">
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        Sistemas y Tics
+                    @php
+                      $title = Request::path() !== 'login-vortal' ? 'Sistemas y Tics' : 'Desarrollo Estratégico y Calidad';
+                    @endphp
+                    <a class="navbar-brand" href="#">
+                      {{$title}}
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
@@ -57,9 +60,11 @@
                         <ul class="navbar-nav ml-auto">
                             <!-- Authentication Links -->
                             @guest
+                              @if (Request::path() !== 'login-vortal')
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
+                              @endif
                                 {{-- @if (Route::has('register'))
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
