@@ -12,7 +12,7 @@
                             </h4>
                         </div>
                         <form class="form_filters p-4" @submit="getInfoTables(paramsTable)">
-                          <h3>Filtrar Facturas:</h3>
+                          <h3>Filtrar:</h3>
                           <div class="form-row">
                             <div class="form-group col-md-3">
                               <label for="inputState" class="font-weight-bold">Estado</label>
@@ -29,13 +29,15 @@
                               <label for="numFactura" class="font-weight-bold">Consecutivo/Num. Factura</label>
                               <input type="text" class="form-control" id="numFactura" v-model="paramsTable.params.buscar">
                             </div>
-                            <div class="col-md-12">
+                            <div class="form-group col-md-3 my-auto ml-md-3">
                               <button
                                 type="submit"
                                 class="btn btn-primary"
                               >
                                 <i class="fas fa-search"></i> Filtrar Resultados
                               </button>
+                            </div>
+                            <div class="col-md-12">
                               <a
                                 :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar" target="_blank"
                                 class="btn btn-success"
@@ -80,9 +82,12 @@
                                             <th>Id Factura</th>
                                             <th>Prefijo</th>
                                             <th>Consecutivo/Num. Factura</th>
+                                            <th>Facturado a</th>
                                             <th>Fecha</th>
                                             <th>Tipo</th>
                                             <th>Estado</th>
+                                            <th>Sucursal</th>
+                                            <th>Valor Total</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>
@@ -102,9 +107,16 @@
                                       <td>{{data.factura_id}}</td>
                                       <td>{{data.prefijo}}</td>
                                       <td>{{data.consecutivo}}</td>
+                                      <td>
+                                        <span v-for="cliente in data.listaAdquirentes" :key="cliente">
+                                          {{cliente.nombreCompleto}}
+                                        </span>
+                                      </td>
                                       <td>{{data.fechafacturacion}}</td>
                                       <td>{{data.tipodocumentoDescripcion}}</td>
                                       <td>{{data.estado}}</td>
+                                      <td>{{data.sucursal}}</td>
+                                      <td>{{ priceFormatter(data.pago.totalfactura) }}</td>
                                       <td>
                                         <a :href="urlApi+'download-factura?idFactura='+data.factura_id" target="_blank" class="btn btn-outline-info" title="Generar Json">
                                           <i class="fas fa-file-download"></i>
@@ -174,6 +186,15 @@ export default {
             }
           }
           this.$store.dispatch('getInfoTables', allParams)
+        },
+        priceFormatter(value){
+          var formatter = new Intl.NumberFormat('es-US', {
+            style: 'currency',
+            currency: 'USD',
+            maximumFractionDigits: 0
+          });
+
+          return formatter.format(value);
         }
     },
 }

@@ -2683,6 +2683,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2736,6 +2748,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }
       };
       this.$store.dispatch('getInfoTables', allParams);
+    },
+    priceFormatter: function priceFormatter(value) {
+      var formatter = new Intl.NumberFormat('es-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+      });
+      return formatter.format(value);
     }
   })
 });
@@ -27771,7 +27791,7 @@ var render = function() {
                         }
                       },
                       [
-                        _c("h3", [_vm._v("Filtrar Facturas:")]),
+                        _c("h3", [_vm._v("Filtrar:")]),
                         _vm._v(" "),
                         _c("div", { staticClass: "form-row" }, [
                           _c("div", { staticClass: "form-group col-md-3" }, [
@@ -27895,9 +27915,9 @@ var render = function() {
                             })
                           ]),
                           _vm._v(" "),
+                          _vm._m(1),
+                          _vm._v(" "),
                           _c("div", { staticClass: "col-md-12" }, [
-                            _vm._m(1),
-                            _vm._v(" "),
                             _vm.infoTables.data.length
                               ? _c(
                                   "a",
@@ -28061,6 +28081,22 @@ var render = function() {
                                         _vm._v(_vm._s(data.consecutivo))
                                       ]),
                                       _vm._v(" "),
+                                      _c(
+                                        "td",
+                                        _vm._l(data.listaAdquirentes, function(
+                                          cliente
+                                        ) {
+                                          return _c("span", { key: cliente }, [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(cliente.nombreCompleto) +
+                                                "\n                                      "
+                                            )
+                                          ])
+                                        }),
+                                        0
+                                      ),
+                                      _vm._v(" "),
                                       _c("td", [
                                         _vm._v(_vm._s(data.fechafacturacion))
                                       ]),
@@ -28072,6 +28108,18 @@ var render = function() {
                                       ]),
                                       _vm._v(" "),
                                       _c("td", [_vm._v(_vm._s(data.estado))]),
+                                      _vm._v(" "),
+                                      _c("td", [_vm._v(_vm._s(data.sucursal))]),
+                                      _vm._v(" "),
+                                      _c("td", [
+                                        _vm._v(
+                                          _vm._s(
+                                            _vm.priceFormatter(
+                                              data.pago.totalfactura
+                                            )
+                                          )
+                                        )
+                                      ]),
                                       _vm._v(" "),
                                       _c("td", [
                                         _c(
@@ -28140,14 +28188,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-      [
-        _c("i", { staticClass: "fas fa-search" }),
-        _vm._v(" Filtrar Resultados\n                            ")
-      ]
-    )
+    return _c("div", { staticClass: "form-group col-md-3 my-auto ml-md-3" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [
+          _c("i", { staticClass: "fas fa-search" }),
+          _vm._v(" Filtrar Resultados\n                            ")
+        ]
+      )
+    ])
   },
   function() {
     var _vm = this
@@ -28161,11 +28211,17 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Consecutivo/Num. Factura")]),
         _vm._v(" "),
+        _c("th", [_vm._v("Facturado a")]),
+        _vm._v(" "),
         _c("th", [_vm._v("Fecha")]),
         _vm._v(" "),
         _c("th", [_vm._v("Tipo")]),
         _vm._v(" "),
         _c("th", [_vm._v("Estado")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Sucursal")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Valor Total")]),
         _vm._v(" "),
         _c("th", [_vm._v("Acciones")])
       ])
