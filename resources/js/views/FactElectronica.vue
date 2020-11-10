@@ -8,7 +8,7 @@
                     <div class="card card-accent-primary">
                         <div class="card-header">
                             <h4>
-                                <strong><i class="fas fa-users-cog"></i> Solicitudes de Cursos</strong>
+                                <strong><i class="fas fa-file-invoice"></i> Facturación Electrónica</strong>
                             </h4>
                         </div>
                         <form class="form_filters p-4" @submit="getInfoTables(paramsTable)">

@@ -28130,8 +28130,8 @@ var staticRenderFns = [
     return _c("div", { staticClass: "card-header" }, [
       _c("h4", [
         _c("strong", [
-          _c("i", { staticClass: "fas fa-users-cog" }),
-          _vm._v(" Solicitudes de Cursos")
+          _c("i", { staticClass: "fas fa-file-invoice" }),
+          _vm._v(" Facturación Electrónica")
         ])
       ])
     ])
