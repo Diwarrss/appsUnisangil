@@ -57,7 +57,7 @@
 export default {
   data() {
     return {
-      api_url: process.env.API_PGSQL,
+      urlApi: process.env.MIX_API_PGSQL,
       user: '',
       email: '',
       errors: {},
@@ -70,7 +70,6 @@ export default {
     loginVortal(){
       let me = this
       me.sendInfo = true
-      let urlApi = 'http://api.unisangil.edu.co/api/pgsql/login-vortal'
 
       if (me.validation()) {
         //si devuelve 1 para el error
@@ -78,7 +77,7 @@ export default {
         return;
       }
       //envia datos para consultar en la API
-      axios.post(urlApi, {
+      axios.post(me.urlApi, {
         user: me.user,
         email: me.email
       })

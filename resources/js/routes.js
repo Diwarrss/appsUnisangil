@@ -3,6 +3,8 @@ import Error404 from './views/Error404';
 import Dashboard from './views/Dashboard';
 import Cursos from './views/Cursos';
 import Pruebas from './views/Pruebas';
+import Perfil from './views/Perfil';
+import FactElectronica from './views/FactElectronica';
 
 export default {
 
@@ -28,6 +30,16 @@ export default {
             path: "/pruebas",
             name: 'pruebas',
             component: Pruebas
+        },
+        {
+          path: "/perfil",
+          name: 'perfil',
+          component: Perfil
+        },
+        {
+          path: "/facturacion-electronica",
+          name: 'facturacion-electronica',
+          component: FactElectronica
         }
     ]
 };

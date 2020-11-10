@@ -1850,7 +1850,7 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(process) {//
+//
 //
 //
 //
@@ -1908,7 +1908,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      api_url: process.env.API_PGSQL,
+      urlApi: "http://apicenturia.local:8081/api/pgsql/",
       user: '',
       email: '',
       errors: {},
@@ -1921,7 +1921,6 @@ __webpack_require__.r(__webpack_exports__);
     loginVortal: function loginVortal() {
       var me = this;
       me.sendInfo = true;
-      var urlApi = 'http://api.unisangil.edu.co/api/pgsql/login-vortal';
 
       if (me.validation()) {
         //si devuelve 1 para el error
@@ -1930,7 +1929,7 @@ __webpack_require__.r(__webpack_exports__);
       } //envia datos para consultar en la API
 
 
-      axios.post(urlApi, {
+      axios.post(me.urlApi, {
         user: me.user,
         email: me.email
       }).then(function (res) {
@@ -1980,7 +1979,6 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 

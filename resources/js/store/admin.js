@@ -19,12 +19,27 @@ export default {
             commit('setDataUser', data.data[0])
         },
         getInfoTables: async function ({commit, state}, paramsTable) {
-            let url_api = paramsTable.url_api
+            let nameUrl = paramsTable.url_api
             let params = paramsTable.params
             let page = paramsTable.page
+            var apiExt = paramsTable.apiExt
 
             if (!page) {//cuando viene el json completo en params
-                const data = await axios.get(url_api,{
+              if (apiExt) {
+                let urlApi = process.env.MIX_API_ORACLE
+                const data = await axios.get(urlApi + nameUrl, {
+                  params:{
+                    page: params.page,
+                    criterio: params.criterio,
+                    buscar: params.buscar,
+                    cant: params.cant,
+                    sede: state.dataUser.sedes_id
+                  }
+                })
+                const dataTable = data.data
+                commit('setInfoTables', dataTable)
+              } else {
+                const data = await axios.get(nameUrl,{
                     params:{
                         page: params.page,
                         criterio: params.criterio,
@@ -35,10 +50,25 @@ export default {
                 })
                 const dataTable = data.data
                 commit('setInfoTables', dataTable)
+              }
             }
             //cuando viene el num de pagina y querramos cambiar
             else {
-                const data = await axios.get(url_api,{
+              if (apiExt) {
+                let urlApi = process.env.MIX_API_ORACLE
+                const data = await axios.get(urlApi + nameUrl, {
+                  params:{
+                    page: page,
+                    criterio: params.criterio,
+                    buscar: params.buscar,
+                    cant: params.cant,
+                    sede: state.dataUser.sedes_id
+                  }
+                })
+                const dataTable = data.data
+                commit('setInfoTables', dataTable)
+              } else {
+                const data = await axios.get(nameUrl,{
                     params:{
                         page: page,
                         criterio: params.criterio,
@@ -49,6 +79,7 @@ export default {
                 })
                 const dataTable = data.data
                 commit('setInfoTables', dataTable)
+              }
             }
         },
     },

@@ -2068,6 +2068,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 //importamos para usar el mapState, mapActions
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2527,6 +2532,216 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/FactElectronica.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      urlApi: "http://apicenturia.local:8081/api/oracle/",
+      errors: [],
+      tipo_modal: '',
+      paramsTable: {
+        apiExt: true,
+        url_api: 'factura',
+        params: {
+          pagination: true,
+          page: 1,
+          criterio: 'todos',
+          buscar: '',
+          cant: 5
+        }
+      }
+    };
+  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])(['infoTables', 'dataUser']), {
+    getCurrentPage: function getCurrentPage() {
+      return this.infoTables.current_page;
+    }
+  }),
+  created: function created() {
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function created$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            this.$store.dispatch('getInfoTables', this.paramsTable);
+
+          case 1:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, null, this);
+  },
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapActions"])(['getInfoTables']), {
+    //para paginar recibimos la proxima pagina o la anterior
+    getDataForPage: function getDataForPage(changePage) {
+      var allParams = {
+        url_api: this.paramsTable.url_api,
+        page: changePage,
+        apiExt: true,
+        params: {
+          criterio: this.paramsTable.params.criterio,
+          buscar: this.paramsTable.params.buscar,
+          cant: this.paramsTable.params.cant
+        }
+      };
+      this.$store.dispatch('getInfoTables', allParams);
+    }
+  })
+});
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Admin/Footer.vue?vue&type=style&index=0&id=6bc2b6e6&lang=scss&scoped=true&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Admin/Footer.vue?vue&type=style&index=0&id=6bc2b6e6&lang=scss&scoped=true& ***!
@@ -2578,6 +2793,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, ".capitalize_name[data-v-88796c94] {\n  text-transform: capitalize;\n}\n.data_email[data-v-88796c94] {\n  text-decoration: none;\n  color: blue;\n  font-weight: 600;\n  font-size: 15px;\n}\n.data_celular[data-v-88796c94] {\n  text-decoration: none;\n  color: green;\n  font-weight: 600;\n  font-size: 15px;\n}\n.badge[data-v-88796c94] {\n  font-size: 12px;\n}\n.badge.badge-mailSend[data-v-88796c94] {\n  background-color: #4c7aff;\n  color: white;\n}\n.badge.badge-default[data-v-88796c94] {\n  background-color: #6d6d6d;\n  color: white;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".form_filters[data-v-f97a2bec] {\n  border-bottom: 2px solid black;\n}", ""]);
 
 // exports
 
@@ -22111,6 +22345,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../node_modules/vue-loader/lib??vue-loader-options!./FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -26052,49 +26316,70 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "dropdown-divider" }),
             _vm._v(" "),
-            _c("li", { staticClass: "nav-item nav-dropdown" }, [
-              _vm._m(1),
-              _vm._v(" "),
-              _c("ul", { staticClass: "nav-dropdown-items" }, [
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
+            _vm.dataUser.roles_id !== 4
+              ? _c("li", { staticClass: "nav-item nav-dropdown" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "nav-dropdown-items" }, [
                     _c(
-                      "router-link",
-                      {
-                        staticClass: "nav-link",
-                        attrs: { to: { name: "cursos" } }
-                      },
+                      "li",
+                      { staticClass: "nav-item" },
                       [
-                        _c("i", { staticClass: "nav-icon fas fa-boxes" }),
-                        _vm._v(" Cursos\n                    ")
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "nav-link",
+                            attrs: { to: { name: "cursos" } }
+                          },
+                          [
+                            _c("i", { staticClass: "nav-icon fas fa-boxes" }),
+                            _vm._v(" Cursos\n                    ")
+                          ]
+                        )
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
                     _c(
-                      "router-link",
-                      {
-                        staticClass: "nav-link",
-                        attrs: { to: { name: "pruebas" } }
-                      },
+                      "li",
+                      { staticClass: "nav-item" },
                       [
-                        _c("i", { staticClass: "nav-icon fas fa-tags" }),
-                        _vm._v(" Pruebas\n                    ")
-                      ]
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "nav-link",
+                            attrs: { to: { name: "pruebas" } }
+                          },
+                          [
+                            _c("i", { staticClass: "nav-icon fas fa-tags" }),
+                            _vm._v(" Pruebas\n                    ")
+                          ]
+                        )
+                      ],
+                      1
                     )
-                  ],
-                  1
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c(
+              "li",
+              { staticClass: "nav-item" },
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "nav-link",
+                    attrs: { to: { name: "facturacion-electronica" } }
+                  },
+                  [
+                    _c("i", { staticClass: "nav-icon fas fa-file-invoice" }),
+                    _vm._v(" Facturación\n                ")
+                  ]
                 )
-              ])
-            ])
+              ],
+              1
+            )
           ])
         ]),
         _vm._v(" "),
@@ -27434,6 +27719,515 @@ var staticRenderFns = [
                         )
                       ])
                     ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.dataUser
+    ? _c("main", { staticClass: "main" }, [
+        _c("div", { staticClass: "container-fluid py-5" }, [
+          _c("div", { staticClass: "ui-view" }, [
+            _c("div", { staticClass: "animated fadeIn" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-12" }, [
+                  _c("div", { staticClass: "card card-accent-primary" }, [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c(
+                      "form",
+                      {
+                        staticClass: "form_filters p-4",
+                        on: {
+                          submit: function($event) {
+                            return _vm.getInfoTables(_vm.paramsTable)
+                          }
+                        }
+                      },
+                      [
+                        _c("h3", [_vm._v("Filtrar Facturas:")]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-row" }, [
+                          _c("div", { staticClass: "form-group col-md-3" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "font-weight-bold",
+                                attrs: { for: "inputState" }
+                              },
+                              [_vm._v("Estado")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "select",
+                              {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.paramsTable.params.criterio,
+                                    expression: "paramsTable.params.criterio"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                attrs: { id: "inputState" },
+                                on: {
+                                  change: function($event) {
+                                    var $$selectedVal = Array.prototype.filter
+                                      .call($event.target.options, function(o) {
+                                        return o.selected
+                                      })
+                                      .map(function(o) {
+                                        var val =
+                                          "_value" in o ? o._value : o.value
+                                        return val
+                                      })
+                                    _vm.$set(
+                                      _vm.paramsTable.params,
+                                      "criterio",
+                                      $event.target.multiple
+                                        ? $$selectedVal
+                                        : $$selectedVal[0]
+                                    )
+                                  }
+                                }
+                              },
+                              [
+                                _c(
+                                  "option",
+                                  { attrs: { selected: "", value: "todos" } },
+                                  [_vm._v("Todos")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "option",
+                                  { attrs: { value: "REGISTRADO" } },
+                                  [_vm._v(" REGISTRADO ")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "option",
+                                  { attrs: { value: "PROCESADO" } },
+                                  [_vm._v(" PROCESADO ")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "option",
+                                  { attrs: { value: "PENDIENTE" } },
+                                  [_vm._v(" PENDIENTE ")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "option",
+                                  { attrs: { value: "RECHAZADO" } },
+                                  [_vm._v(" RECHAZADO ")]
+                                ),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "ANULADO" } }, [
+                                  _vm._v(" ANULADO ")
+                                ])
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "form-group col-md-3" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass: "font-weight-bold",
+                                attrs: { for: "numFactura" }
+                              },
+                              [_vm._v("Consecutivo/Num. Factura")]
+                            ),
+                            _vm._v(" "),
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.paramsTable.params.buscar,
+                                  expression: "paramsTable.params.buscar"
+                                }
+                              ],
+                              staticClass: "form-control",
+                              attrs: { type: "text", id: "numFactura" },
+                              domProps: {
+                                value: _vm.paramsTable.params.buscar
+                              },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.paramsTable.params,
+                                    "buscar",
+                                    $event.target.value
+                                  )
+                                }
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._m(1),
+                            _vm._v(" "),
+                            _vm.infoTables.data.length
+                              ? _c(
+                                  "a",
+                                  {
+                                    staticClass: "btn btn-success",
+                                    attrs: {
+                                      href:
+                                        _vm.urlApi +
+                                        "download-factura?criterio=" +
+                                        _vm.paramsTable.params.criterio +
+                                        "&buscar=" +
+                                        _vm.paramsTable.params.buscar,
+                                      target: "_blank"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass: "fas fa-file-download"
+                                    }),
+                                    _vm._v(
+                                      " Generar Json General\n                            "
+                                    )
+                                  ]
+                                )
+                              : _vm._e(),
+                            _vm._v(" "),
+                            _vm.infoTables.data.length
+                              ? _c(
+                                  "a",
+                                  {
+                                    staticClass: "btn btn-info",
+                                    attrs: {
+                                      href:
+                                        _vm.urlApi +
+                                        "download-factura?criterio=" +
+                                        _vm.paramsTable.params.criterio +
+                                        "&buscar=" +
+                                        _vm.paramsTable.params.buscar +
+                                        "&zip=true",
+                                      target: "_blank"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass: "fas fa-file-download"
+                                    }),
+                                    _vm._v(
+                                      " Generar Zip/Json/Factura\n                            "
+                                    )
+                                  ]
+                                )
+                              : _vm._e()
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-body row" }, [
+                      _c("div", { staticClass: "col-sm-3 col-md-2 col-lg-2" }, [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("div", { staticClass: "input-group" }, [
+                            _c(
+                              "select",
+                              {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.paramsTable.params.cant,
+                                    expression: "paramsTable.params.cant"
+                                  }
+                                ],
+                                staticClass: "form-control",
+                                on: {
+                                  change: [
+                                    function($event) {
+                                      var $$selectedVal = Array.prototype.filter
+                                        .call($event.target.options, function(
+                                          o
+                                        ) {
+                                          return o.selected
+                                        })
+                                        .map(function(o) {
+                                          var val =
+                                            "_value" in o ? o._value : o.value
+                                          return val
+                                        })
+                                      _vm.$set(
+                                        _vm.paramsTable.params,
+                                        "cant",
+                                        $event.target.multiple
+                                          ? $$selectedVal
+                                          : $$selectedVal[0]
+                                      )
+                                    },
+                                    function($event) {
+                                      return _vm.getInfoTables(_vm.paramsTable)
+                                    }
+                                  ]
+                                }
+                              },
+                              [
+                                _c(
+                                  "option",
+                                  { attrs: { value: "5", selected: "" } },
+                                  [_vm._v("5")]
+                                ),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "10" } }, [
+                                  _vm._v("10")
+                                ]),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "20" } }, [
+                                  _vm._v("20")
+                                ]),
+                                _vm._v(" "),
+                                _c("option", { attrs: { value: "50" } }, [
+                                  _vm._v("50")
+                                ])
+                              ]
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "col-md-5 mt-1" }, [
+                        _c("strong", [_vm._v("Cant. Registros:")]),
+                        _vm._v(
+                          " " +
+                            _vm._s(_vm.infoTables.total) +
+                            "\n                          "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-md-12" },
+                        [
+                          _c(
+                            "table",
+                            {
+                              staticClass: "table table-responsive-xl table-sm"
+                            },
+                            [
+                              _vm._m(2),
+                              _vm._v(" "),
+                              !_vm.infoTables.data.length
+                                ? _c("tbody", [_vm._m(3)])
+                                : _vm._l(_vm.infoTables.data, function(
+                                    data,
+                                    index
+                                  ) {
+                                    return _c("tbody", { key: index.id }, [
+                                      _c("td", [
+                                        _vm._v(_vm._s(data.factura_id))
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [_vm._v(_vm._s(data.prefijo))]),
+                                      _vm._v(" "),
+                                      _c("td", [
+                                        _vm._v(_vm._s(data.consecutivo))
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [
+                                        _vm._v(_vm._s(data.fechafacturacion))
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [
+                                        _vm._v(
+                                          _vm._s(data.tipodocumentoDescripcion)
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("td", [_vm._v(_vm._s(data.estado))]),
+                                      _vm._v(" "),
+                                      _c("td", [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn btn-outline-info",
+                                            attrs: {
+                                              href:
+                                                _vm.urlApi +
+                                                "download-factura?idFactura=" +
+                                                data.factura_id,
+                                              target: "_blank",
+                                              title: "Generar Json"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "fas fa-file-download"
+                                            })
+                                          ]
+                                        )
+                                      ])
+                                    ])
+                                  })
+                            ],
+                            2
+                          ),
+                          _vm._v(" "),
+                          _c("pagination", {
+                            attrs: {
+                              data: _vm.infoTables,
+                              align: "center",
+                              limit: 1
+                            },
+                            on: { "pagination-change-page": _vm.getDataForPage }
+                          })
+                        ],
+                        1
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    : _vm._e()
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h4", [
+        _c("strong", [
+          _c("i", { staticClass: "fas fa-users-cog" }),
+          _vm._v(" Solicitudes de Cursos")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+      [
+        _c("i", { staticClass: "fas fa-search" }),
+        _vm._v(" Filtrar Resultados\n                            ")
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Id Factura")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Prefijo")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Consecutivo/Num. Factura")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Fecha")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Tipo")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Estado")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Acciones")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", { attrs: { colspan: "7" } }, [
+      _c(
+        "div",
+        {
+          staticClass: "alert alert-danger text-center",
+          attrs: { role: "alert" }
+        },
+        [
+          _c("div", { staticClass: "form-group" }, [
+            _c("strong", [_c("h5", [_vm._v("¡Sin información!")])])
+          ])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/Perfil.vue?vue&type=template&id=24e65dab&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/views/Perfil.vue?vue&type=template&id=24e65dab& ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("main", { staticClass: "main" }, [
+      _c("div", { staticClass: "container-fluid p-4" }, [
+        _c("div", { staticClass: "ui-view" }, [
+          _c("div", { staticClass: "animated fadeIn" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-12 col-lg-12" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h1", [_vm._v("Configuración de Perfil en Desarrollo")])
                   ])
                 ])
               ])
@@ -48753,7 +49547,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_Dashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/Dashboard */ "./resources/js/views/Dashboard.vue");
 /* harmony import */ var _views_Cursos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/Cursos */ "./resources/js/views/Cursos.vue");
 /* harmony import */ var _views_Pruebas__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/Pruebas */ "./resources/js/views/Pruebas.vue");
+/* harmony import */ var _views_Perfil__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./views/Perfil */ "./resources/js/views/Perfil.vue");
+/* harmony import */ var _views_FactElectronica__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./views/FactElectronica */ "./resources/js/views/FactElectronica.vue");
 //Importamos los componentes a usar
+
+
 
 
 
@@ -48777,6 +49575,14 @@ __webpack_require__.r(__webpack_exports__);
     path: "/pruebas",
     name: 'pruebas',
     component: _views_Pruebas__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    path: "/perfil",
+    name: 'perfil',
+    component: _views_Perfil__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }, {
+    path: "/facturacion-electronica",
+    name: 'facturacion-electronica',
+    component: _views_FactElectronica__WEBPACK_IMPORTED_MODULE_5__["default"]
   }]
 });
 
@@ -48832,24 +49638,31 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
       });
     },
     getInfoTables: function getInfoTables(_ref2, paramsTable) {
-      var commit, state, url_api, params, page, data, dataTable, _data, _dataTable;
+      var commit, state, nameUrl, params, page, apiExt, urlApi, data, dataTable, _data, _dataTable, _urlApi, _data2, _dataTable2, _data3, _dataTable3;
 
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function getInfoTables$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
               commit = _ref2.commit, state = _ref2.state;
-              url_api = paramsTable.url_api;
+              nameUrl = paramsTable.url_api;
               params = paramsTable.params;
               page = paramsTable.page;
+              apiExt = paramsTable.apiExt;
 
               if (page) {
-                _context2.next = 12;
+                _context2.next = 22;
                 break;
               }
 
-              _context2.next = 7;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get(url_api, {
+              if (!apiExt) {
+                _context2.next = 15;
+                break;
+              }
+
+              urlApi = "http://apicenturia.local:8081/api/oracle/";
+              _context2.next = 10;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get(urlApi + nameUrl, {
                 params: {
                   page: params.page,
                   criterio: params.criterio,
@@ -48859,16 +49672,43 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
                 }
               }));
 
-            case 7:
+            case 10:
               data = _context2.sent;
               dataTable = data.data;
               commit('setInfoTables', dataTable);
-              _context2.next = 17;
+              _context2.next = 20;
               break;
 
-            case 12:
-              _context2.next = 14;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get(url_api, {
+            case 15:
+              _context2.next = 17;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get(nameUrl, {
+                params: {
+                  page: params.page,
+                  criterio: params.criterio,
+                  buscar: params.buscar,
+                  cant: params.cant,
+                  sede: state.dataUser.sedes_id
+                }
+              }));
+
+            case 17:
+              _data = _context2.sent;
+              _dataTable = _data.data;
+              commit('setInfoTables', _dataTable);
+
+            case 20:
+              _context2.next = 36;
+              break;
+
+            case 22:
+              if (!apiExt) {
+                _context2.next = 31;
+                break;
+              }
+
+              _urlApi = "http://apicenturia.local:8081/api/oracle/";
+              _context2.next = 26;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get(_urlApi + nameUrl, {
                 params: {
                   page: page,
                   criterio: params.criterio,
@@ -48878,12 +49718,31 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
                 }
               }));
 
-            case 14:
-              _data = _context2.sent;
-              _dataTable = _data.data;
-              commit('setInfoTables', _dataTable);
+            case 26:
+              _data2 = _context2.sent;
+              _dataTable2 = _data2.data;
+              commit('setInfoTables', _dataTable2);
+              _context2.next = 36;
+              break;
 
-            case 17:
+            case 31:
+              _context2.next = 33;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(axios.get(nameUrl, {
+                params: {
+                  page: page,
+                  criterio: params.criterio,
+                  buscar: params.buscar,
+                  cant: params.cant,
+                  sede: state.dataUser.sedes_id
+                }
+              }));
+
+            case 33:
+              _data3 = _context2.sent;
+              _dataTable3 = _data3.data;
+              commit('setInfoTables', _dataTable3);
+
+            case 36:
             case "end":
               return _context2.stop();
           }
@@ -49084,6 +49943,146 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Error404_vue_vue_type_template_id_0a5dc64f___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Error404_vue_vue_type_template_id_0a5dc64f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/views/FactElectronica.vue":
+/*!************************************************!*\
+  !*** ./resources/js/views/FactElectronica.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FactElectronica_vue_vue_type_template_id_f97a2bec_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true& */ "./resources/js/views/FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true&");
+/* harmony import */ var _FactElectronica_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FactElectronica.vue?vue&type=script&lang=js& */ "./resources/js/views/FactElectronica.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true& */ "./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _FactElectronica_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FactElectronica_vue_vue_type_template_id_f97a2bec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FactElectronica_vue_vue_type_template_id_f97a2bec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "f97a2bec",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/views/FactElectronica.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/views/FactElectronica.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/views/FactElectronica.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./FactElectronica.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/sass-loader/dist/cjs.js??ref--6-3!../../../node_modules/vue-loader/lib??vue-loader-options!./FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=style&index=0&id=f97a2bec&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_sass_loader_dist_cjs_js_ref_6_3_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_style_index_0_id_f97a2bec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/views/FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/views/FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_template_id_f97a2bec_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/FactElectronica.vue?vue&type=template&id=f97a2bec&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_template_id_f97a2bec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FactElectronica_vue_vue_type_template_id_f97a2bec_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/views/Perfil.vue":
+/*!***************************************!*\
+  !*** ./resources/js/views/Perfil.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Perfil_vue_vue_type_template_id_24e65dab___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Perfil.vue?vue&type=template&id=24e65dab& */ "./resources/js/views/Perfil.vue?vue&type=template&id=24e65dab&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Perfil_vue_vue_type_template_id_24e65dab___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Perfil_vue_vue_type_template_id_24e65dab___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/views/Perfil.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/views/Perfil.vue?vue&type=template&id=24e65dab&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/views/Perfil.vue?vue&type=template&id=24e65dab& ***!
+  \**********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Perfil_vue_vue_type_template_id_24e65dab___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Perfil.vue?vue&type=template&id=24e65dab& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/views/Perfil.vue?vue&type=template&id=24e65dab&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Perfil_vue_vue_type_template_id_24e65dab___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Perfil_vue_vue_type_template_id_24e65dab___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

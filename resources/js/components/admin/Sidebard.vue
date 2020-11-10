@@ -14,7 +14,7 @@
                     <i class="nav-icon icon-home"></i> Menú
                 </li>
                 <div class="dropdown-divider"></div>
-                <li class="nav-item nav-dropdown">
+                <li class="nav-item nav-dropdown" v-if="dataUser.roles_id !== 4">
                     <a class="nav-link nav-dropdown-toggle" href="">
                         <i class="nav-icon fas fa-archive"></i> Solicitudes
                     </a>
@@ -30,6 +30,11 @@
                         </router-link>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" :to="{ name: 'facturacion-electronica' }">
+                        <i class="nav-icon fas fa-file-invoice"></i> Facturación
+                    </router-link>
                 </li>
                 <!-- <li class="nav-item">
                 <router-link class="nav-link" to="/admin">
