@@ -1,8 +1,4 @@
 {
-    "/js/appAdmin.js": "/js/appAdmin.js?id=ca8e5103f4e82dcb7449",
-    "/js/appHome.js": "/js/appHome.js?id=605177fa4bee711962b3",
-    "/css/allCoreui.css": "/css/allCoreui.css?id=0a4e124658658f84ea88",
-    "/js/allCoreui.js": "/js/allCoreui.js?id=ad2a201ae478d00f0e33",
-    "/css/allHome.css": "/css/allHome.css?id=0162a430cc8a033d4839",
-    "/js/allHome.js": "/js/allHome.js?id=8975a230fe2c4f48ec3b"
+    "/js/appAdmin.js": "/js/appAdmin.js",
+    "/js/appHome.js": "/js/appHome.js"
 }
