@@ -11,7 +11,7 @@
                                 <strong><i class="fas fa-file-invoice"></i> Facturación Electrónica</strong>
                             </h4>
                         </div>
-                        <form class="form_filters p-4" @submit="getInfoTables(paramsTable)">
+                      <form class="form_filters p-4" @submit.prevent="getInfoTables(paramsTable)">
                           <h3>Filtrar:</h3>
                           <div class="form-row">
                             <div class="form-group col-md-3">
@@ -38,19 +38,26 @@
                               </button>
                             </div>
                             <div class="col-md-12">
-                              <a
-                                :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar" target="_blank"
-                                class="btn btn-success"
+                              <button
+                                @click.prevent="generateFiles(urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&zip=false')" target="_blank"
+                                class="btn btn-dark btn-lg"
                                 v-if="infoTables.data.length"
                               >
-                                <i class="fas fa-file-download"></i> Generar Json General
+                                <i class="fas fa-file-export"></i> Generar Json x Factura en Servidor
+                              </button>
+                              <a
+                                :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar" target="_blank"
+                                class="btn btn-success btn-lg"
+                                v-if="infoTables.data.length"
+                              >
+                                <i class="fas fa-cloud-download-alt"></i> Descargar Json General
                               </a>
                               <a
                                 :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&zip=true'" target="_blank"
-                                class="btn btn-info"
+                                class="btn btn-info btn-lg"
                                 v-if="infoTables.data.length"
                               >
-                                <i class="fas fa-file-download"></i> Generar Zip/Json/Factura
+                                <i class="fas fa-cloud-download-alt"></i> Descargar Zip/Json x Factura
                               </a>
                             </div>
                           </div>
@@ -62,7 +69,7 @@
                                         <select
                                         class="form-control"
                                         v-model="paramsTable.params.cant"
-                                        v-on:change="getInfoTables(paramsTable)"
+                                      v-on:change="getInfoTables(paramsTable)"
                                         >
                                         <option value="5" selected>5</option>
                                         <option value="10">10</option>
@@ -169,7 +176,7 @@ export default {
         },
     },
     async created() {
-        this.$store.dispatch('getInfoTables', this.paramsTable)
+      this.$store.dispatch('getInfoTables', this.paramsTable)
     },
     methods: {
         ...mapActions(['getInfoTables']),
@@ -195,6 +202,39 @@ export default {
           });
 
           return formatter.format(value);
+        },
+        generateFiles(url){
+          let me = this
+          axios.get(url)
+          .then(res => {
+            if (res.data.type === 'success') {
+              me.$swal({
+                position: 'top',
+                icon: 'success',
+                title: `${res.data.message}`,
+                showConfirmButton: false,
+                timer: 3000
+              });
+            }else{
+              me.$swal({
+                position: 'top',
+                icon: 'error',
+                title: `${res.data.message}`,
+                showConfirmButton: false,
+                timer: 3000
+              });
+            }
+          })
+          .catch(err => {
+            me.$swal({
+              position: 'top',
+              icon: 'error',
+              title: "Archivos no generados, intenta de nuevo!",
+              showConfirmButton: false,
+              timer: 3000
+            });
+            console.error(err);
+          })
         }
     },
 }
