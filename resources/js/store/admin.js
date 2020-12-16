@@ -1,16 +1,16 @@
 window.axios = require('axios');
 export default {
     state: {
-        dataUser: {},
-        infoTables:{},
-        popos: 5
+      dataUser: {},
+      infoTables:{},
+      loading: false
     },
     mutations: {
         setDataUser(state, data) {
-            state.dataUser = data;
+          state.dataUser = data;
         },
         setInfoTables(state, actionGet){
-            state.infoTables = actionGet
+          state.infoTables = actionGet
         },
     },
     actions: {
@@ -18,7 +18,7 @@ export default {
             const data = await axios.get('user/getData')
             commit('setDataUser', data.data[0])
         },
-        getInfoTables: async function ({commit, state}, paramsTable) {
+        getInfoTables: function ({commit, state}, paramsTable) {
             let nameUrl = paramsTable.url_api
             let params = paramsTable.params
             let page = paramsTable.page
@@ -27,58 +27,103 @@ export default {
             if (!page) {//cuando viene el json completo en params
               if (apiExt) {
                 let urlApi = process.env.MIX_API_ORACLE
-                const data = await axios.get(urlApi + nameUrl, {
+                axios.get(urlApi + nameUrl, {
                   params:{
                     page: params.page,
                     criterio: params.criterio,
                     buscar: params.buscar,
+                    prefijo: params.prefijo,
+                    tipoFactura: params.tipoFactura,
                     cant: params.cant,
                     sede: state.dataUser.sedes_id
                   }
                 })
-                const dataTable = data.data
-                commit('setInfoTables', dataTable)
-              } else {
-                const data = await axios.get(nameUrl,{
-                    params:{
-                        page: params.page,
-                        criterio: params.criterio,
-                        buscar: params.buscar,
-                        cant: params.cant,
-                        sede: state.dataUser.sedes_id
-                    }
+                .then(res => {
+                  const dataTable = res.data
+                  commit('setInfoTables', dataTable)
+                  if(res.data.type === 'error'){
+                    Vue.swal({
+                      position: 'top',
+                      icon: 'warning',
+                      title: `${res.data.message}`,
+                      showConfirmButton: false,
+                      timer: 2500
+                    });
+                  }
+                  //console.log(res)
                 })
-                const dataTable = data.data
-                commit('setInfoTables', dataTable)
+                .catch(err => {
+                  state.loading = false
+                  console.error(err);
+                })
+              } else {
+                axios.get(nameUrl,{
+                  params:{
+                    page: params.page,
+                    criterio: params.criterio,
+                    buscar: params.buscar,
+                    prefijo: params.prefijo,
+                    tipoFactura: params.tipoFactura,
+                    cant: params.cant,
+                    sede: state.dataUser.sedes_id
+                  }
+                })
+                .then(res => {
+                  const dataTable = res.data
+                  commit('setInfoTables', dataTable)
+                  //console.log(res)
+                })
+                .catch(err => {
+                  console.error(err);
+                  state.loading = false
+                })
               }
             }
             //cuando viene el num de pagina y querramos cambiar
             else {
               if (apiExt) {
                 let urlApi = process.env.MIX_API_ORACLE
-                const data = await axios.get(urlApi + nameUrl, {
+                axios.get(urlApi + nameUrl, {
                   params:{
                     page: page,
                     criterio: params.criterio,
                     buscar: params.buscar,
+                    prefijo: params.prefijo,
+                    tipoFactura: params.tipoFactura,
                     cant: params.cant,
                     sede: state.dataUser.sedes_id
                   }
                 })
-                const dataTable = data.data
-                commit('setInfoTables', dataTable)
-              } else {
-                const data = await axios.get(nameUrl,{
-                    params:{
-                        page: page,
-                        criterio: params.criterio,
-                        buscar: params.buscar,
-                        cant: params.cant,
-                        sede: state.dataUser.sedes_id
-                    }
+                .then(res => {
+                  const dataTable = res.data
+                  commit('setInfoTables', dataTable)
+                  //console.log(res)
                 })
-                const dataTable = data.data
-                commit('setInfoTables', dataTable)
+                .catch(err => {
+                  console.error(err);
+                  state.loading = false
+                })
+              } else {
+                axios.get(nameUrl,{
+                  params:{
+                    page: page,
+                    criterio: params.criterio,
+                    buscar: params.buscar,
+                    prefijo: params.prefijo,
+                    tipoFactura: params.tipoFactura,
+                    cant: params.cant,
+                    sede: state.dataUser.sedes_id
+                  }
+                })
+                .then(res => {
+                  const dataTable = res.data
+                  commit('setInfoTables', dataTable)
+                  //console.log(res)
+                })
+                .catch(err => {
+                  console.error(err);
+                  state.loading = false
+                })
               }
             }
         },

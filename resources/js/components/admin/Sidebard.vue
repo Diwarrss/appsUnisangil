@@ -14,7 +14,7 @@
                     <i class="nav-icon icon-home"></i> Menú
                 </li>
                 <div class="dropdown-divider"></div>
-                <li class="nav-item nav-dropdown" v-if="dataUser.email !== 'factelectronica@unisangil.edu.co'">
+                <li class="nav-item nav-dropdown" v-if="dataUser.email !== 'facturaelectronica@unisangil.edu.co'">
                     <a class="nav-link nav-dropdown-toggle" href="">
                         <i class="nav-icon fas fa-archive"></i> Solicitudes
                     </a>
