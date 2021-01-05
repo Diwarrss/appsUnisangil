@@ -114,14 +114,14 @@
                     <div class="col-md-12 mt-5 mb-5 text-center">
                         <h5 class="mb-0">CALENDARIOS</h5>
                         <button class="btn btn-primary btn-lg mt-4" id="downloadFile" @click.prevent="downloadCalendar">
-                            <i class="fas fa-file-download"></i> Descargar Cronograma 2020
+                            <i class="fas fa-file-download"></i> Descargar Cronograma 2021
                         </button>
                     </div>
                     <div class="">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/PublicarEstudiantesSanGil.png" alt="First slide">
+                                <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/Cursos-Info-Enero-2021-Yopal.JPG" alt="First slide">
                                 </div>
                                 <!-- <div class="carousel-item active">
                                 <img class="d-block w-80 img-fluid"  src="storage/calendarioCursos/Cronograma-Yopal.PNG" alt="First slide">
@@ -558,7 +558,7 @@ export default {
                 const url = window.URL.createObjectURL(new Blob([response.data]));
                 const link = document.createElement("a");
                 link.href = url;
-                link.setAttribute("download", "Calendario_2020.pdf");
+                link.setAttribute("download", "Calendario_2021.pdf");
                 document.body.appendChild(link);
                 link.click();
 

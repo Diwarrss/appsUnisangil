@@ -320,6 +320,6 @@ class InscripcionCursosController extends Controller
     {
         if (!$request->ajax()) return redirect('/');
 
-        return response()->download(public_path('/storage/calendarioCursos/Cronograma 202098Informatica.pdf'));
+        return response()->download(public_path('/storage/calendarioCursos/Calendarios-202198-UNAB.pdf'));
     }
 }

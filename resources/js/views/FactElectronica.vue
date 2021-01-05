@@ -53,7 +53,7 @@
                             <div class="col-md-12">
                               <button
                                 id="generateFiles"
-                                @click.prevent="generateFiles(urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&zip=false')" target="_blank"
+                                @click.prevent="generateFiles(urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&prefijo='+paramsTable.params.prefijo+'&tipoFactura='+paramsTable.params.tipoFactura+'&zip=false')" target="_blank"
                                 class="mt-2 btn btn-dark btn-lg"
                                 v-if="infoTables.data"
                               >
@@ -63,14 +63,14 @@
                                 </div>
                               </button>
                               <a
-                                :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar" target="_blank"
+                                :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&prefijo='+paramsTable.params.prefijo+'&tipoFactura='+paramsTable.params.tipoFactura" target="_blank"
                                 class="mt-2 btn btn-success btn-lg"
                                 v-if="infoTables.data"
                               >
                                 <i class="fas fa-cloud-download-alt"></i> Descargar Json General
                               </a>
                               <a
-                                :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&zip=true'" target="_blank"
+                                :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&prefijo='+paramsTable.params.prefijo+'&tipoFactura='+paramsTable.params.tipoFactura+'&zip=true'" target="_blank"
                                 class="mt-2 btn btn-info btn-lg"
                                 v-if="infoTables.data"
                               >
@@ -252,15 +252,6 @@ export default {
             }
           }
           this.$store.dispatch('getInfoTables', allParams)
-        },
-        priceFormatter(value){
-          var formatter = new Intl.NumberFormat('es-US', {
-            style: 'currency',
-            currency: 'USD',
-            maximumFractionDigits: 0
-          });
-
-          return formatter.format(value);
         },
         generateFiles(url){
           let me = this
