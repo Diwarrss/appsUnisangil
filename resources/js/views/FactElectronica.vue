@@ -62,7 +62,7 @@
                                   <span class="sr-only">Loading...</span>
                                 </div>
                               </button>
-                              <a
+                              <!-- <a
                                 :href="urlApi+'download-factura?criterio='+paramsTable.params.criterio+'&buscar='+paramsTable.params.buscar+'&prefijo='+paramsTable.params.prefijo+'&tipoFactura='+paramsTable.params.tipoFactura" target="_blank"
                                 class="mt-2 btn btn-success btn-lg"
                                 v-if="infoTables.data"
@@ -75,9 +75,9 @@
                                 v-if="infoTables.data"
                               >
                                 <i class="fas fa-cloud-download-alt"></i> Descargar Zip/Json x Factura
-                              </a>
-                              <button class="mt-2 btn btn-outline-danger btn-lg" @click.prevent="modalUpload">
-                                <i class="fas fa-cloud-upload-alt"></i> Adjuntar Json Ajustado
+                              </a> -->
+                              <button class="mt-2 btn btn-outline-success btn-lg" @click.prevent="openModal('file')">
+                                <i class="fas fa-sync"></i> Actualizar Facturas Procesadas
                               </button>
                             </div>
                           </div>
@@ -130,26 +130,29 @@
                                       </div>
                                       </td>
                                     </tbody> -->
-                                    <tbody v-for="(data, index) in infoTables.data" :key="index">
-                                      <td>{{data.factura_id}}</td>
-                                      <td>{{data.prefijo}}</td>
-                                      <td>{{data.consecutivo}}</td>
-                                      <td>
+                                    <tbody v-for="(data, index) in infoTables.data" :key="index" :class="{'bg-danger' : !data.listaAdquirentes[0]['email']}">
+                                      <td class="align-middle">{{data.factura_id}}</td>
+                                      <td class="align-middle">{{data.prefijo}}</td>
+                                      <td class="align-middle">{{data.consecutivo}}</td>
+                                      <td class="align-middle">
                                         <span v-for="cliente in data.listaAdquirentes">
                                           {{cliente.nombreCompleto}}
                                         </span>
                                       </td>
-                                      <td>{{data.fechafacturacion}}</td>
-                                      <td>{{data.tipodocumentoDescripcion}}</td>
-                                      <td>{{data.estado}}</td>
-                                      <td>{{data.sucursal}}</td>
-                                      <td>{{ data.pago.totalfactura }}</td>
-                                      <td>
-                                        <a :href="urlApi+'download-factura?idFactura='+data.factura_id" target="_blank" class="btn btn-outline-info" title="Generar Json">
+                                      <td class="align-middle">{{data.fechafacturacion}}</td>
+                                      <td class="align-middle">{{data.tipodocumentoDescripcion}}</td>
+                                      <td class="align-middle">{{data.estado}}</td>
+                                      <td class="align-middle">{{data.sucursal}}</td>
+                                      <td class="align-middle">{{ data.pago.totalfactura }}</td>
+                                      <td class="align-middle">
+                                        <a :href="urlApi+'download-factura?idFactura='+data.factura_id" target="_blank" class="btn btn-info m-1" title="Generar Json">
                                           <i class="fas fa-file-download"></i>
                                         </a>
-                                        <button v-if="data.estado !== 'PROCESADO'" class="btn btn-outline-success mt-1" title="Procesar Factura" @click.prevent="updateProcess(data.factura_id, 'PROCESADO')">
+                                        <button v-if="data.estado !== 'PROCESADO' && data.listaAdquirentes[0]['email']" class="btn btn-success m-1" title="Procesar Factura" @click.prevent="updateStatus(data.factura_id, 'PROCESADO')">
                                           <i class="fas fa-check-double"></i>
+                                        </button>
+                                        <button v-if="data.estado !== 'PROCESADO' && !data.listaAdquirentes[0]['email']" class="btn btn-warning m-1" title="Editar Factura" @click.prevent="openModal('edit', data.factura_id)">
+                                          <i class="fas fa-edit"></i>
                                         </button>
                                       </td>
                                     </tbody>
@@ -174,22 +177,35 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modal-filesLabel">Adjuntar Facturas</h5>
+            <h5 class="modal-title" id="modal-filesLabel"><i :class="`${iconoModal}`"></i> {{tituloModal}}</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">
-              <i class="far fa-times-circle"></i> Cerrar
-            </button>
-            <button type="button" class="btn btn-success">
-              <i class="far fa-check-circle"></i> Enviar
-            </button>
-          </div>
+          <form @submit.prevent="updateEmailFactura">
+            <div class="modal-body">
+              <div v-if="typeModal === 'edit'">
+                <div class="form-group">
+                  <label for="form-email">Email</label>
+                  <input type="email" class="form-control" id="form-email" v-model="newEmail" autocomplete="off" required>
+                </div>
+              </div>
+              <div v-else>
+                CARGAR ARCHIVO
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <i class="far fa-times-circle"></i> Cerrar
+              </button>
+              <button v-if="typeModal === 'file'" type="button" class="btn btn-success" @click.prevent="uploadFacturas">
+                <i class="fas fa-sync"></i> Actualizar
+              </button>
+              <button v-else type="submit" class="btn btn-success">
+                <i class="fas fa-sync"></i> Actualizar
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -202,7 +218,10 @@ export default {
       return {
         urlApi: process.env.MIX_API_ORACLE,
         errors: [],
-        tipo_modal: '',
+        idFactura: '',
+        typeModal: '',
+        tituloModal: '',
+        iconoModal: '',
         paramsTable: {
           apiExt: true,
           url_api: 'factura',
@@ -215,7 +234,8 @@ export default {
             tipoFactura:'V',
             cant: 5
           }
-        }
+        },
+        newEmail: ''
       }
     },
     computed: {
@@ -295,9 +315,9 @@ export default {
             spinner.classList.remove('d-inline-block')
           })
         },
-        updateProcess(id, state){
+        updateStatus(id, state){
           let me = this
-          axios.post(me.urlApi+'update-factura',{ id: id, estado: state })
+          axios.post(me.urlApi+'update-status-factura',{ id: id, estado: state })
           .then(res => {
             if (res.data.type === 'success') {
               me.$swal({
@@ -330,11 +350,71 @@ export default {
             console.error(err);
           })
         },
-        modalUpload(){
+        openModal(type, idFactura = null){
+          let me = this
           $('#modal-files').modal('show')
+          switch (type) {
+            case 'file':
+              me.typeModal = 'file'
+              me.tituloModal = 'Actualizar Facturas'
+              me.iconoModal = 'fas fa-sync'
+              break;
+            case 'edit':
+              me.typeModal = 'edit'
+              me.tituloModal = 'Editar Factura'
+              me.iconoModal = 'fas fa-edit'
+              me.idFactura = idFactura
+              break;
+            default:
+              //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
+              break;
+          }
         },
         closeModal(){
           $('#modal-files').modal('hide')
+          this.idFactura = ''
+          this.newEmail = ''
+        },
+        uploadFacturas(){
+          console.log('CARGANDO FACTURAS A ACTUALIZAR')
+        },
+        updateEmailFactura(){
+          let me = this
+          axios.post(me.urlApi+'update-data-factura',{ id: me.idFactura, email: me.newEmail })
+          .then(res => {
+            if (res.data.type === 'success') {
+              me.$swal({
+                position: 'top',
+                icon: 'success',
+                title: `${res.data.message}`,
+                showConfirmButton: false,
+                timer: 2000
+              });
+              me.getDataForPage(1)
+              me.closeModal()
+            }else{
+              me.$swal({
+                position: 'top',
+                icon: 'error',
+                title: `${res.data.message}`,
+                showConfirmButton: false,
+                timer: 2000
+              });
+              me.closeModal()
+            }
+            //console.log(res)
+          })
+          .catch(err => {
+            me.$swal({
+              position: 'top',
+              icon: 'error',
+              title: "No existe factura, no se actualizo!",
+              showConfirmButton: false,
+              timer: 3000
+            });
+            console.error(err)
+            me.closeModal()
+          })
         }
     },
 }
@@ -342,5 +422,10 @@ export default {
 <style lang="scss" scoped>
   .form_filters{
     border-bottom: 2px solid black;
+  }
+  tbody{
+    &.error{
+      background-color: red;
+    }
   }
 </style>
