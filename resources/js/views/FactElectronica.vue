@@ -30,6 +30,7 @@
                               <label for="inputState" class="font-weight-bold">Tipo Factura</label>
                               <select id="inputState" class="form-control" v-model="paramsTable.params.tipoFactura">
                                 <option value="todos">Todos</option>
+                                <option value="NCD"> NOTAS CRÉDITO/DÉBITO </option>
                                 <option selected value="V"> FACTURA DE VENTA </option>
                                 <option value="C"> FACTURA DE CONTINGENCIA </option>
                               </select>
