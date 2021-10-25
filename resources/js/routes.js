@@ -5,6 +5,7 @@ import Cursos from './views/Cursos';
 import Pruebas from './views/Pruebas';
 import Perfil from './views/Perfil';
 import FactElectronica from './views/FactElectronica';
+import NominaElectronica from './views/NominaElectronica';
 
 export default {
 
@@ -40,6 +41,11 @@ export default {
           path: "/facturacion-electronica",
           name: 'facturacion-electronica',
           component: FactElectronica
+        },
+        {
+          path: "/nomina-electronica",
+          name: 'nomina-electronica',
+          component: NominaElectronica
         }
     ]
 };

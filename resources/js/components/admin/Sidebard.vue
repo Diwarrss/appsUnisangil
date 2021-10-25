@@ -14,7 +14,7 @@
                     <i class="nav-icon icon-home"></i> Menú
                 </li>
                 <div class="dropdown-divider"></div>
-                <li class="nav-item nav-dropdown" v-if="dataUser.email !== 'facturaelectronica@unisangil.edu.co'">
+                <li class="nav-item nav-dropdown" v-if="dataUser.roles_id === 2 || dataUser.roles_id === 3 || dataUser.roles_id === 1 || dataUser.roles_id === 4">
                     <a class="nav-link nav-dropdown-toggle" href="">
                         <i class="nav-icon fas fa-archive"></i> Solicitudes
                     </a>
@@ -31,9 +31,14 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" v-if="dataUser.roles_id === 5 || dataUser.roles_id === 1">
                     <router-link class="nav-link" :to="{ name: 'facturacion-electronica' }">
                         <i class="nav-icon fas fa-file-invoice"></i> Facturación
+                    </router-link>
+                </li>
+                <li class="nav-item" v-if="dataUser.roles_id === 6 || dataUser.roles_id === 1">
+                    <router-link class="nav-link" :to="{ name: 'nomina-electronica' }">
+                        <i class="nav-icon fas fa-file-invoice"></i> Nómina
                     </router-link>
                 </li>
                 <!-- <li class="nav-item">
