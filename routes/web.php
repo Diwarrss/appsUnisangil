@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Routing\RouteGroup;
+use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
@@ -93,5 +93,11 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('getDataTable', 'InscripcionCursosController@getDataTable')->name('getDataTable');
         Route::post('updateState','InscripcionCursosController@updateState');
         Route::get('downloadPay','InscripcionCursosController@downloadPay');
+    });
+
+    Route::group(['prefix' => 'insCursos'], function () {
+        Route::get('/', 'CursosController@index');
+        Route::post('/', 'CursosController@store');
+        Route::put('/', 'CursosController@update');
     });
 });

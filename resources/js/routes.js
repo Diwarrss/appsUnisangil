@@ -2,9 +2,10 @@
 import Error404 from './views/Error404';
 import Dashboard from './views/Dashboard';
 import Cursos from './views/Cursos';
-import Pruebas from './views/Pruebas';
+import Nrc from './views/Nrc';
 import Perfil from './views/Perfil';
 import FactElectronica from './views/FactElectronica';
+import DocSoporte from './views/DocSoporte'
 import NominaElectronica from './views/NominaElectronica';
 
 export default {
@@ -28,9 +29,9 @@ export default {
             component: Cursos
         },
         {
-            path: "/pruebas",
-            name: 'pruebas',
-            component: Pruebas
+            path: "/nrc",
+            name: 'nrc',
+            component: Nrc
         },
         {
           path: "/perfil",
@@ -41,6 +42,11 @@ export default {
           path: "/facturacion-electronica",
           name: 'facturacion-electronica',
           component: FactElectronica
+        },
+        {
+          path: "/documento-soporte",
+          name: 'documento-soporte',
+          component: DocSoporte
         },
         {
           path: "/nomina-electronica",

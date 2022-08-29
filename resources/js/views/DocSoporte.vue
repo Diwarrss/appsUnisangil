@@ -8,13 +8,13 @@
                     <div class="card card-accent-primary">
                         <div class="card-header">
                             <h4>
-                                <strong><i class="fas fa-file-invoice"></i> Facturación Electrónica</strong>
+                                <strong><i class="fas fa-file-invoice"></i> Documento Soporte</strong>
                             </h4>
                         </div>
                       <form class="form_filters p-4" @submit.prevent="getInfoTables(paramsTable)">
                           <h3>Filtrar:</h3>
                           <div class="form-row">
-                            <div class="form-group col-md-2 col-12">
+                            <div class="form-group col-md-3 col-12">
                               <label for="inputState" class="font-weight-bold">Estado</label>
                               <select id="inputState" class="form-control" v-model="paramsTable.params.criterio">
                                 <option  value="todos">Todos</option>
@@ -26,22 +26,11 @@
                                 <option value="REVERSADO"> REVERSADO </option>
                               </select>
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="form-group col-md-3">
                               <label for="inputState" class="font-weight-bold">Tipo Factura</label>
-                              <select id="inputState" class="form-control" v-model="paramsTable.params.tipoFactura">
-                                <option value="todos">Todos</option>
-                                <option value="NCD"> NOTAS CRÉDITO/DÉBITO </option>
-                                <option selected value="V"> FACTURA DE VENTA </option>
-                                <option value="C"> FACTURA DE CONTINGENCIA </option>
+                              <select id="inputState" class="form-control" v-model="paramsTable.params.tipoFactura" disabled>
+                                <option value="CAUSACION">Documento soporte</option>
                               </select>
-                            </div>
-                            <div class="form-group col-md-1 col-6">
-                              <label for="prefFactura" class="font-weight-bold">Prefijo Factura</label>
-                              <input type="text" class="form-control" id="prefFactura" placeholder="Ej. USG" v-model="paramsTable.params.prefijo">
-                            </div>
-                            <div class="form-group col-md-2 col-6">
-                              <label for="numFactura" class="font-weight-bold">Consecutivo/Num. Factura</label>
-                              <input type="text" class="form-control" id="numFactura" placeholder="Ej. 101" v-model="paramsTable.params.buscar">
                             </div>
                             <div class="form-group col-md-3 my-auto ml-md-3">
                               <button
@@ -232,19 +221,11 @@ export default {
             criterio: 'REGISTRADO',
             buscar:'',
             prefijo:'',
-            tipoFactura:'V',
+            tipoFactura:'CAUSACION',
             cant: 5
           }
         },
         newEmail: ''
-      }
-    },
-    watch:{
-      '$route.path': {
-        immediate: true,
-        handler(newValue, oldValue) {
-          this.infoTables.data = []
-        }
       }
     },
     computed: {
@@ -263,6 +244,14 @@ export default {
     },
     created() {
       //this.$store.dispatch('getInfoTables', this.paramsTable)
+    },
+    watch:{
+      '$route.path': {
+        immediate: true,
+        handler(newValue, oldValue) {
+          this.infoTables.data = []
+        }
+      }
     },
     methods: {
         ...mapActions(['getInfoTables']),

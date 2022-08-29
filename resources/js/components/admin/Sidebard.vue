@@ -25,8 +25,8 @@
                         </router-link>
                         </li>
                         <li class="nav-item">
-                        <router-link class="nav-link" :to="{ name: 'pruebas' }">
-                            <i class="nav-icon fas fa-tags"></i> Pruebas
+                        <router-link class="nav-link" :to="{ name: 'nrc' }">
+                            <i class="nav-icon fas fa-tags"></i> NRC
                         </router-link>
                         </li>
                     </ul>
@@ -36,58 +36,16 @@
                         <i class="nav-icon fas fa-file-invoice"></i> Facturación
                     </router-link>
                 </li>
+                <li class="nav-item" v-if="dataUser.roles_id === 5 || dataUser.roles_id === 1">
+                    <router-link class="nav-link" :to="{ name: 'documento-soporte' }">
+                        <i class="nav-icon fas fa-file-invoice"></i> Documento Soporte
+                    </router-link>
+                </li>
                 <li class="nav-item" v-if="dataUser.roles_id === 6 || dataUser.roles_id === 1">
                     <router-link class="nav-link" :to="{ name: 'nomina-electronica' }">
                         <i class="nav-icon fas fa-file-invoice"></i> Nómina
                     </router-link>
                 </li>
-                <!-- <li class="nav-item">
-                <router-link class="nav-link" to="/admin">
-                    <i class="nav-icon icon-user-following"></i> Admin
-                </router-link>
-                </li>
-                <li class="nav-item">
-                <router-link class="nav-link" to="/personas">
-                    <i class="nav-icon icon-people"></i> Personas
-                </router-link>
-                </li>
-                <li class="nav-item">
-                <router-link class="nav-link" to="/computadores">
-                    <i class="nav-icon icon-screen-desktop"></i> Computadores
-                </router-link>
-                </li> -->
-                <!-- <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#">
-                    <i class="nav-icon icon-chart"></i> Reportes
-                </a>
-                <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                    <router-link class="nav-link" to="/total">
-                        <i class="nav-icon icon-puzzle"></i> Totales
-                    </router-link>
-                    </li>
-                </ul>
-                </li>-->
-                <!-- <li class="nav-item">
-                <router-link class="nav-link" to="/reportes">
-                    <i class="nav-icon icon-chart"></i> Reportes
-                </router-link>
-                </li>
-                <li class="nav-item">
-                <router-link class="nav-link" to="/totalIngresos">
-                    <i class="nav-icon icon-list"></i> Total Ingresos
-                </router-link>
-                </li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-title text-center">
-                    <i class="nav-icon icon-equalizer"></i> Configuración
-                </li>
-                <div class="dropdown-divider"></div>
-                <li class="nav-item">
-                <router-link class="nav-link" to="/perfil">
-                    <i class="nav-icon icon-user"></i> Perfil
-                </router-link>
-                </li> -->
             </ul>
         </div>
         <button class="sidebar-minimizer brand-minimizer" type="button"></button>
