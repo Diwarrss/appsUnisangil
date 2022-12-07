@@ -1,13 +1,13 @@
 <template>
-    <main class="main">
-    <div class="container-fluid py-5">
+  <main class="main">
+    <div class="container-fluid p-4">
       <div class="ui-view">
         <div class="animated fadeIn">
           <div class="row">
             <div class="col-sm-12 col-lg-12">
               <div class="card">
                 <div class="card-body">
-                  <h2>PRUEBAS</h2>
+                  <h1>Configuración de Perfil en Desarrollo</h1>
                 </div>
               </div>
             </div>

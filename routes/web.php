@@ -1,10 +1,14 @@
 <?php
 
-use Illuminate\Routing\RouteGroup;
+use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
 Route::group(['middleware' => ['guest']], function () {
+    //login usando credenciales y api de postgresql del vortal
+    Route::get('/login-vortal', function () {
+        return view('auth.login-vortal');
+    });
     Route::get('/', function () {
         return view('home.intro');
     });
@@ -89,5 +93,11 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('getDataTable', 'InscripcionCursosController@getDataTable')->name('getDataTable');
         Route::post('updateState','InscripcionCursosController@updateState');
         Route::get('downloadPay','InscripcionCursosController@downloadPay');
+    });
+
+    Route::group(['prefix' => 'insCursos'], function () {
+        Route::get('/', 'CursosController@index');
+        Route::post('/', 'CursosController@store');
+        Route::put('/', 'CursosController@update');
     });
 });

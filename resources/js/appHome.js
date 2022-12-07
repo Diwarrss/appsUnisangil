@@ -32,6 +32,8 @@ require("moment/locale/es");
 Vue.use(require("vue-moment"), {
     moment
 });
+//Componente para pagina login consume API del Vortal
+Vue.component('login-vortal', require('./components/Auth/LoginVortal.vue').default);
 
 Vue.component('headerhome', require('./components/Home/Header.vue').default);
 Vue.component('footerhome', require('./components/Home/Footer.vue').default);

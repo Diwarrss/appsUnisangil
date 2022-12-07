@@ -21,9 +21,10 @@ class CreateRolesTable extends Migration
         });
         $now = new \DateTime();
         DB::table('roles')->insert([
-            array('id' => '1', 'nombre' => 'Admin', 'descripcion' => 'Usuario que se encarga del control total de la Página', 'created_at' => $now),
+            array('id' => '1', 'nombre' => 'Admin', 'descripcion' => 'Usuario que se encarga del control total del Sistema', 'created_at' => $now),
             array('id' => '2', 'nombre' => 'Registro', 'descripcion' => 'Rol especifico para registro academico', 'created_at' => $now),
-            array('id' => '3', 'nombre' => 'Tesorería', 'descripcion' => 'Rol especifico para tesorería', 'created_at' => $now)
+            array('id' => '3', 'nombre' => 'Tesorería', 'descripcion' => 'Rol especifico para tesorería', 'created_at' => $now),
+            array('id' => '4', 'nombre' => 'FactElectronicá', 'descripcion' => 'Rol especifico para las personas encargadas de administrar la facturación electrónica de UNISANGIL', 'created_at' => $now)
         ]);
     }
 

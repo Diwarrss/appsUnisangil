@@ -16,8 +16,8 @@ mix
     host: 'appsunisangil.local',
     proxy: 'http://appsunisangil.local:8081/'
 })
-.js('resources/js/appHome.js', 'public/js/appHome.js') //js de Home inicio de Pagina
-.js('resources/js/appAdmin.js', 'public/js/appAdmin.js') //js de Admin de la pagina;
+.js('resources/js/appHome.js', 'public/js/appHome.js').version() //js de Home inicio de Pagina
+.js('resources/js/appAdmin.js', 'public/js/appAdmin.js').version() //js de Admin de la pagina;
 //Creamos los CSS General para las vistas de Coreui
 .styles(
     [
@@ -30,7 +30,7 @@ mix
         "public/adminCoreui/vendors/pace-progress/css/pace.min.css"
     ],
     "public/css/allCoreui.css"
-)
+).version()
 //Creamos el JS General para las vistas de Coreui
 .scripts(
     [
@@ -42,7 +42,7 @@ mix
         "public/adminCoreui/node_modules/@coreui/coreui/dist/js/coreui.min.js"
     ],
     "public/js/allCoreui.js"
-)
+).version()
 //styles to template home
 .styles(
     [
@@ -57,7 +57,7 @@ mix
         "public/templateHome/style.css",
     ],
     "public/css/allHome.css"
-)
+).version()
 //Creamos el JS General para la vista del home
 .scripts(
     [
@@ -75,4 +75,4 @@ mix
         "public/templateHome/main.js"
     ],
     "public/js/allHome.js"
-)
+).version()
